@@ -80,15 +80,6 @@
       "static/chunks/972-7e94f5c52b466e99.js",
       "static/chunks/app/accommodation/gypsy-caravan/page-94ad44f4d264aa63.js"
     ],
-    "/accommodation/mixed-dorm/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/972-7e94f5c52b466e99.js",
-      "static/chunks/app/accommodation/mixed-dorm/page-ce4f47712e6568ff.js"
-    ],
     "/accommodation/page": [
       "static/chunks/webpack-f7cbd32035d5221e.js",
       "static/chunks/fd9d1056-87da80e0c187477b.js",
@@ -97,6 +88,15 @@
       "static/chunks/878-a7642fc5170c7c23.js",
       "static/chunks/972-7e94f5c52b466e99.js",
       "static/chunks/app/accommodation/page-261eae6f61fc3217.js"
+    ],
+    "/accommodation/mixed-dorm/page": [
+      "static/chunks/webpack-f7cbd32035d5221e.js",
+      "static/chunks/fd9d1056-87da80e0c187477b.js",
+      "static/chunks/117-8b1e0c1667a5cc67.js",
+      "static/chunks/main-app-8e347daf419ee9cc.js",
+      "static/chunks/878-a7642fc5170c7c23.js",
+      "static/chunks/972-7e94f5c52b466e99.js",
+      "static/chunks/app/accommodation/mixed-dorm/page-ce4f47712e6568ff.js"
     ],
     "/accommodation/safari-tent/page": [
       "static/chunks/webpack-f7cbd32035d5221e.js",
@@ -189,14 +189,6 @@
       "static/chunks/878-a7642fc5170c7c23.js",
       "static/chunks/app/adventures/lazy-library/page-e7589f6742f6ee63.js"
     ],
-    "/adventures/map-of-africa/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/app/adventures/map-of-africa/page-f389e982e327ac26.js"
-    ],
     "/adventures/page": [
       "static/chunks/webpack-f7cbd32035d5221e.js",
       "static/chunks/fd9d1056-87da80e0c187477b.js",
@@ -205,6 +197,14 @@
       "static/chunks/878-a7642fc5170c7c23.js",
       "static/chunks/972-7e94f5c52b466e99.js",
       "static/chunks/app/adventures/page-debf4042d4d2e154.js"
+    ],
+    "/adventures/map-of-africa/page": [
+      "static/chunks/webpack-f7cbd32035d5221e.js",
+      "static/chunks/fd9d1056-87da80e0c187477b.js",
+      "static/chunks/117-8b1e0c1667a5cc67.js",
+      "static/chunks/main-app-8e347daf419ee9cc.js",
+      "static/chunks/878-a7642fc5170c7c23.js",
+      "static/chunks/app/adventures/map-of-africa/page-f389e982e327ac26.js"
     ],
     "/adventures/paragliding/page": [
       "static/chunks/webpack-f7cbd32035d5221e.js",
