@@ -2,6 +2,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import MouseGradientCard from '@/components/theme/MouseGradientCard'
+import BookNowButton from '@/components/ui/BookNowButton'
+import LogoSection from '@/components/ui/LogoSection'
 import { useState, useRef, useEffect } from 'react'
 
 const roomTypes = [
@@ -136,13 +138,8 @@ export default function Accommodation() {
           </p>
 
           {/* Book Now Button */}
-          <div className="mt-6 flex justify-center">
-            <Link 
-              href="https://book.nightsbridge.com/21082" 
-              className="bg-[#0E7D73] hover:bg-[#073F3A] text-[#C9DD94] hover:text-[#00FF7F] px-6 py-3 rounded-lg font-semibold transition-colors text-base"
-            >
-              Book Now
-            </Link>
+          <div className="mt-6">
+            <BookNowButton />
           </div>
         </div>
       </div>
@@ -264,15 +261,7 @@ export default function Accommodation() {
 
       {/* Logo Section */}
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex justify-center">
-          <Image
-            src="/images/home/logo.webp"
-            alt="Fairy Knowe Logo"
-            width={300}
-            height={300}
-            className="w-48 h-48 object-contain"
-          />
-        </div>
+        <LogoSection />
       </div>
     </div>
   )

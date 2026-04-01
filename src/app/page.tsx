@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import ResponsiveBanner from '@/components/layout/ResponsiveBanner'
+import BookNowButton from '@/components/ui/BookNowButton'
+import LogoSection from '@/components/ui/LogoSection'
 // import GalleryCarousel from '@/components/gallery/GalleryCarousel'
 
 // Add font preloading
@@ -104,13 +106,8 @@ export default function Home() {
           </p>
 
           {/* Book Now Button */}
-          <div className="mt-6 flex justify-center">
-            <Link 
-              href="https://book.nightsbridge.com/21082" 
-              className="bg-[#0E7D73] hover:bg-[#073F3A] text-[#C9DD94] hover:text-[#00FF7F] px-8 py-3 rounded-lg font-semibold transition-colors"
-            >
-              Book Now
-            </Link>
+          <div className="mt-6">
+            <BookNowButton />
           </div>
         </div>
       </div>
@@ -157,16 +154,8 @@ export default function Home() {
           </div>
 
           {/* Logo Section */}
-          <div className="mt-16 mb-8 flex justify-center">
-            <Image
-              src="/images/home/logo.webp"
-              alt="Fairy Knowe Backpackers Logo"
-              width={400}
-              height={400}
-              className="w-auto h-auto max-w-[200px] md:max-w-[250px]"
-              priority
-              loading="eager"
-            />
+          <div className="mt-16 mb-8">
+            <LogoSection />
           </div>
 
           {/* Riddle */}

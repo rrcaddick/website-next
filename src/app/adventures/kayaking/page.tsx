@@ -1,9 +1,9 @@
 'use client'
 
-import Image from 'next/image'
-import Link from 'next/link'
 import { useState } from 'react'
 import ImageGallery from '@/components/gallery/ImageGallery'
+import PageHero from '@/components/ui/PageHero'
+import LogoSection from '@/components/ui/LogoSection'
 
 // Define gallery images with thumbnails and full-size versions
 const galleryImages = [
@@ -52,41 +52,11 @@ const galleryImages = [
 export default function KayakingPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Banner */}
-      {/* Mobile Banner */}
-      <div className="relative w-full aspect-[9/5] mb-6 bg-gray-900 block md:hidden">
-        <Image
-          src="/images/home/mobile/kayaking-banner.webp"
-          alt="Fairy Knowe Kayaking Mobile Banner"
-          fill
-          className="object-cover"
-          priority
-          quality={85}
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center">
-          <h1 className="text-2xl sm:text-3xl font-bold text-white mb-2 sm:mb-4 drop-shadow-[0_0_8px_rgba(0,0,0,1)] hestrial-font px-4 text-center">
-            Kayaking
-          </h1>
-        </div>
-      </div>
-      {/* Desktop Banner */}
-      <div className="relative h-[300px] lg:h-[500px] w-full mb-6 bg-gray-900 hidden md:block">
-        <Image
-          src="/images/adventures/banners/kayaking-banner.webp"
-          alt="Fairy Knowe Kayaking"
-          fill
-          className="object-cover"
-          priority
-          quality={85}
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center">
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 drop-shadow-[0_0_8px_rgba(0,0,0,1)] hestrial-font px-4 text-center">
-            Kayaking
-          </h1>
-        </div>
-      </div>
+      <PageHero
+        mobileSrc="/images/home/mobile/kayaking-banner.webp"
+        desktopSrc="/images/adventures/banners/kayaking-banner.webp"
+        title="Kayaking"
+      />
 
       {/* Content Section */}
       <div className="pt-2 pb-8 sm:pt-4 sm:pb-12 px-4">
@@ -158,15 +128,8 @@ export default function KayakingPage() {
         </div>
 
         {/* Logo Section */}
-        <div className="mt-12 mb-8 flex justify-center">
-          <Image
-            src="/images/home/logo.webp"
-            alt="Fairy Knowe Backpackers Logo"
-            width={400}
-            height={400}
-            className="w-auto h-auto max-w-[200px] md:max-w-[250px]"
-            priority
-          />
+        <div className="mt-12 mb-8">
+          <LogoSection />
         </div>
       </div>
     </div>

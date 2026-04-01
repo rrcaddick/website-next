@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import MouseGradientCard from '@/components/theme/MouseGradientCard'
+import LogoSection from '@/components/ui/LogoSection'
 import { useState, useRef, useEffect } from 'react'
 
 const activities = [
@@ -303,15 +304,8 @@ export default function Adventure() {
         </div>
       </div>
       {/* Logo Section */}
-      <div className="mt-12 mb-8 flex justify-center">
-        <Image
-          src="/images/home/logo.webp"
-          alt="Fairy Knowe Backpackers Logo"
-          width={400}
-          height={400}
-          className="w-auto h-auto max-w-[200px] md:max-w-[250px]"
-          priority
-        />
+      <div className="mt-12 mb-8">
+        <LogoSection />
       </div>
     </div>
   )
