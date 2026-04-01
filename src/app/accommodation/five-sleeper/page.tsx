@@ -1,8 +1,9 @@
 'use client'
 
-import Image from 'next/image'
-import Link from 'next/link'
 import ImageGallery from '@/components/gallery/ImageGallery'
+import PageHero from '@/components/ui/PageHero'
+import BookNowButton from '@/components/ui/BookNowButton'
+import LogoSection from '@/components/ui/LogoSection'
 
 // Define gallery images with the new naming convention
 const galleryImages = [
@@ -51,24 +52,11 @@ const galleryImages = [
 export default function FiveSleeperPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Banner */}
-      {/* Mobile Banner */}
-      <div className="relative w-full aspect-[9/5] mb-6 bg-gray-900 block md:hidden">
-        <Image
-          src="/images/home/mobile/five-sleeper-banner.webp"
-          alt="Fairy Knowe Five Sleeper Mobile Banner"
-          fill
-          className="object-cover"
-          priority
-          quality={85}
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center">
-          <h1 className="text-2xl sm:text-3xl font-bold text-white mb-2 sm:mb-4 drop-shadow-[0_0_8px_rgba(0,0,0,1)] hestrial-font px-4 text-center">
-            Five Sleeper
-          </h1>
-        </div>
-      </div>
+      <PageHero
+        mobileSrc="/images/home/mobile/five-sleeper-banner.webp"
+        desktopSrc="/images/accommodation/banners/five-sleeper-banner.webp"
+        title="Five Sleeper"
+      />
       {/* Desktop Banner */}
       <div className="relative h-[300px] lg:h-[500px] w-full mb-6 bg-gray-900 hidden md:block">
         <Image
@@ -95,13 +83,8 @@ export default function FiveSleeperPage() {
           </p>
 
           {/* Book Now Button */}
-          <div className="mt-6 flex justify-center">
-            <Link
-              href="https://book.nightsbridge.com/21082"
-              className="bg-[#0E7D73] hover:bg-[#073F3A] text-[#C9DD94] hover:text-[#00FF7F] px-6 py-3 rounded-lg font-semibold transition-colors text-base"
-            >
-              Book Now
-            </Link>
+          <div className="mt-6">
+            <BookNowButton />
           </div>
         </div>
 
@@ -189,15 +172,8 @@ export default function FiveSleeperPage() {
         </div>
 
         {/* Logo Section */}
-        <div className="mt-16 mb-8 flex justify-center">
-          <Image
-            src="/images/home/logo.webp"
-            alt="Fairy Knowe Backpackers Logo"
-            width={400}
-            height={400}
-            className="w-auto h-auto max-w-[200px] md:max-w-[250px]"
-            priority
-          />
+        <div className="mt-16 mb-8">
+          <LogoSection />
         </div>
       </div>
     </div>
