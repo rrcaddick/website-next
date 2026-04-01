@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import ImageGallery from '@/components/ImageGallery'
+import ImageGallery from '@/components/gallery/ImageGallery'
 
 // Define the gallery images
 const galleryImages = [

@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import ImageGallery from '@/components/ImageGallery'
+import ImageGallery from '@/components/gallery/ImageGallery'
 import Link from 'next/link'
 
 // Define gallery images with the new naming convention

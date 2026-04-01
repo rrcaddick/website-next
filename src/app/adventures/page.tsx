@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import MouseGradientCard from '../components/MouseGradientCard'
+import MouseGradientCard from '@/components/theme/MouseGradientCard'
 import { useState, useRef, useEffect } from 'react'
 
 const activities = [

@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image'
 import Link from 'next/link'
-import MouseGradientCard from '@/app/components/MouseGradientCard'
+import MouseGradientCard from '@/components/theme/MouseGradientCard'
 import { useState, useRef, useEffect } from 'react'
 
 const roomTypes = [

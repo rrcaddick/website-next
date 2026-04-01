@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
-import ImageGallery from '@/components/ImageGallery'
+import ImageGallery from '@/components/gallery/ImageGallery'
 
 // Define gallery images with the new naming convention
 const galleryImages = [

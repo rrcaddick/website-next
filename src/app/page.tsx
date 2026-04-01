@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import ResponsiveBanner from './components/ResponsiveBanner'
-// import GalleryCarousel from './components/GalleryCarousel'
+import ResponsiveBanner from '@/components/layout/ResponsiveBanner'
+// import GalleryCarousel from '@/components/gallery/GalleryCarousel'
 
 // Add font preloading
 export const metadata = {
