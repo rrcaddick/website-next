@@ -1,60 +1,61 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import BookNowButton from '@/components/ui/BookNowButton'
-import LogoSection from '@/components/ui/LogoSection'
-import PageHero from '@/components/ui/PageHero'
+import Link from "next/link";
+import Image from "next/image";
+import BookNowButton from "@/components/ui/BookNowButton";
+import LogoSection from "@/components/ui/LogoSection";
+import PageHero from "@/components/ui/PageHero";
 
 // Add font preloading
 export const metadata = {
-  title: 'Fairy Knowe Backpackers',
-  description: 'Your home away from home in the heart of Wilderness, offering comfortable accommodation, exciting adventures, and a vibrant social atmosphere.',
-}
+  title: "Fairy Knowe Backpackers",
+  description:
+    "Your home away from home in the heart of Wilderness, offering comfortable accommodation, exciting adventures, and a vibrant social atmosphere.",
+};
 
 export default function Home() {
   const pages = [
     {
-      title: 'Accommodation',
-      description: 'Explore our comfortable rooms and cozy accommodation options.',
-      image: '/images/home/accommodation-card.webp',
-      mobileImage: '/images/home/mobile/accommodation-banner.webp',
-      link: '/accommodation'
+      title: "Accommodation",
+      description: "Explore our comfortable rooms and cozy accommodation options.",
+      image: "/images/home/accommodation-card.webp",
+      mobileImage: "/images/home/mobile/accommodation-banner.webp",
+      link: "/accommodation",
     },
     {
-      title: 'Adventures',
-      description: 'Discover exciting activities and adventures in Wilderness.',
-      image: '/images/home/adventure-card.webp',
-      mobileImage: '/images/home/mobile/adventure-banner.webp',
-      link: '/adventures'
+      title: "Adventures",
+      description: "Discover exciting activities and adventures in Wilderness.",
+      image: "/images/home/adventure-card.webp",
+      mobileImage: "/images/home/mobile/adventure-banner.webp",
+      link: "/adventures",
     },
     {
-      title: 'Entertainment',
-      description: 'Join us for live music, open mic nights, and family markets.',
-      image: '/images/home/entertainment-card.webp',
-      mobileImage: '/images/home/mobile/entertainment-banner.webp',
-      link: '/entertainment'
+      title: "Entertainment",
+      description: "Join us for live music, open mic nights, and family markets.",
+      image: "/images/home/entertainment-card.webp",
+      mobileImage: "/images/home/mobile/entertainment-banner.webp",
+      link: "/entertainment",
     },
     {
-      title: 'Venue Hire',
-      description: 'Host your special occasion in our charming venue surrounded by nature.',
-      image: '/images/home/wedding-events-card.webp',
-      mobileImage: '/images/home/mobile/venue-banner.webp',
-      link: '/venue'
+      title: "Venue Hire",
+      description: "Host your special occasion in our charming venue surrounded by nature.",
+      image: "/images/home/wedding-events-card.webp",
+      mobileImage: "/images/home/mobile/venue-banner.webp",
+      link: "/venue",
     },
     {
-      title: 'Facilities',
-      description: 'Enjoy our bar, restaurant, self catering kitchen and social spaces.',
-      image: '/images/home/facilities-card.webp',
-      mobileImage: '/images/home/mobile/facilities-banner.webp',
-      link: '/facilities'
+      title: "Facilities",
+      description: "Enjoy our bar, restaurant, self catering kitchen and social spaces.",
+      image: "/images/home/facilities-card.webp",
+      mobileImage: "/images/home/mobile/facilities-banner.webp",
+      link: "/facilities",
     },
     {
-      title: 'Fairy Folk \'n Roll',
-      description: 'Visit our YouTube channel exploring the art of live music performance through digital media.',
-      image: '/images/home/ffr-card.webp',
-      mobileImage: '/images/home/mobile/ffr-banner.webp',
-      link: '/fairy-folk-n-roll'
-    }
-  ]
+      title: "Fairy Folk 'n Roll",
+      description: "Visit our YouTube channel exploring the art of live music performance through digital media.",
+      image: "/images/ffr/ffr-banner.webp",
+      mobileImage: "/images/ffr/ffr-banner.webp",
+      link: "/fairy-folk-n-roll",
+    },
+  ];
 
   return (
     <div className="min-h-screen">
@@ -68,8 +69,8 @@ export default function Home() {
       <div className="mb-8">
         <div className="max-w-7xl mx-auto px-4">
           <p className="text-xs md:text-base text-gray-600 max-w-3xl mx-auto text-center leading-relaxed">
-            Your home away from home in the heart of Wilderness, offering comfortable accommodation,
-            exciting adventures, and a vibrant social atmosphere.
+            Your home away from home in the heart of Wilderness, offering comfortable accommodation, exciting
+            adventures, and a vibrant social atmosphere.
           </p>
 
           {/* Book Now Button */}
@@ -113,7 +114,8 @@ export default function Home() {
           <div className="mt-12 text-center">
             <h2 className="text-3xl font-bold mb-4">Ready to Start Your Adventure?</h2>
             <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-              Join us at Fairy Knowe Backpackers Lodge for an unforgettable experience<br />
+              Join us at Fairy Knowe Backpackers Lodge for an unforgettable experience
+              <br />
               in the beautiful Garden Route, South Africa.
             </p>
           </div>
@@ -126,16 +128,20 @@ export default function Home() {
           {/* Riddle */}
           <div className="mt-12 mb-12 text-center px-8 md:px-16 lg:px-24">
             <p className="text-xs md:text-gray-600 dark:text-gray-300 max-w-4xl mx-auto italic">
-              I dwell in forests deep and green, where few have seen and less have been.<br />
-              When the mind has sight, be seen I might, on wings that shimmer through the night.<br/>
-              I guard the flowers, trees and streams, and live within your wildest dreams.<br/>
-              I bring the magic, most delight, yet vanish with the morning light.<br/>
-              <br/>
+              I dwell in forests deep and green, where few have seen and less have been.
+              <br />
+              When the mind has sight, be seen I might, on wings that shimmer through the night.
+              <br />
+              I guard the flowers, trees and streams, and live within your wildest dreams.
+              <br />
+              I bring the magic, most delight, yet vanish with the morning light.
+              <br />
+              <br />
               What am I?
             </p>
           </div>
         </div>
       </div>
     </div>
-  )
-} 
+  );
+}
