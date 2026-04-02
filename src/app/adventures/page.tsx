@@ -47,7 +47,6 @@ export default function Adventure() {
                     fill
                     className="object-cover w-full transition-transform duration-500 ease-in-out group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    priority={activity.id <= 3}
                   />
                 </div>
                 <div className="p-6 flex flex-col flex-grow">

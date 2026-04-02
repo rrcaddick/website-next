@@ -17,7 +17,6 @@ export default function AccommodationDesktopGrid() {
               <AccommodationCardImage
                 src={room.image}
                 alt={room.name}
-                priority={room.id <= 3}
               />
             </div>
             <div className="p-6 flex flex-col flex-grow">

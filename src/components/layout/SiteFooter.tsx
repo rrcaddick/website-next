@@ -68,8 +68,6 @@ export default function SiteFooter() {
           width={1920}
           height={400}
           className="w-full h-auto"
-          priority
-          sizes="100vw"
         />
       </div>
     </footer>
