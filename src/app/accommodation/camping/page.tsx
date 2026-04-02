@@ -1,4 +1,3 @@
-'use client'
 
 import ImageGallery from '@/components/gallery/ImageGallery'
 import PageHero from '@/components/ui/PageHero'

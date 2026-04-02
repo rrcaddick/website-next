@@ -335,6 +335,7 @@ export default function Gallery() {
                   alt={selectedImage.alt}
                   fill
                   className="object-contain"
+                  sizes="100vw"
                   priority
                   quality={100}
                   onError={() => setSelectedImage(null)}

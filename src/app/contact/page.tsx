@@ -1,5 +1,3 @@
-'use client'
-
 import Image from 'next/image'
 
 export default function Contact() {
@@ -12,6 +10,7 @@ export default function Contact() {
           alt="Contact Fairy Knowe"
           fill
           className="object-cover"
+          sizes="100vw"
           priority
         />
         <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center">

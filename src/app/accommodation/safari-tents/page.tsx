@@ -1,71 +1,19 @@
-'use client'
-
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import PaginatedGallery from './PaginatedGallery'
 
 const images = [
-  {
-    src: '/safari-tent-1.jpg',
-    alt: 'Safari Tent Overview',
-    description: 'Our comfortable safari tent accommodation'
-  },
-  {
-    src: '/safari-tent-2.jpg',
-    alt: 'Safari Tent Interior',
-    description: 'Clean and cozy tent interior'
-  },
-  {
-    src: '/safari-tent-3.jpg',
-    alt: 'Safari Tent Bed',
-    description: 'Comfortable double bed'
-  },
-  {
-    src: '/safari-tent-4.jpg',
-    alt: 'Safari Tent View',
-    description: 'Beautiful view from the tent'
-  },
-  // Additional images for pagination
-  {
-    src: '/safari-tent-5.jpg',
-    alt: 'Safari Tent Additional View 1',
-    description: 'Additional view of the tent'
-  },
-  {
-    src: '/safari-tent-6.jpg',
-    alt: 'Safari Tent Additional View 2',
-    description: 'Another view of the tent'
-  },
-  {
-    src: '/safari-tent-7.jpg',
-    alt: 'Safari Tent Additional View 3',
-    description: 'More views of the tent'
-  },
-  {
-    src: '/safari-tent-8.jpg',
-    alt: 'Safari Tent Additional View 4',
-    description: 'Final view of the tent'
-  }
+  { src: '/safari-tent-1.jpg', alt: 'Safari Tent Overview', description: 'Our comfortable safari tent accommodation' },
+  { src: '/safari-tent-2.jpg', alt: 'Safari Tent Interior', description: 'Clean and cozy tent interior' },
+  { src: '/safari-tent-3.jpg', alt: 'Safari Tent Bed', description: 'Comfortable double bed' },
+  { src: '/safari-tent-4.jpg', alt: 'Safari Tent View', description: 'Beautiful view from the tent' },
+  { src: '/safari-tent-5.jpg', alt: 'Safari Tent Additional View 1', description: 'Additional view of the tent' },
+  { src: '/safari-tent-6.jpg', alt: 'Safari Tent Additional View 2', description: 'Another view of the tent' },
+  { src: '/safari-tent-7.jpg', alt: 'Safari Tent Additional View 3', description: 'More views of the tent' },
+  { src: '/safari-tent-8.jpg', alt: 'Safari Tent Additional View 4', description: 'Final view of the tent' }
 ]
 
 export default function SafariTentPage() {
-  const [currentPage, setCurrentPage] = useState(0);
-  const imagesPerPage = 8;
-  const totalPages = Math.ceil(images.length / imagesPerPage);
-  
-  const nextPage = () => {
-    setCurrentPage((prevPage) => (prevPage + 1) % totalPages);
-  };
-  
-  const prevPage = () => {
-    setCurrentPage((prevPage) => (prevPage - 1 + totalPages) % totalPages);
-  };
-  
-  const currentImages = images.slice(
-    currentPage * imagesPerPage,
-    (currentPage + 1) * imagesPerPage
-  );
-
   return (
     <div className="min-h-screen">
       {/* Hero Banner */}
@@ -75,6 +23,7 @@ export default function SafariTentPage() {
           alt="Safari Tent Banner"
           fill
           className="object-cover"
+          sizes="100vw"
           priority
         />
         <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center" />
@@ -87,49 +36,11 @@ export default function SafariTentPage() {
       <div className="py-6 px-4">
         <div className="max-w-7xl mx-auto px-4 mb-12 mt-3">
           <p className="text-gray-600 dark:text-gray-300 text-center mb-2 max-w-4xl mx-auto">
-          Immerse yourself in the ideal blend of camping and comfort with our charming safari tent. A cozy double bed and all the essentials needed to create an unforgettable stay amidst nature's splendor.
+            Immerse yourself in the ideal blend of camping and comfort with our charming safari tent. A cozy double bed and all the essentials needed to create an unforgettable stay amidst nature&apos;s splendor.
           </p>
 
           {/* Gallery Grid */}
-          <div className="mt-12 mb-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {currentImages.map((image, index) => (
-                <div key={index} className="relative aspect-square rounded-lg overflow-hidden shadow-lg">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    fill
-                    className="object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              ))}
-            </div>
-            
-            {/* Gallery Navigation */}
-            <div className="flex justify-center items-center mt-6 gap-4">
-              <button 
-                onClick={prevPage}
-                className="bg-[#0E7D73] hover:bg-[#073F3A] text-[#C9DD94] hover:text-[#00FF7F] px-4 py-2 rounded-lg transition-colors"
-                aria-label="Previous page"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-              <span className="text-gray-700">
-                {currentPage + 1} of {totalPages}
-              </span>
-              <button 
-                onClick={nextPage}
-                className="bg-[#0E7D73] hover:bg-[#073F3A] text-[#C9DD94] hover:text-[#00FF7F] px-4 py-2 rounded-lg transition-colors"
-                aria-label="Next page"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            </div>
-          </div>
+          <PaginatedGallery images={images} imagesPerPage={8} />
 
           {/* Features */}
           <div className="mt-12 mb-12">
@@ -200,4 +111,4 @@ export default function SafariTentPage() {
       </div>
     </div>
   )
-} 
+}

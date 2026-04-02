@@ -1,308 +1,100 @@
 {
   "pages": {
-    "/_not-found/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/app/_not-found/page-b62982a1b0a6c401.js"
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
     ],
     "/layout": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/css/58cd074b5bb11546.css",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/972-7e94f5c52b466e99.js",
-      "static/chunks/app/layout-0599b04c8d33dde9.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
     ],
-    "/accommodation/camping/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/972-7e94f5c52b466e99.js",
-      "static/chunks/app/accommodation/camping/page-6bb099d7e01b946e.js"
+    "/error": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/error.js"
     ],
-    "/accommodation/double-en-suite-rondawel/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/972-7e94f5c52b466e99.js",
-      "static/chunks/app/accommodation/double-en-suite-rondawel/page-a52fb9aaf5d02dc9.js"
-    ],
-    "/accommodation/double-en-suite/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/972-7e94f5c52b466e99.js",
-      "static/chunks/app/accommodation/double-en-suite/page-b3f8f5c2b3302a44.js"
-    ],
-    "/accommodation/family-en-suite-rondawel/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/972-7e94f5c52b466e99.js",
-      "static/chunks/app/accommodation/family-en-suite-rondawel/page-4f030c79a7e0b486.js"
-    ],
-    "/accommodation/family-room/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/972-7e94f5c52b466e99.js",
-      "static/chunks/app/accommodation/family-room/page-c2d69c1219650ea9.js"
-    ],
-    "/accommodation/five-sleeper/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/972-7e94f5c52b466e99.js",
-      "static/chunks/app/accommodation/five-sleeper/page-0d3f7dc7278860c4.js"
-    ],
-    "/accommodation/gypsy-caravan/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/972-7e94f5c52b466e99.js",
-      "static/chunks/app/accommodation/gypsy-caravan/page-f67055a1c4983518.js"
-    ],
-    "/accommodation/mixed-dorm/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/972-7e94f5c52b466e99.js",
-      "static/chunks/app/accommodation/mixed-dorm/page-22d7328d66af3898.js"
+    "/loading": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/loading.js"
     ],
     "/accommodation/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/972-7e94f5c52b466e99.js",
-      "static/chunks/app/accommodation/page-41d237ec655a433e.js"
-    ],
-    "/accommodation/safari-tent/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/972-7e94f5c52b466e99.js",
-      "static/chunks/app/accommodation/safari-tent/page-a08d2d8840d4a58f.js"
-    ],
-    "/accommodation/safari-tents/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/972-7e94f5c52b466e99.js",
-      "static/chunks/app/accommodation/safari-tents/page-6d3dbdbc4540aec7.js"
-    ],
-    "/accommodation/twin-room/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/972-7e94f5c52b466e99.js",
-      "static/chunks/app/accommodation/twin-room/page-2ff44156709d68b1.js"
-    ],
-    "/adventures/ancient-archives/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/app/adventures/ancient-archives/page-9bc54c5ea0a1d3f9.js"
-    ],
-    "/adventures/bosduif-trail/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/app/adventures/bosduif-trail/page-09c6cc72fd7485ef.js"
-    ],
-    "/adventures/brown-hooded-kingfisher-trail/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/app/adventures/brown-hooded-kingfisher-trail/page-7a1de81d9301f3b2.js"
-    ],
-    "/adventures/fairy-labyrinth/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/app/adventures/fairy-labyrinth/page-5355486c76614245.js"
-    ],
-    "/adventures/half-collared-kingfisher-trail/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/app/adventures/half-collared-kingfisher-trail/page-b99d8993a1ea2777.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/accommodation/page.js"
     ],
     "/adventures/kayaking/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/app/adventures/kayaking/page-34b43bc859158d37.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/adventures/kayaking/page.js"
     ],
     "/adventures/horseriding/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/app/adventures/horseriding/page-f0301571faf8cfa4.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/adventures/horseriding/page.js"
     ],
-    "/adventures/lazy-library/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/app/adventures/lazy-library/page-e7589f6742f6ee63.js"
+    "/adventures/brown-hooded-kingfisher-trail/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/adventures/brown-hooded-kingfisher-trail/page.js"
+    ],
+    "/adventures/half-collared-kingfisher-trail/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/adventures/half-collared-kingfisher-trail/page.js"
     ],
     "/adventures/map-of-africa/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/app/adventures/map-of-africa/page-3e581db0d6887d3a.js"
-    ],
-    "/adventures/water-under-the-bridge/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/app/adventures/water-under-the-bridge/page-574b06f3983ded89.js"
-    ],
-    "/adventures/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/972-7e94f5c52b466e99.js",
-      "static/chunks/app/adventures/page-0ab79470d4f8ed02.js"
-    ],
-    "/adventures/paragliding/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/app/adventures/paragliding/page-c65879359ecfb132.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/adventures/map-of-africa/page.js"
     ],
     "/adventures/wilderness-beach/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/app/adventures/wilderness-beach/page-cdb6adeefced9969.js"
-    ],
-    "/adventures/woodville-big-tree/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/app/adventures/woodville-big-tree/page-97987b24bfdb11e6.js"
-    ],
-    "/booking/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/app/booking/page-e597dc09888c2f00.js"
-    ],
-    "/contact/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/app/contact/page-62a2a626dfd430b2.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/adventures/wilderness-beach/page.js"
     ],
     "/entertainment/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/972-7e94f5c52b466e99.js",
-      "static/chunks/app/entertainment/page-6f919cd25ae20c52.js"
-    ],
-    "/facilities/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/app/facilities/page-9b6b75f6e1cefdc5.js"
-    ],
-    "/fairy-folk-n-roll/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/972-7e94f5c52b466e99.js",
-      "static/chunks/app/fairy-folk-n-roll/page-da29b95aab750c2f.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/entertainment/page.js"
     ],
     "/gallery/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/app/gallery/page-464949582942ca0d.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/gallery/page.js"
     ],
-    "/venue/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/app/venue/page-4fb60531905588c0.js"
+    "/gallery/error": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/gallery/error.js"
     ],
-    "/page": [
-      "static/chunks/webpack-f7cbd32035d5221e.js",
-      "static/chunks/fd9d1056-87da80e0c187477b.js",
-      "static/chunks/117-8b1e0c1667a5cc67.js",
-      "static/chunks/main-app-8e347daf419ee9cc.js",
-      "static/chunks/878-a7642fc5170c7c23.js",
-      "static/chunks/972-7e94f5c52b466e99.js",
-      "static/chunks/app/page-2c636f268867980f.js"
+    "/facilities/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/facilities/page.js"
+    ],
+    "/accommodation/family-en-suite-rondawel/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/accommodation/family-en-suite-rondawel/page.js"
+    ],
+    "/adventures/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/adventures/page.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/contact/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

@@ -1,12 +1,9 @@
-'use client'
-
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
 import ImageGallery from '@/components/gallery/ImageGallery'
 import LogoSection from '@/components/ui/LogoSection'
+import MobileImageModal from './MobileImageModal'
 
-// Define gallery images with the new naming convention
 const galleryImages = [
   {
     src: '/images/accommodation/double-en-suite-rondawel/thumbnails/rondawel1.webp',
@@ -21,24 +18,6 @@ const galleryImages = [
 ]
 
 export default function DoubleEnSuiteRondawelPage() {
-  const [selectedImage, setSelectedImage] = useState<number | null>(null);
-
-  const handlePrevImage = () => {
-    if (selectedImage === null) return;
-    setSelectedImage((prev) => {
-      if (prev === null) return 0;
-      return prev === 0 ? galleryImages.length - 1 : prev - 1;
-    });
-  };
-
-  const handleNextImage = () => {
-    if (selectedImage === null) return;
-    setSelectedImage((prev) => {
-      if (prev === null) return 0;
-      return prev === galleryImages.length - 1 ? 0 : prev + 1;
-    });
-  };
-
   return (
     <div className="min-h-screen">
       {/* Hero Banner */}
@@ -48,8 +27,8 @@ export default function DoubleEnSuiteRondawelPage() {
           alt="Double En-suite Rondawel Banner"
           fill
           className="object-cover"
+          sizes="100vw"
           priority
-          unoptimized={false}
         />
         <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center" />
         <div className="absolute inset-0 flex items-center justify-center">
@@ -66,96 +45,17 @@ export default function DoubleEnSuiteRondawelPage() {
 
           {/* Gallery */}
           <div className="mt-8 sm:mt-12 mb-8 sm:mb-12">
-            {/* Mobile Gallery - 2 images per row */}
-            <div className="grid grid-cols-2 gap-2 sm:hidden">
-              {galleryImages.map((image, index) => (
-                <div 
-                  key={index}
-                  className="relative aspect-[4/3] cursor-pointer"
-                  onClick={() => setSelectedImage(index)}
-                >
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    fill
-                    className="object-cover rounded-lg"
-                    sizes="(max-width: 640px) 50vw"
-                  />
-                </div>
-              ))}
-            </div>
+            {/* Mobile Gallery + Modal */}
+            <MobileImageModal images={galleryImages} />
 
             {/* Desktop Gallery */}
             <div className="hidden sm:block">
-              <ImageGallery 
-                images={galleryImages} 
-                imagesPerPage={2} 
+              <ImageGallery
+                images={galleryImages}
+                imagesPerPage={2}
               />
             </div>
           </div>
-
-          {/* Mobile Image Modal */}
-          {selectedImage !== null && (
-            <div 
-              className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center sm:hidden"
-              onClick={() => setSelectedImage(null)}
-            >
-              <div className="relative w-full h-full flex items-center justify-center p-4">
-                {/* Close Button */}
-                <button
-                  className="absolute top-4 right-4 text-white hover:text-gray-300 z-10"
-                  onClick={() => setSelectedImage(null)}
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-
-                {/* Previous button */}
-                <button 
-                  className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 z-10 p-2 rounded-full bg-black bg-opacity-50 hover:bg-opacity-75"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handlePrevImage();
-                  }}
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                  </svg>
-                </button>
-
-                {/* Image */}
-                <div className="relative w-full h-full flex items-center justify-center">
-                  <Image
-                    src={galleryImages[selectedImage].fullSize}
-                    alt={galleryImages[selectedImage].alt}
-                    fill
-                    className="object-contain"
-                    sizes="100vw"
-                    priority
-                  />
-                </div>
-
-                {/* Next button */}
-                <button 
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 z-10 p-2 rounded-full bg-black bg-opacity-50 hover:bg-opacity-75"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleNextImage();
-                  }}
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
-
-                {/* Image counter */}
-                <div className="absolute bottom-4 left-0 right-0 text-center text-white text-xs opacity-50">
-                  {selectedImage + 1} / {galleryImages.length}
-                </div>
-              </div>
-            </div>
-          )}
 
           {/* Mobile Book Now Button - Only visible on mobile */}
           <div className="flex justify-center mt-6 mb-8 sm:hidden">
@@ -170,7 +70,7 @@ export default function DoubleEnSuiteRondawelPage() {
               {/* Mobile Order (What's Included, Shared Facilities, Rules of the Forest) */}
               <div className="grid grid-cols-1 gap-6 sm:hidden">
                 <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
-                  <h3 className="text-lg font-semibold mb-3 text-center">What's Included</h3>
+                  <h3 className="text-lg font-semibold mb-3 text-center">What&apos;s Included</h3>
                   <div className="space-y-2 text-gray-600 dark:text-gray-300 text-xs">
                     <p className="text-center">Double bed</p>
                     <p className="text-center">En-suite bathroom</p>
@@ -204,69 +104,36 @@ export default function DoubleEnSuiteRondawelPage() {
 
               {/* Desktop Order (General Info, What to Bring, Adventure Safely) */}
               <div className="hidden sm:grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-                {/* General Info Section - First on mobile */}
                 <div className="bg-white dark:bg-gray-800 p-6 rounded-lg order-1 md:order-2 shadow-md md:shadow-none">
                   <h3 className="text-lg font-semibold mb-4 dark:text-white text-center">General Info</h3>
                   <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">
-                    <li className="text-center">
-                      Double bed with comfortable mattress
-                    </li>
-                    <li className="text-center">
-                      En-suite bathroom with hot shower
-                    </li>
-                    <li className="text-center">
-                      Private entrance with key access
-                    </li>
-                    <li className="text-center">
-                      Air conditioning for climate control
-                    </li>
-                    <li className="text-center">
-                      WiFi access in the room
-                    </li>
+                    <li className="text-center">Double bed with comfortable mattress</li>
+                    <li className="text-center">En-suite bathroom with hot shower</li>
+                    <li className="text-center">Private entrance with key access</li>
+                    <li className="text-center">Air conditioning for climate control</li>
+                    <li className="text-center">WiFi access in the room</li>
                   </ul>
                 </div>
 
-                {/* What to Bring Section - Second on mobile */}
                 <div className="bg-white dark:bg-gray-800 p-6 rounded-lg order-2 md:order-3 shadow-md md:shadow-none">
                   <h3 className="text-lg font-semibold mb-4 dark:text-white text-center">What to Bring</h3>
                   <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">
-                    <li className="text-center">
-                      Personal toiletries
-                    </li>
-                    <li className="text-center">
-                      Towels (available for rent)
-                    </li>
-                    <li className="text-center">
-                      Travel adapter if needed
-                    </li>
-                    <li className="text-center">
-                      Insect repellent
-                    </li>
-                    <li className="text-center">
-                      Sense of adventure
-                    </li>
+                    <li className="text-center">Personal toiletries</li>
+                    <li className="text-center">Towels (available for rent)</li>
+                    <li className="text-center">Travel adapter if needed</li>
+                    <li className="text-center">Insect repellent</li>
+                    <li className="text-center">Sense of adventure</li>
                   </ul>
                 </div>
 
-                {/* House Rules Section - Third on mobile */}
                 <div className="bg-white dark:bg-gray-800 p-6 rounded-lg order-3 md:order-1 shadow-md md:shadow-none">
                   <h3 className="text-lg font-semibold mb-4 dark:text-white text-center">House Rules</h3>
                   <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">
-                    <li className="text-center">
-                      Check-in: 2PM - 8PM
-                    </li>
-                    <li className="text-center">
-                      Check-out: 10AM
-                    </li>
-                    <li className="text-center">
-                      No smoking inside
-                    </li>
-                    <li className="text-center">
-                      No pets allowed
-                    </li>
-                    <li className="text-center">
-                      Quiet hours: 10PM - 6AM
-                    </li>
+                    <li className="text-center">Check-in: 2PM - 8PM</li>
+                    <li className="text-center">Check-out: 10AM</li>
+                    <li className="text-center">No smoking inside</li>
+                    <li className="text-center">No pets allowed</li>
+                    <li className="text-center">Quiet hours: 10PM - 6AM</li>
                   </ul>
                 </div>
               </div>
@@ -288,4 +155,4 @@ export default function DoubleEnSuiteRondawelPage() {
       </div>
     </div>
   )
-} 
+}

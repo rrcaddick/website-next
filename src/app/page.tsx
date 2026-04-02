@@ -1,9 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import ResponsiveBanner from '@/components/layout/ResponsiveBanner'
 import BookNowButton from '@/components/ui/BookNowButton'
 import LogoSection from '@/components/ui/LogoSection'
-// import GalleryCarousel from '@/components/gallery/GalleryCarousel'
 
 // Add font preloading
 export const metadata = {
@@ -70,7 +68,6 @@ export default function Home() {
           priority
           quality={85}
           sizes="(max-width: 768px) 100vw"
-          loading="eager"
         />
         <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center">
           <h1 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-4 drop-shadow-[0_0_8px_rgba(0,0,0,1)] hestrial-font px-4 text-center">
@@ -88,7 +85,6 @@ export default function Home() {
           priority
           quality={85}
           sizes="(min-width: 768px) 100vw"
-          loading="eager"
         />
         <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center pt-16">
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 drop-shadow-[0_0_8px_rgba(0,0,0,1)] hestrial-font px-4 text-center">
@@ -127,8 +123,6 @@ export default function Home() {
                       fill
                       className="object-fill md:object-cover transition-transform duration-500 ease-in-out md:group-hover:scale-105"
                       sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                      quality={75}
-                      loading="lazy"
                     />
                   </div>
                   <div className="p-4 md:p-6 flex-1 flex flex-col justify-between">

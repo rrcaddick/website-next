@@ -1,127 +1,11 @@
-"use client";
-
 import Image from 'next/image'
 import Link from 'next/link'
 import MouseGradientCard from '@/components/theme/MouseGradientCard'
 import LogoSection from '@/components/ui/LogoSection'
-import { useState, useRef, useEffect } from 'react'
-
-const activities = [
-  {
-    id: 1,
-    name: 'Kayaking',
-    description: '3 hour return trip to the waterfall and back, totaling around 2 hours paddling and 1 hour hiking.',
-    image: '/images/adventures/cards/desktop/kayaking-card.webp',
-    mobileImage: '/images/adventures/cards/mobile/kayaking-card.webp',
-    category: 'Water Activities',
-    features: ['Life jackets included', 'Moderate fitness required', 'Paddling, hiking and swimming', 'Waterfall']
-  },
-  {
-    id: 2,
-    name: 'Paragliding',
-    description: '15 minutes in the air with beautiful views of the ocean and surrounding forests and mountains.',
-    image: '/images/adventures/cards/desktop/paragliding-card.webp',
-    mobileImage: '/images/adventures/cards/mobile/paragliding-card.webp',
-    category: 'Air Activities',
-    features: ['Professional pilots', 'All equipment provided', 'Weather dependent', 'Camera rental available']
-  },
-  {
-    id: 3,
-    name: 'Horseriding',
-    description: '1.5 hour trail through the forests of the Wilderness Heights.',
-    image: '/images/adventures/cards/desktop/horseriding-card.webp',
-    mobileImage: '/images/adventures/cards/mobile/horseriding-card.webp',
-    category: 'Land Activities',
-    features: ['Experienced guide', 'Beginner an/or skilled riders', 'Helmets provided', 'Beautiful forest views']
-  },
-  {
-    id: 4,
-    name: 'Half Collared Kingfisher Trail',
-    description: '3 hour trail along the Touw River, leading to the waterfall. Great for swimming.',
-    image: '/images/adventures/cards/desktop/half-collared-kingfisher-trail-card.webp',
-    mobileImage: '/images/adventures/cards/mobile/half-collared-kingfisher-trail-card.webp',
-    category: 'Hiking',
-    features: ['There and back trail', 'moderate difficulty', 'Swimming spots', 'Waterfall']
-  },
-  {
-    id: 6,
-    name: 'Brown Hooded Kingfisher Trail',
-    description: '2 hour trail crossing multiple times over the Duiwe River.',
-    image: '/images/adventures/cards/desktop/brown-hooded-kingfisher-trail-card.webp',
-    mobileImage: '/images/adventures/cards/mobile/brown-hooded-kingfisher-trail-card.webp',
-    category: 'Hiking',
-    features: ['There and back trail', 'Easy difficulty', 'Bird watching', 'River crossings']
-  },
-  {
-    id: 5,
-    name: 'Bosduif Trail',
-    description: '2 hour loop trail up to breath-taking viewpoints above the Touw River, and back down again.',
-    image: '/images/adventures/cards/desktop/bosduif-trail-card.webp',
-    mobileImage: '/images/adventures/cards/mobile/bosduif-trail-card.webp',
-    category: 'Hiking',
-    features: ['Loop trail', 'Tougher difficulty', 'Steep ups and downs', 'Elevated viewpoints']
-  },
-  {
-    id: 7,
-    name: 'Woodville Big Tree',
-    description: 'Visit a 1000 year old Yellow Wood tree and marvel at its size and glory. 3km and 7km trails looping back around.',
-    image: '/images/adventures/cards/desktop/woodville-big-tree-card.webp',
-    mobileImage: '/images/adventures/cards/mobile/woodville-big-tree-card.webp',
-    category: 'Nature',
-    features: ['Multiple trails', 'Easy difficulty', 'Picnic tables', 'Braai facilities']
-  },
-  {
-    id: 8,
-    name: 'Map of Africa',
-    description: 'A sight to behold.',
-    image: '/images/adventures/cards/desktop/map-of-africa-card.webp',
-    mobileImage: '/images/adventures/cards/mobile/map-of-africa-card.webp',
-    category: 'Viewpoints',
-    features: ['Easy access', 'Spectacular views', 'Picnic spot', 'Birds eye view']
-  },
-  {
-    id: 9,
-    name: 'Wilderness Beach',
-    description: 'Blue Flag beach perfect for a nice sunny day.',
-    image: '/images/adventures/cards/desktop/wilderness-beach-card.webp',
-    mobileImage: '/images/adventures/cards/mobile/wilderness-beach-card.webp',
-    category: 'Beach',
-    features: ['Blue Flag status', 'Swimming', 'Running', 'Relaxing']
-  },
-  {
-    id: 10,
-    name: 'Water Under the Bridge',
-    description: 'Take a leap into the refreshing Touws River from our railway bridge jumping spot.',
-    image: '/images/adventures/cards/desktop/water-under-the-bridge-card.webp',
-    mobileImage: '/images/adventures/cards/mobile/water-under-the-bridge-card.webp',
-    category: 'Water Activities',
-    features: ['Close to backpackers', 'Water jump', 'Swimming', 'Local favorite']
-  },
-  {
-    id: 11,
-    name: 'Fairy Labyrinth',
-    description: 'Something on your mind? Unravel and unwind.',
-    image: '/images/adventures/fairy-labyrinth-card.webp',
-    mobileImage: '/images/adventures/fairy-labyrinth-card.webp',
-    category: 'Relaxation',
-    features: ['Meditatative walk', 'Unwind', 'Intention', 'Garden environment']
-  },
-  {
-    id: 12,
-    name: 'Ancient Archives',
-    description: 'Books, books, books in all the nooks.',
-    image: '/images/adventures/cards/desktop/ancient-archives-card.webp',
-    mobileImage: '/images/adventures/cards/mobile/ancient-archives-card.webp',
-    category: 'Indoor Activities',
-    features: ['Book exchange', 'Over 1500 books', 'Endless adventures', 'Perfect for rainy days']
-  }
-]
-
-const categories = ['All', 'Water Activities', 'Air Activities', 'Land Activities', 'Hiking', 'Nature', 'Viewpoints', 'Beach', 'Relaxation', 'Indoor Activities']
+import AdventuresMobileList from '@/components/features/adventures/AdventuresMobileList'
+import { activities } from '@/components/features/adventures/data'
 
 export default function Adventure() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
   return (
     <div>
       {/* Hero Banner */}
@@ -149,6 +33,7 @@ export default function Adventure() {
           alt="Adventures at Fairy Knowe"
           fill
           className="object-cover"
+          sizes="100vw"
           priority
         />
         <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center">
@@ -170,84 +55,12 @@ export default function Adventure() {
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Mobile Expandable List */}
-        <div className="block sm:hidden">
-          {activities.map((activity, idx) => {
-            const cardRef = useRef<HTMLDivElement>(null);
-
-            useEffect(() => {
-              if (openIndex === idx && cardRef.current) {
-                const offset = 56; // px, adjust as needed
-                const top = cardRef.current.getBoundingClientRect().top + window.scrollY - offset;
-                window.scrollTo({ top, behavior: 'smooth' });
-              }
-            }, [openIndex]);
-
-            return (
-              <div
-                key={activity.id}
-                ref={cardRef}
-                className={
-                  `${openIndex === idx
-                    ? 'mt-4 mb-4 rounded-xl shadow-lg border overflow-hidden bg-white text-[#202635]'
-                    : 'w-screen max-w-none -mx-4 border-b-0 border-l-0 border-r-0 border-t last:border-b rounded-none shadow-none bg-gradient-to-b from-white via-white to-[#E5E7EB] text-[#202635]'}
-                  `
-                }
-                style={openIndex === idx ? {} : { borderRadius: 0 }}
-              >
-                <button
-                  className={`w-full flex flex-col items-center text-left focus:outline-none text-[#202635]`}
-                  onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
-                  aria-expanded={openIndex === idx}
-                >
-                  <div className="py-5 w-full text-center">{activity.name}</div>
-                </button>
-                {openIndex === idx && (
-                  <div>
-                    <div className="w-full aspect-square overflow-hidden rounded-t-xl rounded-b-xl">
-                      {/* Mobile Image */}
-                      <Image
-                        src={activity.mobileImage}
-                        alt={activity.name}
-                        width={400}
-                        height={400}
-                        className="object-cover w-full h-full block sm:hidden"
-                      />
-                      {/* Desktop Image */}
-                      <Image
-                        src={activity.image}
-                        alt={activity.name}
-                        width={400}
-                        height={400}
-                        className="object-cover w-full h-full hidden sm:block"
-                      />
-                    </div>
-                    <div className="px-4 pb-4 pt-2">
-                      <p className="mb-4 text-center text-[#202635] text-sm mt-4">{activity.description}</p>
-                      <div className="flex justify-center mb-4">
-                        <Link
-                          href={`/adventures/${activity.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`}
-                          className="inline-block mb-3 px-6 py-2 rounded-full bg-[#0E7D73] text-[#C9DD94] font-semibold text-sm text-center shadow hover:bg-[#073F3A] hover:text-[#00FF7F] transition-colors"
-                        >
-                          View
-                        </Link>
-                      </div>
-                      <ul className="pl-0 space-y-1.5 text-center text-xs text-[#202635]" style={{ listStyleType: 'none' }}>
-                        {activity.features.map((feature, index) => (
-                          <li key={`${activity.id}-feature-${index}`}>{feature}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                )}
-              </div>
-            );
-          })}
-        </div>
+        <AdventuresMobileList />
         {/* Desktop Grid */}
         <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {activities.map((activity) => (
-            <Link 
-              key={activity.id} 
+            <Link
+              key={activity.id}
               href={`/adventures/${activity.name
                 .toLowerCase()
                 .replace(/\s+/g, '-')
@@ -263,8 +76,6 @@ export default function Adventure() {
                     className="object-cover w-full transition-transform duration-500 ease-in-out group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     priority={activity.id <= 3}
-                    loading={activity.id <= 3 ? 'eager' : 'lazy'}
-                    quality={85}
                   />
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
@@ -309,4 +120,4 @@ export default function Adventure() {
       </div>
     </div>
   )
-} 
+}

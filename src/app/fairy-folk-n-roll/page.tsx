@@ -11,6 +11,7 @@ export default function FairyFolkNRoll() {
           alt="Fairy Folk 'n Roll at Fairy Knowe"
           fill
           className="object-cover"
+          sizes="100vw"
           priority
         />
         <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
@@ -40,6 +41,7 @@ export default function FairyFolkNRoll() {
                 alt="Live Music Events"
                 fill
                 className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
             <div className="p-6">
@@ -73,6 +75,7 @@ export default function FairyFolkNRoll() {
                 alt="Our Venue"
                 fill
                 className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
             <div className="p-6">

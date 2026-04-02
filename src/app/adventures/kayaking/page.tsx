@@ -1,6 +1,3 @@
-'use client'
-
-import { useState } from 'react'
 import ImageGallery from '@/components/gallery/ImageGallery'
 import PageHero from '@/components/ui/PageHero'
 import LogoSection from '@/components/ui/LogoSection'
