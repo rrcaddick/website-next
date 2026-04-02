@@ -1,18 +1,9 @@
-'use client'
-
-import { useState } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import MouseGradientCard from '@/components/theme/MouseGradientCard'
+import AccommodationCardImage from './AccommodationCardImage'
 import { roomTypes } from './data'
 
 export default function AccommodationDesktopGrid() {
-  const [imageError, setImageError] = useState<Record<string, boolean>>({})
-
-  const handleImageError = (imagePath: string) => {
-    setImageError(prev => ({ ...prev, [imagePath]: true }))
-  }
-
   return (
     <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {roomTypes.map((room) => (
@@ -23,22 +14,11 @@ export default function AccommodationDesktopGrid() {
         >
           <MouseGradientCard className="bg-[#F3F4F6] text-[#202635] rounded-lg shadow-lg overflow-hidden flex flex-col h-full transition-all duration-500 ease-in-out transform hover:scale-105">
             <div className="relative w-full h-[250px]">
-              {!imageError[room.image] ? (
-                <Image
-                  src={room.image}
-                  alt={room.name}
-                  fill
-                  className="object-cover w-full transition-transform duration-500 ease-in-out group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  priority={room.id <= 3}
-                  quality={85}
-                  onError={() => handleImageError(room.image)}
-                />
-              ) : (
-                <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                  <span className="text-gray-500">Image not available</span>
-                </div>
-              )}
+              <AccommodationCardImage
+                src={room.image}
+                alt={room.name}
+                priority={room.id <= 3}
+              />
             </div>
             <div className="p-6 flex flex-col flex-grow">
               <div>
