@@ -1,31 +1,20 @@
-import Image from 'next/image'
+import PageHero from '@/components/ui/PageHero'
 
 export default function Contact() {
   return (
     <div className="min-h-screen">
-      {/* Hero Banner */}
-      <div className="relative h-[200px] md:h-[400px] lg:h-[500px] w-full mb-12 bg-gray-900">
-        <Image
-          src="/images/contact/contact-banner.webp"
-          alt="Contact Fairy Knowe"
-          fill
-          className="object-cover"
-          sizes="100vw"
-          priority
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2 sm:mb-4 drop-shadow-[0_0_8px_rgba(0,0,0,1)] hestrial-font px-4 text-center">
-            Contact Us
-          </h1>
-        </div>
-      </div>
+      <PageHero
+        mobileSrc="/images/contact/contact-banner.webp"
+        desktopSrc="/images/contact/contact-banner.webp"
+        title="Contact Us"
+      />
 
       <div className="max-w-7xl mx-auto px-4 mb-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Information */}
           <div className="bg-[#E5E7EB] p-8 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold mb-6 text-[#202635]">Get in Touch</h2>
-            
+
             <div className="space-y-4">
               <div>
                 <h3 className="font-semibold mb-2 text-[#202635]">Address</h3>
@@ -67,7 +56,7 @@ export default function Contact() {
           {/* Contact Form */}
           <div className="bg-[#E5E7EB] p-8 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold mb-6 text-[#202635]">Send us a Message</h2>
-            
+
             <form className="space-y-4">
               <div>
                 <label htmlFor="name" className="block text-[#202635] font-medium mb-2">Name</label>
@@ -125,4 +114,4 @@ export default function Contact() {
       </div>
     </div>
   )
-} 
+}

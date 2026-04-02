@@ -3,6 +3,7 @@ import Link from 'next/link'
 import ImageGallery from '@/components/gallery/ImageGallery'
 import LogoSection from '@/components/ui/LogoSection'
 import MobileImageModal from './MobileImageModal'
+import PageHero from '@/components/ui/PageHero'
 
 const galleryImages = [
   {
@@ -20,21 +21,11 @@ const galleryImages = [
 export default function DoubleEnSuiteRondawelPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Banner */}
-      <div className="relative h-[200px] sm:h-[250px] md:h-[300px] lg:h-[500px] w-full bg-gray-900">
-        <Image
-          src="/images/accommodation/banners/double-en-suite-rondawel-banner.webp"
-          alt="Double En-suite Rondawel Banner"
-          fill
-          className="object-cover"
-          sizes="100vw"
-          priority
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2 sm:mb-4 drop-shadow-[0_0_8px_rgba(0,0,0,1)] hestrial-font px-4 text-center">Double En-suite Rondawel</h1>
-        </div>
-      </div>
+      <PageHero
+        mobileSrc="/images/accommodation/banners/double-en-suite-rondawel-banner.webp"
+        desktopSrc="/images/accommodation/banners/double-en-suite-rondawel-banner.webp"
+        title="Double En-suite Rondawel"
+      />
 
       {/* Content Section */}
       <div className="py-8 sm:py-12 px-4">

@@ -1,25 +1,15 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import PageHero from '@/components/ui/PageHero'
 
 export default function FairyFolkNRoll() {
   return (
     <div>
-      {/* Hero Banner */}
-      <div className="relative h-[300px] md:h-[400px] lg:h-[500px] w-full mb-12 bg-gray-900">
-        <Image
-          src="/images/Fairy Folk 'n Roll/Fairy Folk 'n Roll Banner.webp"
-          alt="Fairy Folk 'n Roll at Fairy Knowe"
-          fill
-          className="object-cover"
-          sizes="100vw"
-          priority
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-          <h1 className="text-5xl font-bold text-white mb-6 drop-shadow-[0_0_8px_rgba(0,0,0,1)] hestrial-font">
-            Fairy Folk 'n Roll
-          </h1>
-        </div>
-      </div>
+      <PageHero
+        mobileSrc="/images/Fairy Folk 'n Roll/Fairy Folk 'n Roll Banner.webp"
+        desktopSrc="/images/Fairy Folk 'n Roll/Fairy Folk 'n Roll Banner.webp"
+        title="Fairy Folk 'n Roll"
+      />
 
       {/* Description */}
       <div className="text-center mb-12">

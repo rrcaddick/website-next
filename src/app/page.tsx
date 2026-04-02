@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import BookNowButton from '@/components/ui/BookNowButton'
 import LogoSection from '@/components/ui/LogoSection'
+import PageHero from '@/components/ui/PageHero'
 
 // Add font preloading
 export const metadata = {
@@ -57,41 +58,11 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Banner */}
-      {/* Mobile Banner */}
-      <div className="relative w-full aspect-[9/5] mb-8 bg-gray-900 block md:hidden">
-        <Image
-          src="/images/home/mobile/home-banner.webp"
-          alt="Fairy Knowe Home Mobile Banner"
-          fill
-          className="object-cover"
-          priority
-          quality={85}
-          sizes="(max-width: 768px) 100vw"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center">
-          <h1 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-4 drop-shadow-[0_0_8px_rgba(0,0,0,1)] hestrial-font px-4 text-center">
-            Fairy Knowe<br />Backpackers
-          </h1>
-        </div>
-      </div>
-      {/* Desktop Banner */}
-      <div className="relative h-[300px] lg:h-[500px] w-full mb-12 bg-gray-900 hidden md:block">
-        <Image
-          src="/images/home/home-banner.webp"
-          alt="Fairy Knowe Home"
-          fill
-          className="object-cover"
-          priority
-          quality={85}
-          sizes="(min-width: 768px) 100vw"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center pt-16">
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 drop-shadow-[0_0_8px_rgba(0,0,0,1)] hestrial-font px-4 text-center">
-            Fairy Knowe Backpackers
-          </h1>
-        </div>
-      </div>
+      <PageHero
+        mobileSrc="/images/home/mobile/home-banner.webp"
+        desktopSrc="/images/home/home-banner.webp"
+        title="Fairy Knowe Backpackers"
+      />
 
       {/* Additional Description */}
       <div className="mb-8">

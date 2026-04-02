@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import PaginatedGallery from './PaginatedGallery'
+import PageHero from '@/components/ui/PageHero'
 
 const images = [
   { src: '/safari-tent-1.jpg', alt: 'Safari Tent Overview', description: 'Our comfortable safari tent accommodation' },
@@ -16,21 +17,11 @@ const images = [
 export default function SafariTentPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Banner */}
-      <div className="relative h-[200px] md:h-[300px] lg:h-[500px] w-full bg-gray-900">
-        <Image
-          src="/images/accommodation/banners/safari-tent-banner.webp"
-          alt="Safari Tent Banner"
-          fill
-          className="object-cover"
-          sizes="100vw"
-          priority
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-4xl font-bold text-white mb-6 drop-shadow-[0_5px_9px_rgba(1,1,1,1)] hestrial-font">Safari Tent</h1>
-        </div>
-      </div>
+      <PageHero
+        mobileSrc="/images/accommodation/banners/safari-tent-banner.webp"
+        desktopSrc="/images/accommodation/banners/safari-tent-banner.webp"
+        title="Safari Tent"
+      />
 
       {/* Content Section */}
       <div className="py-6 px-4">

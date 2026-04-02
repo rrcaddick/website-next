@@ -4,44 +4,16 @@ import MouseGradientCard from '@/components/theme/MouseGradientCard'
 import LogoSection from '@/components/ui/LogoSection'
 import AdventuresMobileList from '@/components/features/adventures/AdventuresMobileList'
 import { activities } from '@/components/features/adventures/data'
+import PageHero from '@/components/ui/PageHero'
 
 export default function Adventure() {
   return (
     <div>
-      {/* Hero Banner */}
-      {/* Mobile Banner */}
-      <div className="relative w-full aspect-[9/5] mb-12 bg-gray-900 block md:hidden">
-        <Image
-          src="/images/home/mobile/adventures-banner.webp"
-          alt="Fairy Knowe Adventures Mobile Banner"
-          fill
-          className="object-cover"
-          priority
-          quality={85}
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center">
-          <h1 className="text-2xl sm:text-3xl font-bold text-white mb-2 sm:mb-4 drop-shadow-[0_0_8px_rgba(0,0,0,1)] hestrial-font px-4 text-center">
-            Adventures
-          </h1>
-        </div>
-      </div>
-      {/* Desktop Banner */}
-      <div className="relative h-[200px] md:h-[300px] lg:h-[500px] w-full mb-12 bg-gray-900 hidden md:block">
-        <Image
-          src="/images/adventures/adventures-banner.webp"
-          alt="Adventures at Fairy Knowe"
-          fill
-          className="object-cover"
-          sizes="100vw"
-          priority
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2 sm:mb-4 drop-shadow-[0_0_8px_rgba(0,0,0,1)] hestrial-font px-4 text-center">
-            Adventures
-          </h1>
-        </div>
-      </div>
+      <PageHero
+        mobileSrc="/images/home/mobile/adventures-banner.webp"
+        desktopSrc="/images/adventures/adventures-banner.webp"
+        title="Adventures"
+      />
 
       {/* Description */}
       <div className="px-2">
