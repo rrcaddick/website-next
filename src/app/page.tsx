@@ -16,43 +16,43 @@ export default function Home() {
     {
       title: "Accommodation",
       description: "Explore our comfortable rooms and cozy accommodation options.",
-      image: "/images/home/accommodation-card.webp",
-      mobileImage: "/images/home/mobile/accommodation-banner.webp",
+      image: "/images-v2/home/cards/accommodation.webp",
+      mobileImage: "/images-v2/home/cards/accommodation-mobile.webp",
       link: "/accommodation",
     },
     {
       title: "Adventures",
       description: "Discover exciting activities and adventures in Wilderness.",
-      image: "/images/home/adventure-card.webp",
-      mobileImage: "/images/home/mobile/adventure-banner.webp",
+      image: "/images-v2/home/cards/adventure.webp",
+      mobileImage: "/images-v2/home/cards/adventure-mobile.webp",
       link: "/adventures",
     },
     {
       title: "Entertainment",
       description: "Join us for live music, open mic nights, and family markets.",
-      image: "/images/home/entertainment-card.webp",
-      mobileImage: "/images/home/mobile/entertainment-banner.webp",
+      image: "/images-v2/home/cards/entertainment.webp",
+      mobileImage: "/images-v2/home/cards/entertainment-mobile.webp",
       link: "/entertainment",
     },
     {
       title: "Venue Hire",
       description: "Host your special occasion in our charming venue surrounded by nature.",
-      image: "/images/home/wedding-events-card.webp",
-      mobileImage: "/images/home/mobile/venue-banner.webp",
+      image: "/images-v2/home/cards/venue.webp",
+      mobileImage: "/images-v2/home/cards/venue-mobile.webp",
       link: "/venue",
     },
     {
       title: "Facilities",
       description: "Enjoy our bar, restaurant, self catering kitchen and social spaces.",
-      image: "/images/home/facilities-card.webp",
-      mobileImage: "/images/home/mobile/facilities-banner.webp",
+      image: "/images-v2/home/cards/facilities.webp",
+      mobileImage: "/images-v2/home/cards/facilities-mobile.webp",
       link: "/facilities",
     },
     {
       title: "Fairy Folk 'n Roll",
       description: "Visit our YouTube channel exploring the art of live music performance through digital media.",
-      image: "/images/ffr/ffr-banner.webp",
-      mobileImage: "/images/ffr/ffr-banner.webp",
+      image: "/images-v2/home/cards/ffr.webp",
+      mobileImage: "/images-v2/home/cards/ffr.webp",
       link: "/fairy-folk-n-roll",
     },
   ];
@@ -60,8 +60,8 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images/home/mobile/home-banner.webp"
-        desktopSrc="/images/home/home-banner.webp"
+        mobileSrc="/images-v2/home/hero/mobile.webp"
+        desktopSrc="/images-v2/home/hero/desktop.webp"
         title="Fairy Knowe Backpackers"
       />
 

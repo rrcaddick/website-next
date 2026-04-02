@@ -5,52 +5,52 @@ import LogoSection from '@/components/ui/LogoSection'
 // Define gallery images with thumbnails and full-size versions
 const galleryImages = [
   {
-    src: '/images/adventures/map-of-africa/thumbnails/adventure1.webp',
+    src: '/images-v2/adventures/map-of-africa/gallery/thumb/1.webp',
     alt: 'Map of Africa Adventure',
     description: 'Panoramic views from the top',
-    fullSize: '/images/adventures/map-of-africa/full/adventure1.webp'
+    fullSize: '/images-v2/adventures/map-of-africa/gallery/full/1.webp'
   },
   {
-    src: '/images/adventures/map-of-africa/thumbnails/adventure2.webp',
+    src: '/images-v2/adventures/map-of-africa/gallery/thumb/2.webp',
     alt: 'Map of Africa Experience',
     description: 'Hiking trail views',
-    fullSize: '/images/adventures/map-of-africa/full/adventure2.webp'
+    fullSize: '/images-v2/adventures/map-of-africa/gallery/full/2.webp'
   },
   {
-    src: '/images/adventures/map-of-africa/thumbnails/adventure3.webp',
+    src: '/images-v2/adventures/map-of-africa/gallery/thumb/3.webp',
     alt: 'Map of Africa Journey',
     description: 'Scenic overlook',
-    fullSize: '/images/adventures/map-of-africa/full/adventure3.webp'
+    fullSize: '/images-v2/adventures/map-of-africa/gallery/full/3.webp'
   },
   {
-    src: '/images/adventures/map-of-africa/thumbnails/adventure4.webp',
+    src: '/images-v2/adventures/map-of-africa/gallery/thumb/4.webp',
     alt: 'Map of Africa Views',
     description: 'Mountain landscape',
-    fullSize: '/images/adventures/map-of-africa/full/adventure4.webp'
+    fullSize: '/images-v2/adventures/map-of-africa/gallery/full/4.webp'
   },
   {
-    src: '/images/adventures/map-of-africa/thumbnails/adventure5.webp',
+    src: '/images-v2/adventures/map-of-africa/gallery/thumb/5.webp',
     alt: 'Map of Africa Adventure',
     description: 'Panoramic views from the top',
-    fullSize: '/images/adventures/map-of-africa/full/adventure5.webp'
+    fullSize: '/images-v2/adventures/map-of-africa/gallery/full/5.webp'
   },
   {
-    src: '/images/adventures/map-of-africa/thumbnails/adventure6.webp',
+    src: '/images-v2/adventures/map-of-africa/gallery/thumb/6.webp',
     alt: 'Map of Africa Experience',
     description: 'Hiking trail views',
-    fullSize: '/images/adventures/map-of-africa/full/adventure6.webp'
+    fullSize: '/images-v2/adventures/map-of-africa/gallery/full/6.webp'
   },
   {
-    src: '/images/adventures/map-of-africa/thumbnails/adventure7.webp',
+    src: '/images-v2/adventures/map-of-africa/gallery/thumb/7.webp',
     alt: 'Map of Africa Journey',
     description: 'Scenic overlook',
-    fullSize: '/images/adventures/map-of-africa/full/adventure7.webp'
+    fullSize: '/images-v2/adventures/map-of-africa/gallery/full/7.webp'
   },
   {
-    src: '/images/adventures/map-of-africa/thumbnails/adventure8.webp',
+    src: '/images-v2/adventures/map-of-africa/gallery/thumb/8.webp',
     alt: 'Map of Africa Views',
     description: 'Mountain landscape',
-    fullSize: '/images/adventures/map-of-africa/full/adventure8.webp'
+    fullSize: '/images-v2/adventures/map-of-africa/gallery/full/8.webp'
   }
 ]
 
@@ -58,8 +58,8 @@ export default function MapOfAfricaPage() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images/home/mobile/map-of-africa-banner.webp"
-        desktopSrc="/images/adventures/banners/map-of-africa-banner.webp"
+        mobileSrc="/images-v2/adventures/map-of-africa/hero/mobile.webp"
+        desktopSrc="/images-v2/adventures/map-of-africa/hero/desktop.webp"
         title="Map of Africa"
       />
 

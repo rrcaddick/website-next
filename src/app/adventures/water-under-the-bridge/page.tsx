@@ -5,52 +5,52 @@ import LogoSection from '@/components/ui/LogoSection'
 // Define gallery images with thumbnails and full-size versions
 const galleryImages = [
   {
-    src: '/images/adventures/water-under-the-bridge/thumbnails/adventure1.webp',
+    src: '/images-v2/adventures/water-under-the-bridge/gallery/thumb/1.webp',
     alt: 'Water Under the Bridge Adventure',
     description: 'Scenic river views',
-    fullSize: '/images/adventures/water-under-the-bridge/full/adventure1.webp'
+    fullSize: '/images-v2/adventures/water-under-the-bridge/gallery/full/1.webp'
   },
   {
-    src: '/images/adventures/water-under-the-bridge/thumbnails/adventure2.webp',
+    src: '/images-v2/adventures/water-under-the-bridge/gallery/thumb/2.webp',
     alt: 'Water Under the Bridge Experience',
     description: 'River pathway',
-    fullSize: '/images/adventures/water-under-the-bridge/full/adventure2.webp'
+    fullSize: '/images-v2/adventures/water-under-the-bridge/gallery/full/2.webp'
   },
   {
-    src: '/images/adventures/water-under-the-bridge/thumbnails/adventure3.webp',
+    src: '/images-v2/adventures/water-under-the-bridge/gallery/thumb/3.webp',
     alt: 'Water Under the Bridge Journey',
     description: 'Bridge views',
-    fullSize: '/images/adventures/water-under-the-bridge/full/adventure3.webp'
+    fullSize: '/images-v2/adventures/water-under-the-bridge/gallery/full/3.webp'
   },
   {
-    src: '/images/adventures/water-under-the-bridge/thumbnails/adventure4.webp',
+    src: '/images-v2/adventures/water-under-the-bridge/gallery/thumb/4.webp',
     alt: 'Water Under the Bridge Views',
     description: 'River landscape',
-    fullSize: '/images/adventures/water-under-the-bridge/full/adventure4.webp'
+    fullSize: '/images-v2/adventures/water-under-the-bridge/gallery/full/4.webp'
   },
   {
-    src: '/images/adventures/water-under-the-bridge/thumbnails/adventure5.webp',
+    src: '/images-v2/adventures/water-under-the-bridge/gallery/thumb/5.webp',
     alt: 'Water Under the Bridge Adventure',
     description: 'Scenic river views',
-    fullSize: '/images/adventures/water-under-the-bridge/full/adventure5.webp'
+    fullSize: '/images-v2/adventures/water-under-the-bridge/gallery/full/5.webp'
   },
   {
-    src: '/images/adventures/water-under-the-bridge/thumbnails/adventure6.webp',
+    src: '/images-v2/adventures/water-under-the-bridge/gallery/thumb/6.webp',
     alt: 'Water Under the Bridge Experience',
     description: 'River pathway',
-    fullSize: '/images/adventures/water-under-the-bridge/full/adventure6.webp'
+    fullSize: '/images-v2/adventures/water-under-the-bridge/gallery/full/6.webp'
   },
   {
-    src: '/images/adventures/water-under-the-bridge/thumbnails/adventure7.webp',
+    src: '/images-v2/adventures/water-under-the-bridge/gallery/thumb/7.webp',
     alt: 'Water Under the Bridge Journey',
     description: 'Bridge views',
-    fullSize: '/images/adventures/water-under-the-bridge/full/adventure7.webp'
+    fullSize: '/images-v2/adventures/water-under-the-bridge/gallery/full/7.webp'
   },
   {
-    src: '/images/adventures/water-under-the-bridge/thumbnails/adventure8.webp',
+    src: '/images-v2/adventures/water-under-the-bridge/gallery/thumb/8.webp',
     alt: 'Water Under the Bridge Views',
     description: 'River landscape',
-    fullSize: '/images/adventures/water-under-the-bridge/full/adventure8.webp'
+    fullSize: '/images-v2/adventures/water-under-the-bridge/gallery/full/8.webp'
   }
 ]
 
@@ -58,8 +58,8 @@ export default function WaterUnderTheBridgePage() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images/home/mobile/water-under-the-bridge-banner.webp"
-        desktopSrc="/images/adventures/banners/water-under-the-bridge-banner.webp"
+        mobileSrc="/images-v2/adventures/water-under-the-bridge/hero/mobile.webp"
+        desktopSrc="/images-v2/adventures/water-under-the-bridge/hero/desktop.webp"
         title="Water Under the Bridge"
       />
 

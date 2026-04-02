@@ -6,7 +6,7 @@ const facilityCategories = [
   {
     id: 1,
     title: 'Amenities & Services',
-    image: '/images/facilities/pet-friendly.webp',
+    image: '/images-v2/facilities/images/pet-friendly.webp',
     facilities: [
       {
         name: 'Communal wi-fi',
@@ -54,7 +54,7 @@ const facilityCategories = [
   {
     id: 2,
     title: 'Entertainment & Recreation',
-    image: '/images/facilities/jungle-gym.webp',
+    image: '/images-v2/facilities/images/jungle-gym.webp',
     facilities: [
       {
         name: 'Books & board games',
@@ -101,7 +101,7 @@ const facilityCategories = [
   {
     id: 3,
     title: 'Food & Drink',
-    image: '/images/facilities/restaurant-kitchen.webp',
+    image: '/images-v2/facilities/images/restaurant-kitchen.webp',
     facilities: [
       {
         name: 'Lively bar',
@@ -150,8 +150,8 @@ const facilityCategories = [
   {
     id: 4,
     title: 'Social & Gathering Spaces',
-    image: '/images/facilities/lively-bar.webp',
-    mobileImage: '/images/facilities/restaurant-kitchen.webp',
+    image: '/images-v2/facilities/images/lively-bar.webp',
+    mobileImage: '/images-v2/facilities/images/restaurant-kitchen.webp',
     facilities: [
       {
         name: 'Communal fire pit',
@@ -191,8 +191,8 @@ export default function Facilities() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images/home/mobile/facilities-banner.webp"
-        desktopSrc="/images/facilities/facilities-banner.webp"
+        mobileSrc="/images-v2/facilities/hero/mobile.webp"
+        desktopSrc="/images-v2/facilities/hero/desktop.webp"
         title="Facilities"
       />
 

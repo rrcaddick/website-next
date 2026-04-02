@@ -8,8 +8,8 @@ export default function Accommodation() {
   return (
     <div>
       <PageHero
-        mobileSrc="/images/home/mobile/accommodation-banner.webp"
-        desktopSrc="/images/accommodation/banner.webp"
+        mobileSrc="/images-v2/accommodation/hero/mobile.webp"
+        desktopSrc="/images-v2/accommodation/hero/desktop.webp"
         title="Accommodation"
       />
 

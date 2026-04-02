@@ -95,8 +95,8 @@ export default function Venue() {
   return (
     <div>
       <PageHero
-        mobileSrc="/images/home/mobile/venue-hire-banner.webp"
-        desktopSrc="/images/venue-hire/venue-hire-banner.webp"
+        mobileSrc="/images-v2/venue/hero/mobile.webp"
+        desktopSrc="/images-v2/venue/hero/desktop.webp"
         title="Venue Hire"
       />
 

@@ -6,44 +6,44 @@ import LogoSection from '@/components/ui/LogoSection'
 // Define gallery images with the new naming convention
 const galleryImages = [
   {
-    src: '/images/accommodation/mixed-dorm/thumbnails/dorm1.webp',
+    src: '/images-v2/accommodation/mixed-dorm/gallery/thumb/1.webp',
     alt: 'Mixed Dorm Overview',
-    fullSize: '/images/accommodation/mixed-dorm/full/dorm1.webp'
+    fullSize: '/images-v2/accommodation/mixed-dorm/gallery/full/1.webp'
   },
   {
-    src: '/images/accommodation/mixed-dorm/thumbnails/dorm2.webp',
+    src: '/images-v2/accommodation/mixed-dorm/gallery/thumb/2.webp',
     alt: 'Mixed Dorm Interior',
-    fullSize: '/images/accommodation/mixed-dorm/full/dorm2.webp'
+    fullSize: '/images-v2/accommodation/mixed-dorm/gallery/full/2.webp'
   },
   {
-    src: '/images/accommodation/mixed-dorm/thumbnails/dorm3.webp',
+    src: '/images-v2/accommodation/mixed-dorm/gallery/thumb/3.webp',
     alt: 'Mixed Dorm Beds',
-    fullSize: '/images/accommodation/mixed-dorm/full/dorm3.webp'
+    fullSize: '/images-v2/accommodation/mixed-dorm/gallery/full/3.webp'
   },
   {
-    src: '/images/accommodation/mixed-dorm/thumbnails/dorm4.webp',
+    src: '/images-v2/accommodation/mixed-dorm/gallery/thumb/4.webp',
     alt: 'Mixed Dorm View',
-    fullSize: '/images/accommodation/mixed-dorm/full/dorm4.webp'
+    fullSize: '/images-v2/accommodation/mixed-dorm/gallery/full/4.webp'
   },
   {
-    src: '/images/accommodation/mixed-dorm/thumbnails/dorm5.webp',
+    src: '/images-v2/accommodation/mixed-dorm/gallery/thumb/5.webp',
     alt: 'Mixed Dorm Additional View 1',
-    fullSize: '/images/accommodation/mixed-dorm/full/dorm5.webp'
+    fullSize: '/images-v2/accommodation/mixed-dorm/gallery/full/5.webp'
   },
   {
-    src: '/images/accommodation/mixed-dorm/thumbnails/dorm6.webp',
+    src: '/images-v2/accommodation/mixed-dorm/gallery/thumb/6.webp',
     alt: 'Mixed Dorm Additional View 2',
-    fullSize: '/images/accommodation/mixed-dorm/full/dorm6.webp'
+    fullSize: '/images-v2/accommodation/mixed-dorm/gallery/full/6.webp'
   },
   {
-    src: '/images/accommodation/mixed-dorm/thumbnails/dorm7.webp',
+    src: '/images-v2/accommodation/mixed-dorm/gallery/thumb/7.webp',
     alt: 'Mixed Dorm Additional View 3',
-    fullSize: '/images/accommodation/mixed-dorm/full/dorm7.webp'
+    fullSize: '/images-v2/accommodation/mixed-dorm/gallery/full/7.webp'
   },
   {
-    src: '/images/accommodation/mixed-dorm/thumbnails/dorm8.webp',
+    src: '/images-v2/accommodation/mixed-dorm/gallery/thumb/8.webp',
     alt: 'Mixed Dorm Additional View 4',
-    fullSize: '/images/accommodation/mixed-dorm/full/dorm8.webp'
+    fullSize: '/images-v2/accommodation/mixed-dorm/gallery/full/8.webp'
   }
 ]
 
@@ -51,8 +51,8 @@ export default function MixedDormPage() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images/home/mobile/mixed-dorm-banner.webp"
-        desktopSrc="/images/accommodation/banners/mixed-dorm-banner.webp"
+        mobileSrc="/images-v2/accommodation/mixed-dorm/hero/mobile.webp"
+        desktopSrc="/images-v2/accommodation/mixed-dorm/hero/desktop.webp"
         title="Mixed Dorm"
       />
       {/* Content Section */}

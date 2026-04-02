@@ -12,7 +12,7 @@ export default function SiteHeader() {
             <Link href="/" className="flex items-center" title="Fairy Knowe Backpackers">
               <div className="relative w-12 h-12">
                 <Image
-                  src="/images/home/logo-icon.png"
+                  src="/images-v2/ui/logos/logo-icon.png"
                   alt="Fairy Knowe Backpackers"
                   priority
                   width={32}

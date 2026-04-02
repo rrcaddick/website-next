@@ -10,16 +10,16 @@ type WeddingImage = {
 }
 
 const weddingImages: WeddingImage[] = [
-  { src: '/images/venue-hire/weddings/thumbnails/wedding1.webp', alt: 'Wedding at Fairy Knowe 1', fullSize: '/images/venue-hire/weddings/full/wedding1.webp' },
-  { src: '/images/venue-hire/weddings/thumbnails/wedding2.webp', alt: 'Wedding at Fairy Knowe 2', fullSize: '/images/venue-hire/weddings/full/wedding2.webp' },
-  { src: '/images/venue-hire/weddings/thumbnails/wedding3.webp', alt: 'Wedding at Fairy Knowe 3', fullSize: '/images/venue-hire/weddings/full/wedding3.webp' },
-  { src: '/images/venue-hire/weddings/thumbnails/wedding4.webp', alt: 'Wedding at Fairy Knowe 4', fullSize: '/images/venue-hire/weddings/full/wedding4.webp' },
-  { src: '/images/venue-hire/weddings/thumbnails/wedding5.webp', alt: 'Wedding at Fairy Knowe 5', fullSize: '/images/venue-hire/weddings/full/wedding5.webp' },
-  { src: '/images/venue-hire/weddings/thumbnails/wedding6.webp', alt: 'Wedding at Fairy Knowe 6', fullSize: '/images/venue-hire/weddings/full/wedding6.webp' },
-  { src: '/images/venue-hire/weddings/thumbnails/wedding7.webp', alt: 'Wedding at Fairy Knowe 7', fullSize: '/images/venue-hire/weddings/full/wedding7.webp' },
-  { src: '/images/venue-hire/weddings/thumbnails/wedding8.webp', alt: 'Wedding at Fairy Knowe 8', fullSize: '/images/venue-hire/weddings/full/wedding8.webp' },
-  { src: '/images/venue-hire/weddings/thumbnails/wedding9.webp', alt: 'Wedding at Fairy Knowe 9', fullSize: '/images/venue-hire/weddings/full/wedding9.webp' },
-  { src: '/images/venue-hire/weddings/thumbnails/wedding10.webp', alt: 'Wedding at Fairy Knowe 10', fullSize: '/images/venue-hire/weddings/full/wedding10.webp' },
+  { src: '/images-v2/venue/weddings/gallery/thumb/1.webp', alt: 'Wedding at Fairy Knowe 1', fullSize: '/images-v2/venue/weddings/gallery/full/1.webp' },
+  { src: '/images-v2/venue/weddings/gallery/thumb/2.webp', alt: 'Wedding at Fairy Knowe 2', fullSize: '/images-v2/venue/weddings/gallery/full/2.webp' },
+  { src: '/images-v2/venue/weddings/gallery/thumb/3.webp', alt: 'Wedding at Fairy Knowe 3', fullSize: '/images-v2/venue/weddings/gallery/full/3.webp' },
+  { src: '/images-v2/venue/weddings/gallery/thumb/4.webp', alt: 'Wedding at Fairy Knowe 4', fullSize: '/images-v2/venue/weddings/gallery/full/4.webp' },
+  { src: '/images-v2/venue/weddings/gallery/thumb/5.webp', alt: 'Wedding at Fairy Knowe 5', fullSize: '/images-v2/venue/weddings/gallery/full/5.webp' },
+  { src: '/images-v2/venue/weddings/gallery/thumb/6.webp', alt: 'Wedding at Fairy Knowe 6', fullSize: '/images-v2/venue/weddings/gallery/full/6.webp' },
+  { src: '/images-v2/venue/weddings/gallery/thumb/7.webp', alt: 'Wedding at Fairy Knowe 7', fullSize: '/images-v2/venue/weddings/gallery/full/7.webp' },
+  { src: '/images-v2/venue/weddings/gallery/thumb/8.webp', alt: 'Wedding at Fairy Knowe 8', fullSize: '/images-v2/venue/weddings/gallery/full/8.webp' },
+  { src: '/images-v2/venue/weddings/gallery/thumb/9.webp', alt: 'Wedding at Fairy Knowe 9', fullSize: '/images-v2/venue/weddings/gallery/full/9.webp' },
+  { src: '/images-v2/venue/weddings/gallery/thumb/10.webp', alt: 'Wedding at Fairy Knowe 10', fullSize: '/images-v2/venue/weddings/gallery/full/10.webp' },
 ]
 
 const imagesPerPage = 12

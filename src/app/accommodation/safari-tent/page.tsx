@@ -6,44 +6,44 @@ import LogoSection from '@/components/ui/LogoSection'
 // Define gallery images with thumbnails and full-size versions
 const galleryImages = [
   {
-    src: '/images/accommodation/safari-tent/thumbnails/safaritent1.webp',
+    src: '/images-v2/accommodation/safari-tent/gallery/thumb/1.webp',
     alt: 'Safari Tent Overview',
-    fullSize: '/images/accommodation/safari-tent/full/safaritent1.webp'
+    fullSize: '/images-v2/accommodation/safari-tent/gallery/full/1.webp'
   },
   {
-    src: '/images/accommodation/safari-tent/thumbnails/safaritent2.webp',
+    src: '/images-v2/accommodation/safari-tent/gallery/thumb/2.webp',
     alt: 'Safari Tent Interior',
-    fullSize: '/images/accommodation/safari-tent/full/safaritent2.webp'
+    fullSize: '/images-v2/accommodation/safari-tent/gallery/full/2.webp'
   },
   {
-    src: '/images/accommodation/safari-tent/thumbnails/safaritent3.webp',
+    src: '/images-v2/accommodation/safari-tent/gallery/thumb/3.webp',
     alt: 'Safari Tent Exterior',
-    fullSize: '/images/accommodation/safari-tent/full/safaritent3.webp'
+    fullSize: '/images-v2/accommodation/safari-tent/gallery/full/3.webp'
   },
   {
-    src: '/images/accommodation/safari-tent/thumbnails/safaritent4.webp',
+    src: '/images-v2/accommodation/safari-tent/gallery/thumb/4.webp',
     alt: 'Safari Tent Night',
-    fullSize: '/images/accommodation/safari-tent/full/safaritent4.webp'
+    fullSize: '/images-v2/accommodation/safari-tent/gallery/full/4.webp'
   },
   {
-    src: '/images/accommodation/safari-tent/thumbnails/safaritent5.webp',
+    src: '/images-v2/accommodation/safari-tent/gallery/thumb/5.webp',
     alt: 'Safari Tent Additional View 1',
-    fullSize: '/images/accommodation/safari-tent/full/safaritent5.webp'
+    fullSize: '/images-v2/accommodation/safari-tent/gallery/full/5.webp'
   },
   {
-    src: '/images/accommodation/safari-tent/thumbnails/safaritent6.webp',
+    src: '/images-v2/accommodation/safari-tent/gallery/thumb/6.webp',
     alt: 'Safari Tent Additional View 2',
-    fullSize: '/images/accommodation/safari-tent/full/safaritent6.webp'
+    fullSize: '/images-v2/accommodation/safari-tent/gallery/full/6.webp'
   },
   {
-    src: '/images/accommodation/safari-tent/thumbnails/safaritent7.webp',
+    src: '/images-v2/accommodation/safari-tent/gallery/thumb/7.webp',
     alt: 'Safari Tent Additional View 3',
-    fullSize: '/images/accommodation/safari-tent/full/safaritent7.webp'
+    fullSize: '/images-v2/accommodation/safari-tent/gallery/full/7.webp'
   },
   {
-    src: '/images/accommodation/safari-tent/thumbnails/safaritent8.webp',
+    src: '/images-v2/accommodation/safari-tent/gallery/thumb/8.webp',
     alt: 'Safari Tent Additional View 4',
-    fullSize: '/images/accommodation/safari-tent/full/safaritent8.webp'
+    fullSize: '/images-v2/accommodation/safari-tent/gallery/full/8.webp'
   }
 ]
 
@@ -51,8 +51,8 @@ export default function SafariTentPage() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images/home/mobile/safari-tent-banner.webp"
-        desktopSrc="/images/accommodation/banners/safari-tent-banner.webp"
+        mobileSrc="/images-v2/accommodation/safari-tent/hero/mobile.webp"
+        desktopSrc="/images-v2/accommodation/safari-tent/hero/desktop.webp"
         title="Safari Tent"
       />
       {/* Content Section */}

@@ -6,44 +6,44 @@ import LogoSection from '@/components/ui/LogoSection'
 // Define gallery images with the new naming convention
 const galleryImages = [
   {
-    src: '/images/accommodation/gypsy-caravan/thumbnails/gypsy1.webp',
+    src: '/images-v2/accommodation/gypsy-caravan/gallery/thumb/1.webp',
     alt: 'Gypsy Caravan Overview',
-    fullSize: '/images/accommodation/gypsy-caravan/full/gypsy1.webp'
+    fullSize: '/images-v2/accommodation/gypsy-caravan/gallery/full/1.webp'
   },
   {
-    src: '/images/accommodation/gypsy-caravan/thumbnails/gypsy2.webp',
+    src: '/images-v2/accommodation/gypsy-caravan/gallery/thumb/2.webp',
     alt: 'Gypsy Caravan Interior',
-    fullSize: '/images/accommodation/gypsy-caravan/full/gypsy2.webp'
+    fullSize: '/images-v2/accommodation/gypsy-caravan/gallery/full/2.webp'
   },
   {
-    src: '/images/accommodation/gypsy-caravan/thumbnails/gypsy3.webp',
+    src: '/images-v2/accommodation/gypsy-caravan/gallery/thumb/3.webp',
     alt: 'Gypsy Caravan Bed',
-    fullSize: '/images/accommodation/gypsy-caravan/full/gypsy3.webp'
+    fullSize: '/images-v2/accommodation/gypsy-caravan/gallery/full/3.webp'
   },
   {
-    src: '/images/accommodation/gypsy-caravan/thumbnails/gypsy4.webp',
+    src: '/images-v2/accommodation/gypsy-caravan/gallery/thumb/4.webp',
     alt: 'Gypsy Caravan View',
-    fullSize: '/images/accommodation/gypsy-caravan/full/gypsy4.webp'
+    fullSize: '/images-v2/accommodation/gypsy-caravan/gallery/full/4.webp'
   },
   {
-    src: '/images/accommodation/gypsy-caravan/thumbnails/gypsy5.webp',
+    src: '/images-v2/accommodation/gypsy-caravan/gallery/thumb/5.webp',
     alt: 'Gypsy Caravan Additional View 1',
-    fullSize: '/images/accommodation/gypsy-caravan/full/gypsy5.webp'
+    fullSize: '/images-v2/accommodation/gypsy-caravan/gallery/full/5.webp'
   },
   {
-    src: '/images/accommodation/gypsy-caravan/thumbnails/gypsy6.webp',
+    src: '/images-v2/accommodation/gypsy-caravan/gallery/thumb/6.webp',
     alt: 'Gypsy Caravan Additional View 2',
-    fullSize: '/images/accommodation/gypsy-caravan/full/gypsy6.webp'
+    fullSize: '/images-v2/accommodation/gypsy-caravan/gallery/full/6.webp'
   },
   {
-    src: '/images/accommodation/gypsy-caravan/thumbnails/gypsy7.webp',
+    src: '/images-v2/accommodation/gypsy-caravan/gallery/thumb/7.webp',
     alt: 'Gypsy Caravan Additional View 3',
-    fullSize: '/images/accommodation/gypsy-caravan/full/gypsy7.webp'
+    fullSize: '/images-v2/accommodation/gypsy-caravan/gallery/full/7.webp'
   },
   {
-    src: '/images/accommodation/gypsy-caravan/thumbnails/gypsy8.webp',
+    src: '/images-v2/accommodation/gypsy-caravan/gallery/thumb/8.webp',
     alt: 'Gypsy Caravan Additional View 4',
-    fullSize: '/images/accommodation/gypsy-caravan/full/gypsy8.webp'
+    fullSize: '/images-v2/accommodation/gypsy-caravan/gallery/full/8.webp'
   }
 ]
 
@@ -51,8 +51,8 @@ export default function GypsyCaravanPage() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images/home/mobile/gypsy-caravan-banner.webp"
-        desktopSrc="/images/accommodation/banners/caravan-banner.webp"
+        mobileSrc="/images-v2/accommodation/gypsy-caravan/hero/mobile.webp"
+        desktopSrc="/images-v2/accommodation/gypsy-caravan/hero/desktop.webp"
         title="Gypsy Caravan"
       />
       {/* Content Section */}

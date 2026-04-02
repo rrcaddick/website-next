@@ -7,14 +7,14 @@ import LogoSection from '@/components/ui/LogoSection'
 // Define gallery images with the new naming convention
 const galleryImages = [
   {
-    src: '/images/accommodation/camping/thumbnails/camping1.webp',
+    src: '/images-v2/accommodation/camping/gallery/thumb/1.webp',
     alt: 'Camping Ground Overview',
-    fullSize: '/images/accommodation/camping/full/camping1.webp'
+    fullSize: '/images-v2/accommodation/camping/gallery/full/1.webp'
   },
   {
-    src: '/images/accommodation/camping/thumbnails/camping2.webp',
+    src: '/images-v2/accommodation/camping/gallery/thumb/2.webp',
     alt: 'Tent Setup Area',
-    fullSize: '/images/accommodation/camping/full/camping2.webp'
+    fullSize: '/images-v2/accommodation/camping/gallery/full/2.webp'
   }
 ]
 
@@ -22,8 +22,8 @@ export default function CampingPage() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images/home/mobile/camping-banner.webp"
-        desktopSrc="/images/accommodation/banners/camping-banner.webp"
+        mobileSrc="/images-v2/accommodation/camping/hero/mobile.webp"
+        desktopSrc="/images-v2/accommodation/camping/hero/desktop.webp"
         title="Camping"
       />
       {/* Content Section */}

@@ -5,49 +5,49 @@ import LogoSection from '@/components/ui/LogoSection'
 // Define the gallery images
 const galleryImages = [
   {
-    src: '/images/adventures/bosduif-trail/thumbnails/bosduif1.webp',
+    src: '/images-v2/adventures/bosduif-trail/gallery/thumb/1.webp',
     alt: 'Bosduif Trail View 1',
-    fullSize: '/images/adventures/bosduif-trail/full/bosduif1.webp'
+    fullSize: '/images-v2/adventures/bosduif-trail/gallery/full/1.webp'
   },
   {
-    src: '/images/adventures/bosduif-trail/thumbnails/bosduif2.webp',
+    src: '/images-v2/adventures/bosduif-trail/gallery/thumb/2.webp',
     alt: 'Bosduif Trail View 2',
-    fullSize: '/images/adventures/bosduif-trail/full/bosduif2.webp'
+    fullSize: '/images-v2/adventures/bosduif-trail/gallery/full/2.webp'
   },
   {
-    src: '/images/adventures/bosduif-trail/thumbnails/bosduif3.webp',
+    src: '/images-v2/adventures/bosduif-trail/gallery/thumb/3.webp',
     alt: 'Bosduif Trail View 3',
-    fullSize: '/images/adventures/bosduif-trail/full/bosduif3.webp'
+    fullSize: '/images-v2/adventures/bosduif-trail/gallery/full/3.webp'
   },
   {
-    src: '/images/adventures/bosduif-trail/thumbnails/bosduif4.webp',
+    src: '/images-v2/adventures/bosduif-trail/gallery/thumb/4.webp',
     alt: 'Bosduif Trail View 4',
-    fullSize: '/images/adventures/bosduif-trail/full/bosduif4.webp'
+    fullSize: '/images-v2/adventures/bosduif-trail/gallery/full/4.webp'
   },
   {
-    src: '/images/adventures/bosduif-trail/thumbnails/bosduif5.webp',
+    src: '/images-v2/adventures/bosduif-trail/gallery/thumb/5.webp',
     alt: 'Bosduif Trail View 5',
-    fullSize: '/images/adventures/bosduif-trail/full/bosduif5.webp'
+    fullSize: '/images-v2/adventures/bosduif-trail/gallery/full/5.webp'
   },
   {
-    src: '/images/adventures/bosduif-trail/thumbnails/bosduif6.webp',
+    src: '/images-v2/adventures/bosduif-trail/gallery/thumb/6.webp',
     alt: 'Bosduif Trail View 6',
-    fullSize: '/images/adventures/bosduif-trail/full/bosduif6.webp'
+    fullSize: '/images-v2/adventures/bosduif-trail/gallery/full/6.webp'
   },
   {
-    src: '/images/adventures/bosduif-trail/thumbnails/bosduif7.webp',
+    src: '/images-v2/adventures/bosduif-trail/gallery/thumb/7.webp',
     alt: 'Bosduif Trail View 7',
-    fullSize: '/images/adventures/bosduif-trail/full/bosduif7.webp'
+    fullSize: '/images-v2/adventures/bosduif-trail/gallery/full/7.webp'
   },
   {
-    src: '/images/adventures/bosduif-trail/thumbnails/bosduif8.webp',
+    src: '/images-v2/adventures/bosduif-trail/gallery/thumb/8.webp',
     alt: 'Bosduif Trail View 8',
-    fullSize: '/images/adventures/bosduif-trail/full/bosduif8.webp'
+    fullSize: '/images-v2/adventures/bosduif-trail/gallery/full/8.webp'
   },
   {
-    src: '/images/adventures/bosduif-trail/thumbnails/bosduif9.webp',
+    src: '/images-v2/adventures/bosduif-trail/gallery/thumb/9.webp',
     alt: 'Bosduif Trail View 9',
-    fullSize: '/images/adventures/bosduif-trail/full/bosduif9.webp'
+    fullSize: '/images-v2/adventures/bosduif-trail/gallery/full/9.webp'
   }
 ]
 
@@ -55,8 +55,8 @@ export default function BosduifTrailPage() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images/home/mobile/bosduif-trail-banner.webp"
-        desktopSrc="/images/adventures/banners/bosduif-trail-banner.webp"
+        mobileSrc="/images-v2/adventures/bosduif-trail/hero/mobile.webp"
+        desktopSrc="/images-v2/adventures/bosduif-trail/hero/desktop.webp"
         title="Bosduif Trail"
       />
 

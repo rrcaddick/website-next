@@ -6,44 +6,44 @@ import LogoSection from '@/components/ui/LogoSection'
 // Define gallery images with the new naming convention
 const galleryImages = [
   {
-    src: '/images/accommodation/five-sleeper/thumbnails/fivesleeper1.webp',
+    src: '/images-v2/accommodation/five-sleeper/gallery/thumb/1.webp',
     alt: 'Five Sleeper Overview',
-    fullSize: '/images/accommodation/five-sleeper/full/fivesleeper1.webp'
+    fullSize: '/images-v2/accommodation/five-sleeper/gallery/full/1.webp'
   },
   {
-    src: '/images/accommodation/five-sleeper/thumbnails/fivesleeper2.webp',
+    src: '/images-v2/accommodation/five-sleeper/gallery/thumb/2.webp',
     alt: 'Five Sleeper Interior',
-    fullSize: '/images/accommodation/five-sleeper/full/fivesleeper2.webp'
+    fullSize: '/images-v2/accommodation/five-sleeper/gallery/full/2.webp'
   },
   {
-    src: '/images/accommodation/five-sleeper/thumbnails/fivesleeper3.webp',
+    src: '/images-v2/accommodation/five-sleeper/gallery/thumb/3.webp',
     alt: 'Five Sleeper Beds',
-    fullSize: '/images/accommodation/five-sleeper/full/fivesleeper3.webp'
+    fullSize: '/images-v2/accommodation/five-sleeper/gallery/full/3.webp'
   },
   {
-    src: '/images/accommodation/five-sleeper/thumbnails/fivesleeper4.webp',
+    src: '/images-v2/accommodation/five-sleeper/gallery/thumb/4.webp',
     alt: 'Five Sleeper View',
-    fullSize: '/images/accommodation/five-sleeper/full/fivesleeper4.webp'
+    fullSize: '/images-v2/accommodation/five-sleeper/gallery/full/4.webp'
   },
   {
-    src: '/images/accommodation/five-sleeper/thumbnails/fivesleeper5.webp',
+    src: '/images-v2/accommodation/five-sleeper/gallery/thumb/5.webp',
     alt: 'Five Sleeper Additional View 1',
-    fullSize: '/images/accommodation/five-sleeper/full/fivesleeper5.webp'
+    fullSize: '/images-v2/accommodation/five-sleeper/gallery/full/5.webp'
   },
   {
-    src: '/images/accommodation/five-sleeper/thumbnails/fivesleeper6.webp',
+    src: '/images-v2/accommodation/five-sleeper/gallery/thumb/6.webp',
     alt: 'Five Sleeper Additional View 2',
-    fullSize: '/images/accommodation/five-sleeper/full/fivesleeper6.webp'
+    fullSize: '/images-v2/accommodation/five-sleeper/gallery/full/6.webp'
   },
   {
-    src: '/images/accommodation/five-sleeper/thumbnails/fivesleeper7.webp',
+    src: '/images-v2/accommodation/five-sleeper/gallery/thumb/7.webp',
     alt: 'Five Sleeper Additional View 3',
-    fullSize: '/images/accommodation/five-sleeper/full/fivesleeper7.webp'
+    fullSize: '/images-v2/accommodation/five-sleeper/gallery/full/7.webp'
   },
   {
-    src: '/images/accommodation/five-sleeper/thumbnails/fivesleeper8.webp',
+    src: '/images-v2/accommodation/five-sleeper/gallery/thumb/8.webp',
     alt: 'Five Sleeper Additional View 4',
-    fullSize: '/images/accommodation/five-sleeper/full/fivesleeper8.webp'
+    fullSize: '/images-v2/accommodation/five-sleeper/gallery/full/8.webp'
   }
 ]
 
@@ -51,8 +51,8 @@ export default function FiveSleeperPage() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images/home/mobile/five-sleeper-banner.webp"
-        desktopSrc="/images/accommodation/banners/five-sleeper-banner.webp"
+        mobileSrc="/images-v2/accommodation/five-sleeper/hero/mobile.webp"
+        desktopSrc="/images-v2/accommodation/five-sleeper/hero/desktop.webp"
         title="Five Sleeper"
       />
       {/* Content Section */}

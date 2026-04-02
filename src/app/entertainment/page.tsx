@@ -8,8 +8,8 @@ export default function Entertainment() {
   return (
     <div>
       <PageHero
-        mobileSrc="/images/home/mobile/entertainment-banner.webp"
-        desktopSrc="/images/entertainment/entertainment-banner.webp"
+        mobileSrc="/images-v2/entertainment/hero/mobile.webp"
+        desktopSrc="/images-v2/entertainment/hero/desktop.webp"
         title="Entertainment"
       />
 

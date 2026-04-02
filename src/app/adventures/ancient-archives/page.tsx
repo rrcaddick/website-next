@@ -5,52 +5,52 @@ import LogoSection from '@/components/ui/LogoSection'
 // Define gallery images with thumbnails and full-size versions
 const galleryImages = [
   {
-    src: '/images/adventures/ancient-archives/thumbnails/adventure1.webp',
+    src: '/images-v2/adventures/ancient-archives/gallery/thumb/1.webp',
     alt: 'Ancient Archives Adventure',
     description: 'Historic library views',
-    fullSize: '/images/adventures/ancient-archives/full/adventure1.webp'
+    fullSize: '/images-v2/adventures/ancient-archives/gallery/full/1.webp'
   },
   {
-    src: '/images/adventures/ancient-archives/thumbnails/adventure2.webp',
+    src: '/images-v2/adventures/ancient-archives/gallery/thumb/2.webp',
     alt: 'Ancient Archives Experience',
     description: 'Book collection',
-    fullSize: '/images/adventures/ancient-archives/full/adventure2.webp'
+    fullSize: '/images-v2/adventures/ancient-archives/gallery/full/2.webp'
   },
   {
-    src: '/images/adventures/ancient-archives/thumbnails/adventure3.webp',
+    src: '/images-v2/adventures/ancient-archives/gallery/thumb/3.webp',
     alt: 'Ancient Archives Journey',
     description: 'Reading spaces',
-    fullSize: '/images/adventures/ancient-archives/full/adventure3.webp'
+    fullSize: '/images-v2/adventures/ancient-archives/gallery/full/3.webp'
   },
   {
-    src: '/images/adventures/ancient-archives/thumbnails/adventure4.webp',
+    src: '/images-v2/adventures/ancient-archives/gallery/thumb/4.webp',
     alt: 'Ancient Archives Views',
     description: 'Library atmosphere',
-    fullSize: '/images/adventures/ancient-archives/full/adventure4.webp'
+    fullSize: '/images-v2/adventures/ancient-archives/gallery/full/4.webp'
   },
   {
-    src: '/images/adventures/ancient-archives/thumbnails/adventure5.webp',
+    src: '/images-v2/adventures/ancient-archives/gallery/thumb/5.webp',
     alt: 'Ancient Archives Adventure',
     description: 'Historic library views',
-    fullSize: '/images/adventures/ancient-archives/full/adventure5.webp'
+    fullSize: '/images-v2/adventures/ancient-archives/gallery/full/5.webp'
   },
   {
-    src: '/images/adventures/ancient-archives/thumbnails/adventure6.webp',
+    src: '/images-v2/adventures/ancient-archives/gallery/thumb/6.webp',
     alt: 'Ancient Archives Experience',
     description: 'Book collection',
-    fullSize: '/images/adventures/ancient-archives/full/adventure6.webp'
+    fullSize: '/images-v2/adventures/ancient-archives/gallery/full/6.webp'
   },
   {
-    src: '/images/adventures/ancient-archives/thumbnails/adventure7.webp',
+    src: '/images-v2/adventures/ancient-archives/gallery/thumb/7.webp',
     alt: 'Ancient Archives Journey',
     description: 'Reading spaces',
-    fullSize: '/images/adventures/ancient-archives/full/adventure7.webp'
+    fullSize: '/images-v2/adventures/ancient-archives/gallery/full/7.webp'
   },
   {
-    src: '/images/adventures/ancient-archives/thumbnails/adventure8.webp',
+    src: '/images-v2/adventures/ancient-archives/gallery/thumb/8.webp',
     alt: 'Ancient Archives Views',
     description: 'Library atmosphere',
-    fullSize: '/images/adventures/ancient-archives/full/adventure8.webp'
+    fullSize: '/images-v2/adventures/ancient-archives/gallery/full/8.webp'
   }
 ]
 
@@ -58,8 +58,8 @@ export default function AncientArchivesPage() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images/home/mobile/ancient-archives-banner.webp"
-        desktopSrc="/images/adventures/banners/ancient-archives-banner.webp"
+        mobileSrc="/images-v2/adventures/ancient-archives/hero/mobile.webp"
+        desktopSrc="/images-v2/adventures/ancient-archives/hero/desktop.webp"
         title="Ancient Archives"
       />
 

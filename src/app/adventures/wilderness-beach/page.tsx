@@ -5,44 +5,44 @@ import LogoSection from '@/components/ui/LogoSection'
 // Define the gallery images
 const galleryImages = [
   {
-    src: '/images/adventures/wilderness-beach/thumbnails/adventure1.webp',
+    src: '/images-v2/adventures/wilderness-beach/gallery/thumb/1.webp',
     alt: 'Wilderness Beach Adventure 1',
-    fullSize: '/images/adventures/wilderness-beach/full/adventure1.webp'
+    fullSize: '/images-v2/adventures/wilderness-beach/gallery/full/1.webp'
   },
   {
-    src: '/images/adventures/wilderness-beach/thumbnails/adventure2.webp',
+    src: '/images-v2/adventures/wilderness-beach/gallery/thumb/2.webp',
     alt: 'Wilderness Beach Adventure 2',
-    fullSize: '/images/adventures/wilderness-beach/full/adventure2.webp'
+    fullSize: '/images-v2/adventures/wilderness-beach/gallery/full/2.webp'
   },
   {
-    src: '/images/adventures/wilderness-beach/thumbnails/adventure3.webp',
+    src: '/images-v2/adventures/wilderness-beach/gallery/thumb/3.webp',
     alt: 'Wilderness Beach Adventure 3',
-    fullSize: '/images/adventures/wilderness-beach/full/adventure3.webp'
+    fullSize: '/images-v2/adventures/wilderness-beach/gallery/full/3.webp'
   },
   {
-    src: '/images/adventures/wilderness-beach/thumbnails/adventure4.webp',
+    src: '/images-v2/adventures/wilderness-beach/gallery/thumb/4.webp',
     alt: 'Wilderness Beach Adventure 4',
-    fullSize: '/images/adventures/wilderness-beach/full/adventure4.webp'
+    fullSize: '/images-v2/adventures/wilderness-beach/gallery/full/4.webp'
   },
   {
-    src: '/images/adventures/wilderness-beach/thumbnails/adventure5.webp',
+    src: '/images-v2/adventures/wilderness-beach/gallery/thumb/5.webp',
     alt: 'Wilderness Beach Adventure 5',
-    fullSize: '/images/adventures/wilderness-beach/full/adventure5.webp'
+    fullSize: '/images-v2/adventures/wilderness-beach/gallery/full/5.webp'
   },
   {
-    src: '/images/adventures/wilderness-beach/thumbnails/adventure6.webp',
+    src: '/images-v2/adventures/wilderness-beach/gallery/thumb/6.webp',
     alt: 'Wilderness Beach Adventure 6',
-    fullSize: '/images/adventures/wilderness-beach/full/adventure6.webp'
+    fullSize: '/images-v2/adventures/wilderness-beach/gallery/full/6.webp'
   },
   {
-    src: '/images/adventures/wilderness-beach/thumbnails/adventure7.webp',
+    src: '/images-v2/adventures/wilderness-beach/gallery/thumb/7.webp',
     alt: 'Wilderness Beach Adventure 7',
-    fullSize: '/images/adventures/wilderness-beach/full/adventure7.webp'
+    fullSize: '/images-v2/adventures/wilderness-beach/gallery/full/7.webp'
   },
   {
-    src: '/images/adventures/wilderness-beach/thumbnails/adventure8.webp',
+    src: '/images-v2/adventures/wilderness-beach/gallery/thumb/8.webp',
     alt: 'Wilderness Beach Adventure 8',
-    fullSize: '/images/adventures/wilderness-beach/full/adventure8.webp'
+    fullSize: '/images-v2/adventures/wilderness-beach/gallery/full/8.webp'
   }
 ]
 
@@ -50,8 +50,8 @@ export default function WildernessBeachPage() {
   return (
     <div>
       <PageHero
-        mobileSrc="/images/home/mobile/wilderness-beach-banner.webp"
-        desktopSrc="/images/adventures/banners/wilderness-beach-banner.webp"
+        mobileSrc="/images-v2/adventures/wilderness-beach/hero/mobile.webp"
+        desktopSrc="/images-v2/adventures/wilderness-beach/hero/desktop.webp"
         title="Wilderness Beach"
       />
 

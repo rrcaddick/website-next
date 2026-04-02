@@ -5,52 +5,52 @@ import LogoSection from '@/components/ui/LogoSection'
 // Define gallery images with thumbnails and full-size versions
 const galleryImages = [
   {
-    src: '/images/adventures/woodville-big-tree/thumbnails/adventure1.webp',
+    src: '/images-v2/adventures/woodville-big-tree/gallery/thumb/1.webp',
     alt: 'Woodville Big Tree Adventure',
     description: 'The majestic Outeniqua Yellowwood',
-    fullSize: '/images/adventures/woodville-big-tree/full/adventure1.webp'
+    fullSize: '/images-v2/adventures/woodville-big-tree/gallery/full/1.webp'
   },
   {
-    src: '/images/adventures/woodville-big-tree/thumbnails/adventure2.webp',
+    src: '/images-v2/adventures/woodville-big-tree/gallery/thumb/2.webp',
     alt: 'Woodville Big Tree Experience',
     description: 'Forest pathway',
-    fullSize: '/images/adventures/woodville-big-tree/full/adventure2.webp'
+    fullSize: '/images-v2/adventures/woodville-big-tree/gallery/full/2.webp'
   },
   {
-    src: '/images/adventures/woodville-big-tree/thumbnails/adventure3.webp',
+    src: '/images-v2/adventures/woodville-big-tree/gallery/thumb/3.webp',
     alt: 'Woodville Big Tree Journey',
     description: 'Tree canopy views',
-    fullSize: '/images/adventures/woodville-big-tree/full/adventure3.webp'
+    fullSize: '/images-v2/adventures/woodville-big-tree/gallery/full/3.webp'
   },
   {
-    src: '/images/adventures/woodville-big-tree/thumbnails/adventure4.webp',
+    src: '/images-v2/adventures/woodville-big-tree/gallery/thumb/4.webp',
     alt: 'Woodville Big Tree Views',
     description: 'Forest surroundings',
-    fullSize: '/images/adventures/woodville-big-tree/full/adventure4.webp'
+    fullSize: '/images-v2/adventures/woodville-big-tree/gallery/full/4.webp'
   },
   {
-    src: '/images/adventures/woodville-big-tree/thumbnails/adventure5.webp',
+    src: '/images-v2/adventures/woodville-big-tree/gallery/thumb/5.webp',
     alt: 'Woodville Big Tree Adventure',
     description: 'The majestic Outeniqua Yellowwood',
-    fullSize: '/images/adventures/woodville-big-tree/full/adventure5.webp'
+    fullSize: '/images-v2/adventures/woodville-big-tree/gallery/full/5.webp'
   },
   {
-    src: '/images/adventures/woodville-big-tree/thumbnails/adventure6.webp',
+    src: '/images-v2/adventures/woodville-big-tree/gallery/thumb/6.webp',
     alt: 'Woodville Big Tree Experience',
     description: 'Forest pathway',
-    fullSize: '/images/adventures/woodville-big-tree/full/adventure6.webp'
+    fullSize: '/images-v2/adventures/woodville-big-tree/gallery/full/6.webp'
   },
   {
-    src: '/images/adventures/woodville-big-tree/thumbnails/adventure7.webp',
+    src: '/images-v2/adventures/woodville-big-tree/gallery/thumb/7.webp',
     alt: 'Woodville Big Tree Journey',
     description: 'Tree canopy views',
-    fullSize: '/images/adventures/woodville-big-tree/full/adventure7.webp'
+    fullSize: '/images-v2/adventures/woodville-big-tree/gallery/full/7.webp'
   },
   {
-    src: '/images/adventures/woodville-big-tree/thumbnails/adventure8.webp',
+    src: '/images-v2/adventures/woodville-big-tree/gallery/thumb/8.webp',
     alt: 'Woodville Big Tree Views',
     description: 'Forest surroundings',
-    fullSize: '/images/adventures/woodville-big-tree/full/adventure8.webp'
+    fullSize: '/images-v2/adventures/woodville-big-tree/gallery/full/8.webp'
   }
 ]
 
@@ -58,8 +58,8 @@ export default function WoodvilleBigTreePage() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images/home/mobile/woodville-big-tree-banner.webp"
-        desktopSrc="/images/adventures/banners/woodville-big-tree-banner.webp"
+        mobileSrc="/images-v2/adventures/woodville-big-tree/hero/mobile.webp"
+        desktopSrc="/images-v2/adventures/woodville-big-tree/hero/desktop.webp"
         title="Woodville Big Tree"
       />
 

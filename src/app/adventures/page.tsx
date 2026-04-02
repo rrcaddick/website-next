@@ -10,8 +10,8 @@ export default function Adventure() {
   return (
     <div>
       <PageHero
-        mobileSrc="/images/home/mobile/adventures-banner.webp"
-        desktopSrc="/images/adventures/adventures-banner.webp"
+        mobileSrc="/images-v2/adventures/hero/mobile.webp"
+        desktopSrc="/images-v2/adventures/hero/desktop.webp"
         title="Adventures"
       />
 

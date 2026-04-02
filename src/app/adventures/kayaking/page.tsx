@@ -5,44 +5,44 @@ import LogoSection from '@/components/ui/LogoSection'
 // Define gallery images with thumbnails and full-size versions
 const galleryImages = [
   {
-    src: '/images/adventures/kayaking/full/adventure1.webp',
+    src: '/images-v2/adventures/kayaking/gallery/full/1.webp',
     alt: 'Kayaking Adventure 1',
-    fullSize: '/images/adventures/kayaking/full/adventure1.webp'
+    fullSize: '/images-v2/adventures/kayaking/gallery/full/1.webp'
   },
   {
-    src: '/images/adventures/kayaking/full/adventure2.webp',
+    src: '/images-v2/adventures/kayaking/gallery/full/2.webp',
     alt: 'Kayaking Adventure 2',
-    fullSize: '/images/adventures/kayaking/full/adventure2.webp'
+    fullSize: '/images-v2/adventures/kayaking/gallery/full/2.webp'
   },
   {
-    src: '/images/adventures/kayaking/full/adventure3.webp',
+    src: '/images-v2/adventures/kayaking/gallery/full/3.webp',
     alt: 'Kayaking Adventure 3',
-    fullSize: '/images/adventures/kayaking/full/adventure3.webp'
+    fullSize: '/images-v2/adventures/kayaking/gallery/full/3.webp'
   },
   {
-    src: '/images/adventures/kayaking/full/adventure4.webp',
+    src: '/images-v2/adventures/kayaking/gallery/full/4.webp',
     alt: 'Kayaking Adventure 4',
-    fullSize: '/images/adventures/kayaking/full/adventure4.webp'
+    fullSize: '/images-v2/adventures/kayaking/gallery/full/4.webp'
   },
   {
-    src: '/images/adventures/kayaking/full/adventure5.webp',
+    src: '/images-v2/adventures/kayaking/gallery/full/5.webp',
     alt: 'Kayaking Adventure 5',
-    fullSize: '/images/adventures/kayaking/full/adventure5.webp'
+    fullSize: '/images-v2/adventures/kayaking/gallery/full/5.webp'
   },
   {
-    src: '/images/adventures/kayaking/full/adventure6.webp',
+    src: '/images-v2/adventures/kayaking/gallery/full/6.webp',
     alt: 'Kayaking Adventure 6',
-    fullSize: '/images/adventures/kayaking/full/adventure6.webp'
+    fullSize: '/images-v2/adventures/kayaking/gallery/full/6.webp'
   },
   {
-    src: '/images/adventures/kayaking/full/adventure7.webp',
+    src: '/images-v2/adventures/kayaking/gallery/full/7.webp',
     alt: 'Kayaking Adventure 7',
-    fullSize: '/images/adventures/kayaking/full/adventure7.webp'
+    fullSize: '/images-v2/adventures/kayaking/gallery/full/7.webp'
   },
   {
-    src: '/images/adventures/kayaking/full/adventure8.webp',
+    src: '/images-v2/adventures/kayaking/gallery/full/8.webp',
     alt: 'Kayaking Adventure 8',
-    fullSize: '/images/adventures/kayaking/full/adventure8.webp'
+    fullSize: '/images-v2/adventures/kayaking/gallery/full/8.webp'
   }
 ]
 
@@ -50,8 +50,8 @@ export default function KayakingPage() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images/home/mobile/kayaking-banner.webp"
-        desktopSrc="/images/adventures/banners/kayaking-banner.webp"
+        mobileSrc="/images-v2/adventures/kayaking/hero/mobile.webp"
+        desktopSrc="/images-v2/adventures/kayaking/hero/desktop.webp"
         title="Kayaking"
       />
 

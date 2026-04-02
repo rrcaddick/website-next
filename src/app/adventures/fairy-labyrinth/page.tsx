@@ -5,52 +5,52 @@ import LogoSection from '@/components/ui/LogoSection'
 // Define gallery images with thumbnails and full-size versions
 const galleryImages = [
   {
-    src: '/images/adventures/fairy-labyrinth/thumbnails/adventure1.webp',
+    src: '/images-v2/adventures/fairy-labyrinth/gallery/thumb/1.webp',
     alt: 'Fairy Labyrinth Adventure',
     description: 'Mystical forest path',
-    fullSize: '/images/adventures/fairy-labyrinth/full/adventure1.webp'
+    fullSize: '/images-v2/adventures/fairy-labyrinth/gallery/full/1.webp'
   },
   {
-    src: '/images/adventures/fairy-labyrinth/thumbnails/adventure2.webp',
+    src: '/images-v2/adventures/fairy-labyrinth/gallery/thumb/2.webp',
     alt: 'Fairy Labyrinth Experience',
     description: 'Ancient tree formations',
-    fullSize: '/images/adventures/fairy-labyrinth/full/adventure2.webp'
+    fullSize: '/images-v2/adventures/fairy-labyrinth/gallery/full/2.webp'
   },
   {
-    src: '/images/adventures/fairy-labyrinth/thumbnails/adventure3.webp',
+    src: '/images-v2/adventures/fairy-labyrinth/gallery/thumb/3.webp',
     alt: 'Fairy Labyrinth Journey',
     description: 'Enchanted pathways',
-    fullSize: '/images/adventures/fairy-labyrinth/full/adventure3.webp'
+    fullSize: '/images-v2/adventures/fairy-labyrinth/gallery/full/3.webp'
   },
   {
-    src: '/images/adventures/fairy-labyrinth/thumbnails/adventure4.webp',
+    src: '/images-v2/adventures/fairy-labyrinth/gallery/thumb/4.webp',
     alt: 'Fairy Labyrinth Views',
     description: 'Magical forest scenes',
-    fullSize: '/images/adventures/fairy-labyrinth/full/adventure4.webp'
+    fullSize: '/images-v2/adventures/fairy-labyrinth/gallery/full/4.webp'
   },
   {
-    src: '/images/adventures/fairy-labyrinth/thumbnails/adventure5.webp',
+    src: '/images-v2/adventures/fairy-labyrinth/gallery/thumb/5.webp',
     alt: 'Fairy Labyrinth Adventure',
     description: 'Mystical forest path',
-    fullSize: '/images/adventures/fairy-labyrinth/full/adventure5.webp'
+    fullSize: '/images-v2/adventures/fairy-labyrinth/gallery/full/5.webp'
   },
   {
-    src: '/images/adventures/fairy-labyrinth/thumbnails/adventure6.webp',
+    src: '/images-v2/adventures/fairy-labyrinth/gallery/thumb/6.webp',
     alt: 'Fairy Labyrinth Experience',
     description: 'Ancient tree formations',
-    fullSize: '/images/adventures/fairy-labyrinth/full/adventure6.webp'
+    fullSize: '/images-v2/adventures/fairy-labyrinth/gallery/full/6.webp'
   },
   {
-    src: '/images/adventures/fairy-labyrinth/thumbnails/adventure7.webp',
+    src: '/images-v2/adventures/fairy-labyrinth/gallery/thumb/7.webp',
     alt: 'Fairy Labyrinth Journey',
     description: 'Enchanted pathways',
-    fullSize: '/images/adventures/fairy-labyrinth/full/adventure7.webp'
+    fullSize: '/images-v2/adventures/fairy-labyrinth/gallery/full/7.webp'
   },
   {
-    src: '/images/adventures/fairy-labyrinth/thumbnails/adventure8.webp',
+    src: '/images-v2/adventures/fairy-labyrinth/gallery/thumb/8.webp',
     alt: 'Fairy Labyrinth Views',
     description: 'Magical forest scenes',
-    fullSize: '/images/adventures/fairy-labyrinth/full/adventure8.webp'
+    fullSize: '/images-v2/adventures/fairy-labyrinth/gallery/full/8.webp'
   }
 ]
 
@@ -58,8 +58,8 @@ export default function FairyLabyrinthPage() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images/home/mobile/fairy-labyrinth-banner.webp"
-        desktopSrc="/images/adventures/banners/fairy-labyrinth-banner.webp"
+        mobileSrc="/images-v2/adventures/fairy-labyrinth/hero/mobile.webp"
+        desktopSrc="/images-v2/adventures/fairy-labyrinth/hero/desktop.webp"
         title="Fairy Labyrinth"
       />
 

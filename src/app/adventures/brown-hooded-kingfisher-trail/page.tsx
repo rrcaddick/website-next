@@ -5,69 +5,69 @@ import LogoSection from '@/components/ui/LogoSection'
 // Define gallery images with thumbnails and full-size versions
 const galleryImages = [
   {
-    src: '/images/adventures/brown-hooded-kingfisher-trail/thumbnails/brownhood1.webp',
+    src: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/thumb/1.webp',
     alt: 'Brown Hooded Kingfisher Trail Adventure',
-    fullSize: '/images/adventures/brown-hooded-kingfisher-trail/full/brownhood1.webp'
+    fullSize: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/full/1.webp'
   },
   {
-    src: '/images/adventures/brown-hooded-kingfisher-trail/thumbnails/brownhood2.webp',
+    src: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/thumb/2.webp',
     alt: 'Brown Hooded Kingfisher Trail Experience',
-    fullSize: '/images/adventures/brown-hooded-kingfisher-trail/full/brownhood2.webp'
+    fullSize: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/full/2.webp'
   },
   {
-    src: '/images/adventures/brown-hooded-kingfisher-trail/thumbnails/brownhood3.webp',
+    src: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/thumb/3.webp',
     alt: 'Brown Hooded Kingfisher Trail Journey',
-    fullSize: '/images/adventures/brown-hooded-kingfisher-trail/full/brownhood3.webp'
+    fullSize: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/full/3.webp'
   },
   {
-    src: '/images/adventures/brown-hooded-kingfisher-trail/thumbnails/brownhood4.webp',
+    src: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/thumb/4.webp',
     alt: 'Brown Hooded Kingfisher Trail Views',
-    fullSize: '/images/adventures/brown-hooded-kingfisher-trail/full/brownhood4.webp'
+    fullSize: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/full/4.webp'
   },
   {
-    src: '/images/adventures/brown-hooded-kingfisher-trail/thumbnails/brownhood5.webp',
+    src: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/thumb/5.webp',
     alt: 'Brown Hooded Kingfisher Trail Additional View 1',
-    fullSize: '/images/adventures/brown-hooded-kingfisher-trail/full/brownhood5.webp'
+    fullSize: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/full/5.webp'
   },
   {
-    src: '/images/adventures/brown-hooded-kingfisher-trail/thumbnails/brownhood6.webp',
+    src: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/thumb/6.webp',
     alt: 'Brown Hooded Kingfisher Trail Additional View 2',
-    fullSize: '/images/adventures/brown-hooded-kingfisher-trail/full/brownhood6.webp'
+    fullSize: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/full/6.webp'
   },
   {
-    src: '/images/adventures/brown-hooded-kingfisher-trail/thumbnails/brownhood7.webp',
+    src: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/thumb/7.webp',
     alt: 'Brown Hooded Kingfisher Trail Additional View 3',
-    fullSize: '/images/adventures/brown-hooded-kingfisher-trail/full/brownhood7.webp'
+    fullSize: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/full/7.webp'
   },
   {
-    src: '/images/adventures/brown-hooded-kingfisher-trail/thumbnails/brownhood8.webp',
+    src: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/thumb/8.webp',
     alt: 'Brown Hooded Kingfisher Trail Additional View 4',
-    fullSize: '/images/adventures/brown-hooded-kingfisher-trail/full/brownhood8.webp'
+    fullSize: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/full/8.webp'
   },
   {
-    src: '/images/adventures/brown-hooded-kingfisher-trail/thumbnails/brownhood9.webp',
+    src: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/thumb/9.webp',
     alt: 'Brown Hooded Kingfisher Trail Additional View 5',
-    fullSize: '/images/adventures/brown-hooded-kingfisher-trail/full/brownhood9.webp'
+    fullSize: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/full/9.webp'
   },
   {
-    src: '/images/adventures/brown-hooded-kingfisher-trail/thumbnails/brownhood10.webp',
+    src: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/thumb/10.webp',
     alt: 'Brown Hooded Kingfisher Trail Additional View 6',
-    fullSize: '/images/adventures/brown-hooded-kingfisher-trail/full/brownhood10.webp'
+    fullSize: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/full/10.webp'
   },
   {
-    src: '/images/adventures/brown-hooded-kingfisher-trail/thumbnails/brownhood11.webp',
+    src: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/thumb/11.webp',
     alt: 'Brown Hooded Kingfisher Trail Additional View 7',
-    fullSize: '/images/adventures/brown-hooded-kingfisher-trail/full/brownhood11.webp'
+    fullSize: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/full/11.webp'
   },
   {
-    src: '/images/adventures/brown-hooded-kingfisher-trail/thumbnails/brownhood12.webp',
+    src: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/thumb/12.webp',
     alt: 'Brown Hooded Kingfisher Trail Additional View 8',
-    fullSize: '/images/adventures/brown-hooded-kingfisher-trail/full/brownhood12.webp'
+    fullSize: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/full/12.webp'
   },
   {
-    src: '/images/adventures/brown-hooded-kingfisher-trail/thumbnails/brownhood13.webp',
+    src: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/thumb/13.webp',
     alt: 'Brown Hooded Kingfisher Trail Additional View 9',
-    fullSize: '/images/adventures/brown-hooded-kingfisher-trail/full/brownhood13.webp'
+    fullSize: '/images-v2/adventures/brown-hooded-kingfisher-trail/gallery/full/13.webp'
   }
 ]
 
@@ -75,8 +75,8 @@ export default function BrownHoodedKingfisherTrailPage() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images/home/mobile/brown-hooded-kingfisher-trail-banner.webp"
-        desktopSrc="/images/adventures/banners/brown-hooded-kingfisher-trail-banner.webp"
+        mobileSrc="/images-v2/adventures/brown-hooded-kingfisher-trail/hero/mobile.webp"
+        desktopSrc="/images-v2/adventures/brown-hooded-kingfisher-trail/hero/desktop.webp"
         title="Brown Hooded Kingfisher Trail"
       />
 

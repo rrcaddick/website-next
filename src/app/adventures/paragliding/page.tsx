@@ -5,54 +5,54 @@ import LogoSection from '@/components/ui/LogoSection'
 // Define gallery images with thumbnails and full-size versions
 const galleryImages = [
   {
-    src: '/images/adventures/paragliding/full/adventure1.webp',
+    src: '/images-v2/adventures/paragliding/gallery/full/1.webp',
     alt: 'Paragliding Adventure 1',
-    fullSize: '/images/adventures/paragliding/full/adventure1.webp'
+    fullSize: '/images-v2/adventures/paragliding/gallery/full/1.webp'
   },
   {
-    src: '/images/adventures/paragliding/full/adventure2.webp',
+    src: '/images-v2/adventures/paragliding/gallery/full/2.webp',
     alt: 'Paragliding Adventure 2',
-    fullSize: '/images/adventures/paragliding/full/adventure2.webp'
+    fullSize: '/images-v2/adventures/paragliding/gallery/full/2.webp'
   },
   {
-    src: '/images/adventures/paragliding/full/adventure3.webp',
+    src: '/images-v2/adventures/paragliding/gallery/full/3.webp',
     alt: 'Paragliding Adventure 3',
-    fullSize: '/images/adventures/paragliding/full/adventure3.webp'
+    fullSize: '/images-v2/adventures/paragliding/gallery/full/3.webp'
   },
   {
-    src: '/images/adventures/paragliding/full/adventure4.webp',
+    src: '/images-v2/adventures/paragliding/gallery/full/4.webp',
     alt: 'Paragliding Adventure 4',
-    fullSize: '/images/adventures/paragliding/full/adventure4.webp'
+    fullSize: '/images-v2/adventures/paragliding/gallery/full/4.webp'
   },
   {
-    src: '/images/adventures/paragliding/full/adventure5.webp',
+    src: '/images-v2/adventures/paragliding/gallery/full/5.webp',
     alt: 'Paragliding Adventure 5',
-    fullSize: '/images/adventures/paragliding/full/adventure5.webp'
+    fullSize: '/images-v2/adventures/paragliding/gallery/full/5.webp'
   },
   {
-    src: '/images/adventures/paragliding/full/adventure6.webp',
+    src: '/images-v2/adventures/paragliding/gallery/full/6.webp',
     alt: 'Paragliding Adventure 6',
-    fullSize: '/images/adventures/paragliding/full/adventure6.webp'
+    fullSize: '/images-v2/adventures/paragliding/gallery/full/6.webp'
   },
   {
-    src: '/images/adventures/paragliding/full/adventure7.webp',
+    src: '/images-v2/adventures/paragliding/gallery/full/7.webp',
     alt: 'Paragliding Adventure 7',
-    fullSize: '/images/adventures/paragliding/full/adventure7.webp'
+    fullSize: '/images-v2/adventures/paragliding/gallery/full/7.webp'
   },
   {
-    src: '/images/adventures/paragliding/full/adventure8.webp',
+    src: '/images-v2/adventures/paragliding/gallery/full/8.webp',
     alt: 'Paragliding Adventure 8',
-    fullSize: '/images/adventures/paragliding/full/adventure8.webp'
+    fullSize: '/images-v2/adventures/paragliding/gallery/full/8.webp'
   },
   {
-    src: '/images/adventures/paragliding/full/adventure9.webp',
+    src: '/images-v2/adventures/paragliding/gallery/full/9.webp',
     alt: 'Paragliding Adventure 9',
-    fullSize: '/images/adventures/paragliding/full/adventure9.webp'
+    fullSize: '/images-v2/adventures/paragliding/gallery/full/9.webp'
   },
   {
-    src: '/images/adventures/paragliding/full/adventure10.webp',
+    src: '/images-v2/adventures/paragliding/gallery/full/10.webp',
     alt: 'Paragliding Adventure 10',
-    fullSize: '/images/adventures/paragliding/full/adventure10.webp'
+    fullSize: '/images-v2/adventures/paragliding/gallery/full/10.webp'
   }
 ]
 
@@ -60,8 +60,8 @@ export default function ParaglidingPage() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images/home/mobile/paragliding-banner.webp"
-        desktopSrc="/images/adventures/banners/paragliding-banner.webp"
+        mobileSrc="/images-v2/adventures/paragliding/hero/mobile.webp"
+        desktopSrc="/images-v2/adventures/paragliding/hero/desktop.webp"
         title="Paragliding"
       />
 

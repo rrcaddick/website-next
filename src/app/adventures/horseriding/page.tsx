@@ -5,44 +5,44 @@ import LogoSection from '@/components/ui/LogoSection'
 // Define gallery images with thumbnails and full-size versions
 const galleryImages = [
   {
-    src: '/images/Adventures/Horseriding/adventure1.webp',
+    src: '/images-v2/adventures/horseriding/gallery/full/1.webp',
     alt: 'Horseriding Adventure',
-    fullSize: '/images/Adventures/Horseriding/adventure1.webp'
+    fullSize: '/images-v2/adventures/horseriding/gallery/full/1.webp'
   },
   {
-    src: '/images/Adventures/Horseriding/adventure2.webp',
+    src: '/images-v2/adventures/horseriding/gallery/full/2.webp',
     alt: 'Horseriding Experience',
-    fullSize: '/images/Adventures/Horseriding/adventure2.webp'
+    fullSize: '/images-v2/adventures/horseriding/gallery/full/2.webp'
   },
   {
-    src: '/images/Adventures/Horseriding/adventure3.webp',
+    src: '/images-v2/adventures/horseriding/gallery/full/3.webp',
     alt: 'Horseriding Journey',
-    fullSize: '/images/Adventures/Horseriding/adventure3.webp'
+    fullSize: '/images-v2/adventures/horseriding/gallery/full/3.webp'
   },
   {
-    src: '/images/Adventures/Horseriding/adventure4.webp',
+    src: '/images-v2/adventures/horseriding/gallery/full/4.webp',
     alt: 'Horseriding Views',
-    fullSize: '/images/Adventures/Horseriding/adventure4.webp'
+    fullSize: '/images-v2/adventures/horseriding/gallery/full/4.webp'
   },
   {
-    src: '/images/Adventures/Horseriding/adventure5.webp',
+    src: '/images-v2/adventures/horseriding/gallery/full/5.webp',
     alt: 'Horseriding Adventure',
-    fullSize: '/images/Adventures/Horseriding/adventure5.webp'
+    fullSize: '/images-v2/adventures/horseriding/gallery/full/5.webp'
   },
   {
-    src: '/images/Adventures/Horseriding/adventure6.webp',
+    src: '/images-v2/adventures/horseriding/gallery/full/6.webp',
     alt: 'Horseriding Experience',
-    fullSize: '/images/Adventures/Horseriding/adventure6.webp'
+    fullSize: '/images-v2/adventures/horseriding/gallery/full/6.webp'
   },
   {
-    src: '/images/Adventures/Horseriding/adventure7.webp',
+    src: '/images-v2/adventures/horseriding/gallery/full/7.webp',
     alt: 'Horseriding Journey',
-    fullSize: '/images/Adventures/Horseriding/adventure7.webp'
+    fullSize: '/images-v2/adventures/horseriding/gallery/full/7.webp'
   },
   {
-    src: '/images/Adventures/Horseriding/adventure8.webp',
+    src: '/images-v2/adventures/horseriding/gallery/full/8.webp',
     alt: 'Horseriding Views',
-    fullSize: '/images/Adventures/Horseriding/adventure8.webp'
+    fullSize: '/images-v2/adventures/horseriding/gallery/full/8.webp'
   }
 ]
 
@@ -50,8 +50,8 @@ export default function HorseridingPage() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images/home/mobile/horseriding-banner.webp"
-        desktopSrc="/images/adventures/banners/horseriding-banner.webp"
+        mobileSrc="/images-v2/adventures/horseriding/hero/mobile.webp"
+        desktopSrc="/images-v2/adventures/horseriding/hero/desktop.webp"
         title="Horseriding"
       />
 

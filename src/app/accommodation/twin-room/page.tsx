@@ -6,44 +6,44 @@ import LogoSection from '@/components/ui/LogoSection'
 // Define gallery images with the new naming convention
 const galleryImages = [
   {
-    src: '/images/accommodation/twin-room/thumbnails/twin1.webp',
+    src: '/images-v2/accommodation/twin-room/gallery/thumb/1.webp',
     alt: 'Twin Room Overview',
-    fullSize: '/images/accommodation/twin-room/full/twin1.webp'
+    fullSize: '/images-v2/accommodation/twin-room/gallery/full/1.webp'
   },
   {
-    src: '/images/accommodation/twin-room/thumbnails/twin2.webp',
+    src: '/images-v2/accommodation/twin-room/gallery/thumb/2.webp',
     alt: 'Twin Room Interior',
-    fullSize: '/images/accommodation/twin-room/full/twin2.webp'
+    fullSize: '/images-v2/accommodation/twin-room/gallery/full/2.webp'
   },
   {
-    src: '/images/accommodation/twin-room/thumbnails/twin3.webp',
+    src: '/images-v2/accommodation/twin-room/gallery/thumb/3.webp',
     alt: 'Twin Room Beds',
-    fullSize: '/images/accommodation/twin-room/full/twin3.webp'
+    fullSize: '/images-v2/accommodation/twin-room/gallery/full/3.webp'
   },
   {
-    src: '/images/accommodation/twin-room/thumbnails/twin4.webp',
+    src: '/images-v2/accommodation/twin-room/gallery/thumb/4.webp',
     alt: 'Twin Room View',
-    fullSize: '/images/accommodation/twin-room/full/twin4.webp'
+    fullSize: '/images-v2/accommodation/twin-room/gallery/full/4.webp'
   },
   {
-    src: '/images/accommodation/twin-room/thumbnails/twin5.webp',
+    src: '/images-v2/accommodation/twin-room/gallery/thumb/5.webp',
     alt: 'Twin Room Additional View 1',
-    fullSize: '/images/accommodation/twin-room/full/twin5.webp'
+    fullSize: '/images-v2/accommodation/twin-room/gallery/full/5.webp'
   },
   {
-    src: '/images/accommodation/twin-room/thumbnails/twin6.webp',
+    src: '/images-v2/accommodation/twin-room/gallery/thumb/6.webp',
     alt: 'Twin Room Additional View 2',
-    fullSize: '/images/accommodation/twin-room/full/twin6.webp'
+    fullSize: '/images-v2/accommodation/twin-room/gallery/full/6.webp'
   },
   {
-    src: '/images/accommodation/twin-room/thumbnails/twin7.webp',
+    src: '/images-v2/accommodation/twin-room/gallery/thumb/7.webp',
     alt: 'Twin Room Additional View 3',
-    fullSize: '/images/accommodation/twin-room/full/twin7.webp'
+    fullSize: '/images-v2/accommodation/twin-room/gallery/full/7.webp'
   },
   {
-    src: '/images/accommodation/twin-room/thumbnails/twin8.webp',
+    src: '/images-v2/accommodation/twin-room/gallery/thumb/8.webp',
     alt: 'Twin Room Additional View 4',
-    fullSize: '/images/accommodation/twin-room/full/twin8.webp'
+    fullSize: '/images-v2/accommodation/twin-room/gallery/full/8.webp'
   }
 ]
 
@@ -51,8 +51,8 @@ export default function TwinRoomPage() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images/home/mobile/twin-room-banner.webp"
-        desktopSrc="/images/accommodation/banners/twin-room-banner.webp"
+        mobileSrc="/images-v2/accommodation/twin-room/hero/mobile.webp"
+        desktopSrc="/images-v2/accommodation/twin-room/hero/desktop.webp"
         title="Twin Room"
       />
       {/* Content Section */}

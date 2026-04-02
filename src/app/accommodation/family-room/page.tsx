@@ -6,44 +6,44 @@ import LogoSection from '@/components/ui/LogoSection'
 // Define gallery images with the new naming convention
 const galleryImages = [
   {
-    src: '/images/accommodation/family-room/thumbnails/family1.webp',
+    src: '/images-v2/accommodation/family-room/gallery/thumb/1.webp',
     alt: 'Family Room Overview',
-    fullSize: '/images/accommodation/family-room/full/family1.webp'
+    fullSize: '/images-v2/accommodation/family-room/gallery/full/1.webp'
   },
   {
-    src: '/images/accommodation/family-room/thumbnails/family2.webp',
+    src: '/images-v2/accommodation/family-room/gallery/thumb/2.webp',
     alt: 'Family Room Interior',
-    fullSize: '/images/accommodation/family-room/full/family2.webp'
+    fullSize: '/images-v2/accommodation/family-room/gallery/full/2.webp'
   },
   {
-    src: '/images/accommodation/family-room/thumbnails/family3.webp',
+    src: '/images-v2/accommodation/family-room/gallery/thumb/3.webp',
     alt: 'Family Room Beds',
-    fullSize: '/images/accommodation/family-room/full/family3.webp'
+    fullSize: '/images-v2/accommodation/family-room/gallery/full/3.webp'
   },
   {
-    src: '/images/accommodation/family-room/thumbnails/family4.webp',
+    src: '/images-v2/accommodation/family-room/gallery/thumb/4.webp',
     alt: 'Family Room View',
-    fullSize: '/images/accommodation/family-room/full/family4.webp'
+    fullSize: '/images-v2/accommodation/family-room/gallery/full/4.webp'
   },
   {
-    src: '/images/accommodation/family-room/thumbnails/family5.webp',
+    src: '/images-v2/accommodation/family-room/gallery/thumb/5.webp',
     alt: 'Family Room Additional View 1',
-    fullSize: '/images/accommodation/family-room/full/family5.webp'
+    fullSize: '/images-v2/accommodation/family-room/gallery/full/5.webp'
   },
   {
-    src: '/images/accommodation/family-room/thumbnails/family6.webp',
+    src: '/images-v2/accommodation/family-room/gallery/thumb/6.webp',
     alt: 'Family Room Additional View 2',
-    fullSize: '/images/accommodation/family-room/full/family6.webp'
+    fullSize: '/images-v2/accommodation/family-room/gallery/full/6.webp'
   },
   {
-    src: '/images/accommodation/family-room/thumbnails/family7.webp',
+    src: '/images-v2/accommodation/family-room/gallery/thumb/7.webp',
     alt: 'Family Room Additional View 3',
-    fullSize: '/images/accommodation/family-room/full/family7.webp'
+    fullSize: '/images-v2/accommodation/family-room/gallery/full/7.webp'
   },
   {
-    src: '/images/accommodation/family-room/thumbnails/family8.webp',
+    src: '/images-v2/accommodation/family-room/gallery/thumb/8.webp',
     alt: 'Family Room Additional View 4',
-    fullSize: '/images/accommodation/family-room/full/family8.webp'
+    fullSize: '/images-v2/accommodation/family-room/gallery/full/8.webp'
   }
 ]
 
@@ -51,8 +51,8 @@ export default function FamilyRoomPage() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images/home/mobile/family-room-banner.webp"
-        desktopSrc="/images/accommodation/banners/family-room-banner.webp"
+        mobileSrc="/images-v2/accommodation/family-room/hero/mobile.webp"
+        desktopSrc="/images-v2/accommodation/family-room/hero/desktop.webp"
         title="Family Room"
       />
       {/* Content Section */}

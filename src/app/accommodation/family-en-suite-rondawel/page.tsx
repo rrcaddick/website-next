@@ -6,44 +6,44 @@ import LogoSection from '@/components/ui/LogoSection'
 // Define gallery images with thumbnails and full-size versions
 const galleryImages = [
   {
-    src: '/images/accommodation/family-en-suite-rondawel/thumbnails/rondawel1.webp',
+    src: '/images-v2/accommodation/family-en-suite-rondawel/gallery/thumb/1.webp',
     alt: 'Family En-suite Rondawel Overview',
-    fullSize: '/images/accommodation/family-en-suite-rondawel/full/rondawel1.webp'
+    fullSize: '/images-v2/accommodation/family-en-suite-rondawel/gallery/full/1.webp'
   },
   {
-    src: '/images/accommodation/family-en-suite-rondawel/thumbnails/rondawel2.webp',
+    src: '/images-v2/accommodation/family-en-suite-rondawel/gallery/thumb/2.webp',
     alt: 'Family En-suite Rondawel Interior',
-    fullSize: '/images/accommodation/family-en-suite-rondawel/full/rondawel2.webp'
+    fullSize: '/images-v2/accommodation/family-en-suite-rondawel/gallery/full/2.webp'
   },
   {
-    src: '/images/accommodation/family-en-suite-rondawel/thumbnails/rondawel3.webp',
+    src: '/images-v2/accommodation/family-en-suite-rondawel/gallery/thumb/3.webp',
     alt: 'Family En-suite Rondawel Bathroom',
-    fullSize: '/images/accommodation/family-en-suite-rondawel/full/rondawel3.webp'
+    fullSize: '/images-v2/accommodation/family-en-suite-rondawel/gallery/full/3.webp'
   },
   {
-    src: '/images/accommodation/family-en-suite-rondawel/thumbnails/rondawel4.webp',
+    src: '/images-v2/accommodation/family-en-suite-rondawel/gallery/thumb/4.webp',
     alt: 'Family En-suite Rondawel View',
-    fullSize: '/images/accommodation/family-en-suite-rondawel/full/rondawel4.webp'
+    fullSize: '/images-v2/accommodation/family-en-suite-rondawel/gallery/full/4.webp'
   },
   {
-    src: '/images/accommodation/family-en-suite-rondawel/thumbnails/rondawel5.webp',
+    src: '/images-v2/accommodation/family-en-suite-rondawel/gallery/thumb/5.webp',
     alt: 'Family En-suite Rondawel Additional View 1',
-    fullSize: '/images/accommodation/family-en-suite-rondawel/full/rondawel5.webp'
+    fullSize: '/images-v2/accommodation/family-en-suite-rondawel/gallery/full/5.webp'
   },
   {
-    src: '/images/accommodation/family-en-suite-rondawel/thumbnails/rondawel6.webp',
+    src: '/images-v2/accommodation/family-en-suite-rondawel/gallery/thumb/6.webp',
     alt: 'Family En-suite Rondawel Additional View 2',
-    fullSize: '/images/accommodation/family-en-suite-rondawel/full/rondawel6.webp'
+    fullSize: '/images-v2/accommodation/family-en-suite-rondawel/gallery/full/6.webp'
   },
   {
-    src: '/images/accommodation/family-en-suite-rondawel/thumbnails/rondawel7.webp',
+    src: '/images-v2/accommodation/family-en-suite-rondawel/gallery/thumb/7.webp',
     alt: 'Family En-suite Rondawel Additional View 3',
-    fullSize: '/images/accommodation/family-en-suite-rondawel/full/rondawel7.webp'
+    fullSize: '/images-v2/accommodation/family-en-suite-rondawel/gallery/full/7.webp'
   },
   {
-    src: '/images/accommodation/family-en-suite-rondawel/thumbnails/rondawel8.webp',
+    src: '/images-v2/accommodation/family-en-suite-rondawel/gallery/thumb/8.webp',
     alt: 'Family En-suite Rondawel Additional View 4',
-    fullSize: '/images/accommodation/family-en-suite-rondawel/full/rondawel8.webp'
+    fullSize: '/images-v2/accommodation/family-en-suite-rondawel/gallery/full/8.webp'
   }
 ]
 
@@ -51,8 +51,8 @@ export default function FamilyEnSuiteRondawelPage() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images/home/mobile/family-en-suite-rondawel-banner.webp"
-        desktopSrc="/images/accommodation/banners/rondawel-banner.webp"
+        mobileSrc="/images-v2/accommodation/family-en-suite-rondawel/hero/mobile.webp"
+        desktopSrc="/images-v2/accommodation/family-en-suite-rondawel/hero/desktop.webp"
         title="Family En-Suite Rondawel"
       />
       {/* Content Section */}

@@ -6,44 +6,44 @@ import LogoSection from '@/components/ui/LogoSection'
 // Define gallery images with the new naming convention
 const galleryImages = [
   {
-    src: '/images/accommodation/double-en-suite/thumbnails/doubleensuite1.webp',
+    src: '/images-v2/accommodation/double-en-suite/gallery/thumb/1.webp',
     alt: 'Double En-suite Overview',
-    fullSize: '/images/accommodation/double-en-suite/full/doubleensuite1.webp'
+    fullSize: '/images-v2/accommodation/double-en-suite/gallery/full/1.webp'
   },
   {
-    src: '/images/accommodation/double-en-suite/thumbnails/doubleensuite2.webp',
+    src: '/images-v2/accommodation/double-en-suite/gallery/thumb/2.webp',
     alt: 'Double En-suite Interior',
-    fullSize: '/images/accommodation/double-en-suite/full/doubleensuite2.webp'
+    fullSize: '/images-v2/accommodation/double-en-suite/gallery/full/2.webp'
   },
   {
-    src: '/images/accommodation/double-en-suite/thumbnails/doubleensuite3.webp',
+    src: '/images-v2/accommodation/double-en-suite/gallery/thumb/3.webp',
     alt: 'Double En-suite Bathroom',
-    fullSize: '/images/accommodation/double-en-suite/full/doubleensuite3.webp'
+    fullSize: '/images-v2/accommodation/double-en-suite/gallery/full/3.webp'
   },
   {
-    src: '/images/accommodation/double-en-suite/thumbnails/doubleensuite4.webp',
+    src: '/images-v2/accommodation/double-en-suite/gallery/thumb/4.webp',
     alt: 'Double En-suite View',
-    fullSize: '/images/accommodation/double-en-suite/full/doubleensuite4.webp'
+    fullSize: '/images-v2/accommodation/double-en-suite/gallery/full/4.webp'
   },
   {
-    src: '/images/accommodation/double-en-suite/thumbnails/doubleensuite5.webp',
+    src: '/images-v2/accommodation/double-en-suite/gallery/thumb/5.webp',
     alt: 'Double En-suite Additional View 1',
-    fullSize: '/images/accommodation/double-en-suite/full/doubleensuite5.webp'
+    fullSize: '/images-v2/accommodation/double-en-suite/gallery/full/5.webp'
   },
   {
-    src: '/images/accommodation/double-en-suite/thumbnails/doubleensuite6.webp',
+    src: '/images-v2/accommodation/double-en-suite/gallery/thumb/6.webp',
     alt: 'Double En-suite Additional View 2',
-    fullSize: '/images/accommodation/double-en-suite/full/doubleensuite6.webp'
+    fullSize: '/images-v2/accommodation/double-en-suite/gallery/full/6.webp'
   },
   {
-    src: '/images/accommodation/double-en-suite/thumbnails/doubleensuite7.webp',
+    src: '/images-v2/accommodation/double-en-suite/gallery/thumb/7.webp',
     alt: 'Double En-suite Additional View 3',
-    fullSize: '/images/accommodation/double-en-suite/full/doubleensuite7.webp'
+    fullSize: '/images-v2/accommodation/double-en-suite/gallery/full/7.webp'
   },
   {
-    src: '/images/accommodation/double-en-suite/thumbnails/doubleensuite8.webp',
+    src: '/images-v2/accommodation/double-en-suite/gallery/thumb/8.webp',
     alt: 'Double En-suite Additional View 4',
-    fullSize: '/images/accommodation/double-en-suite/full/doubleensuite8.webp'
+    fullSize: '/images-v2/accommodation/double-en-suite/gallery/full/8.webp'
   }
 ]
 
@@ -51,8 +51,8 @@ export default function DoubleEnSuitePage() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images/home/mobile/double-en-suite-banner.webp"
-        desktopSrc="/images/accommodation/banners/doube-en-suite-banner.webp"
+        mobileSrc="/images-v2/accommodation/double-en-suite/hero/mobile.webp"
+        desktopSrc="/images-v2/accommodation/double-en-suite/hero/desktop.webp"
         title="Double En-Suite"
       />
       {/* Content Section */}
