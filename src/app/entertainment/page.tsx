@@ -1,15 +1,15 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import PageHero from '@/components/ui/PageHero'
-import EntertainmentMobileCards from '@/components/features/entertainment/EntertainmentMobileCards'
-import { events } from '@/components/features/entertainment/data'
+import Link from "next/link";
+import Image from "next/image";
+import PageHero from "@/components/ui/PageHero";
+import EntertainmentMobileCards from "@/components/features/entertainment/EntertainmentMobileCards";
+import { events } from "@/components/features/entertainment/data";
 
 export default function Entertainment() {
   return (
     <div>
       <PageHero
-        mobileSrc="/images-v2/entertainment/hero/mobile.webp"
-        desktopSrc="/images-v2/entertainment/hero/desktop.webp"
+        mobileSrc="/images/entertainment/hero/mobile.webp"
+        desktopSrc="/images/entertainment/hero/desktop.webp"
         title="Entertainment"
       />
 
@@ -17,7 +17,8 @@ export default function Entertainment() {
       <div className="pt-2 pb-8 sm:pt-4 sm:pb-12 px-4">
         <div className="max-w-5xl mx-auto px-4">
           <p className="text-xs md:text-base text-gray-600 max-w-3xl mx-auto text-center">
-            From magical nights with all sorts of musical delights to whimsical days spent hunting for treasure at the fairy family market of leisure, there's always a sprinkle of wonder waiting at the Knowe for your pleasure.
+            From magical nights with all sorts of musical delights to whimsical days spent hunting for treasure at the
+            fairy family market of leisure, there's always a sprinkle of wonder waiting at the Knowe for your pleasure.
           </p>
         </div>
       </div>
@@ -51,8 +52,8 @@ export default function Entertainment() {
       <div className="mt-16 text-center px-4">
         <h2 className="text-3xl font-bold mb-4 dark:text-white">Want to Perform?</h2>
         <p className="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-          We're always looking for talented musicians to join our lineup.
-          Contact us to discuss performance opportunities.
+          We're always looking for talented musicians to join our lineup. Contact us to discuss performance
+          opportunities.
         </p>
         <Link
           href="/booking"
@@ -62,5 +63,5 @@ export default function Entertainment() {
         </Link>
       </div>
     </div>
-  )
+  );
 }

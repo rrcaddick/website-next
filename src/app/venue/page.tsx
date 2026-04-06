@@ -1,102 +1,110 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import PageHero from '@/components/ui/PageHero'
-import VenueMobileCards from '@/components/features/venue/VenueMobileCards'
-import WeddingGallery from '@/components/features/venue/WeddingGallery'
+import Image from "next/image";
+import Link from "next/link";
+import PageHero from "@/components/ui/PageHero";
+import VenueMobileCards from "@/components/features/venue/VenueMobileCards";
+import WeddingGallery from "@/components/features/venue/WeddingGallery";
 
 const eventTypes = [
+  // Weddings
   {
-    title: 'Weddings',
-    description: 'Host your special day in our enchanted fairy forest. Entwine yourselves in a space perfect for intimate ceremonies and receptions entangled in the trees.',
+    title: "Weddings",
+    description:
+      "Host your special day in our enchanted fairy forest. Entwine yourselves in a space perfect for intimate ceremonies and receptions entangled in the trees.",
     features: [
-      'Garden ceremony space',
-      'Reception area',
-      'Catering options',
-      'Accommodation for guests',
-      'Wedding planning assistance',
-      'Beautiful photo opportunities'
+      "Garden ceremony space",
+      "Reception area",
+      "Catering options",
+      "Accommodation for guests",
+      "Wedding planning assistance",
+      "Beautiful photo opportunities",
     ],
-    image: '/images/venue-hire/weddings-card.webp',
-    imageMobile: '/images/venue-hire/mobile/weddings-card.webp'
+    image: "/images/venue/cards/weddings-card.webp",
+    imageMobile: "/images/venue/cards/mobile/weddings-card.webp",
+  },
+  // Private Partie
+  {
+    title: "Private Parties",
+    description:
+      "Celebrate lifes most treasured birthdays, anniversaries, or special occasions with a touch of fairy magic.",
+    features: [
+      "Indoor and outdoor venues",
+      "Bar service available",
+      "Sound system",
+      "Flexible seating arrangements",
+      "Decorating options",
+      "Catering packages",
+    ],
+    image: "/images/venue/cards/private-parties-card.webp",
+    imageMobile: "/images/venue/cards/mobile/private-parties-card.webp",
   },
   {
-    title: 'Private Parties',
-    description: 'Celebrate lifes most treasured birthdays, anniversaries, or special occasions with a touch of fairy magic.',
+    title: "Corporate Events",
+    description:
+      "With the ideal setting  to inspire collaboration and creativity, our venue provides a calming backdrop for productive corporate gatherings.",
     features: [
-      'Indoor and outdoor venues',
-      'Bar service available',
-      'Sound system',
-      'Flexible seating arrangements',
-      'Decorating options',
-      'Catering packages'
+      "Meeting spaces",
+      "Team building activities",
+      "Adventure packages",
+      "Accommodation options",
+      "Catering services",
+      "Wi-Fi and basic equipment",
     ],
-    image: '/images/venue-hire/private-parties-card.webp',
-    imageMobile: '/images/venue-hire/mobile/private-parties-card.webp'
+    image: "/images/venue/cards/corporate-events-card.webp",
+    imageMobile: "/images/venue/cards/mobile/corporate-events-card.webp",
   },
   {
-    title: 'Corporate Events',
-    description: 'With the ideal setting  to inspire collaboration and creativity, our venue provides a calming backdrop for productive corporate gatherings.',
+    title: "Film Crews",
+    description:
+      "A magical setting for your next film or photo shoot. From fantasy flicks to nature documentaries, our location offers diverse and dense backdrops.",
     features: [
-      'Meeting spaces',
-      'Team building activities',
-      'Adventure packages',
-      'Accommodation options',
-      'Catering services',
-      'Wi-Fi and basic equipment'
+      "Diverse natural settings",
+      "Power supply points",
+      "Equipment storage",
+      "Crew accommodation",
+      "Flexible shooting hours",
+      "Dedicated crew facilities",
     ],
-    image: '/images/venue-hire/corporate-events-card.webp',
-    imageMobile: '/images/venue-hire/mobile/corporate-events-card.webp'
+    image: "/images/venue/cards/film-crews-card.webp",
+    imageMobile: "/images/venue/cards/mobile/film-crews-card.webp",
   },
   {
-    title: 'Film Crews',
-    description: 'A magical setting for your next film or photo shoot. From fantasy flicks to nature documentaries, our location offers diverse and dense backdrops.',
+    title: "Skill Trades & Workshops",
+    description:
+      "Share, learn, or host hands-on workshops and skill trades in a creative, collaborative environment. Perfect for artists, makers, and lifelong learners.",
     features: [
-      'Diverse natural settings',
-      'Power supply points',
-      'Equipment storage',
-      'Crew accommodation',
-      'Flexible shooting hours',
-      'Dedicated crew facilities'
+      "Artisan workshops",
+      "Skill-sharing sessions",
+      "Craft & DIY events",
+      "Guest instructors welcome",
+      "Flexible indoor/outdoor spaces",
+      "Community-driven learning",
     ],
-    image: '/images/venue-hire/film-crews-card.webp',
-    imageMobile: '/images/venue-hire/mobile/film-crews-card.webp'
+    image: "/images/venue/cards/skill-trades-workshops-card.webp",
+    imageMobile: "/images/venue/cards/mobile/skill-trades-workshops-card.webp",
   },
   {
-    title: 'Skill Trades & Workshops',
-    description: 'Share, learn, or host hands-on workshops and skill trades in a creative, collaborative environment. Perfect for artists, makers, and lifelong learners.',
+    title: "Expo Events",
+    description:
+      "Host your next trade show, exhibition, or product launch in our versatile event space. Perfect for showcasing products, networking, and creating memorable brand experiences.",
     features: [
-      'Artisan workshops',
-      'Skill-sharing sessions',
-      'Craft & DIY events',
-      'Guest instructors welcome',
-      'Flexible indoor/outdoor spaces',
-      'Community-driven learning'
+      "Spacious exhibition areas",
+      "Professional lighting & sound",
+      "Customizable booth layouts",
+      "Catering services available",
+      "High-speed WiFi",
+      "On-site support staff",
     ],
-    image: '/images/venue-hire/skill-trades-workshops-card.webp',
-    imageMobile: '/images/venue-hire/mobile/skill-trades-workshops-card.webp'
+    image: "/images/venue/cards/expo-events-card.webp",
+    imageMobile: "/images/venue/cards/mobile/expo-events-card.webp",
   },
-  {
-    title: 'Expo Events',
-    description: 'Host your next trade show, exhibition, or product launch in our versatile event space. Perfect for showcasing products, networking, and creating memorable brand experiences.',
-    features: [
-      'Spacious exhibition areas',
-      'Professional lighting & sound',
-      'Customizable booth layouts',
-      'Catering services available',
-      'High-speed WiFi',
-      'On-site support staff'
-    ],
-    image: '/images/venue-hire/expo-events-card.webp',
-    imageMobile: '/images/venue-hire/mobile/expo-events-card.webp'
-  }
-]
+];
 
 export default function Venue() {
   return (
     <div>
       <PageHero
-        mobileSrc="/images-v2/venue/hero/mobile.webp"
-        desktopSrc="/images-v2/venue/hero/desktop.webp"
+        mobileSrc="/images/venue/hero/mobile.webp"
+        desktopSrc="/images/venue/hero/desktop.webp"
         title="Venue Hire"
       />
 
@@ -104,7 +112,11 @@ export default function Venue() {
       <div className="pt-2 pb-8 sm:pt-4 sm:pb-12 px-4">
         <div className="max-w-7xl mx-auto px-4">
           <p className="text-xs md:text-base text-gray-600 max-w-3xl mx-auto text-center">
-            Whether you&apos;re planning an intimate wedding amongst the trees, a captivating film shoot for the next Peter Pan, a corporate retreat where nature fuels inspiration, or a special celebration glowing with fairy-tale splendor, Fairy Knowe Backpackers Lodge opens the door to magical moments. Nestled against a backdrop of natural beauty, this rustic haven of enchanting wonder creates unforgettable memories for all those who wander.
+            Whether you&apos;re planning an intimate wedding amongst the trees, a captivating film shoot for the next
+            Peter Pan, a corporate retreat where nature fuels inspiration, or a special celebration glowing with
+            fairy-tale splendor, Fairy Knowe Backpackers Lodge opens the door to magical moments. Nestled against a
+            backdrop of natural beauty, this rustic haven of enchanting wonder creates unforgettable memories for all
+            those who wander.
           </p>
         </div>
       </div>
@@ -123,7 +135,7 @@ export default function Venue() {
             >
               <div className="relative aspect-square">
                 <Image
-                  src={event.imageMobile || event.image}
+                  src={event.image}
                   alt={event.title}
                   fill
                   className="object-cover"
@@ -131,19 +143,20 @@ export default function Venue() {
                 />
               </div>
               <div className="p-4 sm:p-6">
-                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3">
-                  {event.title}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base mb-4">
-                  {event.description}
-                </p>
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3">{event.title}</h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base mb-4">{event.description}</p>
                 <ul className="space-y-2">
                   {event.features.map((feature, featureIndex) => (
                     <li
                       key={featureIndex}
                       className="flex items-center text-gray-600 dark:text-gray-300 text-sm sm:text-base"
                     >
-                      <svg className="h-4 w-4 text-[#073F3A] mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg
+                        className="h-4 w-4 text-[#073F3A] mr-2"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                       {feature}
@@ -159,5 +172,5 @@ export default function Venue() {
         <WeddingGallery />
       </div>
     </div>
-  )
+  );
 }

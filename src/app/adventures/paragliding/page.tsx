@@ -1,84 +1,82 @@
-import ImageGallery from '@/components/gallery/ImageGallery'
-import PageHero from '@/components/ui/PageHero'
-import LogoSection from '@/components/ui/LogoSection'
+import ImageGallery from "@/components/gallery/ImageGallery";
+import PageHero from "@/components/ui/PageHero";
+import LogoSection from "@/components/ui/LogoSection";
 
 // Define gallery images with thumbnails and full-size versions
 const galleryImages = [
   {
-    src: '/images-v2/adventures/paragliding/gallery/full/1.webp',
-    alt: 'Paragliding Adventure 1',
-    fullSize: '/images-v2/adventures/paragliding/gallery/full/1.webp'
+    src: "/images/adventures/paragliding/gallery/full/1.webp",
+    alt: "Paragliding Adventure 1",
+    fullSize: "/images/adventures/paragliding/gallery/full/1.webp",
   },
   {
-    src: '/images-v2/adventures/paragliding/gallery/full/2.webp',
-    alt: 'Paragliding Adventure 2',
-    fullSize: '/images-v2/adventures/paragliding/gallery/full/2.webp'
+    src: "/images/adventures/paragliding/gallery/full/2.webp",
+    alt: "Paragliding Adventure 2",
+    fullSize: "/images/adventures/paragliding/gallery/full/2.webp",
   },
   {
-    src: '/images-v2/adventures/paragliding/gallery/full/3.webp',
-    alt: 'Paragliding Adventure 3',
-    fullSize: '/images-v2/adventures/paragliding/gallery/full/3.webp'
+    src: "/images/adventures/paragliding/gallery/full/3.webp",
+    alt: "Paragliding Adventure 3",
+    fullSize: "/images/adventures/paragliding/gallery/full/3.webp",
   },
   {
-    src: '/images-v2/adventures/paragliding/gallery/full/4.webp',
-    alt: 'Paragliding Adventure 4',
-    fullSize: '/images-v2/adventures/paragliding/gallery/full/4.webp'
+    src: "/images/adventures/paragliding/gallery/full/4.webp",
+    alt: "Paragliding Adventure 4",
+    fullSize: "/images/adventures/paragliding/gallery/full/4.webp",
   },
   {
-    src: '/images-v2/adventures/paragliding/gallery/full/5.webp',
-    alt: 'Paragliding Adventure 5',
-    fullSize: '/images-v2/adventures/paragliding/gallery/full/5.webp'
+    src: "/images/adventures/paragliding/gallery/full/5.webp",
+    alt: "Paragliding Adventure 5",
+    fullSize: "/images/adventures/paragliding/gallery/full/5.webp",
   },
   {
-    src: '/images-v2/adventures/paragliding/gallery/full/6.webp',
-    alt: 'Paragliding Adventure 6',
-    fullSize: '/images-v2/adventures/paragliding/gallery/full/6.webp'
+    src: "/images/adventures/paragliding/gallery/full/6.webp",
+    alt: "Paragliding Adventure 6",
+    fullSize: "/images/adventures/paragliding/gallery/full/6.webp",
   },
   {
-    src: '/images-v2/adventures/paragliding/gallery/full/7.webp',
-    alt: 'Paragliding Adventure 7',
-    fullSize: '/images-v2/adventures/paragliding/gallery/full/7.webp'
+    src: "/images/adventures/paragliding/gallery/full/7.webp",
+    alt: "Paragliding Adventure 7",
+    fullSize: "/images/adventures/paragliding/gallery/full/7.webp",
   },
   {
-    src: '/images-v2/adventures/paragliding/gallery/full/8.webp',
-    alt: 'Paragliding Adventure 8',
-    fullSize: '/images-v2/adventures/paragliding/gallery/full/8.webp'
+    src: "/images/adventures/paragliding/gallery/full/8.webp",
+    alt: "Paragliding Adventure 8",
+    fullSize: "/images/adventures/paragliding/gallery/full/8.webp",
   },
   {
-    src: '/images-v2/adventures/paragliding/gallery/full/9.webp',
-    alt: 'Paragliding Adventure 9',
-    fullSize: '/images-v2/adventures/paragliding/gallery/full/9.webp'
+    src: "/images/adventures/paragliding/gallery/full/9.webp",
+    alt: "Paragliding Adventure 9",
+    fullSize: "/images/adventures/paragliding/gallery/full/9.webp",
   },
   {
-    src: '/images-v2/adventures/paragliding/gallery/full/10.webp',
-    alt: 'Paragliding Adventure 10',
-    fullSize: '/images-v2/adventures/paragliding/gallery/full/10.webp'
-  }
-]
+    src: "/images/adventures/paragliding/gallery/full/10.webp",
+    alt: "Paragliding Adventure 10",
+    fullSize: "/images/adventures/paragliding/gallery/full/10.webp",
+  },
+];
 
 export default function ParaglidingPage() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images-v2/adventures/paragliding/hero/mobile.webp"
-        desktopSrc="/images-v2/adventures/paragliding/hero/desktop.webp"
+        mobileSrc="/images/adventures/paragliding/hero/mobile.webp"
+        desktopSrc="/images/adventures/paragliding/hero/desktop.webp"
         title="Paragliding"
       />
 
       {/* Content Section */}
       <div className="pt-2 pb-8 sm:pt-4 sm:pb-12 px-4">
         <div className="max-w-7xl mx-auto px-4">
-        <p className="text-xs md:text-base text-gray-600 max-w-3xl mx-auto text-center">
-          Fly like a fairy or glide like a goblin with the power of levitation as you float through the air with expert pilots, taking in awe-inspiring views of the endless ocean, lush forests, and majestic mountains.
+          <p className="text-xs md:text-base text-gray-600 max-w-3xl mx-auto text-center">
+            Fly like a fairy or glide like a goblin with the power of levitation as you float through the air with
+            expert pilots, taking in awe-inspiring views of the endless ocean, lush forests, and majestic mountains.
           </p>
         </div>
 
         {/* Gallery */}
         <div className="w-full px-0 sm:px-4 mt-8 md:mt-12 mb-8 md:mb-12">
-          <ImageGallery 
-            images={galleryImages} 
-            imagesPerPage={8} 
-          />
+          <ImageGallery images={galleryImages} imagesPerPage={8} />
         </div>
 
         <div className="max-w-7xl mx-auto px-4">
@@ -90,43 +88,23 @@ export default function ParaglidingPage() {
                 <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md md:shadow-none">
                   <h3 className="text-lg font-semibold mb-4 dark:text-white text-center md:text-right">General Info</h3>
                   <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">
-                    <li className="text-center md:text-right">
-                      Duration: 15 minutes
-                    </li>
-                    <li className="text-center md:text-right">
-                      Weather dependent
-                    </li>
-                    <li className="text-center md:text-right">
-                      Professional instructor
-                    </li>
-                    <li className="text-center md:text-right">
-                      All equipment included
-                    </li>
-                    <li className="text-center md:text-right">
-                      Camera rental available
-                    </li>
+                    <li className="text-center md:text-right">Duration: 15 minutes</li>
+                    <li className="text-center md:text-right">Weather dependent</li>
+                    <li className="text-center md:text-right">Professional instructor</li>
+                    <li className="text-center md:text-right">All equipment included</li>
+                    <li className="text-center md:text-right">Camera rental available</li>
                   </ul>
                 </div>
-                
+
                 {/* What to Bring */}
                 <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md md:shadow-none">
                   <h3 className="text-lg font-semibold mb-4 dark:text-white text-center md:text-left">What to Bring</h3>
                   <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-sm">
-                    <li className="text-center md:text-left">
-                      Sunscreen and hat
-                    </li>
-                    <li className="text-center md:text-left">
-                      Water and snacks
-                    </li>
-                    <li className="text-center md:text-left">
-                      Comfortable walking shoes
-                    </li>
-                    <li className="text-center md:text-left">
-                      Camera for memories
-                    </li>
-                    <li className="text-center md:text-left">
-                      Small backpack for essentials
-                    </li>
+                    <li className="text-center md:text-left">Sunscreen and hat</li>
+                    <li className="text-center md:text-left">Water and snacks</li>
+                    <li className="text-center md:text-left">Comfortable walking shoes</li>
+                    <li className="text-center md:text-left">Camera for memories</li>
+                    <li className="text-center md:text-left">Small backpack for essentials</li>
                   </ul>
                 </div>
               </div>
@@ -140,5 +118,5 @@ export default function ParaglidingPage() {
         </div>
       </div>
     </div>
-  )
-} 
+  );
+}

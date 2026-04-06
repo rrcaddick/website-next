@@ -1,198 +1,177 @@
-import Image from 'next/image'
-import PageHero from '@/components/ui/PageHero'
-import FacilitiesMobileAccordion from '@/components/features/facilities/FacilitiesMobileAccordion'
+import Image from "next/image";
+import PageHero from "@/components/ui/PageHero";
+import FacilitiesMobileAccordion from "@/components/features/facilities/FacilitiesMobileAccordion";
 
 const facilityCategories = [
   {
     id: 1,
-    title: 'Amenities & Services',
-    image: '/images-v2/facilities/images/pet-friendly.webp',
+    title: "Amenities & Services",
+    image: "/images/facilities/images/amenities-and-services.webp",
     facilities: [
       {
-        name: 'Communal wi-fi',
+        name: "Communal wi-fi",
         features: [
-          'High-speed connection',
-          'In communal areas',
-          'Multiple devices',
-          'Streaming capable',
-          'Work spaces'
-        ]
+          "High-speed connection",
+          "In communal areas",
+          "Multiple devices",
+          "Streaming capable",
+          "Work spaces",
+        ],
       },
       {
-        name: 'Laundry services',
+        name: "Laundry services",
         features: [
-          'Washing machines',
-          'Dryers',
-          'Iron available',
-          'Washing powder',
-          'Clothes lines',
-          'Same-day service'
-        ]
+          "Washing machines",
+          "Dryers",
+          "Iron available",
+          "Washing powder",
+          "Clothes lines",
+          "Same-day service",
+        ],
       },
       {
-        name: 'Pet friendly',
+        name: "Pet friendly",
         features: [
-          'Dogs welcome',
-          'Outdoor spaces for pets',
-          'Pet-friendly accommodation options',
-          'Please inform us in advance'
-        ]
+          "Dogs welcome",
+          "Outdoor spaces for pets",
+          "Pet-friendly accommodation options",
+          "Please inform us in advance",
+        ],
       },
       {
-        name: 'Secure parking',
+        name: "Secure parking",
         features: [
-          '24/7 security',
-          'Well-lit area',
-          'Camera surveillance',
-          'Gated entrance',
-          'Free for guests',
-          'Large vehicle space'
-        ]
-      }
-    ]
+          "24/7 security",
+          "Well-lit area",
+          "Camera surveillance",
+          "Gated entrance",
+          "Free for guests",
+          "Large vehicle space",
+        ],
+      },
+    ],
   },
   {
     id: 2,
-    title: 'Entertainment & Recreation',
-    image: '/images-v2/facilities/images/jungle-gym.webp',
+    title: "Entertainment & Recreation",
+    image: "/images/facilities/images/entertainment-and-recreation.webp",
     facilities: [
       {
-        name: 'Books & board games',
-        features: [
-          'Wide selection of books',
-          'Board games collection',
-          'Reading corner',
-          'Social gaming area'
-        ]
+        name: "Books & board games",
+        features: ["Wide selection of books", "Board games collection", "Reading corner", "Social gaming area"],
       },
       {
-        name: 'Jungle gym',
+        name: "Jungle gym",
         features: [
-          'Safe equipment',
-          'Shaded area',
-          'Child-friendly',
-          'Multiple activities',
-          'Outdoor setting',
-          'Parent seating nearby'
-        ]
+          "Safe equipment",
+          "Shaded area",
+          "Child-friendly",
+          "Multiple activities",
+          "Outdoor setting",
+          "Parent seating nearby",
+        ],
       },
       {
-        name: 'Musical instruments',
-        features: [
-          'Guitars available',
-          'Percussion instruments',
-          'Open mic equipment',
-          'Jam sessions welcome'
-        ]
+        name: "Musical instruments",
+        features: ["Guitars available", "Percussion instruments", "Open mic equipment", "Jam sessions welcome"],
       },
       {
-        name: 'Ping pong',
+        name: "Ping pong",
         features: [
-          'Quality table',
-          'Paddles provided',
-          'Indoor space',
-          'Evening lighting',
-          'Social activity',
-          'All skill levels'
-        ]
-      }
-    ]
+          "Quality table",
+          "Paddles provided",
+          "Indoor space",
+          "Evening lighting",
+          "Social activity",
+          "All skill levels",
+        ],
+      },
+    ],
   },
   {
     id: 3,
-    title: 'Food & Drink',
-    image: '/images-v2/facilities/images/restaurant-kitchen.webp',
+    title: "Food & Drink",
+    image: "/images/facilities/images/food-and-drink.webp",
     facilities: [
       {
-        name: 'Lively bar',
+        name: "Lively bar",
         features: [
-          'Local craft beers',
-          'Wide selection of drinks',
-          'Social atmosphere',
-          'Evening entertainment',
-          'Outdoor seating',
-          'Sports viewing'
-        ]
+          "Local craft beers",
+          "Wide selection of drinks",
+          "Social atmosphere",
+          "Evening entertainment",
+          "Outdoor seating",
+          "Sports viewing",
+        ],
       },
       {
-        name: 'Outdoor braai area',
+        name: "Outdoor braai area",
         features: [
-          'Multiple braai stations',
-          'Outdoor seating',
-          'Wood provided',
-          'Utensils available',
-          'Garden setting',
-          'Evening lighting'
-        ]
+          "Multiple braai stations",
+          "Outdoor seating",
+          "Wood provided",
+          "Utensils available",
+          "Garden setting",
+          "Evening lighting",
+        ],
       },
       {
-        name: 'Restaurant kitchen',
-        features: [
-          'Breakfast service',
-          'Dinner options',
-          'Fresh ingredients',
-          'Affordable meals'
-        ]
+        name: "Restaurant kitchen",
+        features: ["Breakfast service", "Dinner options", "Fresh ingredients", "Affordable meals"],
       },
       {
-        name: 'Self-catering kitchen',
+        name: "Self-catering kitchen",
         features: [
-          'Gas stoves and oven',
-          'Refrigerators',
-          'Cooking utensils',
-          'Storage space',
-          'Dining area',
-          'Tea and coffee station'
-        ]
-      }
-    ]
+          "Gas stoves and oven",
+          "Refrigerators",
+          "Cooking utensils",
+          "Storage space",
+          "Dining area",
+          "Tea and coffee station",
+        ],
+      },
+    ],
   },
   {
     id: 4,
-    title: 'Social & Gathering Spaces',
-    image: '/images-v2/facilities/images/lively-bar.webp',
-    mobileImage: '/images-v2/facilities/images/restaurant-kitchen.webp',
+    title: "Social & Gathering Spaces",
+    image: "/images/facilities/images/social-and-gathering-spaces.webp",
     facilities: [
       {
-        name: 'Communal fire pit',
-        features: [
-          'Nightly fires',
-          'Seating area',
-          'Social atmosphere',
-          'Wood provided'
-        ]
+        name: "Communal fire pit",
+        features: ["Nightly fires", "Seating area", "Social atmosphere", "Wood provided"],
       },
       {
-        name: 'Lively bar',
+        name: "Lively bar",
         features: [
-          'Local craft beers',
-          'Wide selection of drinks',
-          'Social atmosphere',
-          'Evening entertainment',
-          'Outdoor seating',
-          'Sports viewing'
-        ]
+          "Local craft beers",
+          "Wide selection of drinks",
+          "Social atmosphere",
+          "Evening entertainment",
+          "Outdoor seating",
+          "Sports viewing",
+        ],
       },
       {
-        name: 'TV lounge',
+        name: "TV lounge",
         features: [
-          'Large screen TV',
-          'Comfortable seating',
-          'Online streaming services',
-          'Board games',
-          'Reading corner'
-        ]
-      }
-    ]
-  }
-]
+          "Large screen TV",
+          "Comfortable seating",
+          "Online streaming services",
+          "Board games",
+          "Reading corner",
+        ],
+      },
+    ],
+  },
+];
 
 export default function Facilities() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images-v2/facilities/hero/mobile.webp"
-        desktopSrc="/images-v2/facilities/hero/desktop.webp"
+        mobileSrc="/images/facilities/hero/mobile.webp"
+        desktopSrc="/images/facilities/hero/desktop.webp"
         title="Facilities"
       />
 
@@ -200,7 +179,8 @@ export default function Facilities() {
       <div className="pt-2 pb-8 sm:pt-4 sm:pb-12 px-4">
         <div className="max-w-7xl mx-auto">
           <p className="text-xs md:text-base text-gray-600 max-w-3xl mx-auto text-center">
-            Everything you need to keep clean, comfortable, connected, captivated, cozy, fed and feeling good during your stay in the enchanted realms of the wood.
+            Everything you need to keep clean, comfortable, connected, captivated, cozy, fed and feeling good during
+            your stay in the enchanted realms of the wood.
           </p>
         </div>
       </div>
@@ -212,7 +192,10 @@ export default function Facilities() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {facilityCategories.map((category) => (
-            <div key={category.id} className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-200 flex flex-col h-full">
+            <div
+              key={category.id}
+              className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-200 flex flex-col h-full"
+            >
               <div className="relative w-full aspect-square">
                 <Image
                   src={category.image}
@@ -223,7 +206,9 @@ export default function Facilities() {
                 />
               </div>
               <div className="p-4 sm:p-6 flex flex-col flex-1">
-                <h2 className="text-lg sm:text-xl font-bold mb-2 sm:mb-4 text-gray-900 min-h-[2.5rem] sm:min-h-[3rem]">{category.title}</h2>
+                <h2 className="text-lg sm:text-xl font-bold mb-2 sm:mb-4 text-gray-900 min-h-[2.5rem] sm:min-h-[3rem]">
+                  {category.title}
+                </h2>
                 <ul className="space-y-1 sm:space-y-2 text-gray-600 text-center md:text-left flex-1">
                   {category.facilities.map((facility) => (
                     <li key={facility.name} className="flex items-start text-sm sm:text-base">
@@ -267,5 +252,5 @@ export default function Facilities() {
         </div>
       </div>
     </div>
-  )
+  );
 }

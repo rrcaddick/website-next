@@ -1,75 +1,113 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import Image from 'next/image'
+import { useState } from "react";
+import Image from "next/image";
 
 type WeddingImage = {
-  src: string
-  alt: string
-  fullSize: string
-}
+  src: string;
+  alt: string;
+  fullSize: string;
+};
 
 const weddingImages: WeddingImage[] = [
-  { src: '/images-v2/venue/weddings/gallery/thumb/1.webp', alt: 'Wedding at Fairy Knowe 1', fullSize: '/images-v2/venue/weddings/gallery/full/1.webp' },
-  { src: '/images-v2/venue/weddings/gallery/thumb/2.webp', alt: 'Wedding at Fairy Knowe 2', fullSize: '/images-v2/venue/weddings/gallery/full/2.webp' },
-  { src: '/images-v2/venue/weddings/gallery/thumb/3.webp', alt: 'Wedding at Fairy Knowe 3', fullSize: '/images-v2/venue/weddings/gallery/full/3.webp' },
-  { src: '/images-v2/venue/weddings/gallery/thumb/4.webp', alt: 'Wedding at Fairy Knowe 4', fullSize: '/images-v2/venue/weddings/gallery/full/4.webp' },
-  { src: '/images-v2/venue/weddings/gallery/thumb/5.webp', alt: 'Wedding at Fairy Knowe 5', fullSize: '/images-v2/venue/weddings/gallery/full/5.webp' },
-  { src: '/images-v2/venue/weddings/gallery/thumb/6.webp', alt: 'Wedding at Fairy Knowe 6', fullSize: '/images-v2/venue/weddings/gallery/full/6.webp' },
-  { src: '/images-v2/venue/weddings/gallery/thumb/7.webp', alt: 'Wedding at Fairy Knowe 7', fullSize: '/images-v2/venue/weddings/gallery/full/7.webp' },
-  { src: '/images-v2/venue/weddings/gallery/thumb/8.webp', alt: 'Wedding at Fairy Knowe 8', fullSize: '/images-v2/venue/weddings/gallery/full/8.webp' },
-  { src: '/images-v2/venue/weddings/gallery/thumb/9.webp', alt: 'Wedding at Fairy Knowe 9', fullSize: '/images-v2/venue/weddings/gallery/full/9.webp' },
-  { src: '/images-v2/venue/weddings/gallery/thumb/10.webp', alt: 'Wedding at Fairy Knowe 10', fullSize: '/images-v2/venue/weddings/gallery/full/10.webp' },
-]
+  {
+    src: "/images/venue/weddings/gallery/thumb/1.webp",
+    alt: "Wedding at Fairy Knowe 1",
+    fullSize: "/images/venue/weddings/gallery/full/1.webp",
+  },
+  {
+    src: "/images/venue/weddings/gallery/thumb/2.webp",
+    alt: "Wedding at Fairy Knowe 2",
+    fullSize: "/images/venue/weddings/gallery/full/2.webp",
+  },
+  {
+    src: "/images/venue/weddings/gallery/thumb/3.webp",
+    alt: "Wedding at Fairy Knowe 3",
+    fullSize: "/images/venue/weddings/gallery/full/3.webp",
+  },
+  {
+    src: "/images/venue/weddings/gallery/thumb/4.webp",
+    alt: "Wedding at Fairy Knowe 4",
+    fullSize: "/images/venue/weddings/gallery/full/4.webp",
+  },
+  {
+    src: "/images/venue/weddings/gallery/thumb/5.webp",
+    alt: "Wedding at Fairy Knowe 5",
+    fullSize: "/images/venue/weddings/gallery/full/5.webp",
+  },
+  {
+    src: "/images/venue/weddings/gallery/thumb/6.webp",
+    alt: "Wedding at Fairy Knowe 6",
+    fullSize: "/images/venue/weddings/gallery/full/6.webp",
+  },
+  {
+    src: "/images/venue/weddings/gallery/thumb/7.webp",
+    alt: "Wedding at Fairy Knowe 7",
+    fullSize: "/images/venue/weddings/gallery/full/7.webp",
+  },
+  {
+    src: "/images/venue/weddings/gallery/thumb/8.webp",
+    alt: "Wedding at Fairy Knowe 8",
+    fullSize: "/images/venue/weddings/gallery/full/8.webp",
+  },
+  {
+    src: "/images/venue/weddings/gallery/thumb/9.webp",
+    alt: "Wedding at Fairy Knowe 9",
+    fullSize: "/images/venue/weddings/gallery/full/9.webp",
+  },
+  {
+    src: "/images/venue/weddings/gallery/thumb/10.webp",
+    alt: "Wedding at Fairy Knowe 10",
+    fullSize: "/images/venue/weddings/gallery/full/10.webp",
+  },
+];
 
-const imagesPerPage = 12
+const imagesPerPage = 12;
 
 export default function WeddingGallery() {
-  const [currentPage, setCurrentPage] = useState(0)
-  const [selectedImage, setSelectedImage] = useState<WeddingImage | null>(null)
-  const [selectedImageIndex, setSelectedImageIndex] = useState<number>(-1)
+  const [currentPage, setCurrentPage] = useState(0);
+  const [selectedImage, setSelectedImage] = useState<WeddingImage | null>(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number>(-1);
 
-  const totalPages = Math.ceil(weddingImages.length / imagesPerPage)
-  const currentImages = weddingImages.slice(currentPage * imagesPerPage, (currentPage + 1) * imagesPerPage)
+  const totalPages = Math.ceil(weddingImages.length / imagesPerPage);
+  const currentImages = weddingImages.slice(currentPage * imagesPerPage, (currentPage + 1) * imagesPerPage);
 
-  const nextPage = () => setCurrentPage((prev) => (prev + 1) % totalPages)
-  const prevPage = () => setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages)
+  const nextPage = () => setCurrentPage((prev) => (prev + 1) % totalPages);
+  const prevPage = () => setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages);
 
   const openImage = (image: WeddingImage, index: number) => {
-    setSelectedImage(image)
-    setSelectedImageIndex(index)
-  }
+    setSelectedImage(image);
+    setSelectedImageIndex(index);
+  };
 
   const closeImage = () => {
-    setSelectedImage(null)
-    setSelectedImageIndex(-1)
-  }
+    setSelectedImage(null);
+    setSelectedImageIndex(-1);
+  };
 
   const nextImage = () => {
     if (selectedImageIndex < weddingImages.length - 1) {
-      setSelectedImageIndex(selectedImageIndex + 1)
-      setSelectedImage(weddingImages[selectedImageIndex + 1])
+      setSelectedImageIndex(selectedImageIndex + 1);
+      setSelectedImage(weddingImages[selectedImageIndex + 1]);
     } else {
-      setSelectedImageIndex(0)
-      setSelectedImage(weddingImages[0])
+      setSelectedImageIndex(0);
+      setSelectedImage(weddingImages[0]);
     }
-  }
+  };
 
   const prevImage = () => {
     if (selectedImageIndex > 0) {
-      setSelectedImageIndex(selectedImageIndex - 1)
-      setSelectedImage(weddingImages[selectedImageIndex - 1])
+      setSelectedImageIndex(selectedImageIndex - 1);
+      setSelectedImage(weddingImages[selectedImageIndex - 1]);
     } else {
-      setSelectedImageIndex(weddingImages.length - 1)
-      setSelectedImage(weddingImages[weddingImages.length - 1])
+      setSelectedImageIndex(weddingImages.length - 1);
+      setSelectedImage(weddingImages[weddingImages.length - 1]);
     }
-  }
+  };
 
   return (
     <div className="mt-16 mb-16">
-      <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-6 text-center">
-        Wedding Gallery
-      </h2>
+      <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-6 text-center">Wedding Gallery</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 sm:gap-4">
         {currentImages.map((image, index) => (
           <div
@@ -95,7 +133,12 @@ export default function WeddingGallery() {
           onClick={prevPage}
           className="p-2 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
         >
-          <svg className="h-5 w-5 text-gray-600 dark:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg
+            className="h-5 w-5 text-gray-600 dark:text-gray-300"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
         </button>
@@ -106,7 +149,12 @@ export default function WeddingGallery() {
           onClick={nextPage}
           className="p-2 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
         >
-          <svg className="h-5 w-5 text-gray-600 dark:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg
+            className="h-5 w-5 text-gray-600 dark:text-gray-300"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </button>
@@ -163,5 +211,5 @@ export default function WeddingGallery() {
         </div>
       )}
     </div>
-  )
+  );
 }

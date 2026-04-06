@@ -1,65 +1,66 @@
-import ImageGallery from '@/components/gallery/ImageGallery'
-import PageHero from '@/components/ui/PageHero'
-import BookNowButton from '@/components/ui/BookNowButton'
-import LogoSection from '@/components/ui/LogoSection'
+import ImageGallery from "@/components/gallery/ImageGallery";
+import PageHero from "@/components/ui/PageHero";
+import BookNowButton from "@/components/ui/BookNowButton";
+import LogoSection from "@/components/ui/LogoSection";
 
 // Define gallery images with the new naming convention
 const galleryImages = [
   {
-    src: '/images-v2/accommodation/mixed-dorm/gallery/thumb/1.webp',
-    alt: 'Mixed Dorm Overview',
-    fullSize: '/images-v2/accommodation/mixed-dorm/gallery/full/1.webp'
+    src: "/images/accommodation/mixed-dorm/gallery/thumb/1.webp",
+    alt: "Mixed Dorm Overview",
+    fullSize: "/images/accommodation/mixed-dorm/gallery/full/1.webp",
   },
   {
-    src: '/images-v2/accommodation/mixed-dorm/gallery/thumb/2.webp',
-    alt: 'Mixed Dorm Interior',
-    fullSize: '/images-v2/accommodation/mixed-dorm/gallery/full/2.webp'
+    src: "/images/accommodation/mixed-dorm/gallery/thumb/2.webp",
+    alt: "Mixed Dorm Interior",
+    fullSize: "/images/accommodation/mixed-dorm/gallery/full/2.webp",
   },
   {
-    src: '/images-v2/accommodation/mixed-dorm/gallery/thumb/3.webp',
-    alt: 'Mixed Dorm Beds',
-    fullSize: '/images-v2/accommodation/mixed-dorm/gallery/full/3.webp'
+    src: "/images/accommodation/mixed-dorm/gallery/thumb/3.webp",
+    alt: "Mixed Dorm Beds",
+    fullSize: "/images/accommodation/mixed-dorm/gallery/full/3.webp",
   },
   {
-    src: '/images-v2/accommodation/mixed-dorm/gallery/thumb/4.webp',
-    alt: 'Mixed Dorm View',
-    fullSize: '/images-v2/accommodation/mixed-dorm/gallery/full/4.webp'
+    src: "/images/accommodation/mixed-dorm/gallery/thumb/4.webp",
+    alt: "Mixed Dorm View",
+    fullSize: "/images/accommodation/mixed-dorm/gallery/full/4.webp",
   },
   {
-    src: '/images-v2/accommodation/mixed-dorm/gallery/thumb/5.webp',
-    alt: 'Mixed Dorm Additional View 1',
-    fullSize: '/images-v2/accommodation/mixed-dorm/gallery/full/5.webp'
+    src: "/images/accommodation/mixed-dorm/gallery/thumb/5.webp",
+    alt: "Mixed Dorm Additional View 1",
+    fullSize: "/images/accommodation/mixed-dorm/gallery/full/5.webp",
   },
   {
-    src: '/images-v2/accommodation/mixed-dorm/gallery/thumb/6.webp',
-    alt: 'Mixed Dorm Additional View 2',
-    fullSize: '/images-v2/accommodation/mixed-dorm/gallery/full/6.webp'
+    src: "/images/accommodation/mixed-dorm/gallery/thumb/6.webp",
+    alt: "Mixed Dorm Additional View 2",
+    fullSize: "/images/accommodation/mixed-dorm/gallery/full/6.webp",
   },
   {
-    src: '/images-v2/accommodation/mixed-dorm/gallery/thumb/7.webp',
-    alt: 'Mixed Dorm Additional View 3',
-    fullSize: '/images-v2/accommodation/mixed-dorm/gallery/full/7.webp'
+    src: "/images/accommodation/mixed-dorm/gallery/thumb/7.webp",
+    alt: "Mixed Dorm Additional View 3",
+    fullSize: "/images/accommodation/mixed-dorm/gallery/full/7.webp",
   },
   {
-    src: '/images-v2/accommodation/mixed-dorm/gallery/thumb/8.webp',
-    alt: 'Mixed Dorm Additional View 4',
-    fullSize: '/images-v2/accommodation/mixed-dorm/gallery/full/8.webp'
-  }
-]
+    src: "/images/accommodation/mixed-dorm/gallery/thumb/8.webp",
+    alt: "Mixed Dorm Additional View 4",
+    fullSize: "/images/accommodation/mixed-dorm/gallery/full/8.webp",
+  },
+];
 
 export default function MixedDormPage() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images-v2/accommodation/mixed-dorm/hero/mobile.webp"
-        desktopSrc="/images-v2/accommodation/mixed-dorm/hero/desktop.webp"
+        mobileSrc="/images/accommodation/mixed-dorm/hero/mobile.webp"
+        desktopSrc="/images/accommodation/mixed-dorm/hero/desktop.webp"
         title="Mixed Dorm"
       />
       {/* Content Section */}
       <div className="pt-2 pb-8 sm:pt-4 sm:pb-12 px-4">
         <div className="max-w-7xl mx-auto px-4">
           <p className="text-xs md:text-base text-gray-600 max-w-3xl mx-auto text-center">
-            Our mixed dorm offers a social atmosphere with comfortable bunk beds, perfect for solo travelers looking to meet new friends. A great budget-friendly option with all the essential amenities.
+            Our mixed dorm offers a social atmosphere with comfortable bunk beds, perfect for solo travelers looking to
+            meet new friends. A great budget-friendly option with all the essential amenities.
           </p>
 
           {/* Book Now Button */}
@@ -70,10 +71,7 @@ export default function MixedDormPage() {
 
         {/* Gallery */}
         <div className="w-full px-0 sm:px-4 mt-8 md:mt-12 mb-8 md:mb-12">
-          <ImageGallery 
-            images={galleryImages} 
-            imagesPerPage={8} 
-          />
+          <ImageGallery images={galleryImages} imagesPerPage={8} />
         </div>
 
         <div className="max-w-7xl mx-auto px-4">
@@ -117,7 +115,9 @@ export default function MixedDormPage() {
               {/* Desktop Order (What's Included, Rules of the Forest, Shared Facilities) */}
               <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
                 <div className="bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-lg">
-                  <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-center sm:text-left">What's Included</h3>
+                  <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-center sm:text-left">
+                    What's Included
+                  </h3>
                   <div className="space-y-2 text-gray-600 dark:text-gray-300 text-xs sm:text-sm">
                     <p className="text-center sm:text-left">Bunk beds</p>
                     <p className="text-center sm:text-left">Comfortable bedding</p>
@@ -136,9 +136,11 @@ export default function MixedDormPage() {
                     <p className="text-center">Respect the forest</p>
                   </div>
                 </div>
-                
+
                 <div className="bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-lg">
-                  <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-center sm:text-right">Shared Facilities</h3>
+                  <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-center sm:text-right">
+                    Shared Facilities
+                  </h3>
                   <div className="space-y-2 text-gray-600 dark:text-gray-300 text-xs sm:text-sm">
                     <p className="text-center sm:text-right">Bathrooms</p>
                     <p className="text-center sm:text-right">Hot showers</p>
@@ -157,5 +159,5 @@ export default function MixedDormPage() {
         </div>
       </div>
     </div>
-  )
-} 
+  );
+}

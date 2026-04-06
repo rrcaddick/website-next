@@ -99,7 +99,7 @@ export default function SiteFooter() {
       {/* Background Banner Image */}
       <div className="relative w-full mt-auto">
         <Image
-          src="/images-v2/ui/footer-banner.webp"
+          src="/images/ui/footer-banner.webp"
           alt="Footer Background"
           width={1920}
           height={400}

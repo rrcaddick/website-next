@@ -1,7 +1,7 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import MobileMenu from './MobileMenu'
-import { accommodationLinks, adventureLinks } from '@/data/nav'
+import Link from "next/link";
+import Image from "next/image";
+import MobileMenu from "./MobileMenu";
+import { accommodationLinks, adventureLinks } from "@/data/nav";
 
 export default function SiteHeader() {
   return (
@@ -12,7 +12,7 @@ export default function SiteHeader() {
             <Link href="/" className="flex items-center" title="Fairy Knowe Backpackers">
               <div className="relative w-12 h-12">
                 <Image
-                  src="/images-v2/ui/logos/logo-icon.png"
+                  src="/images/ui/logos/logo-icon.png"
                   alt="Fairy Knowe Backpackers"
                   priority
                   width={32}
@@ -28,7 +28,10 @@ export default function SiteHeader() {
             <div className="flex justify-center items-center w-full space-x-4">
               {/* Accommodation Dropdown */}
               <div className="relative group">
-                <Link href="/accommodation" className="text-gray-900 hover:text-primary px-2 py-2 rounded-md text-sm font-medium whitespace-nowrap inline-flex items-center">
+                <Link
+                  href="/accommodation"
+                  className="text-gray-900 hover:text-primary px-2 py-2 rounded-md text-sm font-medium whitespace-nowrap inline-flex items-center"
+                >
                   Accommodation
                   <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
@@ -53,7 +56,10 @@ export default function SiteHeader() {
 
               {/* Adventures Dropdown */}
               <div className="relative group">
-                <Link href="/adventures" className="text-gray-900 hover:text-primary px-2 py-2 rounded-md text-sm font-medium whitespace-nowrap inline-flex items-center">
+                <Link
+                  href="/adventures"
+                  className="text-gray-900 hover:text-primary px-2 py-2 rounded-md text-sm font-medium whitespace-nowrap inline-flex items-center"
+                >
                   Adventures
                   <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
@@ -76,33 +82,48 @@ export default function SiteHeader() {
                 </div>
               </div>
 
-              <Link href="/entertainment" className="text-gray-900 hover:text-primary px-2 py-2 rounded-md text-sm font-medium whitespace-nowrap">
+              <Link
+                href="/entertainment"
+                className="text-gray-900 hover:text-primary px-2 py-2 rounded-md text-sm font-medium whitespace-nowrap"
+              >
                 Entertainment
               </Link>
-              <Link href="/venue" className="text-gray-900 hover:text-primary px-2 py-2 rounded-md text-sm font-medium whitespace-nowrap">
+              <Link
+                href="/venue"
+                className="text-gray-900 hover:text-primary px-2 py-2 rounded-md text-sm font-medium whitespace-nowrap"
+              >
                 Venue Hire
               </Link>
-              <Link href="/facilities" className="text-gray-900 hover:text-primary px-2 py-2 rounded-md text-sm font-medium whitespace-nowrap">
+              <Link
+                href="/facilities"
+                className="text-gray-900 hover:text-primary px-2 py-2 rounded-md text-sm font-medium whitespace-nowrap"
+              >
                 Facilities
               </Link>
-              <Link href="/gallery" className="text-gray-900 hover:text-primary px-2 py-2 rounded-md text-sm font-medium whitespace-nowrap">
+              <Link
+                href="/gallery"
+                className="text-gray-900 hover:text-primary px-2 py-2 rounded-md text-sm font-medium whitespace-nowrap"
+              >
                 Gallery
               </Link>
               <div className="ml-auto">
-                <Link href="/fairy-folk-n-roll" title="Fairy Folk 'n Roll" className="text-gray-900 hover:text-primary px-2 py-2 rounded-md text-sm font-medium whitespace-nowrap">
-                  <span className="bg-gray-200 px-3 py-1.5 rounded-full hover:bg-gray-300 transition-colors">#fairyfolknroll</span>
+                <Link
+                  href="/fairy-folk-n-roll"
+                  title="Fairy Folk 'n Roll"
+                  className="text-gray-900 hover:text-primary px-2 py-2 rounded-md text-sm font-medium whitespace-nowrap"
+                >
+                  <span className="bg-gray-200 px-3 py-1.5 rounded-full hover:bg-gray-300 transition-colors">
+                    #fairyfolknroll
+                  </span>
                 </Link>
               </div>
             </div>
           </div>
 
           {/* Mobile Menu Component */}
-          <MobileMenu
-            accommodationLinks={accommodationLinks}
-            adventureLinks={adventureLinks}
-          />
+          <MobileMenu accommodationLinks={accommodationLinks} adventureLinks={adventureLinks} />
         </div>
       </div>
     </nav>
-  )
+  );
 }

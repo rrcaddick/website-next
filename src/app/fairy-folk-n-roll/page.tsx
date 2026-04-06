@@ -6,8 +6,8 @@ export default function FairyFolkNRoll() {
   return (
     <div>
       <PageHero
-        mobileSrc="/images/ffr/ffr-banner.webp"
-        desktopSrc="/images/ffr/ffr-banner.webp"
+        mobileSrc="/images/fairy-folk-n-roll/hero/mobile.webp"
+        desktopSrc="/images/fairy-folk-n-roll/hero/desktop.webp"
         title="Fairy Folk 'n Roll"
       />
 
@@ -27,7 +27,7 @@ export default function FairyFolkNRoll() {
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
             <div className="relative h-64">
               <Image
-                src="/images/ffr/ffr-live-music.webp"
+                src="/images/fairy-folk-n-roll/cards/ffr-live-music.webp"
                 alt="Live Music Events"
                 fill
                 className="object-cover"
@@ -61,7 +61,7 @@ export default function FairyFolkNRoll() {
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
             <div className="relative h-64">
               <Image
-                src="/images/ffr/ffr-youtube.webp"
+                src="/images/fairy-folk-n-roll/cards/ffr-youtube.webp"
                 alt="Our Venue"
                 fill
                 className="object-cover"

@@ -1,17 +1,17 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import MouseGradientCard from '@/components/theme/MouseGradientCard'
-import LogoSection from '@/components/ui/LogoSection'
-import AdventuresMobileList from '@/components/features/adventures/AdventuresMobileList'
-import { activities } from '@/components/features/adventures/data'
-import PageHero from '@/components/ui/PageHero'
+import Image from "next/image";
+import Link from "next/link";
+import MouseGradientCard from "@/components/theme/MouseGradientCard";
+import LogoSection from "@/components/ui/LogoSection";
+import AdventuresMobileList from "@/components/features/adventures/AdventuresMobileList";
+import { activities } from "@/components/features/adventures/data";
+import PageHero from "@/components/ui/PageHero";
 
 export default function Adventure() {
   return (
     <div>
       <PageHero
-        mobileSrc="/images-v2/adventures/hero/mobile.webp"
-        desktopSrc="/images-v2/adventures/hero/desktop.webp"
+        mobileSrc="/images/adventures/hero/mobile.webp"
+        desktopSrc="/images/adventures/hero/desktop.webp"
         title="Adventures"
       />
 
@@ -35,8 +35,8 @@ export default function Adventure() {
               key={activity.id}
               href={`/adventures/${activity.name
                 .toLowerCase()
-                .replace(/\s+/g, '-')
-                .replace(/[^a-z0-9-]/g, '')}`}
+                .replace(/\s+/g, "-")
+                .replace(/[^a-z0-9-]/g, "")}`}
               className="group"
             >
               <MouseGradientCard className="bg-[#F3F4F6] text-[#202635] rounded-lg shadow-lg overflow-hidden flex flex-col h-full transition-all duration-500 ease-in-out transform hover:scale-105">
@@ -50,10 +50,16 @@ export default function Adventure() {
                   />
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <h2 className="text-2xl font-bold mb-3 text-[#202635] group-hover:text-[#00FF7F] transition-colors duration-500 ease-in-out">{activity.name}</h2>
-                  <p className="text-gray-600 mb-6 min-h-[4.5rem] group-hover:text-white transition-colors duration-500 ease-in-out">{activity.description}</p>
+                  <h2 className="text-2xl font-bold mb-3 text-[#202635] group-hover:text-[#00FF7F] transition-colors duration-500 ease-in-out">
+                    {activity.name}
+                  </h2>
+                  <p className="text-gray-600 mb-6 min-h-[4.5rem] group-hover:text-white transition-colors duration-500 ease-in-out">
+                    {activity.description}
+                  </p>
                   <div className="mt-auto">
-                    <h3 className="font-semibold mb-3 text-[#202635] group-hover:text-[#00FF7F] transition-colors duration-500 ease-in-out">Features:</h3>
+                    <h3 className="font-semibold mb-3 text-[#202635] group-hover:text-[#00FF7F] transition-colors duration-500 ease-in-out">
+                      Features:
+                    </h3>
                     <ul className="list-disc pl-5 space-y-1.5 text-gray-600 group-hover:text-white transition-colors duration-500 ease-in-out">
                       {activity.features.map((feature, index) => (
                         <li key={`${activity.id}-feature-${index}`}>{feature}</li>
@@ -90,5 +96,5 @@ export default function Adventure() {
         <LogoSection />
       </div>
     </div>
-  )
+  );
 }
