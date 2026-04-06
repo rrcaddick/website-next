@@ -1,0 +1,49 @@
+{
+  "slug": "double-en-suite-rondawel",
+  "title": "Double En-suite Rondawel",
+  "description": "Experience the charm of our traditional rondawel with modern comforts. This cozy double en-suite room offers a unique circular design with all the amenities you need for a comfortable stay.",
+  "hero": {
+    "mobileSrc": "/images/accommodation/double-en-suite-rondawel/hero/mobile.webp",
+    "desktopSrc": "/images/accommodation/double-en-suite-rondawel/hero/desktop.webp"
+  },
+  "gallery": [
+    {
+      "src": "/images/accommodation/double-en-suite-rondawel/gallery/thumb/1.webp",
+      "alt": "Double En-suite Rondawel Overview",
+      "fullSize": "/images/accommodation/double-en-suite-rondawel/gallery/full/1.webp"
+    },
+    {
+      "src": "/images/accommodation/double-en-suite-rondawel/gallery/thumb/2.webp",
+      "alt": "Double En-suite Rondawel Interior",
+      "fullSize": "/images/accommodation/double-en-suite-rondawel/gallery/full/2.webp"
+    }
+  ],
+  "imagesPerPage": 8,
+  "whatsIncluded": [
+    "Double bed",
+    "En-suite bathroom",
+    "Private entrance",
+    "Air conditioning",
+    "WiFi access"
+  ],
+  "sharedFacilities": [
+    "Common kitchen area",
+    "Outdoor seating",
+    "Laundry facilities",
+    "Parking"
+  ],
+  "rulesOfTheForest": [
+    "Check-in: 2PM - 8PM",
+    "Check-out: 10AM",
+    "No smoking inside",
+    "No pets allowed",
+    "Quiet hours: 10PM - 6AM"
+  ],
+  "cardImage": "/images/accommodation/double-en-suite-rondawel/gallery/thumb/1.webp",
+  "cardDescription": "Experience the charm of our traditional rondawel with modern comforts. A unique circular design with all the amenities for a comfortable stay.",
+  "cardFeatures": [
+    "Double bed",
+    "En-suite bathroom",
+    "Private entrance"
+  ]
+}

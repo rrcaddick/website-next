@@ -1,19 +1,10 @@
 {
-  "/accommodation/family-room/page": "app/accommodation/family-room/page.js",
-  "/accommodation/five-sleeper/page": "app/accommodation/five-sleeper/page.js",
-  "/accommodation/double-en-suite/page": "app/accommodation/double-en-suite/page.js",
-  "/accommodation/family-en-suite-rondawel/page": "app/accommodation/family-en-suite-rondawel/page.js",
-  "/adventures/kayaking/page": "app/adventures/kayaking/page.js",
-  "/adventures/paragliding/page": "app/adventures/paragliding/page.js",
-  "/adventures/horseriding/page": "app/adventures/horseriding/page.js",
-  "/adventures/half-collared-kingfisher-trail/page": "app/adventures/half-collared-kingfisher-trail/page.js",
-  "/adventures/brown-hooded-kingfisher-trail/page": "app/adventures/brown-hooded-kingfisher-trail/page.js",
-  "/adventures/bosduif-trail/page": "app/adventures/bosduif-trail/page.js",
-  "/adventures/woodville-big-tree/page": "app/adventures/woodville-big-tree/page.js",
-  "/adventures/map-of-africa/page": "app/adventures/map-of-africa/page.js",
-  "/adventures/wilderness-beach/page": "app/adventures/wilderness-beach/page.js",
-  "/adventures/water-under-the-bridge/page": "app/adventures/water-under-the-bridge/page.js",
-  "/adventures/ancient-archives/page": "app/adventures/ancient-archives/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/accommodation/page": "app/accommodation/page.js",
+  "/page": "app/page.js",
   "/entertainment/page": "app/entertainment/page.js",
-  "/booking/page": "app/booking/page.js"
+  "/adventures/page": "app/adventures/page.js",
+  "/fairy-folk-n-roll/page": "app/fairy-folk-n-roll/page.js",
+  "/facilities/page": "app/facilities/page.js",
+  "/venue/page": "app/venue/page.js"
 }

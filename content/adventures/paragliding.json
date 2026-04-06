@@ -1,0 +1,46 @@
+{
+  "slug": "paragliding",
+  "title": "Paragliding",
+  "description": "Fly like a fairy or glide like a goblin with the power of levitation as you float through the air with expert pilots, taking in awe-inspiring views of the endless ocean, lush forests, and majestic mountains.",
+  "category": "Air Activities",
+  "hero": {
+    "mobileSrc": "/images/adventures/paragliding/hero/mobile.webp",
+    "desktopSrc": "/images/adventures/paragliding/hero/desktop.webp"
+  },
+  "gallery": [
+    { "src": "/images/adventures/paragliding/gallery/full/1.webp", "alt": "Paragliding Adventure 1", "fullSize": "/images/adventures/paragliding/gallery/full/1.webp" },
+    { "src": "/images/adventures/paragliding/gallery/full/2.webp", "alt": "Paragliding Adventure 2", "fullSize": "/images/adventures/paragliding/gallery/full/2.webp" },
+    { "src": "/images/adventures/paragliding/gallery/full/3.webp", "alt": "Paragliding Adventure 3", "fullSize": "/images/adventures/paragliding/gallery/full/3.webp" },
+    { "src": "/images/adventures/paragliding/gallery/full/4.webp", "alt": "Paragliding Adventure 4", "fullSize": "/images/adventures/paragliding/gallery/full/4.webp" },
+    { "src": "/images/adventures/paragliding/gallery/full/5.webp", "alt": "Paragliding Adventure 5", "fullSize": "/images/adventures/paragliding/gallery/full/5.webp" },
+    { "src": "/images/adventures/paragliding/gallery/full/6.webp", "alt": "Paragliding Adventure 6", "fullSize": "/images/adventures/paragliding/gallery/full/6.webp" },
+    { "src": "/images/adventures/paragliding/gallery/full/7.webp", "alt": "Paragliding Adventure 7", "fullSize": "/images/adventures/paragliding/gallery/full/7.webp" },
+    { "src": "/images/adventures/paragliding/gallery/full/8.webp", "alt": "Paragliding Adventure 8", "fullSize": "/images/adventures/paragliding/gallery/full/8.webp" },
+    { "src": "/images/adventures/paragliding/gallery/full/9.webp", "alt": "Paragliding Adventure 9", "fullSize": "/images/adventures/paragliding/gallery/full/9.webp" },
+    { "src": "/images/adventures/paragliding/gallery/full/10.webp", "alt": "Paragliding Adventure 10", "fullSize": "/images/adventures/paragliding/gallery/full/10.webp" }
+  ],
+  "imagesPerPage": 8,
+  "generalInfo": [
+    "Duration: 15 minutes",
+    "Weather dependent",
+    "Professional instructor",
+    "All equipment included",
+    "Camera rental available"
+  ],
+  "whatToBring": [
+    "Sunscreen and hat",
+    "Water and snacks",
+    "Comfortable walking shoes",
+    "Camera for memories",
+    "Small backpack for essentials"
+  ],
+  "cardImage": "/images/adventures/cards/desktop/paragliding-card.webp",
+  "cardMobileImage": "/images/adventures/cards/mobile/paragliding-card.webp",
+  "cardDescription": "15 minutes in the air with beautiful views of the ocean and surrounding forests and mountains.",
+  "cardFeatures": [
+    "Professional pilots",
+    "All equipment provided",
+    "Weather dependent",
+    "Camera rental available"
+  ]
+}

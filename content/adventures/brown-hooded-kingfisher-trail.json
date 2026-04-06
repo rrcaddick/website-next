@@ -1,0 +1,49 @@
+{
+  "slug": "brown-hooded-kingfisher-trail",
+  "title": "Brown Hooded Kingfisher Trail",
+  "description": "Embark on a teeming 4.2-km out-and-back journey along the delightful Duiwe River. This quick and easy trail, typically completed in about 1 hour and 20 minutes, invites adventurers on a short and sweet stroll along the stream. Meandering across the river on well-crafted crossings, the path leads to a little rockpool waterfall - a refreshing haven at the trail's end. While beloved by many wonderful wanderers, moments of quiet solitude still await those who venture during the trail's calmer hours.",
+  "category": "Hiking",
+  "hero": {
+    "mobileSrc": "/images/adventures/brown-hooded-kingfisher-trail/hero/mobile.webp",
+    "desktopSrc": "/images/adventures/brown-hooded-kingfisher-trail/hero/desktop.webp"
+  },
+  "gallery": [
+    { "src": "/images/adventures/brown-hooded-kingfisher-trail/gallery/thumb/1.webp", "alt": "Brown Hooded Kingfisher Trail Adventure", "fullSize": "/images/adventures/brown-hooded-kingfisher-trail/gallery/full/1.webp" },
+    { "src": "/images/adventures/brown-hooded-kingfisher-trail/gallery/thumb/2.webp", "alt": "Brown Hooded Kingfisher Trail Experience", "fullSize": "/images/adventures/brown-hooded-kingfisher-trail/gallery/full/2.webp" },
+    { "src": "/images/adventures/brown-hooded-kingfisher-trail/gallery/thumb/3.webp", "alt": "Brown Hooded Kingfisher Trail Journey", "fullSize": "/images/adventures/brown-hooded-kingfisher-trail/gallery/full/3.webp" },
+    { "src": "/images/adventures/brown-hooded-kingfisher-trail/gallery/thumb/4.webp", "alt": "Brown Hooded Kingfisher Trail Views", "fullSize": "/images/adventures/brown-hooded-kingfisher-trail/gallery/full/4.webp" },
+    { "src": "/images/adventures/brown-hooded-kingfisher-trail/gallery/thumb/5.webp", "alt": "Brown Hooded Kingfisher Trail Additional View 1", "fullSize": "/images/adventures/brown-hooded-kingfisher-trail/gallery/full/5.webp" },
+    { "src": "/images/adventures/brown-hooded-kingfisher-trail/gallery/thumb/6.webp", "alt": "Brown Hooded Kingfisher Trail Additional View 2", "fullSize": "/images/adventures/brown-hooded-kingfisher-trail/gallery/full/6.webp" },
+    { "src": "/images/adventures/brown-hooded-kingfisher-trail/gallery/thumb/7.webp", "alt": "Brown Hooded Kingfisher Trail Additional View 3", "fullSize": "/images/adventures/brown-hooded-kingfisher-trail/gallery/full/7.webp" },
+    { "src": "/images/adventures/brown-hooded-kingfisher-trail/gallery/thumb/8.webp", "alt": "Brown Hooded Kingfisher Trail Additional View 4", "fullSize": "/images/adventures/brown-hooded-kingfisher-trail/gallery/full/8.webp" },
+    { "src": "/images/adventures/brown-hooded-kingfisher-trail/gallery/thumb/9.webp", "alt": "Brown Hooded Kingfisher Trail Additional View 5", "fullSize": "/images/adventures/brown-hooded-kingfisher-trail/gallery/full/9.webp" },
+    { "src": "/images/adventures/brown-hooded-kingfisher-trail/gallery/thumb/10.webp", "alt": "Brown Hooded Kingfisher Trail Additional View 6", "fullSize": "/images/adventures/brown-hooded-kingfisher-trail/gallery/full/10.webp" },
+    { "src": "/images/adventures/brown-hooded-kingfisher-trail/gallery/thumb/11.webp", "alt": "Brown Hooded Kingfisher Trail Additional View 7", "fullSize": "/images/adventures/brown-hooded-kingfisher-trail/gallery/full/11.webp" },
+    { "src": "/images/adventures/brown-hooded-kingfisher-trail/gallery/thumb/12.webp", "alt": "Brown Hooded Kingfisher Trail Additional View 8", "fullSize": "/images/adventures/brown-hooded-kingfisher-trail/gallery/full/12.webp" },
+    { "src": "/images/adventures/brown-hooded-kingfisher-trail/gallery/thumb/13.webp", "alt": "Brown Hooded Kingfisher Trail Additional View 9", "fullSize": "/images/adventures/brown-hooded-kingfisher-trail/gallery/full/13.webp" }
+  ],
+  "imagesPerPage": 8,
+  "generalInfo": [
+    "Distance: 4.2 km out-and-back",
+    "Duration: 1.5 hours",
+    "Difficulty: Easy",
+    "River crossings",
+    "Rockpool waterfall"
+  ],
+  "whatToBring": [
+    "Comfortable walking shoes",
+    "Water and snacks",
+    "Sunscreen and hat",
+    "Camera for memories",
+    "Swimwear if planning to swim"
+  ],
+  "cardImage": "/images/adventures/cards/desktop/brown-hooded-kingfisher-trail-card.webp",
+  "cardMobileImage": "/images/adventures/cards/mobile/brown-hooded-kingfisher-trail-card.webp",
+  "cardDescription": "2 hour trail crossing multiple times over the Duiwe River.",
+  "cardFeatures": [
+    "There and back trail",
+    "Easy difficulty",
+    "Bird watching",
+    "River crossings"
+  ]
+}

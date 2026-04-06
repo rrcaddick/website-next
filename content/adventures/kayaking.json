@@ -1,0 +1,71 @@
+{
+  "slug": "kayaking",
+  "title": "Kayaking",
+  "description": "Paddle your way over serene waters, dyed red and orange by the tannins in the ground, through the Wilderness National Park. A wonderful walk and magnificent waterfall wait on the other side.",
+  "category": "Water Activities",
+  "hero": {
+    "mobileSrc": "/images/adventures/kayaking/hero/mobile.webp",
+    "desktopSrc": "/images/adventures/kayaking/hero/desktop.webp"
+  },
+  "gallery": [
+    {
+      "src": "/images/adventures/kayaking/gallery/full/1.webp",
+      "alt": "Kayaking Adventure 1",
+      "fullSize": "/images/adventures/kayaking/gallery/full/1.webp"
+    },
+    {
+      "src": "/images/adventures/kayaking/gallery/full/2.webp",
+      "alt": "Kayaking Adventure 2",
+      "fullSize": "/images/adventures/kayaking/gallery/full/2.webp"
+    },
+    {
+      "src": "/images/adventures/kayaking/gallery/full/3.webp",
+      "alt": "Kayaking Adventure 3",
+      "fullSize": "/images/adventures/kayaking/gallery/full/3.webp"
+    },
+    {
+      "src": "/images/adventures/kayaking/gallery/full/4.webp",
+      "alt": "Kayaking Adventure 4",
+      "fullSize": "/images/adventures/kayaking/gallery/full/4.webp"
+    },
+    {
+      "src": "/images/adventures/kayaking/gallery/full/5.webp",
+      "alt": "Kayaking Adventure 5",
+      "fullSize": "/images/adventures/kayaking/gallery/full/5.webp"
+    },
+    {
+      "src": "/images/adventures/kayaking/gallery/full/6.webp",
+      "alt": "Kayaking Adventure 6",
+      "fullSize": "/images/adventures/kayaking/gallery/full/6.webp"
+    },
+    {
+      "src": "/images/adventures/kayaking/gallery/full/7.webp",
+      "alt": "Kayaking Adventure 7",
+      "fullSize": "/images/adventures/kayaking/gallery/full/7.webp"
+    },
+    {
+      "src": "/images/adventures/kayaking/gallery/full/8.webp",
+      "alt": "Kayaking Adventure 8",
+      "fullSize": "/images/adventures/kayaking/gallery/full/8.webp"
+    }
+  ],
+  "imagesPerPage": 8,
+  "generalInfo": [
+    "Duration: 2-3 hours",
+    "Difficulty: Moderate",
+    "Equipment provided",
+    "Expert guides included",
+    "Wildlife spotting opportunities"
+  ],
+  "whatToBring": [
+    "Sunscreen and hat",
+    "Water and snacks",
+    "Comfortable walking shoes",
+    "Camera for memories",
+    "Small backpack for essentials"
+  ],
+  "cardImage": "/images/adventures/cards/desktop/kayaking-card.webp",
+  "cardMobileImage": "/images/adventures/cards/mobile/kayaking-card.webp",
+  "cardDescription": "3 hour return trip to the waterfall and back, totaling around 2 hours paddling and 1 hour hiking.",
+  "cardFeatures": ["Life jackets included", "Moderate fitness required", "Paddling, hiking and swimming", "Waterfall"]
+}

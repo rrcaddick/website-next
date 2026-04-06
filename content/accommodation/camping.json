@@ -1,0 +1,35 @@
+{
+  "slug": "camping",
+  "title": "Camping",
+  "description": "Pitch your tent and make yourself at home in our magical forest, where nature's embrace tucks you in at night. With access to all facilities, our camping area caters to every camper's preference, offering a mix of sunny clearings and shaded hideaways beneath the trees.",
+  "hero": {
+    "mobileSrc": "/images/accommodation/camping/hero/mobile.webp",
+    "desktopSrc": "/images/accommodation/camping/hero/desktop.webp"
+  },
+  "gallery": [
+    {
+      "src": "/images/accommodation/camping/gallery/thumb/1.webp",
+      "alt": "Camping Ground Overview",
+      "fullSize": "/images/accommodation/camping/gallery/full/1.webp"
+    },
+    {
+      "src": "/images/accommodation/camping/gallery/thumb/2.webp",
+      "alt": "Tent Setup Area",
+      "fullSize": "/images/accommodation/camping/gallery/full/2.webp"
+    }
+  ],
+  "imagesPerPage": 8,
+  "whatsIncluded": ["Private spots", "Communal spots", "Shaded spots", "Sunny spots", "Access to all facilities"],
+  "sharedFacilities": ["Bathrooms", "Hot showers", "Common kitchen area", "WiFi in common areas"],
+  "rulesOfTheForest": [
+    "Quiet hours: 10PM - 6AM",
+    "Keep your space tidy",
+    "No private alcohol",
+    "Be friendly to fellow wanderers",
+    "Respect the forest"
+  ],
+  "cardImage": "/images/accommodation/camping-card.webp",
+  "cardMobileImage": "/images/accommodation/mobile-banners/camping-card.webp",
+  "cardDescription": "Bring your own tent and enjoy our beautiful campsite with access to shared facilities.",
+  "cardFeatures": ["Shared bathroom facilities", "Kitchen access", "Sunny or shaded camping grounds"]
+}
