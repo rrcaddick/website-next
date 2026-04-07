@@ -1,11 +1,11 @@
-import PageHero from '@/components/ui/PageHero'
+import PageHero from "@/components/ui/PageHero";
 
 export default function Contact() {
   return (
     <div className="min-h-screen">
       <PageHero
-        mobileSrc="/images/contact/contact-banner.webp"
-        desktopSrc="/images/contact/contact-banner.webp"
+        mobileSrc="/images/contanct/hero/contact-banner.webp"
+        desktopSrc="/images/contanct/hero/contact-banner.webp"
         title="Contact Us"
       />
 
@@ -19,34 +19,37 @@ export default function Contact() {
               <div>
                 <h3 className="font-semibold mb-2 text-[#202635]">Address</h3>
                 <p className="text-gray-600">
-                  Fairy Knowe Backpackers<br />
-                  1 Dumbleton Road<br />
-                  Wilderness<br />
-                  Western Cape<br />
-                  South Africa<br />
+                  Fairy Knowe Backpackers
+                  <br />
+                  1 Dumbleton Road
+                  <br />
+                  Wilderness
+                  <br />
+                  Western Cape
+                  <br />
+                  South Africa
+                  <br />
                   6560
                 </p>
               </div>
 
               <div>
                 <h3 className="font-semibold mb-2 text-[#202635]">Phone</h3>
-                <p className="text-gray-600">
-                  +27 83 443 8384
-                </p>
+                <p className="text-gray-600">+27 83 443 8384</p>
               </div>
 
               <div>
                 <h3 className="font-semibold mb-2 text-[#202635]">Email</h3>
-                <p className="text-gray-600">
-                  info@wildernessbackpackers.com
-                </p>
+                <p className="text-gray-600">info@wildernessbackpackers.com</p>
               </div>
 
               <div>
                 <h3 className="font-semibold mb-2 text-[#202635]">Reception Hours</h3>
                 <p className="text-gray-600">
-                  Monday - Sunday: 8AM - 8PM<br />
-                  Check-in: 2PM - 8PM<br />
+                  Monday - Sunday: 8AM - 8PM
+                  <br />
+                  Check-in: 2PM - 8PM
+                  <br />
                   Check-out: 10AM
                 </p>
               </div>
@@ -59,7 +62,9 @@ export default function Contact() {
 
             <form className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-[#202635] font-medium mb-2">Name</label>
+                <label htmlFor="name" className="block text-[#202635] font-medium mb-2">
+                  Name
+                </label>
                 <input
                   type="text"
                   id="name"
@@ -70,7 +75,9 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-[#202635] font-medium mb-2">Email</label>
+                <label htmlFor="email" className="block text-[#202635] font-medium mb-2">
+                  Email
+                </label>
                 <input
                   type="email"
                   id="email"
@@ -81,7 +88,9 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-[#202635] font-medium mb-2">Subject</label>
+                <label htmlFor="subject" className="block text-[#202635] font-medium mb-2">
+                  Subject
+                </label>
                 <input
                   type="text"
                   id="subject"
@@ -92,7 +101,9 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-[#202635] font-medium mb-2">Message</label>
+                <label htmlFor="message" className="block text-[#202635] font-medium mb-2">
+                  Message
+                </label>
                 <textarea
                   id="message"
                   name="message"
@@ -113,5 +124,5 @@ export default function Contact() {
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -106,6 +106,12 @@ export default function SiteHeader() {
               >
                 Gallery
               </Link>
+              <Link
+                href="/contact"
+                className="text-gray-900 hover:text-primary px-2 py-2 rounded-md text-sm font-medium whitespace-nowrap"
+              >
+                Contact
+              </Link>
               <div className="ml-auto">
                 <Link
                   href="/fairy-folk-n-roll"
