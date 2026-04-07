@@ -60,8 +60,26 @@
       ]
     }
   ],
-  "cta": {
-    "heading": "General Information",
-    "description": "Quiet hours: 10PM – 8AM. Check-in: 2PM – 8PM, Check-out by 10AM. Reception open Monday to Sunday 8AM – 8PM. Security on site after hours. Please keep common areas clean and respect fellow guests."
-  }
+  "infoSections": [
+    {
+      "heading": "Rules of the Forest",
+      "content": [
+        "Quiet hours: 10PM - 6AM",
+        "Keep your space tidy",
+        "No private alcohol",
+        "Be friendly to fellow wanderers",
+        "Respect the forest"
+      ]
+    },
+    {
+      "heading": "Reception Hours",
+      "content": [
+        "Monday - Sunday: 8AM - 8PM",
+        "Check-in: 2PM - 8PM",
+        "Check-out: by 10AM",
+        "After hours: Security on site",
+        "Emergency contact available 24/7"
+      ]
+    }
+  ]
 }

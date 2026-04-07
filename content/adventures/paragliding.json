@@ -69,7 +69,7 @@
     "Weather dependent",
     "Camera rental available"
   ],
-  "sections": [
+  "infoSections": [
     {
       "heading": "General Info",
       "content": [

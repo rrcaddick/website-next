@@ -3,64 +3,11 @@ import PageHero from '@/components/ui/PageHero'
 import BookNowButton from '@/components/ui/BookNowButton'
 import LogoSection from '@/components/ui/LogoSection'
 import CTASection from '@/components/ui/CTASection'
-import type { DetailPageContent, DetailSection } from '@/lib/content'
+import InfoSections from '@/components/ui/InfoSections'
+import type { DetailPageContent } from '@/lib/content'
 
 interface Props {
   content: DetailPageContent
-}
-
-type Align = 'left' | 'center' | 'right'
-
-function resolveAlign(index: number, total: number, override?: Align): Align {
-  if (override) return override
-  if (total === 1) return 'center'
-  if (total === 2) return index === 0 ? 'left' : 'right'
-  if (index === 0) return 'left'
-  if (index === total - 1) return 'right'
-  return 'center'
-}
-
-const alignClass: Record<Align, string> = {
-  left: 'text-center md:text-left',
-  center: 'text-center',
-  right: 'text-center md:text-right',
-}
-
-const headingAlignClass: Record<Align, string> = {
-  left: 'text-center md:text-left',
-  center: 'text-center',
-  right: 'text-center md:text-right',
-}
-
-function SectionCard({ section, index, total }: { section: DetailSection; index: number; total: number }) {
-  const align = resolveAlign(index, total, section.align)
-  const textClass = alignClass[align]
-  const headClass = headingAlignClass[align]
-
-  return (
-    <div className="bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-lg shadow-md">
-      <h3 className={`text-lg sm:text-xl font-semibold mb-3 sm:mb-4 ${headClass}`}>
-        {section.heading}
-      </h3>
-      <div className={`space-y-2 text-gray-600 dark:text-gray-300 text-xs sm:text-sm ${textClass}`}>
-        {Array.isArray(section.content) ? (
-          <ul className="space-y-2">
-            {section.content.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        ) : (
-          <p>{section.content}</p>
-        )}
-      </div>
-    </div>
-  )
-}
-
-function sectionsGridClass(count: number): string {
-  if (count === 1) return ''
-  if (count === 2) return 'grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8'
-  return 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8'
 }
 
 export default function DetailPageTemplate({ content }: Props) {
@@ -71,11 +18,9 @@ export default function DetailPageTemplate({ content }: Props) {
     gallery,
     imagesPerPage = 8,
     showBookNow,
-    sections,
+    infoSections,
     cta,
   } = content
-
-  const hasSections = sections && sections.length > 0
 
   return (
     <div className="min-h-screen">
@@ -97,23 +42,9 @@ export default function DetailPageTemplate({ content }: Props) {
           <ImageGallery images={gallery} imagesPerPage={imagesPerPage} />
         </div>
 
-        {hasSections && (
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="mt-8 sm:mt-12 mb-8 sm:mb-12">
-              <div className="max-w-6xl mx-auto">
-                {sections!.length === 1 ? (
-                  <div className="max-w-2xl mx-auto">
-                    <SectionCard section={sections![0]} index={0} total={1} />
-                  </div>
-                ) : (
-                  <div className={sectionsGridClass(sections!.length)}>
-                    {sections!.map((section, i) => (
-                      <SectionCard key={section.heading} section={section} index={i} total={sections!.length} />
-                    ))}
-                  </div>
-                )}
-              </div>
-            </div>
+        {infoSections && infoSections.length > 0 && (
+          <div className="max-w-7xl mx-auto px-4 mt-8 sm:mt-12 mb-8 sm:mb-12">
+            <InfoSections sections={infoSections} />
           </div>
         )}
 

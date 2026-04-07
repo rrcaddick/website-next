@@ -58,7 +58,7 @@
     "Spacious layout"
   ],
   "showBookNow": true,
-  "sections": [
+  "infoSections": [
     {
       "heading": "What's Included",
       "content": [

@@ -24,7 +24,7 @@
   "cardDescription": "Bring your own tent and enjoy our beautiful campsite with access to shared facilities.",
   "cardFeatures": ["Shared bathroom facilities", "Kitchen access", "Sunny or shaded camping grounds"],
   "showBookNow": true,
-  "sections": [
+  "infoSections": [
     {
       "heading": "What's Included",
       "content": ["Private spots", "Communal spots", "Shaded spots", "Sunny spots", "Access to all facilities"]

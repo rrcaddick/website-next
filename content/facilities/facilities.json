@@ -58,12 +58,7 @@
       "facilities": [
         {
           "name": "Books & board games",
-          "features": [
-            "Wide selection of books",
-            "Board games collection",
-            "Reading corner",
-            "Social gaming area"
-          ]
+          "features": ["Wide selection of books", "Board games collection", "Reading corner", "Social gaming area"]
         },
         {
           "name": "Jungle gym",
@@ -78,12 +73,7 @@
         },
         {
           "name": "Musical instruments",
-          "features": [
-            "Guitars available",
-            "Percussion instruments",
-            "Open mic equipment",
-            "Jam sessions welcome"
-          ]
+          "features": ["Guitars available", "Percussion instruments", "Open mic equipment", "Jam sessions welcome"]
         },
         {
           "name": "Ping pong",
@@ -127,12 +117,7 @@
         },
         {
           "name": "Restaurant kitchen",
-          "features": [
-            "Breakfast service",
-            "Dinner options",
-            "Fresh ingredients",
-            "Affordable meals"
-          ]
+          "features": ["Breakfast service", "Dinner options", "Fresh ingredients", "Affordable meals"]
         },
         {
           "name": "Self-catering kitchen",
@@ -154,12 +139,7 @@
       "facilities": [
         {
           "name": "Communal fire pit",
-          "features": [
-            "Nightly fires",
-            "Seating area",
-            "Social atmosphere",
-            "Wood provided"
-          ]
+          "features": ["Nightly fires", "Seating area", "Social atmosphere", "Wood provided"]
         },
         {
           "name": "Lively bar",

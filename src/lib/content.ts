@@ -35,6 +35,7 @@ export interface ListingPageContent {
   items: ListingItem[];
   columns?: number;
   showBookNow?: boolean;
+  infoSections?: InfoSection[];
   cta?: {
     heading: string;
     description?: string;
@@ -50,7 +51,7 @@ export interface ListingPageContent {
 // Detail pages (shared by Accommodation + Adventures)
 // ─────────────────────────────────────────────────────────────────────────────
 
-export interface DetailSection {
+export interface InfoSection {
   heading: string;
   content: string | string[];
   align?: "left" | "center" | "right";
@@ -75,7 +76,7 @@ export interface DetailPageContent {
   gallery: GalleryImage[];
   imagesPerPage?: number;
   showBookNow?: boolean;
-  sections?: DetailSection[];
+  infoSections?: InfoSection[];
   cta?: DetailCTA;
 }
 

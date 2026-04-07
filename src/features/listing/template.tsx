@@ -2,6 +2,7 @@ import PageHero from "@/components/ui/PageHero";
 import LogoSection from "@/components/ui/LogoSection";
 import BookNowButton from "@/components/ui/BookNowButton";
 import CTASection from "@/components/ui/CTASection";
+import InfoSections from "@/components/ui/InfoSections";
 import Card from "@/components/features/listing/Card";
 import type { ListingPageContent } from "@/lib/content";
 
@@ -10,7 +11,7 @@ interface Props {
 }
 
 export default function ListingTemplate({ content }: Props) {
-  const { title, description, hero, items, columns = 3, showBookNow, cta, footnote } = content;
+  const { title, description, hero, items, columns = 3, showBookNow, infoSections, cta, footnote } = content;
 
   const itemCount = items.length;
 
@@ -49,6 +50,12 @@ export default function ListingTemplate({ content }: Props) {
               <Card key={`${item.href}-${item.image}`} item={item} />
             ))}
           </div>
+
+          {infoSections && infoSections.length > 0 && (
+            <div className="mt-16">
+              <InfoSections sections={infoSections} />
+            </div>
+          )}
 
           {cta && (
             <div className="mt-16">

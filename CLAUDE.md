@@ -11,9 +11,11 @@ Modern, content-driven Next.js 14 (App Router) website for Fairy Knowe Backpacke
 - **Dynamic routes**: Use `[slug]` + `generateStaticParams()` for accommodation and adventures.
 - **Shared UI**: `src/components/ui/` and `src/components/features/`.
 - **Never**: Hardcode text, images, or metadata in page components. Always pull from content JSON.
-- **Detail pages**: Both accommodation and adventure `[slug]` pages use the single `DetailPageTemplate` at `src/features/detail/template.tsx`. Content is driven by `sections[]` in the JSON — no hardcoded section titles or layouts.
-- **Listing pages**: Use `ListingTemplate` at `src/features/listing/template.tsx`. CTA uses `CTASection` (`src/components/ui/CTASection.tsx`) — schema: `{ heading, description?, button?: { href, label } }`.
+- **Detail pages**: Both accommodation and adventure `[slug]` pages use the single `DetailPageTemplate` at `src/features/detail/template.tsx`. Content is driven by `infoSections[]` in the JSON — no hardcoded section titles or layouts.
+- **Listing pages**: Use `ListingTemplate` at `src/features/listing/template.tsx`. Supports optional `infoSections[]` (rendered before CTA). CTA uses `CTASection` (`src/components/ui/CTASection.tsx`) — schema: `{ heading, description?, button?: { href, label } }`.
 - **CTA schema**: `ListingPageContent.cta` and `DetailPageContent.cta` both use `{ heading, description?, button? }`. No `title`, `href`, `label`, or `generalInfo` at top level.
+- **InfoSections**: `src/components/ui/InfoSections.tsx` renders structured content blocks (heading + string or string[]). Auto-layout: 1→centered max-w-2xl, 2→2-col, 3+→responsive 3-col grid. Alignment defaults: first=left, last=right, middle=center; override per-section via `align` field. Used in both `DetailPageTemplate` and `ListingTemplate`.
+- **InfoSection schema**: `{ heading: string, content: string | string[], align?: 'left' | 'center' | 'right' }`. Field in JSON is `infoSections` (not `sections`).
 
 ## Key Rules (Follow These Strictly)
 
@@ -41,6 +43,8 @@ Modern, content-driven Next.js 14 (App Router) website for Fairy Knowe Backpacke
 **Last cleanup (2026-04-07):** Removed 11 dead files — old mobile list/card/grid components for accommodation, adventures, entertainment, facilities, and venue. Removed orphaned `src/app/camping/` CSS. Fixed pre-existing TypeScript error in `Card.tsx` (`item.href!` assertion).
 
 **Detail page refactor (2026-04-07):** Merged `AccommodationPageTemplate` and `AdventurePageTemplate` into single `DetailPageTemplate`. Removed hardcoded section titles — all sections driven by `sections[]` in JSON. Extracted `CTASection` component. Replaced `ListingTemplate` `generalInfo` logic with `CTASection`. Updated all accommodation (10) and adventure (13) JSON files to use `sections[]`. Updated all listing page CTAs to `{ heading, description?, button? }` schema. Deleted `src/features/accommodation/template.tsx`, `src/features/adventures/template.tsx`, and their `types.ts` re-export files.
+
+**InfoSections refactor (2026-04-07):** Extracted section rendering logic from `DetailPageTemplate` into reusable `InfoSections` component (`src/components/ui/InfoSections.tsx`). Renamed `DetailSection` → `InfoSection` (exported from `@/lib/content`). Renamed JSON field `sections` → `infoSections` across all 23 content files (10 accommodation, 13 adventures). Added `infoSections?` support to `ListingPageContent` and `ListingTemplate`. `DetailPageTemplate` now delegates all section rendering to `InfoSections`.
 
 ## Commands / Scripts
 

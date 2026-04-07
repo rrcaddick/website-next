@@ -42,11 +42,7 @@
         },
         {
           "type": "list",
-          "content": [
-            "Regular new content",
-            "High-quality production",
-            "Behind-the-scenes content"
-          ]
+          "content": ["Regular new content", "High-quality production", "Behind-the-scenes content"]
         }
       ]
     }

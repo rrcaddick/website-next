@@ -94,7 +94,11 @@
   ],
   "cta": {
     "heading": "Ready to Start Your Adventure?",
-    "description": "Join us at Fairy Knowe Backpackers Lodge for an unforgettable experience in the beautiful Garden Route, South Africa."
+    "description": "Join us at Fairy Knowe Backpackers Lodge for an unforgettable experience in the beautiful Garden Route, South Africa.",
+    "button": {
+      "href": "https://book.nightsbridge.com/21082",
+      "label": "Book Now"
+    }
   },
   "footnote": "I dwell in forests deep and green, where few have seen and less have been.\nWhen the mind has sight, be seen I might, on wings that shimmer through the night.\nI guard the flowers, trees and streams, and live within your wildest dreams.\nI bring the magic, most delight, yet vanish with the morning light.\n\nWhat am I?"
 }
