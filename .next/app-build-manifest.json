@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/facilities/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/facilities/page.js"
+      "static/chunks/app/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -26,6 +26,36 @@
       "static/chunks/main-app.js",
       "static/chunks/app/fairy-folk-n-roll/page.js"
     ],
+    "/accommodation/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/accommodation/page.js"
+    ],
+    "/accommodation/[slug]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/accommodation/[slug]/page.js"
+    ],
+    "/adventures/[slug]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/adventures/[slug]/page.js"
+    ],
+    "/entertainment/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/entertainment/page.js"
+    ],
+    "/venue/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/venue/page.js"
+    ],
+    "/facilities/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/facilities/page.js"
+    ],
     "/gallery/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -36,40 +66,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/gallery/error.js"
     ],
-    "/adventures/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/adventures/page.js"
-    ],
-    "/entertainment/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/entertainment/page.js"
-    ],
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
-    ],
-    "/accommodation/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/accommodation/page.js"
-    ],
-    "/venue/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/venue/page.js"
-    ],
     "/contact/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/contact/page.js"
-    ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

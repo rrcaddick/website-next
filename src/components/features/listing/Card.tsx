@@ -32,7 +32,7 @@ export default function Card({ item }: Props) {
 
   // Normal clickable card
   return (
-    <Link href={item.href} className="group mx-auto w-full max-w-[420px] h-full flex justify-center">
+    <Link href={item.href!} className="group mx-auto w-full max-w-[420px] h-full flex justify-center">
       <MouseGradientCard className="bg-[#F3F4F6] text-[#202635] rounded-lg shadow-lg overflow-hidden flex flex-col h-full min-h-[320px] w-full transition-all duration-500 ease-in-out">
         <div className="relative w-full h-[250px]">
           <CardImage src={item.image} alt={getCardTitle(item.blocks)} />

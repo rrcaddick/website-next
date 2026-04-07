@@ -1,9 +1,13 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/fairy-folk-n-roll/page": "app/fairy-folk-n-roll/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/gallery/page": "app/gallery/page.js",
   "/page": "app/page.js",
+  "/fairy-folk-n-roll/page": "app/fairy-folk-n-roll/page.js",
+  "/accommodation/page": "app/accommodation/page.js",
+  "/accommodation/[slug]/page": "app/accommodation/[slug]/page.js",
+  "/adventures/[slug]/page": "app/adventures/[slug]/page.js",
+  "/entertainment/page": "app/entertainment/page.js",
+  "/venue/page": "app/venue/page.js",
+  "/gallery/page": "app/gallery/page.js",
+  "/api/gallery/route": "app/api/gallery/route.js",
   "/facilities/page": "app/facilities/page.js",
-  "/accommodation/page": "app/accommodation/page.js"
+  "/contact/page": "app/contact/page.js"
 }
