@@ -49,26 +49,6 @@
     }
   ],
   "imagesPerPage": 8,
-  "whatsIncluded": [
-    "Double bed",
-    "Comfortable bedding",
-    "Towels available",
-    "Electricity in the tent",
-    "Access to all facilities"
-  ],
-  "sharedFacilities": [
-    "Bathrooms",
-    "Hot showers",
-    "Common kitchen area",
-    "WiFi in common areas"
-  ],
-  "rulesOfTheForest": [
-    "Quiet hours: 10PM - 6AM",
-    "Keep your space tidy",
-    "No private alcohol",
-    "Be friendly to fellow wanderers",
-    "Respect the forest"
-  ],
   "cardImage": "/images/accommodation/safari-tent-card.webp",
   "cardMobileImage": "/images/accommodation/mobile-banners/safari-tent-card.webp",
   "cardDescription": "Experience glamping in our comfortable safari tent, perfect for those who want to be close to nature.",
@@ -76,5 +56,37 @@
     "Double bed",
     "Shared bathroom facilities",
     "Electricity"
+  ],
+  "showBookNow": true,
+  "sections": [
+    {
+      "heading": "What's Included",
+      "content": [
+        "Double bed",
+        "Comfortable bedding",
+        "Towels available",
+        "Electricity in the tent",
+        "Access to all facilities"
+      ]
+    },
+    {
+      "heading": "Rules of the Forest",
+      "content": [
+        "Quiet hours: 10PM - 6AM",
+        "Keep your space tidy",
+        "No private alcohol",
+        "Be friendly to fellow wanderers",
+        "Respect the forest"
+      ]
+    },
+    {
+      "heading": "Shared Facilities",
+      "content": [
+        "Bathrooms",
+        "Hot showers",
+        "Common kitchen area",
+        "WiFi in common areas"
+      ]
+    }
   ]
 }

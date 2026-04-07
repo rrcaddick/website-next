@@ -8,30 +8,48 @@
     "desktopSrc": "/images/adventures/water-under-the-bridge/hero/desktop.webp"
   },
   "gallery": [
-    { "src": "/images/adventures/water-under-the-bridge/gallery/thumb/1.webp", "alt": "Water Under the Bridge Adventure", "fullSize": "/images/adventures/water-under-the-bridge/gallery/full/1.webp" },
-    { "src": "/images/adventures/water-under-the-bridge/gallery/thumb/2.webp", "alt": "Water Under the Bridge Experience", "fullSize": "/images/adventures/water-under-the-bridge/gallery/full/2.webp" },
-    { "src": "/images/adventures/water-under-the-bridge/gallery/thumb/3.webp", "alt": "Water Under the Bridge Journey", "fullSize": "/images/adventures/water-under-the-bridge/gallery/full/3.webp" },
-    { "src": "/images/adventures/water-under-the-bridge/gallery/thumb/4.webp", "alt": "Water Under the Bridge Views", "fullSize": "/images/adventures/water-under-the-bridge/gallery/full/4.webp" },
-    { "src": "/images/adventures/water-under-the-bridge/gallery/thumb/5.webp", "alt": "Water Under the Bridge Adventure 2", "fullSize": "/images/adventures/water-under-the-bridge/gallery/full/5.webp" },
-    { "src": "/images/adventures/water-under-the-bridge/gallery/thumb/6.webp", "alt": "Water Under the Bridge Experience 2", "fullSize": "/images/adventures/water-under-the-bridge/gallery/full/6.webp" },
-    { "src": "/images/adventures/water-under-the-bridge/gallery/thumb/7.webp", "alt": "Water Under the Bridge Journey 2", "fullSize": "/images/adventures/water-under-the-bridge/gallery/full/7.webp" },
-    { "src": "/images/adventures/water-under-the-bridge/gallery/thumb/8.webp", "alt": "Water Under the Bridge Views 2", "fullSize": "/images/adventures/water-under-the-bridge/gallery/full/8.webp" }
+    {
+      "src": "/images/adventures/water-under-the-bridge/gallery/thumb/1.webp",
+      "alt": "Water Under the Bridge Adventure",
+      "fullSize": "/images/adventures/water-under-the-bridge/gallery/full/1.webp"
+    },
+    {
+      "src": "/images/adventures/water-under-the-bridge/gallery/thumb/2.webp",
+      "alt": "Water Under the Bridge Experience",
+      "fullSize": "/images/adventures/water-under-the-bridge/gallery/full/2.webp"
+    },
+    {
+      "src": "/images/adventures/water-under-the-bridge/gallery/thumb/3.webp",
+      "alt": "Water Under the Bridge Journey",
+      "fullSize": "/images/adventures/water-under-the-bridge/gallery/full/3.webp"
+    },
+    {
+      "src": "/images/adventures/water-under-the-bridge/gallery/thumb/4.webp",
+      "alt": "Water Under the Bridge Views",
+      "fullSize": "/images/adventures/water-under-the-bridge/gallery/full/4.webp"
+    },
+    {
+      "src": "/images/adventures/water-under-the-bridge/gallery/thumb/5.webp",
+      "alt": "Water Under the Bridge Adventure 2",
+      "fullSize": "/images/adventures/water-under-the-bridge/gallery/full/5.webp"
+    },
+    {
+      "src": "/images/adventures/water-under-the-bridge/gallery/thumb/6.webp",
+      "alt": "Water Under the Bridge Experience 2",
+      "fullSize": "/images/adventures/water-under-the-bridge/gallery/full/6.webp"
+    },
+    {
+      "src": "/images/adventures/water-under-the-bridge/gallery/thumb/7.webp",
+      "alt": "Water Under the Bridge Journey 2",
+      "fullSize": "/images/adventures/water-under-the-bridge/gallery/full/7.webp"
+    },
+    {
+      "src": "/images/adventures/water-under-the-bridge/gallery/thumb/8.webp",
+      "alt": "Water Under the Bridge Views 2",
+      "fullSize": "/images/adventures/water-under-the-bridge/gallery/full/8.webp"
+    }
   ],
   "imagesPerPage": 8,
-  "generalInfo": [
-    "Distance: 2.5 km round trip",
-    "Duration: 1-1.5 hours",
-    "Difficulty: Easy",
-    "Family-friendly trail",
-    "Historic railway bridge"
-  ],
-  "whatToBring": [
-    "Comfortable walking shoes",
-    "Water bottle",
-    "Sun protection",
-    "Camera for photos",
-    "Binoculars for bird watching"
-  ],
   "cardImage": "/images/adventures/cards/desktop/water-under-the-bridge-card.webp",
   "cardMobileImage": "/images/adventures/cards/mobile/water-under-the-bridge-card.webp",
   "cardDescription": "Take a leap into the refreshing Touws River from our railway bridge jumping spot.",
@@ -40,5 +58,29 @@
     "Water jump",
     "Swimming",
     "Local favorite"
+  ],
+  "sections": [
+    {
+      "heading": "General Info",
+      "content": [
+        "Distance: 2.5 km round trip",
+        "Duration: 1-1.5 hours",
+        "Difficulty: Easy",
+        "Family-friendly trail",
+        "Historic railway bridge"
+      ],
+      "align": "right"
+    },
+    {
+      "heading": "What to Bring",
+      "content": [
+        "Comfortable walking shoes",
+        "Water bottle",
+        "Sun protection",
+        "Camera for photos",
+        "Binoculars for bird watching"
+      ],
+      "align": "left"
+    }
   ]
 }

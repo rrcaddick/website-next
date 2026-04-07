@@ -9,20 +9,6 @@
   },
   "gallery": [],
   "imagesPerPage": 8,
-  "generalInfo": [
-    "Open daily",
-    "Quiet reading space",
-    "Free access",
-    "Book swap available",
-    "Diverse collection"
-  ],
-  "whatToBring": [
-    "A book to swap",
-    "Reading glasses",
-    "Notebook",
-    "Water bottle",
-    "Curiosity"
-  ],
   "cardImage": "/images/adventures/lazy-library/hero/mobile.webp",
   "cardMobileImage": "/images/adventures/lazy-library/hero/mobile.webp",
   "cardDescription": "Feeling a little lazy, or perhaps things are looking rather rainy? Explore the boundless worlds within our charming library.",
@@ -31,5 +17,29 @@
     "Cozy reading nooks",
     "Rainy day retreat",
     "Free to use"
+  ],
+  "sections": [
+    {
+      "heading": "General Info",
+      "content": [
+        "Open daily",
+        "Quiet reading space",
+        "Free access",
+        "Book swap available",
+        "Diverse collection"
+      ],
+      "align": "right"
+    },
+    {
+      "heading": "What to Bring",
+      "content": [
+        "A book to swap",
+        "Reading glasses",
+        "Notebook",
+        "Water bottle",
+        "Curiosity"
+      ],
+      "align": "left"
+    }
   ]
 }

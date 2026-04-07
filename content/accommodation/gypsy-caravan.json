@@ -49,26 +49,6 @@
     }
   ],
   "imagesPerPage": 8,
-  "whatsIncluded": [
-    "Three-quarter bed",
-    "Two sleeper couches",
-    "Comfortable bedding",
-    "Towels available",
-    "Access to facilities"
-  ],
-  "sharedFacilities": [
-    "Bathrooms",
-    "Hot showers",
-    "Common kitchen area",
-    "WiFi in common areas"
-  ],
-  "rulesOfTheForest": [
-    "Quiet hours: 10PM - 6AM",
-    "No smoking inside",
-    "No private alcohol",
-    "Be friendly to fellow wanderers",
-    "Respect the forest"
-  ],
   "cardImage": "/images/accommodation/gypsy-caravan-card.webp",
   "cardMobileImage": "/images/accommodation/mobile-banners/gypsy-caravan-card.webp",
   "cardDescription": "Stay in our unique and charming gypsy caravan for a truly magical experience.",
@@ -76,5 +56,37 @@
     "Double bed + two sleeper couches",
     "Secluded privacy",
     "Electricity"
+  ],
+  "showBookNow": true,
+  "sections": [
+    {
+      "heading": "What's Included",
+      "content": [
+        "Three-quarter bed",
+        "Two sleeper couches",
+        "Comfortable bedding",
+        "Towels available",
+        "Access to facilities"
+      ]
+    },
+    {
+      "heading": "Rules of the Forest",
+      "content": [
+        "Quiet hours: 10PM - 6AM",
+        "No smoking inside",
+        "No private alcohol",
+        "Be friendly to fellow wanderers",
+        "Respect the forest"
+      ]
+    },
+    {
+      "heading": "Shared Facilities",
+      "content": [
+        "Bathrooms",
+        "Hot showers",
+        "Common kitchen area",
+        "WiFi in common areas"
+      ]
+    }
   ]
 }

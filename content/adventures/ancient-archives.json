@@ -8,30 +8,48 @@
     "desktopSrc": "/images/adventures/ancient-archives/hero/desktop.webp"
   },
   "gallery": [
-    { "src": "/images/adventures/ancient-archives/gallery/thumb/1.webp", "alt": "Ancient Archives Adventure", "fullSize": "/images/adventures/ancient-archives/gallery/full/1.webp" },
-    { "src": "/images/adventures/ancient-archives/gallery/thumb/2.webp", "alt": "Ancient Archives Experience", "fullSize": "/images/adventures/ancient-archives/gallery/full/2.webp" },
-    { "src": "/images/adventures/ancient-archives/gallery/thumb/3.webp", "alt": "Ancient Archives Journey", "fullSize": "/images/adventures/ancient-archives/gallery/full/3.webp" },
-    { "src": "/images/adventures/ancient-archives/gallery/thumb/4.webp", "alt": "Ancient Archives Views", "fullSize": "/images/adventures/ancient-archives/gallery/full/4.webp" },
-    { "src": "/images/adventures/ancient-archives/gallery/thumb/5.webp", "alt": "Ancient Archives Adventure 2", "fullSize": "/images/adventures/ancient-archives/gallery/full/5.webp" },
-    { "src": "/images/adventures/ancient-archives/gallery/thumb/6.webp", "alt": "Ancient Archives Experience 2", "fullSize": "/images/adventures/ancient-archives/gallery/full/6.webp" },
-    { "src": "/images/adventures/ancient-archives/gallery/thumb/7.webp", "alt": "Ancient Archives Journey 2", "fullSize": "/images/adventures/ancient-archives/gallery/full/7.webp" },
-    { "src": "/images/adventures/ancient-archives/gallery/thumb/8.webp", "alt": "Ancient Archives Views 2", "fullSize": "/images/adventures/ancient-archives/gallery/full/8.webp" }
+    {
+      "src": "/images/adventures/ancient-archives/gallery/thumb/1.webp",
+      "alt": "Ancient Archives Adventure",
+      "fullSize": "/images/adventures/ancient-archives/gallery/full/1.webp"
+    },
+    {
+      "src": "/images/adventures/ancient-archives/gallery/thumb/2.webp",
+      "alt": "Ancient Archives Experience",
+      "fullSize": "/images/adventures/ancient-archives/gallery/full/2.webp"
+    },
+    {
+      "src": "/images/adventures/ancient-archives/gallery/thumb/3.webp",
+      "alt": "Ancient Archives Journey",
+      "fullSize": "/images/adventures/ancient-archives/gallery/full/3.webp"
+    },
+    {
+      "src": "/images/adventures/ancient-archives/gallery/thumb/4.webp",
+      "alt": "Ancient Archives Views",
+      "fullSize": "/images/adventures/ancient-archives/gallery/full/4.webp"
+    },
+    {
+      "src": "/images/adventures/ancient-archives/gallery/thumb/5.webp",
+      "alt": "Ancient Archives Adventure 2",
+      "fullSize": "/images/adventures/ancient-archives/gallery/full/5.webp"
+    },
+    {
+      "src": "/images/adventures/ancient-archives/gallery/thumb/6.webp",
+      "alt": "Ancient Archives Experience 2",
+      "fullSize": "/images/adventures/ancient-archives/gallery/full/6.webp"
+    },
+    {
+      "src": "/images/adventures/ancient-archives/gallery/thumb/7.webp",
+      "alt": "Ancient Archives Journey 2",
+      "fullSize": "/images/adventures/ancient-archives/gallery/full/7.webp"
+    },
+    {
+      "src": "/images/adventures/ancient-archives/gallery/thumb/8.webp",
+      "alt": "Ancient Archives Views 2",
+      "fullSize": "/images/adventures/ancient-archives/gallery/full/8.webp"
+    }
   ],
   "imagesPerPage": 8,
-  "generalInfo": [
-    "Open daily",
-    "Quiet reading space",
-    "Free access",
-    "Historical collection",
-    "Travel resources"
-  ],
-  "whatToBring": [
-    "Reading glasses",
-    "Notebook",
-    "Camera for photos",
-    "Water bottle",
-    "Curiosity"
-  ],
   "cardImage": "/images/adventures/cards/desktop/ancient-archives-card.webp",
   "cardMobileImage": "/images/adventures/cards/mobile/ancient-archives-card.webp",
   "cardDescription": "Books, books, books in all the nooks.",
@@ -40,5 +58,29 @@
     "Over 1500 books",
     "Endless adventures",
     "Perfect for rainy days"
+  ],
+  "sections": [
+    {
+      "heading": "General Info",
+      "content": [
+        "Open daily",
+        "Quiet reading space",
+        "Free access",
+        "Historical collection",
+        "Travel resources"
+      ],
+      "align": "right"
+    },
+    {
+      "heading": "What to Bring",
+      "content": [
+        "Reading glasses",
+        "Notebook",
+        "Camera for photos",
+        "Water bottle",
+        "Curiosity"
+      ],
+      "align": "left"
+    }
   ]
 }

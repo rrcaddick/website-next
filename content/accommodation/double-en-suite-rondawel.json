@@ -19,31 +19,43 @@
     }
   ],
   "imagesPerPage": 8,
-  "whatsIncluded": [
-    "Double bed",
-    "En-suite bathroom",
-    "Private entrance",
-    "Air conditioning",
-    "WiFi access"
-  ],
-  "sharedFacilities": [
-    "Common kitchen area",
-    "Outdoor seating",
-    "Laundry facilities",
-    "Parking"
-  ],
-  "rulesOfTheForest": [
-    "Check-in: 2PM - 8PM",
-    "Check-out: 10AM",
-    "No smoking inside",
-    "No pets allowed",
-    "Quiet hours: 10PM - 6AM"
-  ],
   "cardImage": "/images/accommodation/double-en-suite-rondawel/gallery/thumb/1.webp",
   "cardDescription": "Experience the charm of our traditional rondawel with modern comforts. A unique circular design with all the amenities for a comfortable stay.",
   "cardFeatures": [
     "Double bed",
     "En-suite bathroom",
     "Private entrance"
+  ],
+  "showBookNow": true,
+  "sections": [
+    {
+      "heading": "What's Included",
+      "content": [
+        "Double bed",
+        "En-suite bathroom",
+        "Private entrance",
+        "Air conditioning",
+        "WiFi access"
+      ]
+    },
+    {
+      "heading": "Rules of the Forest",
+      "content": [
+        "Check-in: 2PM - 8PM",
+        "Check-out: 10AM",
+        "No smoking inside",
+        "No pets allowed",
+        "Quiet hours: 10PM - 6AM"
+      ]
+    },
+    {
+      "heading": "Shared Facilities",
+      "content": [
+        "Common kitchen area",
+        "Outdoor seating",
+        "Laundry facilities",
+        "Parking"
+      ]
+    }
   ]
 }

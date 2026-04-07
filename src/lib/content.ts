@@ -36,26 +36,36 @@ export interface ListingPageContent {
   columns?: number;
   showBookNow?: boolean;
   cta?: {
-    title: string;
+    heading: string;
     description?: string;
-    href?: string;
-    label?: string;
-    generalInfo?: {
-      leftTitle: string;
-      leftItems: string[];
-      rightTitle: string;
-      rightItems: string[];
+    button?: {
+      href: string;
+      label: string;
     };
   };
   footnote?: string;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Accommodation
+// Detail pages (shared by Accommodation + Adventures)
 // ─────────────────────────────────────────────────────────────────────────────
 
-export interface AccommodationContent {
-  slug: string;
+export interface DetailSection {
+  heading: string;
+  content: string | string[];
+  align?: "left" | "center" | "right";
+}
+
+export interface DetailCTA {
+  heading: string;
+  description?: string;
+  button?: {
+    href: string;
+    label: string;
+  };
+}
+
+export interface DetailPageContent {
   title: string;
   description: string;
   hero: {
@@ -64,9 +74,17 @@ export interface AccommodationContent {
   };
   gallery: GalleryImage[];
   imagesPerPage?: number;
-  whatsIncluded: string[];
-  sharedFacilities: string[];
-  rulesOfTheForest: string[];
+  showBookNow?: boolean;
+  sections?: DetailSection[];
+  cta?: DetailCTA;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Accommodation
+// ─────────────────────────────────────────────────────────────────────────────
+
+export interface AccommodationContent extends DetailPageContent {
+  slug: string;
   cardImage: string;
   cardMobileImage?: string;
   cardDescription: string;
@@ -96,19 +114,9 @@ export function getAllAccommodation(): AccommodationContent[] {
 // Adventures
 // ─────────────────────────────────────────────────────────────────────────────
 
-export interface AdventureContent {
+export interface AdventureContent extends DetailPageContent {
   slug: string;
-  title: string;
-  description: string;
   category: string;
-  hero: {
-    mobileSrc: string;
-    desktopSrc: string;
-  };
-  gallery: GalleryImage[];
-  imagesPerPage?: number;
-  generalInfo: string[];
-  whatToBring: string[];
   cardImage: string;
   cardMobileImage: string;
   cardDescription: string;

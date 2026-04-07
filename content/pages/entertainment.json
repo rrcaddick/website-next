@@ -9,7 +9,10 @@
     {
       "image": "/images/entertainment/images/live-gigs-card.webp",
       "blocks": [
-        { "type": "title", "content": "Live Music Gigs" },
+        {
+          "type": "title",
+          "content": "Live Music Gigs"
+        },
         {
           "type": "text",
           "content": "Experience live performances from local magical musicians and traveling musical magicians. From intimate solos to monstrous full-band spectacles, each a celebration of sound that will leave you spellbound."
@@ -19,7 +22,10 @@
     {
       "image": "/images/entertainment/images/open-mic-night-card.webp",
       "blocks": [
-        { "type": "title", "content": "Open Mic Night" },
+        {
+          "type": "title",
+          "content": "Open Mic Night"
+        },
         {
           "type": "text",
           "content": "Step into the spotlight and share what you may dare. Whether you're an aspiring artist, poetic wordsmith, comedic genius, or not, the stage is yours to claim and fame is yours to gain."
@@ -29,7 +35,10 @@
     {
       "image": "/images/entertainment/images/family-market-card.webp",
       "blocks": [
-        { "type": "title", "content": "Family Market" },
+        {
+          "type": "title",
+          "content": "Family Market"
+        },
         {
           "type": "text",
           "content": "Explore our charming family market and discover locally crafted gems, tasty treats, unique garments and one-of-a-kind souvinirs. Connect with locals that bring together a community of creativity."
@@ -38,9 +47,11 @@
     }
   ],
   "cta": {
-    "title": "Want to Perform?",
+    "heading": "Want to Perform?",
     "description": "We're always looking for talented musicians to join our lineup. Contact us to discuss performance opportunities.",
-    "href": "/booking",
-    "label": "Get in Touch"
+    "button": {
+      "href": "/booking",
+      "label": "Get in Touch"
+    }
   }
 }

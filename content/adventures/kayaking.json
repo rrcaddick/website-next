@@ -50,22 +50,37 @@
     }
   ],
   "imagesPerPage": 8,
-  "generalInfo": [
-    "Duration: 2-3 hours",
-    "Difficulty: Moderate",
-    "Equipment provided",
-    "Expert guides included",
-    "Wildlife spotting opportunities"
-  ],
-  "whatToBring": [
-    "Sunscreen and hat",
-    "Water and snacks",
-    "Comfortable walking shoes",
-    "Camera for memories",
-    "Small backpack for essentials"
-  ],
   "cardImage": "/images/adventures/cards/desktop/kayaking-card.webp",
   "cardMobileImage": "/images/adventures/cards/mobile/kayaking-card.webp",
   "cardDescription": "3 hour return trip to the waterfall and back, totaling around 2 hours paddling and 1 hour hiking.",
-  "cardFeatures": ["Life jackets included", "Moderate fitness required", "Paddling, hiking and swimming", "Waterfall"]
+  "cardFeatures": [
+    "Life jackets included",
+    "Moderate fitness required",
+    "Paddling, hiking and swimming",
+    "Waterfall"
+  ],
+  "sections": [
+    {
+      "heading": "General Info",
+      "content": [
+        "Duration: 2-3 hours",
+        "Difficulty: Moderate",
+        "Equipment provided",
+        "Expert guides included",
+        "Wildlife spotting opportunities"
+      ],
+      "align": "right"
+    },
+    {
+      "heading": "What to Bring",
+      "content": [
+        "Sunscreen and hat",
+        "Water and snacks",
+        "Comfortable walking shoes",
+        "Camera for memories",
+        "Small backpack for essentials"
+      ],
+      "align": "left"
+    }
+  ]
 }

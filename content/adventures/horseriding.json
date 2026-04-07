@@ -8,30 +8,48 @@
     "desktopSrc": "/images/adventures/horseriding/hero/desktop.webp"
   },
   "gallery": [
-    { "src": "/images/adventures/horseriding/gallery/full/1.webp", "alt": "Horseriding Adventure", "fullSize": "/images/adventures/horseriding/gallery/full/1.webp" },
-    { "src": "/images/adventures/horseriding/gallery/full/2.webp", "alt": "Horseriding Experience", "fullSize": "/images/adventures/horseriding/gallery/full/2.webp" },
-    { "src": "/images/adventures/horseriding/gallery/full/3.webp", "alt": "Horseriding Journey", "fullSize": "/images/adventures/horseriding/gallery/full/3.webp" },
-    { "src": "/images/adventures/horseriding/gallery/full/4.webp", "alt": "Horseriding Views", "fullSize": "/images/adventures/horseriding/gallery/full/4.webp" },
-    { "src": "/images/adventures/horseriding/gallery/full/5.webp", "alt": "Horseriding Adventure 2", "fullSize": "/images/adventures/horseriding/gallery/full/5.webp" },
-    { "src": "/images/adventures/horseriding/gallery/full/6.webp", "alt": "Horseriding Experience 2", "fullSize": "/images/adventures/horseriding/gallery/full/6.webp" },
-    { "src": "/images/adventures/horseriding/gallery/full/7.webp", "alt": "Horseriding Journey 2", "fullSize": "/images/adventures/horseriding/gallery/full/7.webp" },
-    { "src": "/images/adventures/horseriding/gallery/full/8.webp", "alt": "Horseriding Views 2", "fullSize": "/images/adventures/horseriding/gallery/full/8.webp" }
+    {
+      "src": "/images/adventures/horseriding/gallery/full/1.webp",
+      "alt": "Horseriding Adventure",
+      "fullSize": "/images/adventures/horseriding/gallery/full/1.webp"
+    },
+    {
+      "src": "/images/adventures/horseriding/gallery/full/2.webp",
+      "alt": "Horseriding Experience",
+      "fullSize": "/images/adventures/horseriding/gallery/full/2.webp"
+    },
+    {
+      "src": "/images/adventures/horseriding/gallery/full/3.webp",
+      "alt": "Horseriding Journey",
+      "fullSize": "/images/adventures/horseriding/gallery/full/3.webp"
+    },
+    {
+      "src": "/images/adventures/horseriding/gallery/full/4.webp",
+      "alt": "Horseriding Views",
+      "fullSize": "/images/adventures/horseriding/gallery/full/4.webp"
+    },
+    {
+      "src": "/images/adventures/horseriding/gallery/full/5.webp",
+      "alt": "Horseriding Adventure 2",
+      "fullSize": "/images/adventures/horseriding/gallery/full/5.webp"
+    },
+    {
+      "src": "/images/adventures/horseriding/gallery/full/6.webp",
+      "alt": "Horseriding Experience 2",
+      "fullSize": "/images/adventures/horseriding/gallery/full/6.webp"
+    },
+    {
+      "src": "/images/adventures/horseriding/gallery/full/7.webp",
+      "alt": "Horseriding Journey 2",
+      "fullSize": "/images/adventures/horseriding/gallery/full/7.webp"
+    },
+    {
+      "src": "/images/adventures/horseriding/gallery/full/8.webp",
+      "alt": "Horseriding Views 2",
+      "fullSize": "/images/adventures/horseriding/gallery/full/8.webp"
+    }
   ],
   "imagesPerPage": 8,
-  "generalInfo": [
-    "Duration: 1.5 hours",
-    "All skill levels welcome",
-    "Experienced guides",
-    "Safety equipment provided",
-    "Well-trained horses"
-  ],
-  "whatToBring": [
-    "Long pants and closed shoes",
-    "Water and snacks",
-    "Sunscreen and hat",
-    "Camera for memories",
-    "Small backpack for essentials"
-  ],
   "cardImage": "/images/adventures/cards/desktop/horseriding-card.webp",
   "cardMobileImage": "/images/adventures/cards/mobile/horseriding-card.webp",
   "cardDescription": "1.5 hour trail through the forests of the Wilderness Heights.",
@@ -40,5 +58,29 @@
     "Beginner an/or skilled riders",
     "Helmets provided",
     "Beautiful forest views"
+  ],
+  "sections": [
+    {
+      "heading": "General Info",
+      "content": [
+        "Duration: 1.5 hours",
+        "All skill levels welcome",
+        "Experienced guides",
+        "Safety equipment provided",
+        "Well-trained horses"
+      ],
+      "align": "right"
+    },
+    {
+      "heading": "What to Bring",
+      "content": [
+        "Long pants and closed shoes",
+        "Water and snacks",
+        "Sunscreen and hat",
+        "Camera for memories",
+        "Small backpack for essentials"
+      ],
+      "align": "left"
+    }
   ]
 }

@@ -49,25 +49,6 @@
     }
   ],
   "imagesPerPage": 8,
-  "whatsIncluded": [
-    "Bunk beds",
-    "Comfortable bedding",
-    "Towels available",
-    "Access to all facilities"
-  ],
-  "sharedFacilities": [
-    "Bathrooms",
-    "Hot showers",
-    "Common kitchen area",
-    "WiFi in common areas"
-  ],
-  "rulesOfTheForest": [
-    "Quiet hours: 10PM - 6AM",
-    "No smoking inside",
-    "No private alcohol",
-    "Be friendly to fellow wanderers",
-    "Respect the forest"
-  ],
   "cardImage": "/images/accommodation/mixed-dorm-card.webp",
   "cardMobileImage": "/images/accommodation/mobile-banners/mixed-dorm-card.webp",
   "cardDescription": "Comfortable bunk beds in our mixed dormitory, perfect for solo travelers and backpackers.",
@@ -75,5 +56,36 @@
     "Bunk beds",
     "Shared bathroom facilities",
     "Towels available"
+  ],
+  "showBookNow": true,
+  "sections": [
+    {
+      "heading": "What's Included",
+      "content": [
+        "Bunk beds",
+        "Comfortable bedding",
+        "Towels available",
+        "Access to all facilities"
+      ]
+    },
+    {
+      "heading": "Rules of the Forest",
+      "content": [
+        "Quiet hours: 10PM - 6AM",
+        "No smoking inside",
+        "No private alcohol",
+        "Be friendly to fellow wanderers",
+        "Respect the forest"
+      ]
+    },
+    {
+      "heading": "Shared Facilities",
+      "content": [
+        "Bathrooms",
+        "Hot showers",
+        "Common kitchen area",
+        "WiFi in common areas"
+      ]
+    }
   ]
 }

@@ -49,17 +49,43 @@
     }
   ],
   "imagesPerPage": 8,
-  "whatsIncluded": ["Two single beds", "Comfortable bedding", "Towels available", "Access to all facilities"],
-  "sharedFacilities": ["Bathrooms", "Hot showers", "Common kitchen area", "WiFi in common areas"],
-  "rulesOfTheForest": [
-    "Quiet hours: 10PM - 6AM",
-    "No smoking inside",
-    "No private alcohol",
-    "Be friendly to fellow wanderers",
-    "Respect the forest"
-  ],
   "cardImage": "/images/accommodation/twin-room-card.webp",
   "cardMobileImage": "/images/accommodation/mobile-banners/twin-room-card.webp",
   "cardDescription": "Cozy room with two single beds, ideal for friends traveling together.",
-  "cardFeatures": ["Two single beds", "Shared bathroom facilities", "Fresh linen"]
+  "cardFeatures": [
+    "Two single beds",
+    "Shared bathroom facilities",
+    "Fresh linen"
+  ],
+  "showBookNow": true,
+  "sections": [
+    {
+      "heading": "What's Included",
+      "content": [
+        "Two single beds",
+        "Comfortable bedding",
+        "Towels available",
+        "Access to all facilities"
+      ]
+    },
+    {
+      "heading": "Rules of the Forest",
+      "content": [
+        "Quiet hours: 10PM - 6AM",
+        "No smoking inside",
+        "No private alcohol",
+        "Be friendly to fellow wanderers",
+        "Respect the forest"
+      ]
+    },
+    {
+      "heading": "Shared Facilities",
+      "content": [
+        "Bathrooms",
+        "Hot showers",
+        "Common kitchen area",
+        "WiFi in common areas"
+      ]
+    }
+  ]
 }

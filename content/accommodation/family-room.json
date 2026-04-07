@@ -49,30 +49,42 @@
     }
   ],
   "imagesPerPage": 8,
-  "whatsIncluded": [
-    "Double bed + bunk bed",
-    "Comfortable bedding",
-    "Towels available",
-    "Access to all facilities"
-  ],
-  "sharedFacilities": [
-    "Bathrooms",
-    "Hot showers",
-    "Common kitchen area",
-    "WiFi in common areas"
-  ],
-  "rulesOfTheForest": [
-    "Quiet hours: 10PM - 6AM",
-    "No smoking inside",
-    "No private alcohol",
-    "Be friendly to fellow wanderers",
-    "Respect the forest"
-  ],
   "cardImage": "/images/accommodation/family-room-card.webp",
   "cardDescription": "Spacious room perfect for families, featuring multiple beds and shared facilities.",
   "cardFeatures": [
     "Double bed + bunk bed",
     "Shared bathroom facilities",
     "Family friendly"
+  ],
+  "showBookNow": true,
+  "sections": [
+    {
+      "heading": "What's Included",
+      "content": [
+        "Double bed + bunk bed",
+        "Comfortable bedding",
+        "Towels available",
+        "Access to all facilities"
+      ]
+    },
+    {
+      "heading": "Rules of the Forest",
+      "content": [
+        "Quiet hours: 10PM - 6AM",
+        "No smoking inside",
+        "No private alcohol",
+        "Be friendly to fellow wanderers",
+        "Respect the forest"
+      ]
+    },
+    {
+      "heading": "Shared Facilities",
+      "content": [
+        "Bathrooms",
+        "Hot showers",
+        "Common kitchen area",
+        "WiFi in common areas"
+      ]
+    }
   ]
 }

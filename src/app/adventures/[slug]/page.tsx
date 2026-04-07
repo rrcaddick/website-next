@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import { getAdventure, getAllAdventureSlugs } from '@/lib/content'
-import AdventurePageTemplate from '@/features/adventures/template'
+import DetailPageTemplate from '@/features/detail/template'
 
 export async function generateStaticParams() {
   return getAllAdventureSlugs().map((slug) => ({ slug }))
@@ -20,5 +20,5 @@ export default async function AdventurePage({
     notFound()
   }
 
-  return <AdventurePageTemplate content={content} />
+  return <DetailPageTemplate content={content} />
 }

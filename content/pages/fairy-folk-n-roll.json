@@ -10,7 +10,10 @@
     {
       "image": "/images/fairy-folk-n-roll/cards/ffr-live-music.webp",
       "blocks": [
-        { "type": "title", "content": "Live Music Sessions" },
+        {
+          "type": "title",
+          "content": "Live Music Sessions"
+        },
         {
           "type": "text",
           "content": "Experience the raw energy and authentic sound of local artists in our professionally recorded live sessions. Each performance is carefully captured to preserve the intimate atmosphere and musical excellence that defines our venue."
@@ -29,22 +32,31 @@
       "image": "/images/fairy-folk-n-roll/cards/ffr-youtube.webp",
       "href": "https://www.youtube.com/@FairyFolknRoll",
       "blocks": [
-        { "type": "title", "content": "Our YouTube Channel" },
+        {
+          "type": "title",
+          "content": "Our YouTube Channel"
+        },
         {
           "type": "text",
           "content": "Subscribe to our YouTube channel to discover the diverse musical talent of the Garden Route. From folk and acoustic to indie rock and world music, our channel is a platform for artists to reach audiences worldwide while capturing the unique atmosphere of our backpackers."
         },
         {
           "type": "list",
-          "content": ["Regular new content", "High-quality production", "Behind-the-scenes content"]
+          "content": [
+            "Regular new content",
+            "High-quality production",
+            "Behind-the-scenes content"
+          ]
         }
       ]
     }
   ],
   "cta": {
-    "title": "Be Part of Our Story",
+    "heading": "Be Part of Our Story",
     "description": "Are you a musician looking to showcase your talent? We're always excited to feature new artists in our live sessions. Join our growing community of musicians and reach audiences worldwide through our YouTube channel",
-    "href": "/booking",
-    "label": "Contact Us"
+    "button": {
+      "href": "/booking",
+      "label": "Contact Us"
+    }
   }
 }

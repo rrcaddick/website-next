@@ -10,12 +10,18 @@
       "image": "/images/adventures/cards/kayaking-card.webp",
       "href": "/adventures/kayaking",
       "blocks": [
-        { "type": "title", "content": "Kayaking" },
+        {
+          "type": "title",
+          "content": "Kayaking"
+        },
         {
           "type": "text",
           "content": "You can paddle up the Touw River to view spectacular waterfalls and wonderful birdlife."
         },
-        { "type": "subheading", "content": "Features:" },
+        {
+          "type": "subheading",
+          "content": "Features:"
+        },
         {
           "type": "list",
           "content": [
@@ -31,15 +37,26 @@
       "image": "/images/adventures/cards/paragliding-card.webp",
       "href": "/adventures/paragliding",
       "blocks": [
-        { "type": "title", "content": "Paragliding" },
+        {
+          "type": "title",
+          "content": "Paragliding"
+        },
         {
           "type": "text",
           "content": "Wilderness is a mecca for paragliding. Experience a flight of a lifetime from one of the many launch sites in and around Wilderness."
         },
-        { "type": "subheading", "content": "Features:" },
+        {
+          "type": "subheading",
+          "content": "Features:"
+        },
         {
           "type": "list",
-          "content": ["Professional pilots", "All equipment provided", "Weather dependant", "Camera rental available"]
+          "content": [
+            "Professional pilots",
+            "All equipment provided",
+            "Weather dependant",
+            "Camera rental available"
+          ]
         }
       ]
     },
@@ -47,15 +64,26 @@
       "image": "/images/adventures/cards/horseriding-card.webp",
       "href": "/adventures/horseriding",
       "blocks": [
-        { "type": "title", "content": "Horse Riding" },
+        {
+          "type": "title",
+          "content": "Horse Riding"
+        },
         {
           "type": "text",
           "content": "For beginners, there is a 1,5-hour forest ride. For the adventurist or more experienced rider, a 3-hour outride takes the rider through plantations and indigenous forest to a spectacular waterfall."
         },
-        { "type": "subheading", "content": "Features:" },
+        {
+          "type": "subheading",
+          "content": "Features:"
+        },
         {
           "type": "list",
-          "content": ["Experienced guide", "Any experience level", "Helmets provided", "Beautiful forest views"]
+          "content": [
+            "Experienced guide",
+            "Any experience level",
+            "Helmets provided",
+            "Beautiful forest views"
+          ]
         }
       ]
     },
@@ -63,15 +91,26 @@
       "image": "/images/adventures/cards/half-collared-kingfisher-trail-card.webp",
       "href": "/adventures/half-collared-kingfisher-trail",
       "blocks": [
-        { "type": "title", "content": "Half Collared Kingfisher Trail" },
+        {
+          "type": "title",
+          "content": "Half Collared Kingfisher Trail"
+        },
         {
           "type": "text",
           "content": "Embark on a delightful 7.6-km out-and-back trail that winds its way through a serene, shaded wonderland."
         },
-        { "type": "subheading", "content": "Features:" },
+        {
+          "type": "subheading",
+          "content": "Features:"
+        },
         {
           "type": "list",
-          "content": ["Meditative walk", "Unwind", "Intention", "Garden environment"]
+          "content": [
+            "Meditative walk",
+            "Unwind",
+            "Intention",
+            "Garden environment"
+          ]
         }
       ]
     },
@@ -79,15 +118,26 @@
       "image": "/images/adventures/cards/brown-hooded-kingfisher-trail-card.webp",
       "href": "/adventures/brown-hooded-kingfisher-trail",
       "blocks": [
-        { "type": "title", "content": "Brown Hooded Kingfisher Trail" },
+        {
+          "type": "title",
+          "content": "Brown Hooded Kingfisher Trail"
+        },
         {
           "type": "text",
           "content": "Embark on a teeming 4.2-km out-and-back journey along the delightful Duiwe River. This quick and easy trail, typically completed in about 1 hour and 20 minutes, invites adventurers on a short and sweet stroll along the stream."
         },
-        { "type": "subheading", "content": "Features:" },
+        {
+          "type": "subheading",
+          "content": "Features:"
+        },
         {
           "type": "list",
-          "content": ["There and back trail", "Easy difficulty", "Bird watching", "River crosssing"]
+          "content": [
+            "There and back trail",
+            "Easy difficulty",
+            "Bird watching",
+            "River crosssing"
+          ]
         }
       ]
     },
@@ -95,15 +145,26 @@
       "image": "/images/adventures/cards/bosduif-trail-card.webp",
       "href": "/adventures/bosduif-trail",
       "blocks": [
-        { "type": "title", "content": "Bosduif Trail" },
+        {
+          "type": "title",
+          "content": "Bosduif Trail"
+        },
         {
           "type": "text",
           "content": "Embark on a 2-hour loop trail that takes you up to breathtaking viewpoints above the Touw River. Experience the perfect blend of forest exploration and scenic vistas as you make your way back down through the enchanting landscape."
         },
-        { "type": "subheading", "content": "Features:" },
+        {
+          "type": "subheading",
+          "content": "Features:"
+        },
         {
           "type": "list",
-          "content": ["Loop trail", "Tougher difficulty", "Steep ups and downs", "Elevated views"]
+          "content": [
+            "Loop trail",
+            "Tougher difficulty",
+            "Steep ups and downs",
+            "Elevated views"
+          ]
         }
       ]
     },
@@ -111,15 +172,26 @@
       "image": "/images/adventures/cards/woodville-big-tree-card.webp",
       "href": "/adventures/woodville-big-tree",
       "blocks": [
-        { "type": "title", "content": "Ancient Archives" },
+        {
+          "type": "title",
+          "content": "Ancient Archives"
+        },
         {
           "type": "text",
           "content": "Fairy Knowe Adventures is a birder-friendly establishment . The property is set in a forest of yellowwood and milkwood trees with abundant birdlife and has a birdhide on its doorstep."
         },
-        { "type": "subheading", "content": "Features:" },
+        {
+          "type": "subheading",
+          "content": "Features:"
+        },
         {
           "type": "list",
-          "content": ["Book exchange", "Over 1500 books", "Endless adventures", "Perfect for rainy days"]
+          "content": [
+            "Book exchange",
+            "Over 1500 books",
+            "Endless adventures",
+            "Perfect for rainy days"
+          ]
         }
       ]
     },
@@ -127,15 +199,26 @@
       "image": "/images/adventures/cards/map-of-africa-card.webp",
       "href": "/adventures/map-of-africa",
       "blocks": [
-        { "type": "title", "content": "Map of Africa" },
+        {
+          "type": "title",
+          "content": "Map of Africa"
+        },
         {
           "type": "text",
           "content": "The Map of Africa offers a spellbinding viewpoint, where nature's artistry is unveiled in the form of a river that gracefully sculpts the shape of the African continent into the valley below."
         },
-        { "type": "subheading", "content": "Features:" },
+        {
+          "type": "subheading",
+          "content": "Features:"
+        },
         {
           "type": "list",
-          "content": ["Easy access", "Spectacular views", "Picnic spot", "Birds eye view"]
+          "content": [
+            "Easy access",
+            "Spectacular views",
+            "Picnic spot",
+            "Birds eye view"
+          ]
         }
       ]
     },
@@ -143,15 +226,26 @@
       "image": "/images/adventures/cards/wilderness-beach-card.webp",
       "href": "/adventures/wilderness-beach",
       "blocks": [
-        { "type": "title", "content": "Wilderness Beach" },
+        {
+          "type": "title",
+          "content": "Wilderness Beach"
+        },
         {
           "type": "text",
           "content": "Bask in the sun on the golden shores of Wilderness Beach, a Blue Flag gem renowned for its beauty and charm."
         },
-        { "type": "subheading", "content": "Features:" },
+        {
+          "type": "subheading",
+          "content": "Features:"
+        },
         {
           "type": "list",
-          "content": ["Close to backpackers", "Bridge jump", "Swimming", "Local favorite"]
+          "content": [
+            "Close to backpackers",
+            "Bridge jump",
+            "Swimming",
+            "Local favorite"
+          ]
         }
       ]
     },
@@ -159,15 +253,26 @@
       "image": "/images/adventures/cards/water-under-the-bridge-card.webp",
       "href": "/adventures/water-under-the-bridge",
       "blocks": [
-        { "type": "title", "content": "Water Under the Bridge" },
+        {
+          "type": "title",
+          "content": "Water Under the Bridge"
+        },
         {
           "type": "text",
           "content": "Discover the enchanting Water Under the Bridge trail, a picturesque 2.5-km walk that follows the gentle flow of the Touw River."
         },
-        { "type": "subheading", "content": "Features:" },
+        {
+          "type": "subheading",
+          "content": "Features:"
+        },
         {
           "type": "list",
-          "content": ["Close to backpackers", "Bridge jump", "Swimming", "Local favorite"]
+          "content": [
+            "Close to backpackers",
+            "Bridge jump",
+            "Swimming",
+            "Local favorite"
+          ]
         }
       ]
     },
@@ -175,15 +280,26 @@
       "image": "/images/adventures/cards/fairy-labyrinth-card.webp",
       "href": "/adventures/fairy-labyrinth",
       "blocks": [
-        { "type": "title", "content": "Fairy Labyrinth" },
+        {
+          "type": "title",
+          "content": "Fairy Labyrinth"
+        },
         {
           "type": "text",
           "content": "Step into a world of enchantment at the Fairy Labyrinth, a magical 1.5-km trail that winds through an ancient forest filled with towering trees and mystical formations."
         },
-        { "type": "subheading", "content": "Features:" },
+        {
+          "type": "subheading",
+          "content": "Features:"
+        },
         {
           "type": "list",
-          "content": ["Meditative walk", "Unwind", "Intention", "Garden environment"]
+          "content": [
+            "Meditative walk",
+            "Unwind",
+            "Intention",
+            "Garden environment"
+          ]
         }
       ]
     },
@@ -191,21 +307,32 @@
       "image": "/images/adventures/cards/ancient-archives-card.webp",
       "href": "/adventures/ancient-archives",
       "blocks": [
-        { "type": "title", "content": "Ancient Archives" },
+        {
+          "type": "title",
+          "content": "Ancient Archives"
+        },
         {
           "type": "text",
           "content": "Fairy Knowe Adventures is a birder-friendly establishment . The property is set in a forest of yellowwood and milkwood trees with abundant birdlife and has a birdhide on its doorstep."
         },
-        { "type": "subheading", "content": "Features:" },
+        {
+          "type": "subheading",
+          "content": "Features:"
+        },
         {
           "type": "list",
-          "content": ["Book exchange", "Over 1500 books", "Endless adventures", "Perfect for rainy days"]
+          "content": [
+            "Book exchange",
+            "Over 1500 books",
+            "Endless adventures",
+            "Perfect for rainy days"
+          ]
         }
       ]
     }
   ],
   "cta": {
-    "title": "Adventure Safely",
+    "heading": "Adventure Safely",
     "description": "Always check the weather. Wear appropriate clothing and footwear. Stay hydrated and carry water. Inform staff of any medical need to knows. Wear a hat on sunny expeditions. Bring a backpack. Carry snacks. Watch out for the big bad wolf."
   }
 }

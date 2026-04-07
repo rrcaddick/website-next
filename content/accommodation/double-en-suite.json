@@ -49,26 +49,6 @@
     }
   ],
   "imagesPerPage": 8,
-  "whatsIncluded": [
-    "Queen bed | Comfortable bedding",
-    "En-suite bathroom",
-    "Towels provided",
-    "Outdoor seating area",
-    "Access to all facilities"
-  ],
-  "sharedFacilities": [
-    "Common kitchen area",
-    "WiFi in common areas",
-    "Outdoor seating areas",
-    "Access to all resort facilities"
-  ],
-  "rulesOfTheForest": [
-    "Quiet hours: 10PM - 6AM",
-    "No smoking inside",
-    "No private alcohol",
-    "Be friendly to fellow wanderers",
-    "Respect the forest"
-  ],
   "cardImage": "/images/accommodation/double-ensuite-card.webp",
   "cardMobileImage": "/images/accommodation/mobile-banners/double-en-suite-card.webp",
   "cardDescription": "Private room with a queen size bed and en-suite bathroom for added comfort.",
@@ -76,5 +56,37 @@
     "Queen bed",
     "Private bathroom",
     "Extra comfort"
+  ],
+  "showBookNow": true,
+  "sections": [
+    {
+      "heading": "What's Included",
+      "content": [
+        "Queen bed | Comfortable bedding",
+        "En-suite bathroom",
+        "Towels provided",
+        "Outdoor seating area",
+        "Access to all facilities"
+      ]
+    },
+    {
+      "heading": "Rules of the Forest",
+      "content": [
+        "Quiet hours: 10PM - 6AM",
+        "No smoking inside",
+        "No private alcohol",
+        "Be friendly to fellow wanderers",
+        "Respect the forest"
+      ]
+    },
+    {
+      "heading": "Shared Facilities",
+      "content": [
+        "Common kitchen area",
+        "WiFi in common areas",
+        "Outdoor seating areas",
+        "Access to all resort facilities"
+      ]
+    }
   ]
 }

@@ -49,26 +49,6 @@
     }
   ],
   "imagesPerPage": 8,
-  "whatsIncluded": [
-    "Double bed + bunk bed | Comfortable bedding",
-    "En-suite bathroom | Towels provided",
-    "Traditional African design",
-    "Outside seating area | View of the forest",
-    "Access to all facilities"
-  ],
-  "sharedFacilities": [
-    "Common kitchen area",
-    "WiFi in common areas",
-    "Outdoor seating areas",
-    "Access to all resort facilities"
-  ],
-  "rulesOfTheForest": [
-    "Quiet hours: 10PM - 6AM",
-    "No smoking inside",
-    "No private alcohol",
-    "Be friendly to fellow wanderers",
-    "Respect the forest"
-  ],
   "cardImage": "/images/accommodation/family-en-suite-rondawel-card.webp",
   "cardMobileImage": "/images/accommodation/mobile-banners/family-en-suite-rondawel-card.webp",
   "cardDescription": "Traditional round African house with modern amenities, perfect for families seeking a unique stay.",
@@ -76,5 +56,37 @@
     "Queen bed + bunk bed",
     "Private bathroom",
     "Secluded privacy"
+  ],
+  "showBookNow": true,
+  "sections": [
+    {
+      "heading": "What's Included",
+      "content": [
+        "Double bed + bunk bed | Comfortable bedding",
+        "En-suite bathroom | Towels provided",
+        "Traditional African design",
+        "Outside seating area | View of the forest",
+        "Access to all facilities"
+      ]
+    },
+    {
+      "heading": "Rules of the Forest",
+      "content": [
+        "Quiet hours: 10PM - 6AM",
+        "No smoking inside",
+        "No private alcohol",
+        "Be friendly to fellow wanderers",
+        "Respect the forest"
+      ]
+    },
+    {
+      "heading": "Shared Facilities",
+      "content": [
+        "Common kitchen area",
+        "WiFi in common areas",
+        "Outdoor seating areas",
+        "Access to all resort facilities"
+      ]
+    }
   ]
 }

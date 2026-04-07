@@ -19,17 +19,29 @@
     }
   ],
   "imagesPerPage": 8,
-  "whatsIncluded": ["Private spots", "Communal spots", "Shaded spots", "Sunny spots", "Access to all facilities"],
-  "sharedFacilities": ["Bathrooms", "Hot showers", "Common kitchen area", "WiFi in common areas"],
-  "rulesOfTheForest": [
-    "Quiet hours: 10PM - 6AM",
-    "Keep your space tidy",
-    "No private alcohol",
-    "Be friendly to fellow wanderers",
-    "Respect the forest"
-  ],
   "cardImage": "/images/accommodation/camping-card.webp",
   "cardMobileImage": "/images/accommodation/mobile-banners/camping-card.webp",
   "cardDescription": "Bring your own tent and enjoy our beautiful campsite with access to shared facilities.",
-  "cardFeatures": ["Shared bathroom facilities", "Kitchen access", "Sunny or shaded camping grounds"]
+  "cardFeatures": ["Shared bathroom facilities", "Kitchen access", "Sunny or shaded camping grounds"],
+  "showBookNow": true,
+  "sections": [
+    {
+      "heading": "What's Included",
+      "content": ["Private spots", "Communal spots", "Shaded spots", "Sunny spots", "Access to all facilities"]
+    },
+    {
+      "heading": "Rules of the Forest",
+      "content": [
+        "Quiet hours: 10PM - 6AM",
+        "Keep your space tidy",
+        "No private alcohol",
+        "Be friendly to fellow wanderers",
+        "Respect the forest"
+      ]
+    },
+    {
+      "heading": "Shared Facilities",
+      "content": ["Bathrooms", "Hot showers", "Common kitchen area", "WiFi in common areas"]
+    }
+  ]
 }

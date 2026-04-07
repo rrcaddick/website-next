@@ -11,11 +11,14 @@ Modern, content-driven Next.js 14 (App Router) website for Fairy Knowe Backpacke
 - **Dynamic routes**: Use `[slug]` + `generateStaticParams()` for accommodation and adventures.
 - **Shared UI**: `src/components/ui/` and `src/components/features/`.
 - **Never**: Hardcode text, images, or metadata in page components. Always pull from content JSON.
+- **Detail pages**: Both accommodation and adventure `[slug]` pages use the single `DetailPageTemplate` at `src/features/detail/template.tsx`. Content is driven by `sections[]` in the JSON — no hardcoded section titles or layouts.
+- **Listing pages**: Use `ListingTemplate` at `src/features/listing/template.tsx`. CTA uses `CTASection` (`src/components/ui/CTASection.tsx`) — schema: `{ heading, description?, button?: { href, label } }`.
+- **CTA schema**: `ListingPageContent.cta` and `DetailPageContent.cta` both use `{ heading, description?, button? }`. No `title`, `href`, `label`, or `generalInfo` at top level.
 
 ## Key Rules (Follow These Strictly)
 
 - No content inside React components → everything from `/content/`.
-- Pages must be template-driven (use `ListingTemplate`, `AccommodationPageTemplate`, `AdventurePageTemplate`).
+- Pages must be template-driven (use `ListingTemplate` for listing pages, `DetailPageTemplate` for `[slug]` detail pages).
 - Use TypeScript strictly. No `any`. Prefer named exports.
 - Tailwind only. No inline styles except where explicitly allowed (e.g., MouseGradientCard).
 - Mobile-first responsive.
@@ -35,7 +38,9 @@ Modern, content-driven Next.js 14 (App Router) website for Fairy Knowe Backpacke
 - After cleanup, run `npm run build` to verify and update this CLAUDE.md.
 - Goal: Minimal, clean codebase. Prefer deletion over leaving commented-out code.
 
-**Last cleanup (2026-04-07):** Removed 11 dead files — old mobile list/card/grid components for accommodation, adventures, entertainment, facilities, and venue that were replaced by the unified card/listing system. Also removed orphaned `src/app/camping/` CSS. Fixed pre-existing TypeScript error in `Card.tsx` (`item.href!` assertion).
+**Last cleanup (2026-04-07):** Removed 11 dead files — old mobile list/card/grid components for accommodation, adventures, entertainment, facilities, and venue. Removed orphaned `src/app/camping/` CSS. Fixed pre-existing TypeScript error in `Card.tsx` (`item.href!` assertion).
+
+**Detail page refactor (2026-04-07):** Merged `AccommodationPageTemplate` and `AdventurePageTemplate` into single `DetailPageTemplate`. Removed hardcoded section titles — all sections driven by `sections[]` in JSON. Extracted `CTASection` component. Replaced `ListingTemplate` `generalInfo` logic with `CTASection`. Updated all accommodation (10) and adventure (13) JSON files to use `sections[]`. Updated all listing page CTAs to `{ heading, description?, button? }` schema. Deleted `src/features/accommodation/template.tsx`, `src/features/adventures/template.tsx`, and their `types.ts` re-export files.
 
 ## Commands / Scripts
 

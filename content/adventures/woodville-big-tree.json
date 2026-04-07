@@ -8,30 +8,48 @@
     "desktopSrc": "/images/adventures/woodville-big-tree/hero/desktop.webp"
   },
   "gallery": [
-    { "src": "/images/adventures/woodville-big-tree/gallery/thumb/1.webp", "alt": "Woodville Big Tree Adventure", "fullSize": "/images/adventures/woodville-big-tree/gallery/full/1.webp" },
-    { "src": "/images/adventures/woodville-big-tree/gallery/thumb/2.webp", "alt": "Woodville Big Tree Experience", "fullSize": "/images/adventures/woodville-big-tree/gallery/full/2.webp" },
-    { "src": "/images/adventures/woodville-big-tree/gallery/thumb/3.webp", "alt": "Woodville Big Tree Journey", "fullSize": "/images/adventures/woodville-big-tree/gallery/full/3.webp" },
-    { "src": "/images/adventures/woodville-big-tree/gallery/thumb/4.webp", "alt": "Woodville Big Tree Views", "fullSize": "/images/adventures/woodville-big-tree/gallery/full/4.webp" },
-    { "src": "/images/adventures/woodville-big-tree/gallery/thumb/5.webp", "alt": "Woodville Big Tree Adventure 2", "fullSize": "/images/adventures/woodville-big-tree/gallery/full/5.webp" },
-    { "src": "/images/adventures/woodville-big-tree/gallery/thumb/6.webp", "alt": "Woodville Big Tree Experience 2", "fullSize": "/images/adventures/woodville-big-tree/gallery/full/6.webp" },
-    { "src": "/images/adventures/woodville-big-tree/gallery/thumb/7.webp", "alt": "Woodville Big Tree Journey 2", "fullSize": "/images/adventures/woodville-big-tree/gallery/full/7.webp" },
-    { "src": "/images/adventures/woodville-big-tree/gallery/thumb/8.webp", "alt": "Woodville Big Tree Views 2", "fullSize": "/images/adventures/woodville-big-tree/gallery/full/8.webp" }
+    {
+      "src": "/images/adventures/woodville-big-tree/gallery/thumb/1.webp",
+      "alt": "Woodville Big Tree Adventure",
+      "fullSize": "/images/adventures/woodville-big-tree/gallery/full/1.webp"
+    },
+    {
+      "src": "/images/adventures/woodville-big-tree/gallery/thumb/2.webp",
+      "alt": "Woodville Big Tree Experience",
+      "fullSize": "/images/adventures/woodville-big-tree/gallery/full/2.webp"
+    },
+    {
+      "src": "/images/adventures/woodville-big-tree/gallery/thumb/3.webp",
+      "alt": "Woodville Big Tree Journey",
+      "fullSize": "/images/adventures/woodville-big-tree/gallery/full/3.webp"
+    },
+    {
+      "src": "/images/adventures/woodville-big-tree/gallery/thumb/4.webp",
+      "alt": "Woodville Big Tree Views",
+      "fullSize": "/images/adventures/woodville-big-tree/gallery/full/4.webp"
+    },
+    {
+      "src": "/images/adventures/woodville-big-tree/gallery/thumb/5.webp",
+      "alt": "Woodville Big Tree Adventure 2",
+      "fullSize": "/images/adventures/woodville-big-tree/gallery/full/5.webp"
+    },
+    {
+      "src": "/images/adventures/woodville-big-tree/gallery/thumb/6.webp",
+      "alt": "Woodville Big Tree Experience 2",
+      "fullSize": "/images/adventures/woodville-big-tree/gallery/full/6.webp"
+    },
+    {
+      "src": "/images/adventures/woodville-big-tree/gallery/thumb/7.webp",
+      "alt": "Woodville Big Tree Journey 2",
+      "fullSize": "/images/adventures/woodville-big-tree/gallery/full/7.webp"
+    },
+    {
+      "src": "/images/adventures/woodville-big-tree/gallery/thumb/8.webp",
+      "alt": "Woodville Big Tree Views 2",
+      "fullSize": "/images/adventures/woodville-big-tree/gallery/full/8.webp"
+    }
   ],
   "imagesPerPage": 8,
-  "generalInfo": [
-    "Distance: 2.2 km or 7 km loop",
-    "Duration: 1-3 hours",
-    "Difficulty: Easy to Moderate",
-    "1000-year-old Outeniqua Yellowwood",
-    "Ancient forest with diverse wildlife"
-  ],
-  "whatToBring": [
-    "Comfortable walking shoes",
-    "Water and snacks",
-    "Sunscreen and hat",
-    "Camera for memories",
-    "Binoculars for bird watching"
-  ],
   "cardImage": "/images/adventures/cards/desktop/woodville-big-tree-card.webp",
   "cardMobileImage": "/images/adventures/cards/mobile/woodville-big-tree-card.webp",
   "cardDescription": "Visit a 1000 year old Yellow Wood tree and marvel at its size and glory. 3km and 7km trails looping back around.",
@@ -40,5 +58,29 @@
     "Easy difficulty",
     "Picnic tables",
     "Braai facilities"
+  ],
+  "sections": [
+    {
+      "heading": "General Info",
+      "content": [
+        "Distance: 2.2 km or 7 km loop",
+        "Duration: 1-3 hours",
+        "Difficulty: Easy to Moderate",
+        "1000-year-old Outeniqua Yellowwood",
+        "Ancient forest with diverse wildlife"
+      ],
+      "align": "right"
+    },
+    {
+      "heading": "What to Bring",
+      "content": [
+        "Comfortable walking shoes",
+        "Water and snacks",
+        "Sunscreen and hat",
+        "Camera for memories",
+        "Binoculars for bird watching"
+      ],
+      "align": "left"
+    }
   ]
 }

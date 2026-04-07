@@ -8,30 +8,48 @@
     "desktopSrc": "/images/adventures/fairy-labyrinth/hero/desktop.webp"
   },
   "gallery": [
-    { "src": "/images/adventures/fairy-labyrinth/gallery/thumb/1.webp", "alt": "Fairy Labyrinth Adventure", "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/1.webp" },
-    { "src": "/images/adventures/fairy-labyrinth/gallery/thumb/2.webp", "alt": "Fairy Labyrinth Experience", "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/2.webp" },
-    { "src": "/images/adventures/fairy-labyrinth/gallery/thumb/3.webp", "alt": "Fairy Labyrinth Journey", "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/3.webp" },
-    { "src": "/images/adventures/fairy-labyrinth/gallery/thumb/4.webp", "alt": "Fairy Labyrinth Views", "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/4.webp" },
-    { "src": "/images/adventures/fairy-labyrinth/gallery/thumb/5.webp", "alt": "Fairy Labyrinth Adventure 2", "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/5.webp" },
-    { "src": "/images/adventures/fairy-labyrinth/gallery/thumb/6.webp", "alt": "Fairy Labyrinth Experience 2", "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/6.webp" },
-    { "src": "/images/adventures/fairy-labyrinth/gallery/thumb/7.webp", "alt": "Fairy Labyrinth Journey 2", "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/7.webp" },
-    { "src": "/images/adventures/fairy-labyrinth/gallery/thumb/8.webp", "alt": "Fairy Labyrinth Views 2", "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/8.webp" }
+    {
+      "src": "/images/adventures/fairy-labyrinth/gallery/thumb/1.webp",
+      "alt": "Fairy Labyrinth Adventure",
+      "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/1.webp"
+    },
+    {
+      "src": "/images/adventures/fairy-labyrinth/gallery/thumb/2.webp",
+      "alt": "Fairy Labyrinth Experience",
+      "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/2.webp"
+    },
+    {
+      "src": "/images/adventures/fairy-labyrinth/gallery/thumb/3.webp",
+      "alt": "Fairy Labyrinth Journey",
+      "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/3.webp"
+    },
+    {
+      "src": "/images/adventures/fairy-labyrinth/gallery/thumb/4.webp",
+      "alt": "Fairy Labyrinth Views",
+      "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/4.webp"
+    },
+    {
+      "src": "/images/adventures/fairy-labyrinth/gallery/thumb/5.webp",
+      "alt": "Fairy Labyrinth Adventure 2",
+      "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/5.webp"
+    },
+    {
+      "src": "/images/adventures/fairy-labyrinth/gallery/thumb/6.webp",
+      "alt": "Fairy Labyrinth Experience 2",
+      "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/6.webp"
+    },
+    {
+      "src": "/images/adventures/fairy-labyrinth/gallery/thumb/7.webp",
+      "alt": "Fairy Labyrinth Journey 2",
+      "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/7.webp"
+    },
+    {
+      "src": "/images/adventures/fairy-labyrinth/gallery/thumb/8.webp",
+      "alt": "Fairy Labyrinth Views 2",
+      "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/8.webp"
+    }
   ],
   "imagesPerPage": 8,
-  "generalInfo": [
-    "Distance: 1.5 km round trip",
-    "Duration: 45-60 minutes",
-    "Difficulty: Easy",
-    "Family-friendly trail",
-    "Ancient forest setting"
-  ],
-  "whatToBring": [
-    "Comfortable walking shoes",
-    "Water bottle",
-    "Camera for memories",
-    "Light jacket",
-    "Sense of wonder"
-  ],
   "cardImage": "/images/adventures/fairy-labyrinth-card.webp",
   "cardMobileImage": "/images/adventures/fairy-labyrinth-card.webp",
   "cardDescription": "Something on your mind? Unravel and unwind.",
@@ -40,5 +58,29 @@
     "Unwind",
     "Intention",
     "Garden environment"
+  ],
+  "sections": [
+    {
+      "heading": "General Info",
+      "content": [
+        "Distance: 1.5 km round trip",
+        "Duration: 45-60 minutes",
+        "Difficulty: Easy",
+        "Family-friendly trail",
+        "Ancient forest setting"
+      ],
+      "align": "right"
+    },
+    {
+      "heading": "What to Bring",
+      "content": [
+        "Comfortable walking shoes",
+        "Water bottle",
+        "Camera for memories",
+        "Light jacket",
+        "Sense of wonder"
+      ],
+      "align": "left"
+    }
   ]
 }

@@ -8,30 +8,48 @@
     "desktopSrc": "/images/adventures/wilderness-beach/hero/desktop.webp"
   },
   "gallery": [
-    { "src": "/images/adventures/wilderness-beach/gallery/thumb/1.webp", "alt": "Wilderness Beach Adventure 1", "fullSize": "/images/adventures/wilderness-beach/gallery/full/1.webp" },
-    { "src": "/images/adventures/wilderness-beach/gallery/thumb/2.webp", "alt": "Wilderness Beach Adventure 2", "fullSize": "/images/adventures/wilderness-beach/gallery/full/2.webp" },
-    { "src": "/images/adventures/wilderness-beach/gallery/thumb/3.webp", "alt": "Wilderness Beach Adventure 3", "fullSize": "/images/adventures/wilderness-beach/gallery/full/3.webp" },
-    { "src": "/images/adventures/wilderness-beach/gallery/thumb/4.webp", "alt": "Wilderness Beach Adventure 4", "fullSize": "/images/adventures/wilderness-beach/gallery/full/4.webp" },
-    { "src": "/images/adventures/wilderness-beach/gallery/thumb/5.webp", "alt": "Wilderness Beach Adventure 5", "fullSize": "/images/adventures/wilderness-beach/gallery/full/5.webp" },
-    { "src": "/images/adventures/wilderness-beach/gallery/thumb/6.webp", "alt": "Wilderness Beach Adventure 6", "fullSize": "/images/adventures/wilderness-beach/gallery/full/6.webp" },
-    { "src": "/images/adventures/wilderness-beach/gallery/thumb/7.webp", "alt": "Wilderness Beach Adventure 7", "fullSize": "/images/adventures/wilderness-beach/gallery/full/7.webp" },
-    { "src": "/images/adventures/wilderness-beach/gallery/thumb/8.webp", "alt": "Wilderness Beach Adventure 8", "fullSize": "/images/adventures/wilderness-beach/gallery/full/8.webp" }
+    {
+      "src": "/images/adventures/wilderness-beach/gallery/thumb/1.webp",
+      "alt": "Wilderness Beach Adventure 1",
+      "fullSize": "/images/adventures/wilderness-beach/gallery/full/1.webp"
+    },
+    {
+      "src": "/images/adventures/wilderness-beach/gallery/thumb/2.webp",
+      "alt": "Wilderness Beach Adventure 2",
+      "fullSize": "/images/adventures/wilderness-beach/gallery/full/2.webp"
+    },
+    {
+      "src": "/images/adventures/wilderness-beach/gallery/thumb/3.webp",
+      "alt": "Wilderness Beach Adventure 3",
+      "fullSize": "/images/adventures/wilderness-beach/gallery/full/3.webp"
+    },
+    {
+      "src": "/images/adventures/wilderness-beach/gallery/thumb/4.webp",
+      "alt": "Wilderness Beach Adventure 4",
+      "fullSize": "/images/adventures/wilderness-beach/gallery/full/4.webp"
+    },
+    {
+      "src": "/images/adventures/wilderness-beach/gallery/thumb/5.webp",
+      "alt": "Wilderness Beach Adventure 5",
+      "fullSize": "/images/adventures/wilderness-beach/gallery/full/5.webp"
+    },
+    {
+      "src": "/images/adventures/wilderness-beach/gallery/thumb/6.webp",
+      "alt": "Wilderness Beach Adventure 6",
+      "fullSize": "/images/adventures/wilderness-beach/gallery/full/6.webp"
+    },
+    {
+      "src": "/images/adventures/wilderness-beach/gallery/thumb/7.webp",
+      "alt": "Wilderness Beach Adventure 7",
+      "fullSize": "/images/adventures/wilderness-beach/gallery/full/7.webp"
+    },
+    {
+      "src": "/images/adventures/wilderness-beach/gallery/thumb/8.webp",
+      "alt": "Wilderness Beach Adventure 8",
+      "fullSize": "/images/adventures/wilderness-beach/gallery/full/8.webp"
+    }
   ],
   "imagesPerPage": 8,
-  "generalInfo": [
-    "Blue Flag beach status",
-    "Lifeguards on duty",
-    "Perfect for swimming",
-    "Beach volleyball available",
-    "Stunning sunset views"
-  ],
-  "whatToBring": [
-    "Sunscreen and hat",
-    "Beach towels",
-    "Water bottles",
-    "Beach games",
-    "Camera"
-  ],
   "cardImage": "/images/adventures/cards/desktop/wilderness-beach-card.webp",
   "cardMobileImage": "/images/adventures/cards/mobile/wilderness-beach-card.webp",
   "cardDescription": "Blue Flag beach perfect for a nice sunny day.",
@@ -40,5 +58,29 @@
     "Swimming",
     "Running",
     "Relaxing"
+  ],
+  "sections": [
+    {
+      "heading": "General Info",
+      "content": [
+        "Blue Flag beach status",
+        "Lifeguards on duty",
+        "Perfect for swimming",
+        "Beach volleyball available",
+        "Stunning sunset views"
+      ],
+      "align": "right"
+    },
+    {
+      "heading": "What to Bring",
+      "content": [
+        "Sunscreen and hat",
+        "Beach towels",
+        "Water bottles",
+        "Beach games",
+        "Camera"
+      ],
+      "align": "left"
+    }
   ]
 }
