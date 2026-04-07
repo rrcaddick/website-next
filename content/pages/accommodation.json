@@ -8,58 +8,150 @@
   "showBookNow": true,
   "items": [
     {
-      "title": "Camping",
-      "description": "Bring your own tent and enjoy our beautiful campsite with access to shared facilities.",
       "image": "/images/accommodation/cards/camping-card.webp",
-      "href": "/accommodation/camping"
+      "href": "/accommodation/camping",
+      "blocks": [
+        { "type": "title", "content": "Camping" },
+        {
+          "type": "text",
+          "content": "Pitch your tent beneath a Milkwood tree or in the indigenous forest or on the lawns. There are plenty of private spots for your camper as well. You will enjoy all the benefits of the backpackers with the privacy of your own accommodation."
+        },
+        { "type": "subheading", "content": "Features:" },
+        {
+          "type": "list",
+          "content": ["Shared bathroom facilities", "Kitchen access", "Sunny or shaded camping grounds"]
+        }
+      ]
     },
     {
-      "title": "Safari Tent",
-      "description": "Experience glamping in our comfortable safari tent, perfect for those who want to be close to nature.",
       "image": "/images/accommodation/cards/safari-tent-card.webp",
-      "href": "/accommodation/safari-tent"
+      "href": "/accommodation/safari-tent",
+      "blocks": [
+        { "type": "title", "content": "Safari Tent" },
+        {
+          "type": "text",
+          "content": "Immerse yourself in the ideal blend of camping and comfort with our charming safari tent. A cozy double bed and all the essentials needed to create an unforgettable stay amidst nature's splendor."
+        },
+        { "type": "subheading", "content": "Features:" },
+        {
+          "type": "list",
+          "content": [
+            "Double bed",
+            "Comfortable bedding",
+            "Towels available",
+            "Electricity in the tent",
+            "Access to all facilities"
+          ]
+        }
+      ]
     },
     {
-      "title": "Gypsy Caravan",
-      "description": "Stay in our unique and charming gypsy caravan for a truly magical experience.",
       "image": "/images/accommodation/cards/gypsy-caravan-card.webp",
-      "href": "/accommodation/gypsy-caravan"
+      "href": "/accommodation/gypsy-caravan",
+      "blocks": [
+        { "type": "title", "content": "Gypsy Caravan" },
+        {
+          "type": "text",
+          "content": "Experience a unique stay in our charming gypsy caravan, fitted with a double bed and two single sleeper couches, nestled in a secluded cozy corner of the forest."
+        },
+        { "type": "subheading", "content": "Features:" },
+        {
+          "type": "list",
+          "content": [
+            "Three-quarter bed",
+            "Two sleeper couches",
+            "Comfortable bedding",
+            "Towels available",
+            "Access to facilities"
+          ]
+        }
+      ]
     },
     {
-      "title": "Mixed Dorm",
-      "description": "Comfortable bunk beds in our mixed dormitory, perfect for solo travelers and backpackers.",
       "image": "/images/accommodation/cards/mixed-dorm-card.webp",
-      "href": "/accommodation/mixed-dorm"
+      "href": "/accommodation/mixed-dorm",
+      "blocks": [
+        { "type": "title", "content": "Mixed Dorm" },
+        {
+          "type": "text",
+          "content": "Our dorms have a maximum of 8 beds. Linen is provided, guests to supply own towels."
+        },
+        { "type": "subheading", "content": "Features:" },
+        { "type": "list", "content": ["Bunk beds", "Shared bathroom facilities", "Towels available"] }
+      ]
     },
     {
-      "title": "Twin Room",
-      "description": "Cozy room with two single beds, ideal for friends traveling together.",
       "image": "/images/accommodation/cards/twin-room-card.webp",
-      "href": "/accommodation/twin-room"
+      "href": "/accommodation/twin-room",
+      "blocks": [
+        { "type": "title", "content": "Twin Room" },
+        {
+          "type": "text",
+          "content": "This room is accessed from a vine-covered courtyard and has forest views. It has two single beds and there is a bathroom right next door. Linen is provided, guests to supply own towels."
+        },
+        { "type": "subheading", "content": "Features:" },
+        { "type": "list", "content": ["Two single beds", "Shared bathroom facilities", "Fresh linen"] }
+      ]
     },
     {
-      "title": "Family Room",
-      "description": "Spacious room perfect for families, featuring multiple beds and shared facilities.",
       "image": "/images/accommodation/cards/family-room-card.webp",
-      "href": "/accommodation/family-room"
+      "href": "/accommodation/family-room",
+      "blocks": [
+        { "type": "title", "content": "Family Room" },
+        {
+          "type": "text",
+          "content": "The Ikhaya, Loerie, Little Seaview, and Kingfisher Family Rooms. Each of these rooms have their own special view. Linen is provided, guests to supply their own towels. Bathroom facilities are shared."
+        },
+        { "type": "subheading", "content": "Features:" },
+        { "type": "list", "content": ["Double bed + bunk bed", "Shared bathroom facilities", "Family friendly"] }
+      ]
     },
     {
-      "title": "Five Sleeper",
-      "description": "Large room that comfortably accommodates up to five people, perfect for groups or families.",
       "image": "/images/accommodation/cards/five-sleeper-card.webp",
-      "href": "/accommodation/five-sleeper"
+      "href": "/accommodation/five-sleeper",
+      "blocks": [
+        { "type": "title", "content": "Five Sleeper" },
+        {
+          "type": "text",
+          "content": "Our five sleeper room is the perfect retreat for larger families or groups, offering spacious comfort and privacy."
+        },
+        { "type": "subheading", "content": "Features:" },
+        {
+          "type": "list",
+          "content": [
+            "Double bed + bunk bed + single bed",
+            "Comfortable bedding",
+            "Towels available",
+            "Access to all facilities"
+          ]
+        }
+      ]
     },
     {
-      "title": "Double En-suite",
-      "description": "Private room with a queen size bed and en-suite bathroom for added comfort.",
       "image": "/images/accommodation/cards/double-ensuite-card.webp",
-      "href": "/accommodation/double-en-suite"
+      "href": "/accommodation/double-en-suite",
+      "blocks": [
+        { "type": "title", "content": "Double En-suite" },
+        {
+          "type": "text",
+          "content": "These rooms are separate from the main lodge, are under thatch with a wooden deck and lovely forest views. Linen and towels are provided."
+        },
+        { "type": "subheading", "content": "Features:" },
+        { "type": "list", "content": ["Queen bed", "Private bathroom", "Extra comfort"] }
+      ]
     },
     {
-      "title": "Family En-suite Rondawel",
-      "description": "Traditional round African house with modern amenities, perfect for families seeking a unique stay.",
       "image": "/images/accommodation/cards/family-en-suite-rondawel-card.webp",
-      "href": "/accommodation/family-en-suite-rondawel"
+      "href": "/accommodation/family-en-suite-rondawel",
+      "blocks": [
+        { "type": "title", "content": "Family En-suite Rondawel" },
+        {
+          "type": "text",
+          "content": "Sunny rondawel with a forest view, furnished tastefully with a double bed and double bunk bed. Linen and towels are provided."
+        },
+        { "type": "subheading", "content": "Features:" },
+        { "type": "list", "content": ["Queen bed + bunk bed", "Private bathroom", "Secluded privacy"] }
+      ]
     }
   ]
 }

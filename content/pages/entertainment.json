@@ -7,22 +7,28 @@
   },
   "items": [
     {
-      "title": "Live Music Gigs",
-      "description": "Experience live performances from local magical musicians and traveling musical magicians. From intimate solos to monstrous full-band spectacles, each a celebration of sound that will leave you spellbound.",
       "image": "/images/entertainment/images/live-gigs-card.webp",
-      "href": "#"
+      "href": "#",
+      "blocks": [
+        { "type": "title", "content": "Live Music Gigs" },
+        { "type": "text", "content": "Experience live performances from local magical musicians and traveling musical magicians. From intimate solos to monstrous full-band spectacles, each a celebration of sound that will leave you spellbound." }
+      ]
     },
     {
-      "title": "Open Mic Night",
-      "description": "Step into the spotlight and share what you may dare. Whether you're an aspiring artist, poetic wordsmith, comedic genius, or not, the stage is yours to claim and fame is yours to gain.",
       "image": "/images/entertainment/images/open-mic-night-card.webp",
-      "href": "#"
+      "href": "#",
+      "blocks": [
+        { "type": "title", "content": "Open Mic Night" },
+        { "type": "text", "content": "Step into the spotlight and share what you may dare. Whether you're an aspiring artist, poetic wordsmith, comedic genius, or not, the stage is yours to claim and fame is yours to gain." }
+      ]
     },
     {
-      "title": "Family Market",
-      "description": "Explore our charming family market and discover locally crafted gems, tasty treats, unique garments and one-of-a-kind souvinirs. Connect with locals that bring together a community of creativity.",
       "image": "/images/entertainment/images/family-market-card.webp",
-      "href": "#"
+      "href": "#",
+      "blocks": [
+        { "type": "title", "content": "Family Market" },
+        { "type": "text", "content": "Explore our charming family market and discover locally crafted gems, tasty treats, unique garments and one-of-a-kind souvinirs. Connect with locals that bring together a community of creativity." }
+      ]
     }
   ],
   "cta": {

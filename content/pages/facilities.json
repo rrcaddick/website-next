@@ -1,0 +1,76 @@
+{
+  "title": "Facilities",
+  "description": "Everything you need to keep clean, comfortable, connected, captivated, cozy, fed and feeling good during your stay in the enchanted realms of the wood.",
+  "hero": {
+    "mobileSrc": "/images/facilities/hero/mobile.webp",
+    "desktopSrc": "/images/facilities/hero/desktop.webp"
+  },
+  "columns": 4,
+  "items": [
+    {
+      "image": "/images/facilities/cards/amenities-and-services-card.webp",
+      "href": "/facilities/amenities-services",
+      "blocks": [
+        { "type": "title", "content": "Amenities & Services" },
+        {
+          "type": "list",
+          "content": ["Communal wi-fi", "Laundry services", "Pet friendly", "Secure parking"]
+        }
+      ]
+    },
+    {
+      "image": "/images/facilities/cards/entertainment-and-recreation-card.webp",
+      "href": "/facilities/entertainment-recreation",
+      "blocks": [
+        { "type": "title", "content": "Entertainment & Recreation" },
+        {
+          "type": "list",
+          "content": ["Books & board games", "Jungle gym", "Musical instruments", "Ping pong"]
+        }
+      ]
+    },
+    {
+      "image": "/images/facilities/cards/food-and-drink-card.webp",
+      "href": "/facilities/food-drink",
+      "blocks": [
+        { "type": "title", "content": "Food & Drink" },
+        {
+          "type": "list",
+          "content": ["Lively bar", "Outdoor braai area", "Restaurant kitchen", "Self-catering kitchen"]
+        }
+      ]
+    },
+    {
+      "image": "/images/facilities/cards/social-and-gathering-spaces-card.webp",
+      "href": "/facilities/social-gathering-spaces",
+      "blocks": [
+        { "type": "title", "content": "Social & Gathering Spaces" },
+        {
+          "type": "list",
+          "content": ["Communal fire pit", "Lively bar", "TV lounge"]
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "title": "General Information",
+    "generalInfo": {
+      "leftTitle": "House Rules",
+      "leftItems": [
+        "Quiet hours: 10PM - 8AM",
+        "Keep common areas clean",
+        "Label and store food properly",
+        "Respect other guests",
+        "No smoking indoors"
+      ],
+      "rightTitle": "Reception Hours",
+      "rightItems": [
+        "Monday - Sunday: 8AM - 8PM",
+        "Check-in: 2PM - 8PM",
+        "Check-out: by 10AM",
+        "After hours: Security on site",
+        "Emergency contact available 24/7"
+      ]
+    }
+  }
+}

@@ -39,4 +39,4 @@ jspm_packages
 
 repomix-output.*
 
-tas
+tsconfig.tsbuildinfo

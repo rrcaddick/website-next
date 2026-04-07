@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/accommodation/page": [
+    "/facilities/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/accommodation/page.js"
+      "static/chunks/app/facilities/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -21,30 +21,30 @@
       "static/chunks/main-app.js",
       "static/chunks/app/loading.js"
     ],
-    "/page": [
+    "/fairy-folk-n-roll/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/fairy-folk-n-roll/page.js"
     ],
-    "/facilities/page": [
+    "/gallery/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/facilities/page.js"
+      "static/chunks/app/gallery/page.js"
     ],
-    "/venue/page": [
+    "/gallery/error": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/venue/page.js"
+      "static/chunks/app/gallery/error.js"
     ],
-    "/adventures/[slug]/page": [
+    "/adventures/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/adventures/[slug]/page.js"
+      "static/chunks/app/adventures/page.js"
     ],
-    "/_not-found/page": [
+    "/entertainment/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/chunks/app/entertainment/page.js"
     ]
   }
 }

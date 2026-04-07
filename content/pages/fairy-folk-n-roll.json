@@ -5,23 +5,46 @@
     "mobileSrc": "/images/fairy-folk-n-roll/hero/mobile.webp",
     "desktopSrc": "/images/fairy-folk-n-roll/hero/desktop.webp"
   },
+  "columns": 2,
   "items": [
     {
-      "title": "Live Music Sessions",
-      "description": "Experience the raw energy and authentic sound of local artists in our professionally recorded live sessions. Each performance is carefully captured to preserve the intimate atmosphere and musical excellence that defines our venue.",
       "image": "/images/fairy-folk-n-roll/cards/ffr-live-music.webp",
-      "href": "#"
+      "href": "#",
+      "blocks": [
+        { "type": "title", "content": "Live Music Sessions" },
+        {
+          "type": "text",
+          "content": "Experience the raw energy and authentic sound of local artists in our professionally recorded live sessions. Each performance is carefully captured to preserve the intimate atmosphere and musical excellence that defines our venue."
+        },
+        {
+          "type": "list",
+          "content": [
+            "Professional audio and video recording",
+            "Intimate acoustic performances",
+            "Showcasing local talent"
+          ]
+        }
+      ]
     },
     {
-      "title": "Our YouTube Channel",
-      "description": "Subscribe to our YouTube channel to discover the diverse musical talent of the Garden Route. From folk and acoustic to indie rock and world music, our channel is a platform for artists to reach audiences worldwide while capturing the unique atmosphere of our backpackers.",
       "image": "/images/fairy-folk-n-roll/cards/ffr-youtube.webp",
-      "href": "#"
+      "href": "#",
+      "blocks": [
+        { "type": "title", "content": "Our YouTube Channel" },
+        {
+          "type": "text",
+          "content": "Subscribe to our YouTube channel to discover the diverse musical talent of the Garden Route. From folk and acoustic to indie rock and world music, our channel is a platform for artists to reach audiences worldwide while capturing the unique atmosphere of our backpackers."
+        },
+        {
+          "type": "list",
+          "content": ["Regular new content", "High-quality production", "Behind-the-scenes content"]
+        }
+      ]
     }
   ],
   "cta": {
     "title": "Be Part of Our Story",
-    "description": "Are you a musician looking to showcase your talent? We're always excited to feature new artists in our live sessions. Join our growing community of musicians and reach audiences worldwide through our YouTube channel.",
+    "description": "Are you a musician looking to showcase your talent? We're always excited to feature new artists in our live sessions. Join our growing community of musicians and reach audiences worldwide through our YouTube channel",
     "href": "/booking",
     "label": "Contact Us"
   }

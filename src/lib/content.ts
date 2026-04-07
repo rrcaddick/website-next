@@ -1,7 +1,5 @@
 import fs from "fs";
 import path from "path";
-import type { ListingPageContent } from "@/features/listing/types";
-
 // ─────────────────────────────────────────────────────────────────────────────
 // Shared types
 // ─────────────────────────────────────────────────────────────────────────────
@@ -10,6 +8,46 @@ export interface GalleryImage {
   src: string;
   alt: string;
   fullSize: string;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Page Listing
+// ─────────────────────────────────────────────────────────────────────────────
+
+export type CardBlock = {
+  type: "title" | "text" | "subheading" | "list";
+  content: string | string[];
+};
+
+export interface ListingItem {
+  image: string;
+  href: string;
+  blocks: CardBlock[];
+}
+
+export interface ListingPageContent {
+  title: string;
+  description?: string;
+  hero: {
+    mobileSrc: string;
+    desktopSrc: string;
+  };
+  items: ListingItem[];
+  columns?: number;
+  showBookNow?: boolean;
+  cta?: {
+    title: string;
+    description?: string;
+    href?: string;
+    label?: string;
+    generalInfo?: {
+      leftTitle: string;
+      leftItems: string[];
+      rightTitle: string;
+      rightItems: string[];
+    };
+  };
+  footnote?: string;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────

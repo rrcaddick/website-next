@@ -7,40 +7,70 @@
   },
   "items": [
     {
-      "title": "Weddings",
-      "description": "Host your special day in our enchanted fairy forest. Entwine yourselves in a space perfect for intimate ceremonies and receptions entangled in the trees.",
       "image": "/images/venue/cards/weddings-card.webp",
-      "href": "#"
+      "href": "#",
+      "blocks": [
+        { "type": "title", "content": "Weddings" },
+        {
+          "type": "text",
+          "content": "Host your special day in our enchanted fairy forest. Entwine yourselves in a space perfect for intimate ceremonies and receptions entangled in the trees."
+        }
+      ]
     },
     {
-      "title": "Private Parties",
-      "description": "Celebrate lifes most treasured birthdays, anniversaries, or special occasions with a touch of fairy magic.",
       "image": "/images/venue/cards/private-parties-card.webp",
-      "href": "#"
+      "href": "#",
+      "blocks": [
+        { "type": "title", "content": "Private Parties" },
+        {
+          "type": "text",
+          "content": "Celebrate lifes most treasured birthdays, anniversaries, or special occasions with a touch of fairy magic."
+        }
+      ]
     },
     {
-      "title": "Corporate Events",
-      "description": "With the ideal setting to inspire collaboration and creativity, our venue provides a calming backdrop for productive corporate gatherings.",
       "image": "/images/venue/cards/corporate-events-card.webp",
-      "href": "#"
+      "href": "#",
+      "blocks": [
+        { "type": "title", "content": "Corporate Events" },
+        {
+          "type": "text",
+          "content": "With the ideal setting to inspire collaboration and creativity, our venue provides a calming backdrop for productive corporate gatherings."
+        }
+      ]
     },
     {
-      "title": "Film Crews",
-      "description": "A magical setting for your next film or photo shoot. From fantasy flicks to nature documentaries, our location offers diverse and dense backdrops.",
       "image": "/images/venue/cards/film-crews-card.webp",
-      "href": "#"
+      "href": "#",
+      "blocks": [
+        { "type": "title", "content": "Film Crews" },
+        {
+          "type": "text",
+          "content": "A magical setting for your next film or photo shoot. From fantasy flicks to nature documentaries, our location offers diverse and dense backdrops."
+        }
+      ]
     },
     {
-      "title": "Skill Trades & Workshops",
-      "description": "Share, learn, or host hands-on workshops and skill trades in a creative, collaborative environment. Perfect for artists, makers, and lifelong learners.",
       "image": "/images/venue/cards/skill-trades-workshops-card.webp",
-      "href": "#"
+      "href": "#",
+      "blocks": [
+        { "type": "title", "content": "Skill Trades & Workshops" },
+        {
+          "type": "text",
+          "content": "Share, learn, or host hands-on workshops and skill trades in a creative, collaborative environment. Perfect for artists, makers, and lifelong learners."
+        }
+      ]
     },
     {
-      "title": "Expo Events",
-      "description": "Host your next trade show, exhibition, or product launch in our versatile event space. Perfect for showcasing products, networking, and creating memorable brand experiences.",
       "image": "/images/venue/cards/expo-events-card.webp",
-      "href": "#"
+      "href": "#",
+      "blocks": [
+        { "type": "title", "content": "Expo Events" },
+        {
+          "type": "text",
+          "content": "Host your next trade show, exhibition, or product launch in our versatile event space. Perfect for showcasing products, networking, and creating memorable brand experiences."
+        }
+      ]
     }
   ]
 }
