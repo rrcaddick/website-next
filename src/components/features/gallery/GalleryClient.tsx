@@ -20,18 +20,21 @@ function getBalancedImages(images: GalleryImage[]): GalleryImage[] {
   images.forEach((img) => {
     const key = `${img.category}|||${img.subcategory}`;
     if (!groupMap.has(key)) groupMap.set(key, []);
-    groupMap.get(key)!.push(img);
+    groupMap.get(key)?.push(img);
   });
   const groupKeys = shuffle(Array.from(groupMap.keys()));
-  const groupArrays = groupKeys.map((key) => shuffle(groupMap.get(key)!));
+  const groupArrays = groupKeys.map((key) => shuffle(groupMap.get(key) ?? []));
   const result: GalleryImage[] = [];
   let added = true;
   while (added) {
     added = false;
     for (let i = 0; i < groupArrays.length; i++) {
       if (groupArrays[i].length > 0) {
-        result.push(groupArrays[i].shift()!);
-        added = true;
+        const img = groupArrays[i].shift();
+        if (img) {
+          result.push(img);
+          added = true;
+        }
       }
     }
   }

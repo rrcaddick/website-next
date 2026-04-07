@@ -54,25 +54,15 @@ export default function ImageGallery({
   };
 
   const nextImage = () => {
-    if (selectedImageIndex < images.length - 1) {
-      setSelectedImageIndex(selectedImageIndex + 1);
-      setSelectedImage(images[selectedImageIndex + 1]);
-    } else {
-      // Loop back to the first image
-      setSelectedImageIndex(0);
-      setSelectedImage(images[0]);
-    }
+    const next = selectedImageIndex < images.length - 1 ? selectedImageIndex + 1 : 0;
+    setSelectedImageIndex(next);
+    setSelectedImage(images[next]);
   };
 
   const prevImage = () => {
-    if (selectedImageIndex > 0) {
-      setSelectedImageIndex(selectedImageIndex - 1);
-      setSelectedImage(images[selectedImageIndex - 1]);
-    } else {
-      // Loop to the last image
-      setSelectedImageIndex(images.length - 1);
-      setSelectedImage(images[images.length - 1]);
-    }
+    const prev = selectedImageIndex > 0 ? selectedImageIndex - 1 : images.length - 1;
+    setSelectedImageIndex(prev);
+    setSelectedImage(images[prev]);
   };
 
   // Handle touch events for swiping

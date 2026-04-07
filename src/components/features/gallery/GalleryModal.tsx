@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import { useState } from 'react'
 import { GalleryImage } from './types'
 
 type Props = {
@@ -13,6 +14,8 @@ type Props = {
 }
 
 export default function GalleryModal({ image, currentIndex, totalImages, onClose, onNext, onPrevious }: Props) {
+  const [imageError, setImageError] = useState(false)
+
   if (!image) return null
 
   return (
@@ -53,17 +56,25 @@ export default function GalleryModal({ image, currentIndex, totalImages, onClose
         </button>
 
         <div className="relative h-[80vh]">
-          <div className="absolute inset-0 bg-gray-800 animate-pulse" />
-          <Image
-            src={image.fullSize}
-            alt={image.alt}
-            fill
-            className="object-contain"
-            sizes="100vw"
-            priority
-            quality={100}
-            onError={onClose}
-          />
+          {imageError ? (
+            <div className="absolute inset-0 flex items-center justify-center bg-gray-900 text-gray-400 text-sm">
+              Image unavailable
+            </div>
+          ) : (
+            <>
+              <div className="absolute inset-0 bg-gray-800 animate-pulse" />
+              <Image
+                src={image.fullSize}
+                alt={image.alt}
+                fill
+                className="object-contain"
+                sizes="100vw"
+                priority
+                quality={100}
+                onError={() => setImageError(true)}
+              />
+            </>
+          )}
         </div>
 
         <div className="text-white text-center mt-4">
