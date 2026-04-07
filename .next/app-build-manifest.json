@@ -26,30 +26,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/adventures/page": [
+    "/facilities/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/adventures/page.js"
-    ],
-    "/entertainment/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/entertainment/page.js"
-    ],
-    "/fairy-folk-n-roll/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/fairy-folk-n-roll/page.js"
+      "static/chunks/app/facilities/page.js"
     ],
     "/venue/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/venue/page.js"
     ],
-    "/facilities/page": [
+    "/adventures/[slug]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/facilities/page.js"
+      "static/chunks/app/adventures/[slug]/page.js"
     ],
     "/_not-found/page": [
       "static/chunks/webpack.js",

@@ -1,10 +1,8 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/accommodation/page": "app/accommodation/page.js",
   "/page": "app/page.js",
-  "/entertainment/page": "app/entertainment/page.js",
-  "/adventures/page": "app/adventures/page.js",
-  "/fairy-folk-n-roll/page": "app/fairy-folk-n-roll/page.js",
+  "/accommodation/page": "app/accommodation/page.js",
+  "/venue/page": "app/venue/page.js",
   "/facilities/page": "app/facilities/page.js",
-  "/venue/page": "app/venue/page.js"
+  "/adventures/[slug]/page": "app/adventures/[slug]/page.js"
 }

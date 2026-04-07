@@ -1,0 +1,34 @@
+{
+  "title": "Entertainment",
+  "description": "From magical nights with all sorts of musical delights to whimsical days spent hunting for treasure at the fairy family market of leisure, there's always a sprinkle of wonder waiting at the Knowe for your pleasure.",
+  "hero": {
+    "mobileSrc": "/images/entertainment/hero/mobile.webp",
+    "desktopSrc": "/images/entertainment/hero/desktop.webp"
+  },
+  "items": [
+    {
+      "title": "Live Music Gigs",
+      "description": "Experience live performances from local magical musicians and traveling musical magicians. From intimate solos to monstrous full-band spectacles, each a celebration of sound that will leave you spellbound.",
+      "image": "/images/entertainment/images/live-gigs-card.webp",
+      "href": "#"
+    },
+    {
+      "title": "Open Mic Night",
+      "description": "Step into the spotlight and share what you may dare. Whether you're an aspiring artist, poetic wordsmith, comedic genius, or not, the stage is yours to claim and fame is yours to gain.",
+      "image": "/images/entertainment/images/open-mic-night-card.webp",
+      "href": "#"
+    },
+    {
+      "title": "Family Market",
+      "description": "Explore our charming family market and discover locally crafted gems, tasty treats, unique garments and one-of-a-kind souvinirs. Connect with locals that bring together a community of creativity.",
+      "image": "/images/entertainment/images/family-market-card.webp",
+      "href": "#"
+    }
+  ],
+  "cta": {
+    "title": "Want to Perform?",
+    "description": "We're always looking for talented musicians to join our lineup. Contact us to discuss performance opportunities.",
+    "href": "/booking",
+    "label": "Get in Touch"
+  }
+}

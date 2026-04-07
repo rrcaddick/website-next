@@ -1,0 +1,46 @@
+{
+  "title": "Venue Hire",
+  "description": "Whether you're planning an intimate wedding amongst the trees, a captivating film shoot for the next Peter Pan, a corporate retreat where nature fuels inspiration, or a special celebration glowing with fairy-tale splendor, Fairy Knowe Backpackers Lodge opens the door to magical moments. Nestled against a backdrop of natural beauty, this rustic haven of enchanting wonder creates unforgettable memories for all those who wander.",
+  "hero": {
+    "mobileSrc": "/images/venue/hero/mobile.webp",
+    "desktopSrc": "/images/venue/hero/desktop.webp"
+  },
+  "items": [
+    {
+      "title": "Weddings",
+      "description": "Host your special day in our enchanted fairy forest. Entwine yourselves in a space perfect for intimate ceremonies and receptions entangled in the trees.",
+      "image": "/images/venue/cards/weddings-card.webp",
+      "href": "#"
+    },
+    {
+      "title": "Private Parties",
+      "description": "Celebrate lifes most treasured birthdays, anniversaries, or special occasions with a touch of fairy magic.",
+      "image": "/images/venue/cards/private-parties-card.webp",
+      "href": "#"
+    },
+    {
+      "title": "Corporate Events",
+      "description": "With the ideal setting to inspire collaboration and creativity, our venue provides a calming backdrop for productive corporate gatherings.",
+      "image": "/images/venue/cards/corporate-events-card.webp",
+      "href": "#"
+    },
+    {
+      "title": "Film Crews",
+      "description": "A magical setting for your next film or photo shoot. From fantasy flicks to nature documentaries, our location offers diverse and dense backdrops.",
+      "image": "/images/venue/cards/film-crews-card.webp",
+      "href": "#"
+    },
+    {
+      "title": "Skill Trades & Workshops",
+      "description": "Share, learn, or host hands-on workshops and skill trades in a creative, collaborative environment. Perfect for artists, makers, and lifelong learners.",
+      "image": "/images/venue/cards/skill-trades-workshops-card.webp",
+      "href": "#"
+    },
+    {
+      "title": "Expo Events",
+      "description": "Host your next trade show, exhibition, or product launch in our versatile event space. Perfect for showcasing products, networking, and creating memorable brand experiences.",
+      "image": "/images/venue/cards/expo-events-card.webp",
+      "href": "#"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "title": "Fairy Knowe Backpackers",
+  "description": "Your home away from home in the heart of Wilderness, offering comfortable accommodation, exciting adventures, and a vibrant social atmosphere.",
+  "hero": {
+    "mobileSrc": "/images/home/hero/mobile.webp",
+    "desktopSrc": "/images/home/hero/desktop.webp"
+  },
+  "showBookNow": true,
+  "items": [
+    {
+      "title": "Accommodation",
+      "description": "Explore our comfortable rooms and cozy accommodation options.",
+      "image": "/images/home/cards/accommodation.webp",
+      "href": "/accommodation"
+    },
+    {
+      "title": "Adventures",
+      "description": "Discover exciting activities and adventures in Wilderness.",
+      "image": "/images/home/cards/adventure.webp",
+      "href": "/adventures"
+    },
+    {
+      "title": "Entertainment",
+      "description": "Join us for live music, open mic nights, and family markets.",
+      "image": "/images/home/cards/entertainment.webp",
+      "href": "/entertainment"
+    },
+    {
+      "title": "Venue Hire",
+      "description": "Host your special occasion in our charming venue surrounded by nature.",
+      "image": "/images/home/cards/venue.webp",
+      "href": "/venue"
+    },
+    {
+      "title": "Facilities",
+      "description": "Enjoy our bar, restaurant, self catering kitchen and social spaces.",
+      "image": "/images/home/cards/facilities.webp",
+      "href": "/facilities"
+    },
+    {
+      "title": "Fairy Folk 'n Roll",
+      "description": "Visit our YouTube channel exploring the art of live music performance through digital media.",
+      "image": "/images/home/cards/ffr.webp",
+      "href": "/fairy-folk-n-roll"
+    }
+  ],
+  "cta": {
+    "title": "Ready to Start Your Adventure?",
+    "description": "Join us at Fairy Knowe Backpackers Lodge for an unforgettable experience in the beautiful Garden Route, South Africa."
+  },
+  "footnote": "I dwell in forests deep and green, where few have seen and less have been.\nWhen the mind has sight, be seen I might, on wings that shimmer through the night.\nI guard the flowers, trees and streams, and live within your wildest dreams.\nI bring the magic, most delight, yet vanish with the morning light.\n\nWhat am I?"
+}

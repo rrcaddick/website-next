@@ -1,0 +1,65 @@
+{
+  "title": "Accommodation",
+  "description": "Nestled in the heart of Wilderness, our enchanting backpackers offers a magical retreat with room for every wandering soul. With cozy beds for up to 50 guests and a sprawling campsite that welcomes twice as many adventurers, we've created a space where lifelong friendships and unforgettable memories are made.",
+  "hero": {
+    "mobileSrc": "/images/accommodation/hero/mobile.webp",
+    "desktopSrc": "/images/accommodation/hero/desktop.webp"
+  },
+  "showBookNow": true,
+  "items": [
+    {
+      "title": "Camping",
+      "description": "Bring your own tent and enjoy our beautiful campsite with access to shared facilities.",
+      "image": "/images/accommodation/cards/camping-card.webp",
+      "href": "/accommodation/camping"
+    },
+    {
+      "title": "Safari Tent",
+      "description": "Experience glamping in our comfortable safari tent, perfect for those who want to be close to nature.",
+      "image": "/images/accommodation/cards/safari-tent-card.webp",
+      "href": "/accommodation/safari-tent"
+    },
+    {
+      "title": "Gypsy Caravan",
+      "description": "Stay in our unique and charming gypsy caravan for a truly magical experience.",
+      "image": "/images/accommodation/cards/gypsy-caravan-card.webp",
+      "href": "/accommodation/gypsy-caravan"
+    },
+    {
+      "title": "Mixed Dorm",
+      "description": "Comfortable bunk beds in our mixed dormitory, perfect for solo travelers and backpackers.",
+      "image": "/images/accommodation/cards/mixed-dorm-card.webp",
+      "href": "/accommodation/mixed-dorm"
+    },
+    {
+      "title": "Twin Room",
+      "description": "Cozy room with two single beds, ideal for friends traveling together.",
+      "image": "/images/accommodation/cards/twin-room-card.webp",
+      "href": "/accommodation/twin-room"
+    },
+    {
+      "title": "Family Room",
+      "description": "Spacious room perfect for families, featuring multiple beds and shared facilities.",
+      "image": "/images/accommodation/cards/family-room-card.webp",
+      "href": "/accommodation/family-room"
+    },
+    {
+      "title": "Five Sleeper",
+      "description": "Large room that comfortably accommodates up to five people, perfect for groups or families.",
+      "image": "/images/accommodation/cards/five-sleeper-card.webp",
+      "href": "/accommodation/five-sleeper"
+    },
+    {
+      "title": "Double En-suite",
+      "description": "Private room with a queen size bed and en-suite bathroom for added comfort.",
+      "image": "/images/accommodation/cards/double-ensuite-card.webp",
+      "href": "/accommodation/double-en-suite"
+    },
+    {
+      "title": "Family En-suite Rondawel",
+      "description": "Traditional round African house with modern amenities, perfect for families seeking a unique stay.",
+      "image": "/images/accommodation/cards/family-en-suite-rondawel-card.webp",
+      "href": "/accommodation/family-en-suite-rondawel"
+    }
+  ]
+}

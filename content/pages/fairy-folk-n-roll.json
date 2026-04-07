@@ -1,0 +1,28 @@
+{
+  "title": "Fairy Folk 'n Roll",
+  "description": "Welcome to our vibrant music community where local talent meets global audiences through our YouTube channel. We capture the magic of live performances and blend it with the natural beauty of our enchanted milkwood forest, creating a unique musical experience that celebrates both artistry and nature.",
+  "hero": {
+    "mobileSrc": "/images/fairy-folk-n-roll/hero/mobile.webp",
+    "desktopSrc": "/images/fairy-folk-n-roll/hero/desktop.webp"
+  },
+  "items": [
+    {
+      "title": "Live Music Sessions",
+      "description": "Experience the raw energy and authentic sound of local artists in our professionally recorded live sessions. Each performance is carefully captured to preserve the intimate atmosphere and musical excellence that defines our venue.",
+      "image": "/images/fairy-folk-n-roll/cards/ffr-live-music.webp",
+      "href": "#"
+    },
+    {
+      "title": "Our YouTube Channel",
+      "description": "Subscribe to our YouTube channel to discover the diverse musical talent of the Garden Route. From folk and acoustic to indie rock and world music, our channel is a platform for artists to reach audiences worldwide while capturing the unique atmosphere of our backpackers.",
+      "image": "/images/fairy-folk-n-roll/cards/ffr-youtube.webp",
+      "href": "#"
+    }
+  ],
+  "cta": {
+    "title": "Be Part of Our Story",
+    "description": "Are you a musician looking to showcase your talent? We're always excited to feature new artists in our live sessions. Join our growing community of musicians and reach audiences worldwide through our YouTube channel.",
+    "href": "/booking",
+    "label": "Contact Us"
+  }
+}
