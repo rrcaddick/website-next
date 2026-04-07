@@ -8,7 +8,7 @@ export default function LogoSection() {
         alt="Fairy Knowe Backpackers Logo"
         width={400}
         height={400}
-        className="w-auto h-auto max-w-[200px] md:max-w-[250px]"
+        className="w-[200px] md:w-[250px] h-auto"
       />
     </div>
   );
