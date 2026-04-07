@@ -1,8 +1,8 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/accommodation/[slug]/page": "app/accommodation/[slug]/page.js",
-  "/adventures/page": "app/adventures/page.js",
   "/adventures/[slug]/page": "app/adventures/[slug]/page.js",
   "/gallery/page": "app/gallery/page.js",
-  "/api/gallery/route": "app/api/gallery/route.js"
+  "/page": "app/page.js",
+  "/accommodation/page": "app/accommodation/page.js"
 }
