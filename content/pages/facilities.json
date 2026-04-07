@@ -69,7 +69,8 @@
         "No private alcohol",
         "Be friendly to fellow wanderers",
         "Respect the forest"
-      ]
+      ],
+      "align": "right"
     },
     {
       "heading": "Reception Hours",
@@ -79,7 +80,8 @@
         "Check-out: by 10AM",
         "After hours: Security on site",
         "Emergency contact available 24/7"
-      ]
+      ],
+      "align": "left"
     }
   ]
 }

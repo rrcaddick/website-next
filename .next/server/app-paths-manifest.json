@@ -1,6 +1,11 @@
 {
+  "/facilities/page": "app/facilities/page.js",
+  "/adventures/[slug]/page": "app/adventures/[slug]/page.js",
   "/page": "app/page.js",
-  "/contact/page": "app/contact/page.js",
   "/accommodation/page": "app/accommodation/page.js",
-  "/adventures/[slug]/page": "app/adventures/[slug]/page.js"
+  "/accommodation/[slug]/page": "app/accommodation/[slug]/page.js",
+  "/entertainment/page": "app/entertainment/page.js",
+  "/adventures/page": "app/adventures/page.js",
+  "/gallery/page": "app/gallery/page.js",
+  "/api/gallery/route": "app/api/gallery/route.js"
 }

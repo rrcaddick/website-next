@@ -53,12 +53,7 @@
   "cardImage": "/images/adventures/cards/desktop/kayaking-card.webp",
   "cardMobileImage": "/images/adventures/cards/mobile/kayaking-card.webp",
   "cardDescription": "3 hour return trip to the waterfall and back, totaling around 2 hours paddling and 1 hour hiking.",
-  "cardFeatures": [
-    "Life jackets included",
-    "Moderate fitness required",
-    "Paddling, hiking and swimming",
-    "Waterfall"
-  ],
+  "cardFeatures": ["Life jackets included", "Moderate fitness required", "Paddling, hiking and swimming", "Waterfall"],
   "infoSections": [
     {
       "heading": "General Info",

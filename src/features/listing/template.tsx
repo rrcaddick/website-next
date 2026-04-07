@@ -52,7 +52,7 @@ export default function ListingTemplate({ content }: Props) {
           </div>
 
           {infoSections && infoSections.length > 0 && (
-            <div className="mt-16">
+            <div className="max-w-7xl mx-auto px-4 mt-8 sm:mt-12 mb-8 sm:mb-12">
               <InfoSections sections={infoSections} />
             </div>
           )}
