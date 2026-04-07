@@ -8,7 +8,6 @@
   "items": [
     {
       "image": "/images/venue/cards/weddings-card.webp",
-      "href": "#",
       "blocks": [
         { "type": "title", "content": "Weddings" },
         {
@@ -19,7 +18,6 @@
     },
     {
       "image": "/images/venue/cards/private-parties-card.webp",
-      "href": "#",
       "blocks": [
         { "type": "title", "content": "Private Parties" },
         {
@@ -30,7 +28,6 @@
     },
     {
       "image": "/images/venue/cards/corporate-events-card.webp",
-      "href": "#",
       "blocks": [
         { "type": "title", "content": "Corporate Events" },
         {
@@ -41,7 +38,6 @@
     },
     {
       "image": "/images/venue/cards/film-crews-card.webp",
-      "href": "#",
       "blocks": [
         { "type": "title", "content": "Film Crews" },
         {
@@ -52,7 +48,6 @@
     },
     {
       "image": "/images/venue/cards/skill-trades-workshops-card.webp",
-      "href": "#",
       "blocks": [
         { "type": "title", "content": "Skill Trades & Workshops" },
         {
@@ -63,7 +58,6 @@
     },
     {
       "image": "/images/venue/cards/expo-events-card.webp",
-      "href": "#",
       "blocks": [
         { "type": "title", "content": "Expo Events" },
         {

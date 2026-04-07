@@ -21,7 +21,7 @@ export type CardBlock = {
 
 export interface ListingItem {
   image: string;
-  href: string;
+  href?: string;
   blocks: CardBlock[];
 }
 

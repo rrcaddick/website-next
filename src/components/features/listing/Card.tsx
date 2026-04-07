@@ -14,14 +14,29 @@ function getCardTitle(blocks: ListingItem["blocks"]) {
 }
 
 export default function Card({ item }: Props) {
+  const hasValidHref = item.href && item.href !== "#" && item.href !== "";
+
+  // If no valid href → render as a plain div (non-clickable)
+  if (!hasValidHref) {
+    return (
+      <div className="group mx-auto w-full max-w-[420px] h-full flex justify-center">
+        <MouseGradientCard className="bg-[#F3F4F6] text-[#202635] rounded-lg shadow-lg overflow-hidden flex flex-col h-full min-h-[320px] w-full transition-all duration-500 ease-in-out cursor-default">
+          <div className="relative w-full h-[250px]">
+            <CardImage src={item.image} alt={getCardTitle(item.blocks)} />
+          </div>
+          <CardContent blocks={item.blocks} />
+        </MouseGradientCard>
+      </div>
+    );
+  }
+
+  // Normal clickable card
   return (
     <Link href={item.href} className="group mx-auto w-full max-w-[420px] h-full flex justify-center">
       <MouseGradientCard className="bg-[#F3F4F6] text-[#202635] rounded-lg shadow-lg overflow-hidden flex flex-col h-full min-h-[320px] w-full transition-all duration-500 ease-in-out">
-        {/* Image container - consistent height */}
         <div className="relative w-full h-[250px]">
           <CardImage src={item.image} alt={getCardTitle(item.blocks)} />
         </div>
-
         <CardContent blocks={item.blocks} />
       </MouseGradientCard>
     </Link>

@@ -9,7 +9,6 @@
   "items": [
     {
       "image": "/images/facilities/cards/amenities-and-services-card.webp",
-      "href": "/facilities/amenities-services",
       "blocks": [
         { "type": "title", "content": "Amenities & Services" },
         {
@@ -20,7 +19,6 @@
     },
     {
       "image": "/images/facilities/cards/entertainment-and-recreation-card.webp",
-      "href": "/facilities/entertainment-recreation",
       "blocks": [
         { "type": "title", "content": "Entertainment & Recreation" },
         {
@@ -31,7 +29,6 @@
     },
     {
       "image": "/images/facilities/cards/food-and-drink-card.webp",
-      "href": "/facilities/food-drink",
       "blocks": [
         { "type": "title", "content": "Food & Drink" },
         {
@@ -42,7 +39,6 @@
     },
     {
       "image": "/images/facilities/cards/social-and-gathering-spaces-card.webp",
-      "href": "/facilities/social-gathering-spaces",
       "blocks": [
         { "type": "title", "content": "Social & Gathering Spaces" },
         {

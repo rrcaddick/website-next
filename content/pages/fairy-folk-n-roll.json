@@ -9,7 +9,6 @@
   "items": [
     {
       "image": "/images/fairy-folk-n-roll/cards/ffr-live-music.webp",
-      "href": "#",
       "blocks": [
         { "type": "title", "content": "Live Music Sessions" },
         {
@@ -28,7 +27,7 @@
     },
     {
       "image": "/images/fairy-folk-n-roll/cards/ffr-youtube.webp",
-      "href": "#",
+      "href": "https://www.youtube.com/@FairyFolknRoll",
       "blocks": [
         { "type": "title", "content": "Our YouTube Channel" },
         {
