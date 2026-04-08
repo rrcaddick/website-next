@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "@/app/globals.css";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
+import { getSiteContent } from "@/lib/content";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -14,12 +15,14 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const site = getSiteContent();
+
   return (
     <html lang="en" className={inter.variable}>
       <body className="font-sans bg-white">
         <SiteHeader />
         <main className="min-h-screen pt-12">{children}</main>
-        <SiteFooter />
+        <SiteFooter site={site} />
       </body>
     </html>
   );

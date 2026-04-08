@@ -1,4 +1,15 @@
 {
+  "topLevelLinks": [
+    { "href": "/", "label": "Home" },
+    { "href": "/accommodation", "label": "Accommodation" },
+    { "href": "/adventures", "label": "Adventures" },
+    { "href": "/entertainment", "label": "Entertainment" },
+    { "href": "/venue", "label": "Venue Hire" },
+    { "href": "/facilities", "label": "Facilities" },
+    { "href": "/fairy-folk-n-roll", "label": "Fairy Folk 'n Roll" },
+    { "href": "/gallery", "label": "Gallery" },
+    { "href": "/contact", "label": "Contact" }
+  ],
   "accommodationLinks": [
     { "href": "/accommodation/camping", "label": "Camping" },
     { "href": "/accommodation/safari-tent", "label": "Safari Tent" },

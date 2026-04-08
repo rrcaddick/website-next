@@ -1,5 +1,7 @@
-import GalleryClient from '@/components/features/gallery/GalleryClient'
+import { getGalleryPageContent } from "@/lib/content";
+import GalleryTemplate from "@/features/gallery/template";
 
-export default function GalleryPage() {
-  return <GalleryClient />
+export default function Gallery() {
+  const content = getGalleryPageContent("gallery");
+  return <GalleryTemplate content={content} />;
 }

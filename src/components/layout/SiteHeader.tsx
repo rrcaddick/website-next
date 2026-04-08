@@ -1,9 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import MobileMenu from "./MobileMenu";
-import { accommodationLinks, adventureLinks } from "@/data/nav";
+import { getNav } from "@/lib/content";
 
 export default function SiteHeader() {
+  const nav = getNav();
+
   return (
     <nav className="bg-white shadow-lg fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4">
@@ -42,7 +44,7 @@ export default function SiteHeader() {
               <div className="absolute left-0 mt-0 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out">
                 <div className="relative top-2">
                   <div className="bg-white border border-gray-100 rounded-lg shadow-lg">
-                    {accommodationLinks.map((link) => (
+                    {nav.accommodationLinks.map((link) => (
                       <Link
                         key={link.href}
                         href={link.href}
@@ -70,7 +72,7 @@ export default function SiteHeader() {
               <div className="absolute left-0 mt-0 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out">
                 <div className="relative top-2">
                   <div className="bg-white border border-gray-100 rounded-lg shadow-lg">
-                    {adventureLinks.map((link) => (
+                    {nav.adventureLinks.map((link) => (
                       <Link
                         key={link.href}
                         href={link.href}
@@ -126,7 +128,7 @@ export default function SiteHeader() {
           </div>
 
           {/* Mobile Menu — stays on the right of the logo row */}
-          <MobileMenu />
+          <MobileMenu links={nav.topLevelLinks} />
         </div>
       </div>
     </nav>

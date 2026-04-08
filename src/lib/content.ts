@@ -45,6 +45,7 @@ export interface ListingPageContent {
     };
   };
   footnote?: string;
+  galleryHeading?: string;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -79,6 +80,21 @@ export function getContactPageContent(slug: string): ContactPageContent {
   const file = path.join(process.cwd(), "content", "pages", `${slug}.json`);
   const raw = fs.readFileSync(file, "utf-8");
   return JSON.parse(raw) as ContactPageContent;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Gallery page
+// ─────────────────────────────────────────────────────────────────────────────
+
+export interface GalleryPageContent {
+  galleryHeading: string;
+  galleryDetail: string;
+}
+
+export function getGalleryPageContent(slug: string): GalleryPageContent {
+  const file = path.join(process.cwd(), "content", "pages", `${slug}.json`);
+  const raw = fs.readFileSync(file, "utf-8");
+  return JSON.parse(raw) as GalleryPageContent;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -243,8 +259,30 @@ export interface NavLink {
 }
 
 export interface NavContent {
+  topLevelLinks: NavLink[];
   accommodationLinks: NavLink[];
   adventureLinks: NavLink[];
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Site-wide content (footer, social links)
+// ─────────────────────────────────────────────────────────────────────────────
+
+export interface SiteContent {
+  address: string;
+  phone: string;
+  email: string;
+  social: {
+    facebook: string;
+    instagram: string;
+    youtube: string;
+  };
+}
+
+export function getSiteContent(): SiteContent {
+  const file = path.join(process.cwd(), "content", "site.json");
+  const raw = fs.readFileSync(file, "utf-8");
+  return JSON.parse(raw) as SiteContent;
 }
 
 export function getNav(): NavContent {

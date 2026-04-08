@@ -2,20 +2,13 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import type { NavLink } from "@/lib/content";
 
-const topLevelLinks = [
-  { href: "/", label: "Home" },
-  { href: "/accommodation", label: "Accommodation" },
-  { href: "/adventures", label: "Adventures" },
-  { href: "/entertainment", label: "Entertainment" },
-  { href: "/venue", label: "Venue Hire" },
-  { href: "/facilities", label: "Facilities" },
-  { href: "/fairy-folk-n-roll", label: "Fairy Folk 'n Roll" },
-  { href: "/gallery", label: "Gallery" },
-  { href: "/contact", label: "Contact" },
-];
+interface Props {
+  links: NavLink[];
+}
 
-export default function MobileMenu() {
+export default function MobileMenu({ links }: Props) {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -72,7 +65,7 @@ export default function MobileMenu() {
 
             <nav className="flex-1 overflow-y-auto px-4 py-5">
               <div className="space-y-3">
-                {topLevelLinks.map((link) => (
+                {links.map((link) => (
                   <Link
                     key={link.href}
                     href={link.href}

@@ -1,6 +1,11 @@
 import Image from "next/image";
+import type { SiteContent } from "@/lib/content";
 
-export default function SiteFooter() {
+interface Props {
+  site: SiteContent;
+}
+
+export default function SiteFooter({ site }: Props) {
   return (
     <footer className="relative mt-2">
       {/* Unified contact section: bg-white on mobile, transparent on desktop */}
@@ -19,7 +24,7 @@ export default function SiteFooter() {
         {/* Contact buttons — single DOM tree, colour shifts at sm breakpoint */}
         <div className="flex justify-center space-x-6 mb-4 relative z-10">
           {/* Phone */}
-          <a href="tel:+27834438384" className="text-gray-900 sm:text-black hover:text-primary transition-colors">
+          <a href={`tel:${site.phone}`} className="text-gray-900 sm:text-black hover:text-primary transition-colors">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -56,7 +61,7 @@ export default function SiteFooter() {
 
           {/* Facebook */}
           <a
-            href="https://facebook.com/fairyknowe"
+            href={site.social.facebook}
             target="_blank"
             className="text-gray-900 sm:text-black hover:text-primary transition-colors"
           >
@@ -67,7 +72,7 @@ export default function SiteFooter() {
 
           {/* Instagram */}
           <a
-            href="https://www.instagram.com/fairyknowebackpackers/"
+            href={site.social.instagram}
             target="_blank"
             className="text-gray-900 sm:text-black hover:text-primary transition-colors"
           >
@@ -78,7 +83,7 @@ export default function SiteFooter() {
 
           {/* YouTube */}
           <a
-            href="https://www.youtube.com/@FairyFolknRoll"
+            href={site.social.youtube}
             target="_blank"
             className="text-gray-900 sm:text-black hover:text-primary transition-colors"
           >
@@ -90,9 +95,7 @@ export default function SiteFooter() {
 
         {/* Address */}
         <div className="text-center mb-6 relative z-10">
-          <p className="text-xs sm:text-sm text-gray-900 sm:text-black">
-            1 Dumbleton Road, Wilderness, Garden Route, South Africa
-          </p>
+          <p className="text-xs sm:text-sm text-gray-900 sm:text-black">{site.address}</p>
         </div>
       </div>
 

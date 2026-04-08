@@ -1,26 +1,17 @@
-import ImageGallery from '@/components/gallery/ImageGallery'
-import PageHero from '@/components/ui/PageHero'
-import BookNowButton from '@/components/ui/BookNowButton'
-import LogoSection from '@/components/ui/LogoSection'
-import CTASection from '@/components/ui/CTASection'
-import InfoSections from '@/components/ui/InfoSections'
-import type { DetailPageContent } from '@/lib/content'
+import ImageGallery from "@/components/gallery/ImageGallery";
+import PageHero from "@/components/ui/PageHero";
+import BookNowButton from "@/components/ui/BookNowButton";
+import LogoSection from "@/components/ui/LogoSection";
+import CTASection from "@/components/ui/CTASection";
+import InfoSections from "@/components/ui/InfoSections";
+import type { DetailPageContent } from "@/lib/content";
 
 interface Props {
-  content: DetailPageContent
+  content: DetailPageContent;
 }
 
 export default function DetailPageTemplate({ content }: Props) {
-  const {
-    title,
-    description,
-    hero,
-    gallery,
-    imagesPerPage = 8,
-    showBookNow,
-    infoSections,
-    cta,
-  } = content
+  const { title, description, hero, gallery, imagesPerPage = 8, showBookNow, infoSections, cta } = content;
 
   return (
     <div className="min-h-screen">
@@ -28,9 +19,7 @@ export default function DetailPageTemplate({ content }: Props) {
 
       <div className="pt-2 pb-8 sm:pt-4 sm:pb-12 px-4">
         <div className="max-w-7xl mx-auto px-4">
-          <p className="text-xs md:text-base text-gray-600 max-w-3xl mx-auto text-center">
-            {description}
-          </p>
+          <p className="text-xs md:text-base text-gray-600 max-w-3xl mx-auto text-center">{description}</p>
           {showBookNow && (
             <div className="mt-6">
               <BookNowButton />
@@ -61,5 +50,5 @@ export default function DetailPageTemplate({ content }: Props) {
         </div>
       </div>
     </div>
-  )
+  );
 }

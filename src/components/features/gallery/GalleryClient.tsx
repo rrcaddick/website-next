@@ -161,89 +161,80 @@ export default function GalleryClient() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      {/* Gallery top reference point for smooth scroll */}
-      <div ref={galleryTopRef} className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-center mb-8 dark:text-white">Our Gallery</h1>
-        <p className="text-gray-600 dark:text-gray-300 text-center mb-12 max-w-2xl mx-auto">
-          Explore our collection of photos showcasing our accommodation, adventures, events, facilities, and venue.
-          Click on any image to view it in full size.
-        </p>
+    <div ref={galleryTopRef} className="container mx-auto px-4 py-8">
+      <GalleryFilters
+        categories={CATEGORIES}
+        selectedCategory={selectedCategory}
+        selectedSubcategory={selectedSubcategory}
+        images={images}
+        onSelectCategory={setSelectedCategory}
+        onSelectSubcategory={setSelectedSubcategory}
+      />
 
-        <GalleryFilters
-          categories={CATEGORIES}
-          selectedCategory={selectedCategory}
-          selectedSubcategory={selectedSubcategory}
-          images={images}
-          onSelectCategory={setSelectedCategory}
-          onSelectSubcategory={setSelectedSubcategory}
-        />
+      <GalleryGrid
+        images={currentImages}
+        imageLoadErrors={imageLoadErrors}
+        onImageClick={handleImageClick}
+        onImageError={handleImageError}
+      />
 
-        <GalleryGrid
-          images={currentImages}
-          imageLoadErrors={imageLoadErrors}
-          onImageClick={handleImageClick}
-          onImageError={handleImageError}
-        />
-
-        {/* Clean arrow-only pagination */}
-        {totalPages > 1 && (
-          <div className="flex justify-center items-center mt-12 space-x-8">
-            <button
-              onClick={() => setCurrentPage((prev) => Math.max(0, prev - 1))}
-              disabled={currentPage === 0}
-              className="p-3 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors disabled:opacity-40"
-              aria-label="Previous page"
+      {/* Clean arrow-only pagination */}
+      {totalPages > 1 && (
+        <div className="flex justify-center items-center mt-12 space-x-8">
+          <button
+            onClick={() => setCurrentPage((prev) => Math.max(0, prev - 1))}
+            disabled={currentPage === 0}
+            className="p-3 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors disabled:opacity-40"
+            aria-label="Previous page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6 text-gray-600 dark:text-gray-300"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-gray-600 dark:text-gray-300"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
 
-            <span className="text-sm text-gray-600 dark:text-gray-300 px-4">
-              Page <strong>{currentPage + 1}</strong> of {totalPages}
-            </span>
+          <span className="text-sm text-gray-600 dark:text-gray-300 px-4">
+            Page <strong>{currentPage + 1}</strong> of {totalPages}
+          </span>
 
-            <button
-              onClick={() => setCurrentPage((prev) => Math.min(totalPages - 1, prev + 1))}
-              disabled={currentPage === totalPages - 1}
-              className="p-3 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors disabled:opacity-40"
-              aria-label="Next page"
+          <button
+            onClick={() => setCurrentPage((prev) => Math.min(totalPages - 1, prev + 1))}
+            disabled={currentPage === totalPages - 1}
+            className="p-3 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors disabled:opacity-40"
+            aria-label="Next page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6 text-gray-600 dark:text-gray-300"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-gray-600 dark:text-gray-300"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
-        )}
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      )}
 
-        {imagesToDisplay.length === 0 && (
-          <div className="text-center py-12">
-            <p className="text-gray-500 dark:text-gray-400">No images found in this category.</p>
-          </div>
-        )}
+      {imagesToDisplay.length === 0 && (
+        <div className="text-center py-12">
+          <p className="text-gray-500 dark:text-gray-400">No images found in this category.</p>
+        </div>
+      )}
 
-        <GalleryModal
-          image={selectedImage}
-          currentIndex={selectedImageIndex}
-          totalImages={imagesToDisplay.length}
-          onClose={() => setSelectedImage(null)}
-          onNext={handleNextImage}
-          onPrevious={handlePreviousImage}
-        />
-      </div>
+      <GalleryModal
+        image={selectedImage}
+        currentIndex={selectedImageIndex}
+        totalImages={imagesToDisplay.length}
+        onClose={() => setSelectedImage(null)}
+        onNext={handleNextImage}
+        onPrevious={handlePreviousImage}
+      />
     </div>
   );
 }
