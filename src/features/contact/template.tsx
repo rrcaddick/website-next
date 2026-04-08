@@ -6,7 +6,7 @@ interface Props {
 }
 
 export default function ContactPageTemplate({ content }: Props) {
-  const { title, desktopSrc, mobileSrc, infoSections, formHeading, formFields, formSubmitLabel } = content;
+  const { title, desktopSrc, mobileSrc, infoHeading, infoSections, formHeading, formFields, formSubmitLabel } = content;
 
   return (
     <div className="min-h-screen">
@@ -16,7 +16,7 @@ export default function ContactPageTemplate({ content }: Props) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Information */}
           <div className="bg-[#E5E7EB] p-8 rounded-lg ">
-            <h2 className="text-2xl font-bold mb-6 text-[#202635]">Get in Touch</h2>
+            <h2 className="text-2xl font-bold mb-6 text-[#202635]">{infoHeading}</h2>
 
             <div className="space-y-4">
               {infoSections.map((section, sectionIndex) => (
