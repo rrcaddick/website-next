@@ -106,6 +106,7 @@ export default function SiteFooter({ site }: Props) {
           alt="Footer Background"
           width={1920}
           height={400}
+          sizes="100vw"
           className="w-full h-auto"
           priority
         />

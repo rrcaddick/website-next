@@ -1,22 +1,24 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-  output: 'standalone',
+  output: "standalone",
   trailingSlash: true,
   images: {
-    domains: ['localhost'],
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: '**',
+        protocol: "https",
+        hostname: "**",
       },
     ],
-    unoptimized: true,
+    unoptimized: process.env.NODE_ENV === "development",
   },
   // Add case sensitive routing to false to handle case mismatches
   experimental: {
     caseSensitiveRoutes: false,
+    outputFileTracingIncludes: {
+      "*": ["./public/**/*", "./.next/static/**/*"],
+    },
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

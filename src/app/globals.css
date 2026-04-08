@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Hestrial';
-  src: url('/fonts/hestrial.ttf') format('truetype');
+  font-family: "Hestrial";
+  src: url("/fonts/hestrial.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 .hestrial-font {
-  font-family: 'Hestrial', sans-serif !important;
+  font-family: "Hestrial", sans-serif !important;
 }
 
 :root {
@@ -37,4 +37,4 @@ body {
 
 .gradient-exit {
   transition: background-image 1.5s ease-out;
-} 
+}

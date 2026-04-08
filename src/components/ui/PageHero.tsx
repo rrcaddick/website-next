@@ -1,9 +1,9 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 interface PageHeroProps {
-  mobileSrc: string
-  desktopSrc: string
-  title: string
+  mobileSrc: string;
+  desktopSrc: string;
+  title: string;
 }
 
 export default function PageHero({ mobileSrc, desktopSrc, title }: PageHeroProps) {
@@ -44,5 +44,5 @@ export default function PageHero({ mobileSrc, desktopSrc, title }: PageHeroProps
         </div>
       </div>
     </>
-  )
+  );
 }

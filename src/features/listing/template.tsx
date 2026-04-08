@@ -46,8 +46,8 @@ export default function ListingTemplate({ content }: Props) {
       <div className="pt-2 pb-8 sm:pt-4 sm:pb-12 px-4">
         <div className="max-w-7xl mx-auto">
           <div className={gridClasses}>
-            {items.map((item) => (
-              <Card key={`${item.href}-${item.image}`} item={item} />
+            {items.map((item, index) => (
+              <Card key={`${item.href}-${item.image}`} item={item} priority={index === 0} />
             ))}
           </div>
 

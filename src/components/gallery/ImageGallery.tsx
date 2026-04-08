@@ -223,6 +223,7 @@ export default function ImageGallery({
                 alt={selectedImage.alt}
                 width={2560}
                 height={1440}
+                sizes="(max-width: 768px) 100vw, 80vw"
                 className="object-contain max-w-full max-h-full w-auto h-auto"
                 priority
                 quality={100}

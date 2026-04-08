@@ -6,9 +6,10 @@ import Image from "next/image";
 interface Props {
   src: string;
   alt: string;
+  priority?: boolean;
 }
 
-export default function CardImage({ src, alt }: Props) {
+export default function CardImage({ src, alt, priority = false }: Props) {
   const [error, setError] = useState(false);
 
   if (error) {
@@ -24,6 +25,8 @@ export default function CardImage({ src, alt }: Props) {
       src={src}
       alt={alt}
       fill
+      priority={priority}
+      quality={80}
       className="object-cover w-full transition-transform duration-500 ease-in-out group-hover:scale-105"
       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
       onError={() => setError(true)}
