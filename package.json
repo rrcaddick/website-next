@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "tinacms build && next build",
-    "start": "node .next/standalone/server.js",
+    "build": "next build",
+    "start": "next start",
     "lint": "next lint",
     "tina:dev": "tinacms dev -c \"next dev\"",
     "tina:build": "tinacms dev -c \"next build\""
