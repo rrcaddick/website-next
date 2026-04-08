@@ -164,6 +164,7 @@ function buildGalleryImages(): GalleryImage[] {
 let cachedImages: GalleryImage[];
 try {
   cachedImages = buildGalleryImages();
+  console.log(`Gallery: loaded ${cachedImages.length} images`);
 } catch (error) {
   console.error("Error building gallery image list:", error);
   cachedImages = [];

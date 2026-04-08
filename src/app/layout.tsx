@@ -8,7 +8,9 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export function generateMetadata() {
   const site = getSiteContent();
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.wildernessbackpackers.com';
   return {
+    metadataBase: new URL(baseUrl),
     title: site.seo.defaultTitle,
     description: site.seo.defaultDescription,
     icons: {

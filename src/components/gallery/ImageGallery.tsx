@@ -1,7 +1,8 @@
 'use client'
 
 import Image from 'next/image'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
+import GalleryModal from '@/components/features/gallery/GalleryModal'
 
 interface GalleryImage {
   src: string;
@@ -15,21 +16,17 @@ interface ImageGalleryProps {
   imagesPerPage?: number;
 }
 
-export default function ImageGallery({ 
-  images, 
-  title, 
-  imagesPerPage = 8 
+export default function ImageGallery({
+  images,
+  title,
+  imagesPerPage = 8
 }: ImageGalleryProps) {
   const [currentPage, setCurrentPage] = useState(0);
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
   const [selectedImageIndex, setSelectedImageIndex] = useState<number>(-1);
-  const [touchStart, setTouchStart] = useState<number | null>(null);
-  const [touchEnd, setTouchEnd] = useState<number | null>(null);
-  const modalRef = useRef<HTMLDivElement>(null);
-  
+
   const totalPages = Math.ceil(images.length / imagesPerPage);
-  
-  // Get current page images
+
   const currentImages = images.slice(
     currentPage * imagesPerPage,
     (currentPage + 1) * imagesPerPage
@@ -65,49 +62,13 @@ export default function ImageGallery({
     setSelectedImage(images[prev]);
   };
 
-  // Handle touch events for swiping
-  const handleTouchStart = (e: React.TouchEvent) => {
-    setTouchStart(e.targetTouches[0].clientX);
-  };
-
-  const handleTouchMove = (e: React.TouchEvent) => {
-    setTouchEnd(e.targetTouches[0].clientX);
-  };
-
-  const handleTouchEnd = () => {
-    if (!touchStart || !touchEnd) return;
-    
-    const distance = touchStart - touchEnd;
-    const isLeftSwipe = distance > 50;
-    const isRightSwipe = distance < -50;
-    
-    if (isLeftSwipe) {
-      nextImage();
-    }
-    
-    if (isRightSwipe) {
-      prevImage();
-    }
-    
-    // Reset values
-    setTouchStart(null);
-    setTouchEnd(null);
-  };
-
-  // Handle keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (!selectedImage) return;
-      
-      if (e.key === 'ArrowRight') {
-        nextImage();
-      } else if (e.key === 'ArrowLeft') {
-        prevImage();
-      } else if (e.key === 'Escape') {
-        closeImage();
-      }
+      if (e.key === 'ArrowRight') nextImage();
+      else if (e.key === 'ArrowLeft') prevImage();
+      else if (e.key === 'Escape') closeImage();
     };
-    
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [selectedImage, selectedImageIndex]);
@@ -119,15 +80,13 @@ export default function ImageGallery({
           {title}
         </h2>
       )}
-      
+
       <div className="relative overflow-hidden">
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
-          {/* Current page images */}
           {currentImages.map((image, index) => {
             const globalIndex = currentPage * imagesPerPage + index;
-            
             return (
-              <div 
+              <div
                 key={`${image.src}-${globalIndex}`}
                 className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-lg hover:shadow-xl cursor-pointer"
                 onClick={() => openImage(image, globalIndex)}
@@ -143,8 +102,7 @@ export default function ImageGallery({
             );
           })}
         </div>
-        
-        {/* Navigation buttons */}
+
         <div className="flex justify-center mt-8 gap-4">
           <button
             onClick={prevPage}
@@ -167,77 +125,14 @@ export default function ImageGallery({
         </div>
       </div>
 
-      {/* Modal */}
-      {selectedImage && (
-        <div 
-          className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-0"
-          onClick={closeImage}
-        >
-          <div 
-            className="relative w-full h-full flex items-center justify-center"
-            ref={modalRef}
-            onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchMove}
-            onTouchEnd={handleTouchEnd}
-          >
-            <button
-              className="absolute top-4 right-4 text-white hover:text-[#00FF7F] transition-colors z-10 opacity-50 hover:opacity-100"
-              onClick={closeImage}
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 sm:h-10 sm:w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-            
-            {/* Left Navigation Button */}
-            <button
-              className="absolute left-2 sm:left-6 top-1/2 transform -translate-y-1/2 bg-[#0E7D73] bg-opacity-50 hover:bg-opacity-100 text-[#C9DD94] hover:text-[#00FF7F] p-2 sm:p-4 rounded-full transition-colors z-10"
-              onClick={(e) => {
-                e.stopPropagation();
-                prevImage();
-              }}
-              aria-label="Previous image"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 sm:h-10 sm:w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-            
-            {/* Right Navigation Button */}
-            <button
-              className="absolute right-2 sm:right-6 top-1/2 transform -translate-y-1/2 bg-[#0E7D73] bg-opacity-50 hover:bg-opacity-100 text-[#C9DD94] hover:text-[#00FF7F] p-2 sm:p-4 rounded-full transition-colors z-10"
-              onClick={(e) => {
-                e.stopPropagation();
-                nextImage();
-              }}
-              aria-label="Next image"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 sm:h-10 sm:w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-            
-            <div className="w-full h-full flex items-center justify-center">
-              <Image
-                src={selectedImage.fullSize}
-                alt={selectedImage.alt}
-                width={2560}
-                height={1440}
-                sizes="(max-width: 768px) 100vw, 80vw"
-                className="object-contain max-w-full max-h-full w-auto h-auto"
-                priority
-                quality={100}
-                onClick={(e) => e.stopPropagation()}
-              />
-            </div>
-            
-            {/* Image counter */}
-            <div className="absolute bottom-4 sm:bottom-6 left-0 right-0 text-center text-white text-xs sm:text-sm opacity-50">
-              {selectedImageIndex + 1} / {images.length}
-            </div>
-          </div>
-        </div>
-      )}
+      <GalleryModal
+        image={selectedImage}
+        currentIndex={selectedImageIndex}
+        totalImages={images.length}
+        onClose={closeImage}
+        onNext={nextImage}
+        onPrevious={prevImage}
+      />
     </div>
   );
-} 
+}
