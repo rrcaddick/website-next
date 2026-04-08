@@ -14,7 +14,7 @@
  * For production: set NEXT_PUBLIC_TINA_CONTENT_URL to this route's URL.
  * For local dev:  use `npm run tina:dev` instead (uses port 4001 directly).
  */
-
+export const runtime = "nodejs";
 import { createLocalDatabase, FilesystemBridge, resolve } from "@tinacms/graphql";
 import { buildSchema } from "@tinacms/graphql";
 import tinaConfig from "../../../../../.tina/config";
@@ -56,8 +56,5 @@ export async function POST(req: Request) {
 }
 
 export async function GET() {
-  return Response.json(
-    { message: "Tina GraphQL — use POST with { query, variables }" },
-    { status: 200 }
-  );
+  return Response.json({ message: "Tina GraphQL — use POST with { query, variables }" }, { status: 200 });
 }
