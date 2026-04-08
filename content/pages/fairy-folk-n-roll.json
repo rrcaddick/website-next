@@ -12,15 +12,18 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Live Music Sessions"
+          "content": "Live Music Sessions",
+          "_template": "title"
         },
         {
           "type": "text",
-          "content": "Experience the raw energy and authentic sound of local artists in our professionally recorded live sessions. Each performance is carefully captured to preserve the intimate atmosphere and musical excellence that defines our venue."
+          "content": "Experience the raw energy and authentic sound of local artists in our professionally recorded live sessions. Each performance is carefully captured to preserve the intimate atmosphere and musical excellence that defines our venue.",
+          "_template": "text"
         },
         {
           "type": "list",
-          "content": [
+          "_template": "list",
+          "contentItems": [
             "Professional audio and video recording",
             "Intimate acoustic performances",
             "Showcasing local talent"
@@ -34,15 +37,22 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Our YouTube Channel"
+          "content": "Our YouTube Channel",
+          "_template": "title"
         },
         {
           "type": "text",
-          "content": "Subscribe to our YouTube channel to discover the diverse musical talent of the Garden Route. From folk and acoustic to indie rock and world music, our channel is a platform for artists to reach audiences worldwide while capturing the unique atmosphere of our backpackers."
+          "content": "Subscribe to our YouTube channel to discover the diverse musical talent of the Garden Route. From folk and acoustic to indie rock and world music, our channel is a platform for artists to reach audiences worldwide while capturing the unique atmosphere of our backpackers.",
+          "_template": "text"
         },
         {
           "type": "list",
-          "content": ["Regular new content", "High-quality production", "Behind-the-scenes content"]
+          "_template": "list",
+          "contentItems": [
+            "Regular new content",
+            "High-quality production",
+            "Behind-the-scenes content"
+          ]
         }
       ]
     }

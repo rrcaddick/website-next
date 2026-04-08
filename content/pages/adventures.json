@@ -12,19 +12,23 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Kayaking"
+          "content": "Kayaking",
+          "_template": "title"
         },
         {
           "type": "text",
-          "content": "You can paddle up the Touw River to view spectacular waterfalls and wonderful birdlife."
+          "content": "You can paddle up the Touw River to view spectacular waterfalls and wonderful birdlife.",
+          "_template": "text"
         },
         {
           "type": "subheading",
-          "content": "Features:"
+          "content": "Features:",
+          "_template": "subheading"
         },
         {
           "type": "list",
-          "content": [
+          "_template": "list",
+          "contentItems": [
             "Life jackets included",
             "Moderate fitness required",
             "Paddling, hiking and swimming",
@@ -39,19 +43,23 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Paragliding"
+          "content": "Paragliding",
+          "_template": "title"
         },
         {
           "type": "text",
-          "content": "Wilderness is a mecca for paragliding. Experience a flight of a lifetime from one of the many launch sites in and around Wilderness."
+          "content": "Wilderness is a mecca for paragliding. Experience a flight of a lifetime from one of the many launch sites in and around Wilderness.",
+          "_template": "text"
         },
         {
           "type": "subheading",
-          "content": "Features:"
+          "content": "Features:",
+          "_template": "subheading"
         },
         {
           "type": "list",
-          "content": [
+          "_template": "list",
+          "contentItems": [
             "Professional pilots",
             "All equipment provided",
             "Weather dependant",
@@ -66,19 +74,23 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Horse Riding"
+          "content": "Horse Riding",
+          "_template": "title"
         },
         {
           "type": "text",
-          "content": "For beginners, there is a 1,5-hour forest ride. For the adventurist or more experienced rider, a 3-hour outride takes the rider through plantations and indigenous forest to a spectacular waterfall."
+          "content": "For beginners, there is a 1,5-hour forest ride. For the adventurist or more experienced rider, a 3-hour outride takes the rider through plantations and indigenous forest to a spectacular waterfall.",
+          "_template": "text"
         },
         {
           "type": "subheading",
-          "content": "Features:"
+          "content": "Features:",
+          "_template": "subheading"
         },
         {
           "type": "list",
-          "content": [
+          "_template": "list",
+          "contentItems": [
             "Experienced guide",
             "Any experience level",
             "Helmets provided",
@@ -93,19 +105,23 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Half Collared Kingfisher Trail"
+          "content": "Half Collared Kingfisher Trail",
+          "_template": "title"
         },
         {
           "type": "text",
-          "content": "Embark on a delightful 7.6-km out-and-back trail that winds its way through a serene, shaded wonderland."
+          "content": "Embark on a delightful 7.6-km out-and-back trail that winds its way through a serene, shaded wonderland.",
+          "_template": "text"
         },
         {
           "type": "subheading",
-          "content": "Features:"
+          "content": "Features:",
+          "_template": "subheading"
         },
         {
           "type": "list",
-          "content": [
+          "_template": "list",
+          "contentItems": [
             "Meditative walk",
             "Unwind",
             "Intention",
@@ -120,19 +136,23 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Brown Hooded Kingfisher Trail"
+          "content": "Brown Hooded Kingfisher Trail",
+          "_template": "title"
         },
         {
           "type": "text",
-          "content": "Embark on a teeming 4.2-km out-and-back journey along the delightful Duiwe River. This quick and easy trail, typically completed in about 1 hour and 20 minutes, invites adventurers on a short and sweet stroll along the stream."
+          "content": "Embark on a teeming 4.2-km out-and-back journey along the delightful Duiwe River. This quick and easy trail, typically completed in about 1 hour and 20 minutes, invites adventurers on a short and sweet stroll along the stream.",
+          "_template": "text"
         },
         {
           "type": "subheading",
-          "content": "Features:"
+          "content": "Features:",
+          "_template": "subheading"
         },
         {
           "type": "list",
-          "content": [
+          "_template": "list",
+          "contentItems": [
             "There and back trail",
             "Easy difficulty",
             "Bird watching",
@@ -147,19 +167,23 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Bosduif Trail"
+          "content": "Bosduif Trail",
+          "_template": "title"
         },
         {
           "type": "text",
-          "content": "Embark on a 2-hour loop trail that takes you up to breathtaking viewpoints above the Touw River. Experience the perfect blend of forest exploration and scenic vistas as you make your way back down through the enchanting landscape."
+          "content": "Embark on a 2-hour loop trail that takes you up to breathtaking viewpoints above the Touw River. Experience the perfect blend of forest exploration and scenic vistas as you make your way back down through the enchanting landscape.",
+          "_template": "text"
         },
         {
           "type": "subheading",
-          "content": "Features:"
+          "content": "Features:",
+          "_template": "subheading"
         },
         {
           "type": "list",
-          "content": [
+          "_template": "list",
+          "contentItems": [
             "Loop trail",
             "Tougher difficulty",
             "Steep ups and downs",
@@ -174,19 +198,23 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Ancient Archives"
+          "content": "Ancient Archives",
+          "_template": "title"
         },
         {
           "type": "text",
-          "content": "Fairy Knowe Adventures is a birder-friendly establishment . The property is set in a forest of yellowwood and milkwood trees with abundant birdlife and has a birdhide on its doorstep."
+          "content": "Fairy Knowe Adventures is a birder-friendly establishment . The property is set in a forest of yellowwood and milkwood trees with abundant birdlife and has a birdhide on its doorstep.",
+          "_template": "text"
         },
         {
           "type": "subheading",
-          "content": "Features:"
+          "content": "Features:",
+          "_template": "subheading"
         },
         {
           "type": "list",
-          "content": [
+          "_template": "list",
+          "contentItems": [
             "Book exchange",
             "Over 1500 books",
             "Endless adventures",
@@ -201,19 +229,23 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Map of Africa"
+          "content": "Map of Africa",
+          "_template": "title"
         },
         {
           "type": "text",
-          "content": "The Map of Africa offers a spellbinding viewpoint, where nature's artistry is unveiled in the form of a river that gracefully sculpts the shape of the African continent into the valley below."
+          "content": "The Map of Africa offers a spellbinding viewpoint, where nature's artistry is unveiled in the form of a river that gracefully sculpts the shape of the African continent into the valley below.",
+          "_template": "text"
         },
         {
           "type": "subheading",
-          "content": "Features:"
+          "content": "Features:",
+          "_template": "subheading"
         },
         {
           "type": "list",
-          "content": [
+          "_template": "list",
+          "contentItems": [
             "Easy access",
             "Spectacular views",
             "Picnic spot",
@@ -228,19 +260,23 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Wilderness Beach"
+          "content": "Wilderness Beach",
+          "_template": "title"
         },
         {
           "type": "text",
-          "content": "Bask in the sun on the golden shores of Wilderness Beach, a Blue Flag gem renowned for its beauty and charm."
+          "content": "Bask in the sun on the golden shores of Wilderness Beach, a Blue Flag gem renowned for its beauty and charm.",
+          "_template": "text"
         },
         {
           "type": "subheading",
-          "content": "Features:"
+          "content": "Features:",
+          "_template": "subheading"
         },
         {
           "type": "list",
-          "content": [
+          "_template": "list",
+          "contentItems": [
             "Close to backpackers",
             "Bridge jump",
             "Swimming",
@@ -255,19 +291,23 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Water Under the Bridge"
+          "content": "Water Under the Bridge",
+          "_template": "title"
         },
         {
           "type": "text",
-          "content": "Discover the enchanting Water Under the Bridge trail, a picturesque 2.5-km walk that follows the gentle flow of the Touw River."
+          "content": "Discover the enchanting Water Under the Bridge trail, a picturesque 2.5-km walk that follows the gentle flow of the Touw River.",
+          "_template": "text"
         },
         {
           "type": "subheading",
-          "content": "Features:"
+          "content": "Features:",
+          "_template": "subheading"
         },
         {
           "type": "list",
-          "content": [
+          "_template": "list",
+          "contentItems": [
             "Close to backpackers",
             "Bridge jump",
             "Swimming",
@@ -282,19 +322,23 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Fairy Labyrinth"
+          "content": "Fairy Labyrinth",
+          "_template": "title"
         },
         {
           "type": "text",
-          "content": "Step into a world of enchantment at the Fairy Labyrinth, a magical 1.5-km trail that winds through an ancient forest filled with towering trees and mystical formations."
+          "content": "Step into a world of enchantment at the Fairy Labyrinth, a magical 1.5-km trail that winds through an ancient forest filled with towering trees and mystical formations.",
+          "_template": "text"
         },
         {
           "type": "subheading",
-          "content": "Features:"
+          "content": "Features:",
+          "_template": "subheading"
         },
         {
           "type": "list",
-          "content": [
+          "_template": "list",
+          "contentItems": [
             "Meditative walk",
             "Unwind",
             "Intention",
@@ -309,19 +353,23 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Ancient Archives"
+          "content": "Ancient Archives",
+          "_template": "title"
         },
         {
           "type": "text",
-          "content": "Fairy Knowe Adventures is a birder-friendly establishment . The property is set in a forest of yellowwood and milkwood trees with abundant birdlife and has a birdhide on its doorstep."
+          "content": "Fairy Knowe Adventures is a birder-friendly establishment . The property is set in a forest of yellowwood and milkwood trees with abundant birdlife and has a birdhide on its doorstep.",
+          "_template": "text"
         },
         {
           "type": "subheading",
-          "content": "Features:"
+          "content": "Features:",
+          "_template": "subheading"
         },
         {
           "type": "list",
-          "content": [
+          "_template": "list",
+          "contentItems": [
             "Book exchange",
             "Over 1500 books",
             "Endless adventures",

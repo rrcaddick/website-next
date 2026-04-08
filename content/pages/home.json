@@ -13,11 +13,13 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Accommodation"
+          "content": "Accommodation",
+          "_template": "title"
         },
         {
           "type": "text",
-          "content": "Explore our comfortable rooms and cozy accommodation options."
+          "content": "Explore our comfortable rooms and cozy accommodation options.",
+          "_template": "text"
         }
       ]
     },
@@ -27,11 +29,13 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Adventures"
+          "content": "Adventures",
+          "_template": "title"
         },
         {
           "type": "text",
-          "content": "Discover exciting activities and adventures in Wilderness."
+          "content": "Discover exciting activities and adventures in Wilderness.",
+          "_template": "text"
         }
       ]
     },
@@ -41,11 +45,13 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Entertainment"
+          "content": "Entertainment",
+          "_template": "title"
         },
         {
           "type": "text",
-          "content": "Join us for live music, open mic nights, and family markets."
+          "content": "Join us for live music, open mic nights, and family markets.",
+          "_template": "text"
         }
       ]
     },
@@ -55,11 +61,13 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Venue Hire"
+          "content": "Venue Hire",
+          "_template": "title"
         },
         {
           "type": "text",
-          "content": "Host your special occasion in our charming venue surrounded by nature."
+          "content": "Host your special occasion in our charming venue surrounded by nature.",
+          "_template": "text"
         }
       ]
     },
@@ -69,11 +77,13 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Facilities"
+          "content": "Facilities",
+          "_template": "title"
         },
         {
           "type": "text",
-          "content": "Enjoy our bar, restaurant, self catering kitchen and social spaces."
+          "content": "Enjoy our bar, restaurant, self catering kitchen and social spaces.",
+          "_template": "text"
         }
       ]
     },
@@ -83,11 +93,13 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Fairy Folk 'n Roll"
+          "content": "Fairy Folk 'n Roll",
+          "_template": "title"
         },
         {
           "type": "text",
-          "content": "Visit our YouTube channel exploring the art of live music performance through digital media."
+          "content": "Visit our YouTube channel exploring the art of live music performance through digital media.",
+          "_template": "text"
         }
       ]
     }

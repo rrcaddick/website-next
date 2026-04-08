@@ -9,60 +9,90 @@
     {
       "image": "/images/venue/cards/weddings-card.webp",
       "blocks": [
-        { "type": "title", "content": "Weddings" },
+        {
+          "type": "title",
+          "content": "Weddings",
+          "_template": "title"
+        },
         {
           "type": "text",
-          "content": "Host your special day in our enchanted fairy forest. Entwine yourselves in a space perfect for intimate ceremonies and receptions entangled in the trees."
+          "content": "Host your special day in our enchanted fairy forest. Entwine yourselves in a space perfect for intimate ceremonies and receptions entangled in the trees.",
+          "_template": "text"
         }
       ]
     },
     {
       "image": "/images/venue/cards/private-parties-card.webp",
       "blocks": [
-        { "type": "title", "content": "Private Parties" },
+        {
+          "type": "title",
+          "content": "Private Parties",
+          "_template": "title"
+        },
         {
           "type": "text",
-          "content": "Celebrate lifes most treasured birthdays, anniversaries, or special occasions with a touch of fairy magic."
+          "content": "Celebrate lifes most treasured birthdays, anniversaries, or special occasions with a touch of fairy magic.",
+          "_template": "text"
         }
       ]
     },
     {
       "image": "/images/venue/cards/corporate-events-card.webp",
       "blocks": [
-        { "type": "title", "content": "Corporate Events" },
+        {
+          "type": "title",
+          "content": "Corporate Events",
+          "_template": "title"
+        },
         {
           "type": "text",
-          "content": "With the ideal setting to inspire collaboration and creativity, our venue provides a calming backdrop for productive corporate gatherings."
+          "content": "With the ideal setting to inspire collaboration and creativity, our venue provides a calming backdrop for productive corporate gatherings.",
+          "_template": "text"
         }
       ]
     },
     {
       "image": "/images/venue/cards/film-crews-card.webp",
       "blocks": [
-        { "type": "title", "content": "Film Crews" },
+        {
+          "type": "title",
+          "content": "Film Crews",
+          "_template": "title"
+        },
         {
           "type": "text",
-          "content": "A magical setting for your next film or photo shoot. From fantasy flicks to nature documentaries, our location offers diverse and dense backdrops."
+          "content": "A magical setting for your next film or photo shoot. From fantasy flicks to nature documentaries, our location offers diverse and dense backdrops.",
+          "_template": "text"
         }
       ]
     },
     {
       "image": "/images/venue/cards/skill-trades-workshops-card.webp",
       "blocks": [
-        { "type": "title", "content": "Skill Trades & Workshops" },
+        {
+          "type": "title",
+          "content": "Skill Trades & Workshops",
+          "_template": "title"
+        },
         {
           "type": "text",
-          "content": "Share, learn, or host hands-on workshops and skill trades in a creative, collaborative environment. Perfect for artists, makers, and lifelong learners."
+          "content": "Share, learn, or host hands-on workshops and skill trades in a creative, collaborative environment. Perfect for artists, makers, and lifelong learners.",
+          "_template": "text"
         }
       ]
     },
     {
       "image": "/images/venue/cards/expo-events-card.webp",
       "blocks": [
-        { "type": "title", "content": "Expo Events" },
+        {
+          "type": "title",
+          "content": "Expo Events",
+          "_template": "title"
+        },
         {
           "type": "text",
-          "content": "Host your next trade show, exhibition, or product launch in our versatile event space. Perfect for showcasing products, networking, and creating memorable brand experiences."
+          "content": "Host your next trade show, exhibition, or product launch in our versatile event space. Perfect for showcasing products, networking, and creating memorable brand experiences.",
+          "_template": "text"
         }
       ]
     }

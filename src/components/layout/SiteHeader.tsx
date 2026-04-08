@@ -3,8 +3,8 @@ import Image from "next/image";
 import MobileMenu from "./MobileMenu";
 import { getNav } from "@/lib/content";
 
-export default function SiteHeader() {
-  const nav = getNav();
+export default async function SiteHeader() {
+  const nav = await getNav();
 
   return (
     <nav className="bg-white shadow-lg fixed w-full z-50">

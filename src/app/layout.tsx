@@ -10,8 +10,8 @@ const inter = localFont({
   display: "swap",
 });
 
-export function generateMetadata() {
-  const site = getSiteContent();
+export async function generateMetadata() {
+  const site = await getSiteContent();
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.wildernessbackpackers.com";
   return {
     metadataBase: new URL(baseUrl),
@@ -23,8 +23,8 @@ export function generateMetadata() {
   };
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const site = getSiteContent();
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const site = await getSiteContent();
 
   return (
     <html lang="en" className={inter.variable}>

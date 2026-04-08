@@ -8,7 +8,7 @@
     "start": "node .next/standalone/server.js",
     "lint": "next lint",
     "tina:dev": "tinacms dev -c \"next dev\"",
-    "tina:build": "tinacms build && next build"
+    "tina:build": "tinacms dev -c \"next build\""
   },
   "dependencies": {
     "@tinacms/cli": "^2.2.2",

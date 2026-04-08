@@ -1,7 +1,7 @@
 import { getPageContent } from '@/lib/content'
 import ListingTemplate from '@/features/listing/template'
 
-export default function Entertainment() {
-  const content = getPageContent('entertainment')
+export default async function Entertainment() {
+  const content = await getPageContent('entertainment')
   return <ListingTemplate content={content} />
 }

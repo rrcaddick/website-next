@@ -15,7 +15,7 @@ const STATIC_ROUTES = [
   '/fairy-folk-n-roll/',
 ]
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticEntries: MetadataRoute.Sitemap = STATIC_ROUTES.map((path) => ({
     url: `${BASE_URL}${path}`,
     lastModified: new Date(),
@@ -23,14 +23,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: path === '/' ? 1 : 0.8,
   }))
 
-  const accommodationEntries: MetadataRoute.Sitemap = getAllAccommodationSlugs().map((slug) => ({
+  const [accommodationSlugs, adventureSlugs] = await Promise.all([
+    getAllAccommodationSlugs(),
+    getAllAdventureSlugs(),
+  ])
+
+  const accommodationEntries: MetadataRoute.Sitemap = accommodationSlugs.map((slug) => ({
     url: `${BASE_URL}/accommodation/${slug}/`,
     lastModified: new Date(),
     changeFrequency: 'monthly',
     priority: 0.7,
   }))
 
-  const adventureEntries: MetadataRoute.Sitemap = getAllAdventureSlugs().map((slug) => ({
+  const adventureEntries: MetadataRoute.Sitemap = adventureSlugs.map((slug) => ({
     url: `${BASE_URL}/adventures/${slug}/`,
     lastModified: new Date(),
     changeFrequency: 'monthly',

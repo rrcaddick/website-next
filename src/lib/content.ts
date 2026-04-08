@@ -1,5 +1,17 @@
-import fs from "fs";
-import path from "path";
+import { tinaClient } from "./tina-client";
+import type {
+  AccommodationQuery,
+  AccommodationConnectionQuery,
+  AdventuresQuery,
+  AdventuresConnectionQuery,
+  ListingPagesQuery,
+  ContactPageQuery,
+  GalleryPageQuery,
+  SiteQuery,
+  NavQuery,
+  ListingPagesItemsBlocks,
+} from "../../.tina/__generated__/types";
+
 // ─────────────────────────────────────────────────────────────────────────────
 // Shared types
 // ─────────────────────────────────────────────────────────────────────────────
@@ -82,12 +94,6 @@ export interface ContactPageContent {
   formSubmitLabel: string;
 }
 
-export function getContactPageContent(slug: string): ContactPageContent {
-  const file = path.join(process.cwd(), "content", "pages", `${slug}.json`);
-  const raw = fs.readFileSync(file, "utf-8");
-  return JSON.parse(raw) as ContactPageContent;
-}
-
 // ─────────────────────────────────────────────────────────────────────────────
 // Gallery page
 // ─────────────────────────────────────────────────────────────────────────────
@@ -96,12 +102,6 @@ export interface GalleryPageContent {
   galleryHeading: string;
   galleryDetail: string;
   emptyMessage: string;
-}
-
-export function getGalleryPageContent(slug: string): GalleryPageContent {
-  const file = path.join(process.cwd(), "content", "pages", `${slug}.json`);
-  const raw = fs.readFileSync(file, "utf-8");
-  return JSON.parse(raw) as GalleryPageContent;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -149,25 +149,6 @@ export interface AccommodationContent extends DetailPageContent {
   cardFeatures: string[];
 }
 
-const accommodationDir = path.join(process.cwd(), "content", "accommodation");
-
-export function getAccommodation(slug: string): AccommodationContent {
-  const file = path.join(accommodationDir, `${slug}.json`);
-  const raw = fs.readFileSync(file, "utf-8");
-  return JSON.parse(raw) as AccommodationContent;
-}
-
-export function getAllAccommodationSlugs(): string[] {
-  return fs
-    .readdirSync(accommodationDir)
-    .filter((f) => f.endsWith(".json"))
-    .map((f) => f.replace(".json", ""));
-}
-
-export function getAllAccommodation(): AccommodationContent[] {
-  return getAllAccommodationSlugs().map(getAccommodation);
-}
-
 // ─────────────────────────────────────────────────────────────────────────────
 // Adventures
 // ─────────────────────────────────────────────────────────────────────────────
@@ -179,81 +160,6 @@ export interface AdventureContent extends DetailPageContent {
   cardMobileImage: string;
   cardDescription: string;
   cardFeatures: string[];
-}
-
-const adventuresDir = path.join(process.cwd(), "content", "adventures");
-
-export function getAdventure(slug: string): AdventureContent {
-  const file = path.join(adventuresDir, `${slug}.json`);
-  const raw = fs.readFileSync(file, "utf-8");
-  return JSON.parse(raw) as AdventureContent;
-}
-
-export function getAllAdventureSlugs(): string[] {
-  return fs
-    .readdirSync(adventuresDir)
-    .filter((f) => f.endsWith(".json"))
-    .map((f) => f.replace(".json", ""));
-}
-
-export function getAllAdventures(): AdventureContent[] {
-  return getAllAdventureSlugs().map(getAdventure);
-}
-
-// ─────────────────────────────────────────────────────────────────────────────
-// Entertainment
-// ─────────────────────────────────────────────────────────────────────────────
-
-export interface EntertainmentEvent {
-  title: string;
-  schedule: string;
-  description: string;
-  image: string;
-  mobileImage: string;
-}
-
-export interface EntertainmentContent {
-  heroMobile: string;
-  heroDesktop: string;
-  description: string;
-  events: EntertainmentEvent[];
-}
-
-export function getEntertainment(): EntertainmentContent {
-  const file = path.join(process.cwd(), "content", "entertainment", "events.json");
-  const raw = fs.readFileSync(file, "utf-8");
-  return JSON.parse(raw) as EntertainmentContent;
-}
-
-// ─────────────────────────────────────────────────────────────────────────────
-// Facilities
-// ─────────────────────────────────────────────────────────────────────────────
-
-export interface FacilityItem {
-  name: string;
-  features: string[];
-}
-
-export interface FacilityCategory {
-  id: number;
-  title: string;
-  image: string;
-  facilities: FacilityItem[];
-}
-
-export interface FacilitiesContent {
-  heroMobile: string;
-  heroDesktop: string;
-  description: string;
-  categories: FacilityCategory[];
-  houseRules: string[];
-  receptionHours: string[];
-}
-
-export function getFacilities(): FacilitiesContent {
-  const file = path.join(process.cwd(), "content", "facilities", "facilities.json");
-  const raw = fs.readFileSync(file, "utf-8");
-  return JSON.parse(raw) as FacilitiesContent;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -301,24 +207,335 @@ export interface SiteContent {
   };
 }
 
-export function getSiteContent(): SiteContent {
-  const file = path.join(process.cwd(), "content", "site.json");
-  const raw = fs.readFileSync(file, "utf-8");
-  return JSON.parse(raw) as SiteContent;
+// ─────────────────────────────────────────────────────────────────────────────
+// Mapping helpers (Tina → app types)
+// ─────────────────────────────────────────────────────────────────────────────
+
+type TinaInfoSection = {
+  heading: string;
+  content?: Array<string | null> | null;
+  align?: string | null;
+};
+
+function mapInfoSection(s: TinaInfoSection): InfoSection {
+  const items = (s.content ?? []).filter((c): c is string => c !== null);
+  return {
+    heading: s.heading,
+    // Preserve single-string shorthand; renderer handles both.
+    content: items.length === 1 ? items[0] : items,
+    align: (s.align as InfoSection["align"]) ?? undefined,
+  };
 }
 
-export function getNav(): NavContent {
-  const file = path.join(process.cwd(), "content", "nav.json");
-  const raw = fs.readFileSync(file, "utf-8");
-  return JSON.parse(raw) as NavContent;
+type TinaCta = {
+  heading: string;
+  description?: string | null;
+  button?: { href?: string | null; label?: string | null } | null;
+} | null | undefined;
+
+function mapCta(cta: TinaCta): DetailCTA | undefined {
+  if (!cta) return undefined;
+  return {
+    heading: cta.heading,
+    description: cta.description ?? undefined,
+    button:
+      cta.button?.href && cta.button?.label
+        ? { href: cta.button.href, label: cta.button.label }
+        : undefined,
+  };
+}
+
+function mapBlock(block: ListingPagesItemsBlocks): CardBlock {
+  switch (block.__typename) {
+    case "ListingPagesItemsBlocksTitle":
+      return { type: "title", content: block.content ?? "" };
+    case "ListingPagesItemsBlocksText":
+      return { type: "text", content: block.content ?? "" };
+    case "ListingPagesItemsBlocksSubheading":
+      return { type: "subheading", content: block.content ?? "" };
+    case "ListingPagesItemsBlocksList":
+      return {
+        type: "list",
+        content: [],
+        contentItems: (block.contentItems ?? []).filter(
+          (s): s is string => s !== null
+        ),
+      };
+    default:
+      return { type: "text", content: "" };
+  }
+}
+
+type TinaAccommodation = AccommodationQuery["accommodation"];
+type TinaAdventures = AdventuresQuery["adventures"];
+type TinaListingPages = ListingPagesQuery["listingPages"];
+type TinaContactPage = ContactPageQuery["contactPage"];
+type TinaGalleryPage = GalleryPageQuery["galleryPage"];
+type TinaSite = SiteQuery["site"];
+type TinaNav = NavQuery["nav"];
+type TinaAccommodationNode = NonNullable<
+  NonNullable<AccommodationConnectionQuery["accommodationConnection"]["edges"]>[number]
+>["node"];
+type TinaAdventuresNode = NonNullable<
+  NonNullable<AdventuresConnectionQuery["adventuresConnection"]["edges"]>[number]
+>["node"];
+
+function mapAccommodation(data: TinaAccommodation | TinaAccommodationNode): AccommodationContent {
+  if (!data) throw new Error("Accommodation data is null");
+  return {
+    slug: data.slug,
+    title: data.title,
+    description: data.description,
+    hero: {
+      mobileSrc: data.hero?.mobileSrc ?? "",
+      desktopSrc: data.hero?.desktopSrc ?? "",
+    },
+    gallery: (data.gallery ?? [])
+      .filter((g): g is NonNullable<typeof g> => g !== null)
+      .map((g) => ({ src: g.src ?? "", alt: g.alt ?? "", fullSize: g.fullSize ?? "" })),
+    imagesPerPage: data.imagesPerPage ?? undefined,
+    cardImage: data.cardImage ?? "",
+    cardMobileImage: data.cardMobileImage ?? undefined,
+    cardDescription: data.cardDescription ?? "",
+    cardFeatures: (data.cardFeatures ?? []).filter((f): f is string => f !== null),
+    showBookNow: data.showBookNow ?? undefined,
+    infoSections: data.infoSections
+      ? data.infoSections
+          .filter((s): s is NonNullable<typeof s> => s !== null)
+          .map(mapInfoSection)
+      : undefined,
+    cta: mapCta(data.cta),
+  };
+}
+
+function mapAdventure(data: TinaAdventures | TinaAdventuresNode): AdventureContent {
+  if (!data) throw new Error("Adventure data is null");
+  return {
+    slug: data.slug,
+    title: data.title,
+    description: data.description,
+    category: data.category ?? "",
+    hero: {
+      mobileSrc: data.hero?.mobileSrc ?? "",
+      desktopSrc: data.hero?.desktopSrc ?? "",
+    },
+    gallery: (data.gallery ?? [])
+      .filter((g): g is NonNullable<typeof g> => g !== null)
+      .map((g) => ({ src: g.src ?? "", alt: g.alt ?? "", fullSize: g.fullSize ?? "" })),
+    imagesPerPage: data.imagesPerPage ?? undefined,
+    cardImage: data.cardImage ?? "",
+    cardMobileImage: data.cardMobileImage ?? "",
+    cardDescription: data.cardDescription ?? "",
+    cardFeatures: (data.cardFeatures ?? []).filter((f): f is string => f !== null),
+    infoSections: data.infoSections
+      ? data.infoSections
+          .filter((s): s is NonNullable<typeof s> => s !== null)
+          .map(mapInfoSection)
+      : undefined,
+    cta: mapCta(data.cta),
+  };
+}
+
+function mapListingPage(data: TinaListingPages): ListingPageContent {
+  return {
+    title: data.title,
+    description: data.description ?? undefined,
+    hero: {
+      mobileSrc: data.hero?.mobileSrc ?? "",
+      desktopSrc: data.hero?.desktopSrc ?? "",
+    },
+    items: (data.items ?? [])
+      .filter((item): item is NonNullable<typeof item> => item !== null)
+      .map((item) => ({
+        image: item.image ?? "",
+        href: item.href ?? undefined,
+        blocks: (item.blocks ?? [])
+          .filter((b): b is NonNullable<typeof b> => b !== null)
+          .map(mapBlock),
+      })),
+    columns: data.columns ?? undefined,
+    showBookNow: data.showBookNow ?? undefined,
+    infoSections: data.infoSections
+      ? data.infoSections
+          .filter((s): s is NonNullable<typeof s> => s !== null)
+          .map(mapInfoSection)
+      : undefined,
+    cta: mapCta(data.cta),
+    footnote: data.footnote ?? undefined,
+    galleryHeading: data.galleryHeading ?? undefined,
+  };
+}
+
+function mapContactPage(data: TinaContactPage): ContactPageContent {
+  return {
+    title: data.title ?? "",
+    mobileSrc: data.mobileSrc ?? "",
+    desktopSrc: data.desktopSrc ?? "",
+    infoHeading: data.infoHeading ?? "",
+    infoSections: (data.infoSections ?? [])
+      .filter((s): s is NonNullable<typeof s> => s !== null)
+      .map((s) => ({
+        sectionTitle: s.sectionTitle ?? "",
+        sectionsItems: (s.sectionsItems ?? []).filter(
+          (i): i is string => i !== null
+        ),
+      })),
+    formHeading: data.formHeading ?? "",
+    formFields: (data.formFields ?? [])
+      .filter((f): f is NonNullable<typeof f> => f !== null)
+      .map((f) => ({
+        name: f.name ?? "",
+        label: f.label ?? "",
+        type: f.type ?? "text",
+        placeholder: f.placeholder ?? undefined,
+        required: f.required ?? undefined,
+      })),
+    formSubmitLabel: data.formSubmitLabel ?? "",
+  };
+}
+
+function mapGalleryPage(data: TinaGalleryPage): GalleryPageContent {
+  return {
+    galleryHeading: data.galleryHeading ?? "",
+    galleryDetail: data.galleryDetail ?? "",
+    emptyMessage: data.emptyMessage ?? "",
+  };
+}
+
+function mapSite(data: TinaSite): SiteContent {
+  return {
+    address: data.address ?? "",
+    phone: data.phone ?? "",
+    email: data.email ?? "",
+    social: {
+      facebook: data.social?.facebook ?? "",
+      instagram: data.social?.instagram ?? "",
+      youtube: data.social?.youtube ?? "",
+    },
+    seo: {
+      defaultTitle: data.seo?.defaultTitle ?? "",
+      defaultDescription: data.seo?.defaultDescription ?? "",
+      home: {
+        title: data.seo?.home?.title ?? "",
+        description: data.seo?.home?.description ?? "",
+      },
+    },
+    errors: {
+      generic: {
+        title: data.errors?.generic?.title ?? "",
+        message: data.errors?.generic?.message ?? "",
+        button: data.errors?.generic?.button ?? "",
+      },
+      gallery: {
+        title: data.errors?.gallery?.title ?? "",
+        message: data.errors?.gallery?.message ?? "",
+        button: data.errors?.gallery?.button ?? "",
+      },
+    },
+    defaults: {
+      galleryHeading: data.defaults?.galleryHeading ?? "Gallery",
+    },
+  };
+}
+
+function mapNav(data: TinaNav): NavContent {
+  const mapLinks = (
+    links: Array<{ href?: string | null; label?: string | null } | null> | null | undefined
+  ): NavLink[] =>
+    (links ?? [])
+      .filter((l): l is NonNullable<typeof l> => l !== null)
+      .map((l) => ({ href: l.href ?? "", label: l.label ?? "" }));
+
+  return {
+    topLevelLinks: mapLinks(data.topLevelLinks),
+    accommodationLinks: mapLinks(data.accommodationLinks),
+    adventureLinks: mapLinks(data.adventureLinks),
+  };
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Accommodation
+// ─────────────────────────────────────────────────────────────────────────────
+
+export async function getAccommodation(slug: string): Promise<AccommodationContent> {
+  const res = await tinaClient.queries.accommodation({ relativePath: `${slug}.json` });
+  return mapAccommodation(res.data.accommodation);
+}
+
+export async function getAllAccommodationSlugs(): Promise<string[]> {
+  const res = await tinaClient.queries.accommodationConnection({ first: 100 });
+  return (res.data.accommodationConnection.edges ?? [])
+    .filter((e): e is NonNullable<typeof e> => e?.node != null)
+    .map((e) => e.node!._sys.filename);
+}
+
+export async function getAllAccommodation(): Promise<AccommodationContent[]> {
+  const res = await tinaClient.queries.accommodationConnection({ first: 100 });
+  return (res.data.accommodationConnection.edges ?? [])
+    .filter((e): e is NonNullable<typeof e> => e?.node != null)
+    .map((e) => mapAccommodation(e.node!));
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Adventures
+// ─────────────────────────────────────────────────────────────────────────────
+
+export async function getAdventure(slug: string): Promise<AdventureContent> {
+  const res = await tinaClient.queries.adventures({ relativePath: `${slug}.json` });
+  return mapAdventure(res.data.adventures);
+}
+
+export async function getAllAdventureSlugs(): Promise<string[]> {
+  const res = await tinaClient.queries.adventuresConnection({ first: 100 });
+  return (res.data.adventuresConnection.edges ?? [])
+    .filter((e): e is NonNullable<typeof e> => e?.node != null)
+    .map((e) => e.node!._sys.filename);
+}
+
+export async function getAllAdventures(): Promise<AdventureContent[]> {
+  const res = await tinaClient.queries.adventuresConnection({ first: 100 });
+  return (res.data.adventuresConnection.edges ?? [])
+    .filter((e): e is NonNullable<typeof e> => e?.node != null)
+    .map((e) => mapAdventure(e.node!));
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Navigation
+// ─────────────────────────────────────────────────────────────────────────────
+
+export async function getSiteContent(): Promise<SiteContent> {
+  const res = await tinaClient.queries.site({ relativePath: "site.json" });
+  return mapSite(res.data.site);
+}
+
+export async function getNav(): Promise<NavContent> {
+  const res = await tinaClient.queries.nav({ relativePath: "nav.json" });
+  return mapNav(res.data.nav);
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Listing pages
 // ─────────────────────────────────────────────────────────────────────────────
 
-export function getPageContent(slug: string): ListingPageContent {
-  const file = path.join(process.cwd(), "content", "pages", `${slug}.json`);
-  const raw = fs.readFileSync(file, "utf-8");
-  return JSON.parse(raw) as ListingPageContent;
+export async function getPageContent(slug: string): Promise<ListingPageContent> {
+  const res = await tinaClient.queries.listingPages({ relativePath: `${slug}.json` });
+  return mapListingPage(res.data.listingPages);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Contact page
+// ─────────────────────────────────────────────────────────────────────────────
+
+export async function getContactPageContent(_slug: string): Promise<ContactPageContent> {
+  const res = await tinaClient.queries.contactPage({ relativePath: "contact.json" });
+  return mapContactPage(res.data.contactPage);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Gallery page
+// ─────────────────────────────────────────────────────────────────────────────
+
+export async function getGalleryPageContent(_slug: string): Promise<GalleryPageContent> {
+  const res = await tinaClient.queries.galleryPage({ relativePath: "gallery.json" });
+  return mapGalleryPage(res.data.galleryPage);
 }

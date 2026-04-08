@@ -3,7 +3,8 @@ import { getAdventure, getAllAdventureSlugs, getSiteContent } from '@/lib/conten
 import DetailPageTemplate from '@/features/detail/template'
 
 export async function generateStaticParams() {
-  return getAllAdventureSlugs().map((slug) => ({ slug }))
+  const slugs = await getAllAdventureSlugs()
+  return slugs.map((slug) => ({ slug }))
 }
 
 export async function generateMetadata({
@@ -12,9 +13,9 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>
 }) {
   const { slug } = await params
-  const site = getSiteContent()
+  const site = await getSiteContent()
   try {
-    const content = getAdventure(slug)
+    const content = await getAdventure(slug)
     return {
       title: `${content.title} — ${site.seo.defaultTitle}`,
       description: content.description,
@@ -38,7 +39,7 @@ export default async function AdventurePage({
 
   let content
   try {
-    content = getAdventure(slug)
+    content = await getAdventure(slug)
   } catch {
     notFound()
   }

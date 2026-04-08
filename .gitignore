@@ -43,5 +43,6 @@ tsconfig.tsbuildinfo
 
 .next/
 
-
 refactor_plan.md
+
+.env*

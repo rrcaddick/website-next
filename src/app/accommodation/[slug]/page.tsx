@@ -3,7 +3,8 @@ import { getAccommodation, getAllAccommodationSlugs, getSiteContent } from '@/li
 import DetailPageTemplate from '@/features/detail/template'
 
 export async function generateStaticParams() {
-  return getAllAccommodationSlugs().map((slug) => ({ slug }))
+  const slugs = await getAllAccommodationSlugs()
+  return slugs.map((slug) => ({ slug }))
 }
 
 export async function generateMetadata({
@@ -12,9 +13,9 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>
 }) {
   const { slug } = await params
-  const site = getSiteContent()
+  const site = await getSiteContent()
   try {
-    const content = getAccommodation(slug)
+    const content = await getAccommodation(slug)
     return {
       title: `${content.title} — ${site.seo.defaultTitle}`,
       description: content.description,
@@ -38,7 +39,7 @@ export default async function AccommodationPage({
 
   let content
   try {
-    content = getAccommodation(slug)
+    content = await getAccommodation(slug)
   } catch {
     notFound()
   }

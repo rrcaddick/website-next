@@ -12,11 +12,18 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Amenities & Services"
+          "content": "Amenities & Services",
+          "_template": "title"
         },
         {
           "type": "list",
-          "content": ["Communal wi-fi", "Laundry services", "Pet friendly", "Secure parking"]
+          "_template": "list",
+          "contentItems": [
+            "Communal wi-fi",
+            "Laundry services",
+            "Pet friendly",
+            "Secure parking"
+          ]
         }
       ]
     },
@@ -25,11 +32,18 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Entertainment & Recreation"
+          "content": "Entertainment & Recreation",
+          "_template": "title"
         },
         {
           "type": "list",
-          "content": ["Books & board games", "Jungle gym", "Musical instruments", "Ping pong"]
+          "_template": "list",
+          "contentItems": [
+            "Books & board games",
+            "Jungle gym",
+            "Musical instruments",
+            "Ping pong"
+          ]
         }
       ]
     },
@@ -38,11 +52,18 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Food & Drink"
+          "content": "Food & Drink",
+          "_template": "title"
         },
         {
           "type": "list",
-          "content": ["Lively bar", "Outdoor braai area", "Restaurant kitchen", "Self-catering kitchen"]
+          "_template": "list",
+          "contentItems": [
+            "Lively bar",
+            "Outdoor braai area",
+            "Restaurant kitchen",
+            "Self-catering kitchen"
+          ]
         }
       ]
     },
@@ -51,11 +72,17 @@
       "blocks": [
         {
           "type": "title",
-          "content": "Social & Gathering Spaces"
+          "content": "Social & Gathering Spaces",
+          "_template": "title"
         },
         {
           "type": "list",
-          "content": ["Communal fire pit", "Lively bar", "TV lounge"]
+          "_template": "list",
+          "contentItems": [
+            "Communal fire pit",
+            "Lively bar",
+            "TV lounge"
+          ]
         }
       ]
     }
