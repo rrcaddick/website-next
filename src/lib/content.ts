@@ -15,8 +15,14 @@ export interface GalleryImage {
 // ─────────────────────────────────────────────────────────────────────────────
 
 export type CardBlock = {
+  // _template is added by TinaCMS when blocks are edited via the admin UI.
+  // CardBlockRenderer checks `_template || type` so both old and new JSON work.
+  _template?: string;
   type: "title" | "text" | "subheading" | "list";
   content: string | string[];
+  // contentItems is used by the Tina `list` template (avoids String vs [String]
+  // GraphQL conflict). Existing JSON uses `content: string[]`; Tina writes `contentItems`.
+  contentItems?: string[];
 };
 
 export interface ListingItem {
