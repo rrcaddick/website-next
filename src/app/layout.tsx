@@ -6,13 +6,16 @@ import { getSiteContent } from "@/lib/content";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
-export const metadata = {
-  title: "Fairy Knowe Backpackers",
-  description: "Adventure Backpackers in the heart of the Garden Route",
-  icons: {
-    icon: "/favicon.png",
-  },
-};
+export function generateMetadata() {
+  const site = getSiteContent();
+  return {
+    title: site.seo.defaultTitle,
+    description: site.seo.defaultDescription,
+    icons: {
+      icon: "/favicon.png",
+    },
+  };
+}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const site = getSiteContent();

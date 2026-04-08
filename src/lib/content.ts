@@ -89,6 +89,7 @@ export function getContactPageContent(slug: string): ContactPageContent {
 export interface GalleryPageContent {
   galleryHeading: string;
   galleryDetail: string;
+  emptyMessage: string;
 }
 
 export function getGalleryPageContent(slug: string): GalleryPageContent {
@@ -276,6 +277,21 @@ export interface SiteContent {
     facebook: string;
     instagram: string;
     youtube: string;
+  };
+  seo: {
+    defaultTitle: string;
+    defaultDescription: string;
+    home: {
+      title: string;
+      description: string;
+    };
+  };
+  errors: {
+    generic: { title: string; message: string; button: string };
+    gallery: { title: string; message: string; button: string };
+  };
+  defaults: {
+    galleryHeading: string;
   };
 }
 

@@ -1,4 +1,5 @@
 {
   "galleryHeading": "Our Gallery",
-  "galleryDetail": "Explore our collection of photos showcasing our accommodation, adventures, events, facilities, and venue. Click on any image to view it in full size."
+  "galleryDetail": "Explore our collection of photos showcasing our accommodation, adventures, events, facilities, and venue. Click on any image to view it in full size.",
+  "emptyMessage": "No images found in this category."
 }

@@ -6,5 +6,28 @@
     "facebook": "https://facebook.com/fairyknowe",
     "instagram": "https://www.instagram.com/fairyknowebackpackers/",
     "youtube": "https://www.youtube.com/@FairyFolknRoll"
+  },
+  "seo": {
+    "defaultTitle": "Fairy Knowe Backpackers",
+    "defaultDescription": "Adventure Backpackers in the heart of the Garden Route",
+    "home": {
+      "title": "Fairy Knowe Backpackers",
+      "description": "Your home away from home in the heart of Wilderness, offering comfortable accommodation, exciting adventures, and a vibrant social atmosphere."
+    }
+  },
+  "errors": {
+    "generic": {
+      "title": "Something went wrong",
+      "message": "An unexpected error occurred. Please try again.",
+      "button": "Try again"
+    },
+    "gallery": {
+      "title": "Gallery unavailable",
+      "message": "We couldn't load the gallery images. Please check your connection and try again.",
+      "button": "Try again"
+    }
+  },
+  "defaults": {
+    "galleryHeading": "Gallery"
   }
 }

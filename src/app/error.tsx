@@ -1,6 +1,9 @@
 'use client'
 
 import { useEffect } from 'react'
+import siteData from '../../content/site.json'
+
+const { title, message, button } = siteData.errors.generic
 
 export default function Error({
   error,
@@ -16,16 +19,16 @@ export default function Error({
   return (
     <div className="min-h-[60vh] flex flex-col items-center justify-center px-4 text-center">
       <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
-        Something went wrong
+        {title}
       </h2>
       <p className="text-gray-500 dark:text-gray-400 mb-8 max-w-md">
-        An unexpected error occurred. Please try again.
+        {message}
       </p>
       <button
         onClick={reset}
         className="px-6 py-2 rounded-full bg-[#0E7D73] text-[#C9DD94] font-semibold hover:bg-[#073F3A] hover:text-[#00FF7F] transition-colors"
       >
-        Try again
+        {button}
       </button>
     </div>
   )

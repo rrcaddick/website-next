@@ -41,7 +41,11 @@ function getBalancedImages(images: GalleryImage[]): GalleryImage[] {
   return result;
 }
 
-export default function GalleryClient() {
+interface Props {
+  emptyMessage: string;
+}
+
+export default function GalleryClient({ emptyMessage }: Props) {
   const IMAGES_PER_PAGE = 12;
 
   const [selectedCategory, setSelectedCategory] = useState<Category>("All");
@@ -223,7 +227,7 @@ export default function GalleryClient() {
 
       {imagesToDisplay.length === 0 && (
         <div className="text-center py-12">
-          <p className="text-gray-500 dark:text-gray-400">No images found in this category.</p>
+          <p className="text-gray-500 dark:text-gray-400">{emptyMessage}</p>
         </div>
       )}
 
