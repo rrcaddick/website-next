@@ -42,3 +42,6 @@ repomix-output.*
 tsconfig.tsbuildinfo
 
 .next/
+
+
+refactor_plan.md

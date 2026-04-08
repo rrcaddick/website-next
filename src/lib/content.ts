@@ -48,6 +48,40 @@ export interface ListingPageContent {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+// Contact page
+// ─────────────────────────────────────────────────────────────────────────────
+
+export interface InfoSections {
+  sectionTitle: string;
+  sectionsItems: string[];
+}
+
+export interface FormFields {
+  name: string;
+  label: string;
+  type: string;
+  placeholder?: string;
+  required?: boolean;
+}
+
+export interface ContactPageContent {
+  title: string;
+  mobileSrc: string;
+  desktopSrc: string;
+  infoHeading: string;
+  infoSections: InfoSections[];
+  formHeading: string;
+  formFields: FormFields[];
+  formSubmitLabel: string;
+}
+
+export function getContactPageContent(slug: string): ContactPageContent {
+  const file = path.join(process.cwd(), "content", "pages", `${slug}.json`);
+  const raw = fs.readFileSync(file, "utf-8");
+  return JSON.parse(raw) as ContactPageContent;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // Detail pages (shared by Accommodation + Adventures)
 // ─────────────────────────────────────────────────────────────────────────────
 
