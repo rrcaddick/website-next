@@ -1,7 +1,7 @@
 {
   "title": "Contact",
-  "mobileSrc": "/images/contanct/hero/contact-banner.webp",
-  "desktopSrc": "/images/contanct/hero/contact-banner.webp",
+  "mobileSrc": "/images/contact/hero/mobile.webp",
+  "desktopSrc": "/images/contact/hero/desktop.webp",
   "infoHeading": "Get in Touch",
   "infoSections": [
     {
@@ -17,23 +17,15 @@
     },
     {
       "sectionTitle": "Phone",
-      "sectionsItems": [
-        "+27 83 443 8384"
-      ]
+      "sectionsItems": ["+27 83 443 8384"]
     },
     {
       "sectionTitle": "Email",
-      "sectionsItems": [
-        "info@wildernessbackpackers.com"
-      ]
+      "sectionsItems": ["info@wildernessbackpackers.com"]
     },
     {
       "sectionTitle": "Reception Hours",
-      "sectionsItems": [
-        "Monday - Sunday: 8AM - 8PM",
-        "Check-in: 2PM - 8PM",
-        "Check-out: 10AM"
-      ]
+      "sectionsItems": ["Monday - Sunday: 8AM - 8PM", "Check-in: 2PM - 8PM", "Check-out: 10AM"]
     }
   ],
   "formHeading": "Send us a Message",
