@@ -1,7 +1,6 @@
 import { defineConfig } from "tinacms";
 
-const branch =
-  process.env.GITHUB_BRANCH || process.env.VERCEL_GIT_COMMIT_REF || "main";
+const branch = process.env.GITHUB_BRANCH || process.env.VERCEL_GIT_COMMIT_REF || "main";
 
 // ─── Shared field groups ─────────────────────────────────────────────────────
 
@@ -104,17 +103,20 @@ const blockTemplates = [
 
 export default defineConfig({
   branch,
-  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID || "",
-  token: process.env.TINA_TOKEN || "",
+  clientId: "",
+  token: "",
+
+  // Self-hosted: point the Tina admin at our own API route
+  contentApiUrlOverride: `${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/api/tina/gql`,
 
   build: {
     outputFolder: "admin",
     publicFolder: "public",
   },
   media: {
-    tina: {
-      mediaRoot: "images",
-      publicFolder: "public",
+    loadCustomStore: async () => {
+      const pack = await import("next-tinacms-cloudinary");
+      return pack.CloudinaryMediaStore;
     },
   },
 
@@ -285,6 +287,11 @@ export default defineConfig({
             label: "Info Sections",
             type: "object",
             list: true,
+            ui: {
+              itemProps: (item) => ({
+                label: item?.sectionTitle || "New Section",
+              }),
+            },
             fields: [
               { name: "sectionTitle", label: "Section Title", type: "string" },
               { name: "sectionsItems", label: "Items", type: "string", list: true },
@@ -413,9 +420,7 @@ export default defineConfig({
             name: "defaults",
             label: "Defaults",
             type: "object",
-            fields: [
-              { name: "galleryHeading", label: "Gallery Heading Fallback", type: "string" },
-            ],
+            fields: [{ name: "galleryHeading", label: "Gallery Heading Fallback", type: "string" }],
           },
         ],
       },

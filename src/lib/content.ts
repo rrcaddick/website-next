@@ -1,4 +1,4 @@
-import { tinaClient } from "./tina-client";
+import { databaseClient } from "./tina-client";
 import type {
   AccommodationQuery,
   AccommodationConnectionQuery,
@@ -458,19 +458,19 @@ function mapNav(data: TinaNav): NavContent {
 // ─────────────────────────────────────────────────────────────────────────────
 
 export async function getAccommodation(slug: string): Promise<AccommodationContent> {
-  const res = await tinaClient.queries.accommodation({ relativePath: `${slug}.json` });
+  const res = await databaseClient.queries.accommodation({ relativePath: `${slug}.json` });
   return mapAccommodation(res.data.accommodation);
 }
 
 export async function getAllAccommodationSlugs(): Promise<string[]> {
-  const res = await tinaClient.queries.accommodationConnection({ first: 100 });
+  const res = await databaseClient.queries.accommodationConnection({ first: 100 });
   return (res.data.accommodationConnection.edges ?? [])
     .filter((e): e is NonNullable<typeof e> => e?.node != null)
     .map((e) => e.node!._sys.filename);
 }
 
 export async function getAllAccommodation(): Promise<AccommodationContent[]> {
-  const res = await tinaClient.queries.accommodationConnection({ first: 100 });
+  const res = await databaseClient.queries.accommodationConnection({ first: 100 });
   return (res.data.accommodationConnection.edges ?? [])
     .filter((e): e is NonNullable<typeof e> => e?.node != null)
     .map((e) => mapAccommodation(e.node!));
@@ -481,19 +481,19 @@ export async function getAllAccommodation(): Promise<AccommodationContent[]> {
 // ─────────────────────────────────────────────────────────────────────────────
 
 export async function getAdventure(slug: string): Promise<AdventureContent> {
-  const res = await tinaClient.queries.adventures({ relativePath: `${slug}.json` });
+  const res = await databaseClient.queries.adventures({ relativePath: `${slug}.json` });
   return mapAdventure(res.data.adventures);
 }
 
 export async function getAllAdventureSlugs(): Promise<string[]> {
-  const res = await tinaClient.queries.adventuresConnection({ first: 100 });
+  const res = await databaseClient.queries.adventuresConnection({ first: 100 });
   return (res.data.adventuresConnection.edges ?? [])
     .filter((e): e is NonNullable<typeof e> => e?.node != null)
     .map((e) => e.node!._sys.filename);
 }
 
 export async function getAllAdventures(): Promise<AdventureContent[]> {
-  const res = await tinaClient.queries.adventuresConnection({ first: 100 });
+  const res = await databaseClient.queries.adventuresConnection({ first: 100 });
   return (res.data.adventuresConnection.edges ?? [])
     .filter((e): e is NonNullable<typeof e> => e?.node != null)
     .map((e) => mapAdventure(e.node!));
@@ -504,12 +504,12 @@ export async function getAllAdventures(): Promise<AdventureContent[]> {
 // ─────────────────────────────────────────────────────────────────────────────
 
 export async function getSiteContent(): Promise<SiteContent> {
-  const res = await tinaClient.queries.site({ relativePath: "site.json" });
+  const res = await databaseClient.queries.site({ relativePath: "site.json" });
   return mapSite(res.data.site);
 }
 
 export async function getNav(): Promise<NavContent> {
-  const res = await tinaClient.queries.nav({ relativePath: "nav.json" });
+  const res = await databaseClient.queries.nav({ relativePath: "nav.json" });
   return mapNav(res.data.nav);
 }
 
@@ -518,7 +518,7 @@ export async function getNav(): Promise<NavContent> {
 // ─────────────────────────────────────────────────────────────────────────────
 
 export async function getPageContent(slug: string): Promise<ListingPageContent> {
-  const res = await tinaClient.queries.listingPages({ relativePath: `${slug}.json` });
+  const res = await databaseClient.queries.listingPages({ relativePath: `${slug}.json` });
   return mapListingPage(res.data.listingPages);
 }
 
@@ -527,7 +527,7 @@ export async function getPageContent(slug: string): Promise<ListingPageContent> 
 // ─────────────────────────────────────────────────────────────────────────────
 
 export async function getContactPageContent(_slug: string): Promise<ContactPageContent> {
-  const res = await tinaClient.queries.contactPage({ relativePath: "contact.json" });
+  const res = await databaseClient.queries.contactPage({ relativePath: "contact.json" });
   return mapContactPage(res.data.contactPage);
 }
 
@@ -536,6 +536,6 @@ export async function getContactPageContent(_slug: string): Promise<ContactPageC
 // ─────────────────────────────────────────────────────────────────────────────
 
 export async function getGalleryPageContent(_slug: string): Promise<GalleryPageContent> {
-  const res = await tinaClient.queries.galleryPage({ relativePath: "gallery.json" });
+  const res = await databaseClient.queries.galleryPage({ relativePath: "gallery.json" });
   return mapGalleryPage(res.data.galleryPage);
 }

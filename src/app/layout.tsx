@@ -12,7 +12,7 @@ const inter = localFont({
 
 export async function generateMetadata() {
   const site = await getSiteContent();
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.wildernessbackpackers.com";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
   return {
     metadataBase: new URL(baseUrl),
     title: site.seo.defaultTitle,

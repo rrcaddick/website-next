@@ -9,7 +9,7 @@
   },
   "gallery": [
     {
-      "src": "/images/adventures/wilderness-beach/gallery/thumb/1.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/v1775750972/beach2_xpc9v9.webp",
       "alt": "Wilderness Beach Adventure 1",
       "fullSize": "/images/adventures/wilderness-beach/gallery/full/1.webp"
     },
