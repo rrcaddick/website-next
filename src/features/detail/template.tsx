@@ -18,7 +18,16 @@ export default function DetailPageTemplate({ content }: Props) {
 
   return (
     <div className="min-h-screen">
-      <PageHero mobileSrc={hero.mobileSrc} desktopSrc={hero.desktopSrc} title={title} />
+      <PageHero
+        mobileSrc={hero.mobileSrc}
+        desktopSrc={hero.desktopSrc}
+        title={title}
+        tinaFields={{
+          title: tf(content, "title"),
+          mobileSrc: tf(hero, "mobileSrc"),
+          desktopSrc: tf(hero, "desktopSrc"),
+        }}
+      />
 
       <div className="pt-2 pb-8 sm:pt-4 sm:pb-12 px-4">
         <div className="max-w-7xl mx-auto px-4">
@@ -43,7 +52,12 @@ export default function DetailPageTemplate({ content }: Props) {
         <div className="max-w-7xl mx-auto px-4">
           {cta && (
             <div className="mt-8 mb-8">
-              <CTASection heading={cta.heading} description={cta.description} button={cta.button} />
+              <CTASection
+                heading={cta.heading}
+                description={cta.description}
+                button={cta.button}
+                tinaFields={{ heading: tf(cta, "heading"), description: tf(cta, "description") }}
+              />
             </div>
           )}
 

@@ -1,4 +1,7 @@
+import { tinaField } from "tinacms/dist/react";
 import type { CardBlock } from "@/lib/content";
+
+const tf = tinaField as (obj: unknown, field: string) => string;
 
 interface Props {
   block: CardBlock;
@@ -11,6 +14,7 @@ export default function CardBlockRenderer({ block }: Props) {
   if (blockType === "title") {
     return (
       <h2
+        data-tina-field={tf(block, "content")}
         className="text-3xl md:text-2xl font-bold mb-3 text-[#202635] group-hover:text-[#00FF7F] transition-colors duration-500 ease-in-out
                      text-center md:text-left"
       >
@@ -22,6 +26,7 @@ export default function CardBlockRenderer({ block }: Props) {
   if (blockType === "text") {
     return (
       <p
+        data-tina-field={tf(block, "content")}
         className="text-sm md:text-base text-gray-600 mb-4 last:mb-0 group-hover:text-white transition-colors duration-500 ease-in-out
                     text-center md:text-left leading-relaxed"
       >
@@ -33,6 +38,7 @@ export default function CardBlockRenderer({ block }: Props) {
   if (blockType === "subheading") {
     return (
       <h3
+        data-tina-field={tf(block, "content")}
         className="text-base md:text-lg font-semibold mb-3 text-[#202635] group-hover:text-[#00FF7F] transition-colors duration-500 ease-in-out
                      text-center md:text-left"
       >
@@ -43,9 +49,10 @@ export default function CardBlockRenderer({ block }: Props) {
 
   // List - centered on mobile WITHOUT bullets, left-aligned with bullets on desktop.
   // Supports both existing JSON (`content: string[]`) and Tina-edited JSON (`contentItems: string[]`).
-  const listItems = block.contentItems ?? (block.content as string[]);
+  const listItems = block.contentItems ?? (block.content as string[] | null) ?? [];
   return (
     <ul
+      data-tina-field={tf(block, "contentItems")}
       className="space-y-1.5 text-sm md:text-base text-gray-600 group-hover:text-white transition-colors duration-500 ease-in-out
                    text-center md:text-left md:list-disc md:pl-5"
     >

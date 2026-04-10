@@ -13,7 +13,16 @@ export default function ContactPageTemplate({ content }: Props) {
 
   return (
     <div className="min-h-screen">
-      <PageHero mobileSrc={mobileSrc} desktopSrc={desktopSrc} title={title} />
+      <PageHero
+        mobileSrc={mobileSrc}
+        desktopSrc={desktopSrc}
+        title={title}
+        tinaFields={{
+          title: tf(content, "title"),
+          mobileSrc: tf(content, "mobileSrc"),
+          desktopSrc: tf(content, "desktopSrc"),
+        }}
+      />
 
       <div className="max-w-7xl mx-auto px-4 mb-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -24,7 +33,7 @@ export default function ContactPageTemplate({ content }: Props) {
             <div className="space-y-4">
               {(infoSections ?? []).map((section, sectionIndex) => (
                 <div key={sectionIndex}>
-                  <h3 className="font-semibold mb-2 text-[#202635]">{section.sectionTitle}</h3>
+                  <h3 data-tina-field={tf(section, "sectionTitle")} className="font-semibold mb-2 text-[#202635]">{section.sectionTitle}</h3>
                   {(section.sectionsItems ?? []).map((item, index) => (
                     <p key={index} className="text-gray-600">
                       {item}
@@ -42,7 +51,7 @@ export default function ContactPageTemplate({ content }: Props) {
             <form className="space-y-4">
               {(formFields ?? []).map((field) => (
                 <div key={field.name}>
-                  <label htmlFor={field.name} className="block text-[#202635] font-medium mb-2">
+                  <label data-tina-field={tf(field, "label")} htmlFor={field.name} className="block text-[#202635] font-medium mb-2">
                     {field.label}
                   </label>
 
@@ -67,6 +76,7 @@ export default function ContactPageTemplate({ content }: Props) {
               ))}
               <button
                 type="submit"
+                data-tina-field={tf(content, "formSubmitLabel")}
                 className="bg-[#0E7D73] hover:bg-[#073F3A] text-[#C9DD94] hover:text-[#00FF7F] px-8 py-3 rounded-lg transition-colors"
               >
                 {formSubmitLabel}

@@ -6,11 +6,12 @@ interface Props {
 }
 
 export default function CardContent({ blocks }: Props) {
-  const bottomStartIndex = blocks.findIndex(
+  const safeBlocks = blocks ?? [];
+  const bottomStartIndex = safeBlocks.findIndex(
     (block) => block.type === 'subheading' || block.type === 'list'
   )
-  const topBlocks = bottomStartIndex === -1 ? blocks : blocks.slice(0, bottomStartIndex)
-  const bottomBlocks = bottomStartIndex === -1 ? [] : blocks.slice(bottomStartIndex)
+  const topBlocks = bottomStartIndex === -1 ? safeBlocks : safeBlocks.slice(0, bottomStartIndex)
+  const bottomBlocks = bottomStartIndex === -1 ? [] : safeBlocks.slice(bottomStartIndex)
 
   return (
     <div className="p-4 md:p-6 flex-1 flex flex-col">

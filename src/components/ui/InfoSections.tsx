@@ -1,3 +1,7 @@
+import { tinaField } from "tinacms/dist/react";
+
+const tf = tinaField as (obj: unknown, field: string) => string;
+
 type Align = "left" | "center" | "right";
 
 export interface InfoSection {
@@ -42,11 +46,11 @@ export default function InfoSections({ sections }: Props) {
 
     return (
       <div key={section.heading} className="bg-white dark:bg-gray-800 p-4 sm:p-6">
-        <h3 className={`text-lg sm:text-xl font-semibold mb-3 sm:mb-4 ${textClass}`}>{section.heading}</h3>
-        <div className={`space-y-2 text-gray-600 dark:text-gray-300 text-xs sm:text-sm ${textClass}`}>
+        <h3 data-tina-field={tf(section, "heading")} className={`text-lg sm:text-xl font-semibold mb-3 sm:mb-4 ${textClass}`}>{section.heading}</h3>
+        <div data-tina-field={tf(section, "content")} className={`space-y-2 text-gray-600 dark:text-gray-300 text-xs sm:text-sm ${textClass}`}>
           {Array.isArray(section.content) ? (
             <ul className="space-y-2">
-              {section.content.map((item) => (
+              {(section.content ?? []).map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>

@@ -27,7 +27,16 @@ export default function ListingTemplate({ content }: Props) {
 
   return (
     <div className="min-h-screen">
-      <PageHero mobileSrc={hero.mobileSrc} desktopSrc={hero.desktopSrc} title={title} />
+      <PageHero
+        mobileSrc={hero.mobileSrc}
+        desktopSrc={hero.desktopSrc}
+        title={title}
+        tinaFields={{
+          title: tf(content, "title"),
+          mobileSrc: tf(hero, "mobileSrc"),
+          desktopSrc: tf(hero, "desktopSrc"),
+        }}
+      />
 
       {(description || showBookNow) && (
         <div className="mb-8">
@@ -65,7 +74,12 @@ export default function ListingTemplate({ content }: Props) {
 
           {cta && (
             <div className="mt-16">
-              <CTASection heading={cta.heading} description={cta.description} button={cta.button} />
+              <CTASection
+                heading={cta.heading}
+                description={cta.description}
+                button={cta.button}
+                tinaFields={{ heading: tf(cta, "heading"), description: tf(cta, "description") }}
+              />
             </div>
           )}
 
@@ -75,7 +89,7 @@ export default function ListingTemplate({ content }: Props) {
 
           {footnote && (
             <div className="mt-12 mb-12 text-center px-8 md:px-16 lg:px-24">
-              <p className="text-xs md:text-base text-gray-600 dark:text-gray-300 max-w-4xl mx-auto italic">
+              <p data-tina-field={tf(content, "footnote")} className="text-xs md:text-base text-gray-600 dark:text-gray-300 max-w-4xl mx-auto italic">
                 {footnote.split("\n").map((line, i, arr) => (
                   <span key={i}>
                     {line}

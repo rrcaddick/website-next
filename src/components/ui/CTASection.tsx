@@ -7,13 +7,17 @@ interface CTAProps {
     href: string;
     label: string;
   };
+  tinaFields?: {
+    heading?: string;
+    description?: string;
+  };
 }
 
-export default function CTASection({ heading, description, button }: CTAProps) {
+export default function CTASection({ heading, description, button, tinaFields }: CTAProps) {
   return (
     <div className="text-center max-w-2xl mx-auto">
-      <h2 className="text-3xl font-bold mb-6">{heading}</h2>
-      {description && <p className="text-gray-600 mb-8 leading-relaxed">{description}</p>}
+      <h2 data-tina-field={tinaFields?.heading} className="text-3xl font-bold mb-6">{heading}</h2>
+      {description && <p data-tina-field={tinaFields?.description} className="text-gray-600 mb-8 leading-relaxed">{description}</p>}
       {button && (
         <Link
           href={button.href}
