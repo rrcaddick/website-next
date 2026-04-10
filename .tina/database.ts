@@ -1,7 +1,9 @@
 import { createDatabase, createLocalDatabase } from "@tinacms/datalayer";
 import { GitHubProvider } from "tinacms-gitprovider-github";
 import { RedisLevel } from "upstash-redis-level";
+import { Redis } from "@upstash/redis";
 
+const branch = process.env.GITHUB_BRANCH || process.env.VERCEL_GIT_COMMIT_REF || "main";
 const isLocal = process.env.TINA_PUBLIC_IS_LOCAL === "true";
 
 export default isLocal
@@ -12,14 +14,14 @@ export default isLocal
         owner: process.env.GITHUB_OWNER!,
         repo: process.env.GITHUB_REPO!,
         token: process.env.GITHUB_PERSONAL_ACCESS_TOKEN!,
-        branch: process.env.GITHUB_BRANCH || "main",
+        branch,
       }),
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      databaseAdapter: new RedisLevel({
-        redis: {
+      databaseAdapter: new RedisLevel<string, Record<string, any>>({
+        redis: new Redis({
           url: process.env.KV_REST_API_URL!,
           token: process.env.KV_REST_API_TOKEN!,
-        },
-        namespace: process.env.GITHUB_BRANCH || "main",
+        }) as any,
+        debug: process.env.DEBUG === "true" || false,
+        namespace: branch,
       }) as any,
     });
