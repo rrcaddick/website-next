@@ -1,7 +1,14 @@
 import { getContactPageContent } from "@/lib/content";
-import ContactPageTemplate from "@/features/contact/template";
+import { ContactPageDocument } from "@tina/__generated__/types";
+import ContactPageClient from "@/features/contact/ContactPageClient";
 
 export default async function Contact() {
-  const content = await getContactPageContent("contact");
-  return <ContactPageTemplate content={content} />;
+  const data = await getContactPageContent("contact");
+  return (
+    <ContactPageClient
+      data={data}
+      query={ContactPageDocument}
+      variables={{ relativePath: "contact.json" }}
+    />
+  );
 }

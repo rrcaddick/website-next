@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 import { getAdventure, getAllAdventureSlugs, getSiteContent } from '@/lib/content'
-import DetailPageTemplate from '@/features/detail/template'
+import { AdventuresDocument } from '@tina/__generated__/types'
+import DetailPageTemplateClient from '@/features/detail/DetailPageTemplateClient'
 
 export async function generateStaticParams() {
   const slugs = await getAllAdventureSlugs()
@@ -44,5 +45,11 @@ export default async function AdventurePage({
     notFound()
   }
 
-  return <DetailPageTemplate content={content} />
+  return (
+    <DetailPageTemplateClient
+      data={content}
+      query={AdventuresDocument}
+      variables={{ relativePath: `${slug}.json` }}
+    />
+  )
 }

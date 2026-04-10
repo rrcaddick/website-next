@@ -1,7 +1,14 @@
 import { getGalleryPageContent } from "@/lib/content";
-import GalleryTemplate from "@/features/gallery/template";
+import { GalleryPageDocument } from "@tina/__generated__/types";
+import GalleryPageClient from "@/features/gallery/GalleryPageClient";
 
 export default async function Gallery() {
-  const content = await getGalleryPageContent("gallery");
-  return <GalleryTemplate content={content} />;
+  const data = await getGalleryPageContent("gallery");
+  return (
+    <GalleryPageClient
+      data={data}
+      query={GalleryPageDocument}
+      variables={{ relativePath: "gallery.json" }}
+    />
+  );
 }

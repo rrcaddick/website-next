@@ -133,6 +133,9 @@ export default defineConfig({
         label: "Accommodation",
         path: "content/accommodation",
         format: "json",
+        ui: {
+          router: ({ document }) => `/accommodation/${document._sys.filename}`,
+        },
         fields: [
           { name: "slug", label: "Slug", type: "string", required: true },
           { name: "title", label: "Title", type: "string", required: true },
@@ -179,6 +182,9 @@ export default defineConfig({
         label: "Adventures",
         path: "content/adventures",
         format: "json",
+        ui: {
+          router: ({ document }) => `/adventures/${document._sys.filename}`,
+        },
         fields: [
           { name: "slug", label: "Slug", type: "string", required: true },
           { name: "title", label: "Title", type: "string", required: true },
@@ -228,6 +234,12 @@ export default defineConfig({
         format: "json",
         match: {
           exclude: "{contact,gallery}",
+        },
+        ui: {
+          router: ({ document }) => {
+            const filename = document._sys.filename;
+            return filename === "home" ? "/" : `/${filename}`;
+          },
         },
         fields: [
           { name: "title", label: "Title", type: "string", required: true },
@@ -282,6 +294,9 @@ export default defineConfig({
         path: "content/pages",
         format: "json",
         match: { include: "contact" },
+        ui: {
+          router: () => `/contact`,
+        },
         fields: [
           { name: "title", label: "Page Title", type: "string" },
           { name: "mobileSrc", label: "Mobile Hero Image", type: "image" },
@@ -332,6 +347,9 @@ export default defineConfig({
         path: "content/pages",
         format: "json",
         match: { include: "gallery" },
+        ui: {
+          router: () => `/gallery`,
+        },
         fields: [
           { name: "galleryHeading", label: "Heading", type: "string" },
           {

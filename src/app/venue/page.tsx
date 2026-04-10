@@ -1,15 +1,20 @@
 import { getPageContent, getSiteContent } from "@/lib/content";
-import ListingTemplate from "@/features/listing/template";
+import { ListingPagesDocument } from "@tina/__generated__/types";
+import ListingTemplateClient from "@/features/listing/ListingTemplateClient";
 import VenueGallery from "@/components/features/venue/VenueGallery";
 
 export default async function Venue() {
-  const content = await getPageContent("venue");
+  const data = await getPageContent("venue");
   const site = await getSiteContent();
   return (
     <>
-      <ListingTemplate content={content} />
+      <ListingTemplateClient
+        data={data}
+        query={ListingPagesDocument}
+        variables={{ relativePath: "venue.json" }}
+      />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 mb-16">
-        <VenueGallery heading={content.galleryHeading ?? site.defaults.galleryHeading} />
+        <VenueGallery heading={data.galleryHeading ?? site.defaults.galleryHeading} />
       </div>
     </>
   );

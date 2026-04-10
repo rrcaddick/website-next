@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 import { getAccommodation, getAllAccommodationSlugs, getSiteContent } from '@/lib/content'
-import DetailPageTemplate from '@/features/detail/template'
+import { AccommodationDocument } from '@tina/__generated__/types'
+import DetailPageTemplateClient from '@/features/detail/DetailPageTemplateClient'
 
 export async function generateStaticParams() {
   const slugs = await getAllAccommodationSlugs()
@@ -44,5 +45,11 @@ export default async function AccommodationPage({
     notFound()
   }
 
-  return <DetailPageTemplate content={content} />
+  return (
+    <DetailPageTemplateClient
+      data={content}
+      query={AccommodationDocument}
+      variables={{ relativePath: `${slug}.json` }}
+    />
+  )
 }
