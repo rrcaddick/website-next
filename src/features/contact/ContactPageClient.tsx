@@ -1,4 +1,5 @@
 'use client';
+import { useMemo } from 'react';
 import { useTina } from 'tinacms/dist/react';
 import ContactPageTemplate from './template';
 import type { ContactPageContent } from '@/lib/content';
@@ -10,6 +11,7 @@ interface Props {
 }
 
 export default function ContactPageClient({ query, variables, data }: Props) {
-  const { data: liveData } = useTina({ query, variables, data });
-  return <ContactPageTemplate content={liveData as ContactPageContent} />;
+  const wrapped = useMemo(() => ({ contactPage: data }), [data]);
+  const { data: liveData } = useTina({ query, variables, data: wrapped });
+  return <ContactPageTemplate content={(liveData as { contactPage: ContactPageContent }).contactPage} />;
 }

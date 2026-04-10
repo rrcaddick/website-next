@@ -50,6 +50,7 @@ export default async function AccommodationPage({
       data={content}
       query={AccommodationDocument}
       variables={{ relativePath: `${slug}.json` }}
+      collection="accommodation"
     />
   )
 }

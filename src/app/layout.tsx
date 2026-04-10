@@ -1,9 +1,8 @@
 import localFont from "next/font/local";
 import "@/app/globals.css";
-import SiteHeaderClient from "@/components/layout/SiteHeaderClient";
-import SiteFooterClient from "@/components/layout/SiteFooterClient";
-import { getSiteContent, getNav } from "@/lib/content";
-import { SiteDocument, NavDocument } from "@tina/__generated__/types";
+import SiteHeader from "@/components/layout/SiteHeader";
+import SiteFooter from "@/components/layout/SiteFooter";
+import { getSiteContent } from "@/lib/content";
 
 const inter = localFont({
   src: "../../public/fonts/Inter.ttf",
@@ -25,22 +24,14 @@ export async function generateMetadata() {
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const [site, nav] = await Promise.all([getSiteContent(), getNav()]);
+  const site = await getSiteContent();
 
   return (
     <html lang="en" className={inter.variable}>
       <body className="font-sans bg-white">
-        <SiteHeaderClient
-          data={nav}
-          query={NavDocument}
-          variables={{ relativePath: "nav.json" }}
-        />
+        <SiteHeader />
         <main className="min-h-screen pt-12">{children}</main>
-        <SiteFooterClient
-          data={site}
-          query={SiteDocument}
-          variables={{ relativePath: "site.json" }}
-        />
+        <SiteFooter site={site} />
       </body>
     </html>
   );

@@ -1,13 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import MobileMenu from "./MobileMenu";
-import type { NavContent } from "@/lib/content";
+import { getNav } from "@/lib/content";
 
-interface Props {
-  nav: NavContent;
-}
-
-export default function SiteHeader({ nav }: Props) {
+export default async function SiteHeader() {
+  const nav = await getNav();
 
   return (
     <nav className="bg-white shadow-lg fixed w-full z-50">

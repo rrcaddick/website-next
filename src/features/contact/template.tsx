@@ -1,9 +1,12 @@
 import PageHero from "@/components/ui/PageHero";
+import { tinaField } from "tinacms/dist/react";
 import type { ContactPageContent } from "@/lib/content";
 
 interface Props {
   content: ContactPageContent;
 }
+
+const tf = tinaField as (obj: unknown, field: string) => string;
 
 export default function ContactPageTemplate({ content }: Props) {
   const { title, desktopSrc, mobileSrc, infoHeading, infoSections, formHeading, formFields, formSubmitLabel } = content;
@@ -16,13 +19,13 @@ export default function ContactPageTemplate({ content }: Props) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Information */}
           <div className="bg-[#E5E7EB] p-8 rounded-lg ">
-            <h2 className="text-2xl font-bold mb-6 text-[#202635]">{infoHeading}</h2>
+            <h2 data-tina-field={tf(content, "infoHeading")} className="text-2xl font-bold mb-6 text-[#202635]">{infoHeading}</h2>
 
             <div className="space-y-4">
-              {infoSections.map((section, sectionIndex) => (
+              {(infoSections ?? []).map((section, sectionIndex) => (
                 <div key={sectionIndex}>
                   <h3 className="font-semibold mb-2 text-[#202635]">{section.sectionTitle}</h3>
-                  {section.sectionsItems.map((item, index) => (
+                  {(section.sectionsItems ?? []).map((item, index) => (
                     <p key={index} className="text-gray-600">
                       {item}
                     </p>
@@ -34,10 +37,10 @@ export default function ContactPageTemplate({ content }: Props) {
 
           {/* Contact Form */}
           <div className="bg-[#E5E7EB] p-8 rounded-lg ">
-            <h2 className="text-2xl font-bold mb-6 text-[#202635]">{formHeading}</h2>
+            <h2 data-tina-field={tf(content, "formHeading")} className="text-2xl font-bold mb-6 text-[#202635]">{formHeading}</h2>
 
             <form className="space-y-4">
-              {formFields.map((field) => (
+              {(formFields ?? []).map((field) => (
                 <div key={field.name}>
                   <label htmlFor={field.name} className="block text-[#202635] font-medium mb-2">
                     {field.label}

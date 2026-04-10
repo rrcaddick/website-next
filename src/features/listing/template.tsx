@@ -4,16 +4,19 @@ import BookNowButton from "@/components/ui/BookNowButton";
 import CTASection from "@/components/ui/CTASection";
 import InfoSections from "@/components/ui/InfoSections";
 import Card from "@/components/features/listing/Card";
+import { tinaField } from "tinacms/dist/react";
 import type { ListingPageContent } from "@/lib/content";
 
 interface Props {
   content: ListingPageContent;
 }
 
+const tf = tinaField as (obj: unknown, field: string) => string;
+
 export default function ListingTemplate({ content }: Props) {
   const { title, description, hero, items, columns = 3, showBookNow, infoSections, cta, footnote } = content;
 
-  const itemCount = items.length;
+  const itemCount = (items ?? []).length;
 
   // Dynamic column classes (still respects the `columns` prop from content)
   const colClass =
@@ -30,7 +33,10 @@ export default function ListingTemplate({ content }: Props) {
         <div className="mb-8">
           <div className="max-w-7xl mx-auto px-4">
             {description && (
-              <p className="text-xs md:text-base text-gray-600 max-w-3xl mx-auto text-center leading-relaxed">
+              <p
+                data-tina-field={tf(content, "description")}
+                className="text-xs md:text-base text-gray-600 max-w-3xl mx-auto text-center leading-relaxed"
+              >
                 {description}
               </p>
             )}
@@ -46,7 +52,7 @@ export default function ListingTemplate({ content }: Props) {
       <div className="pt-2 pb-8 sm:pt-4 sm:pb-12 px-4">
         <div className="max-w-7xl mx-auto">
           <div className={gridClasses}>
-            {items.map((item, index) => (
+            {(items ?? []).map((item, index) => (
               <Card key={`${item.href}-${item.image}`} item={item} priority={index === 0} />
             ))}
           </div>

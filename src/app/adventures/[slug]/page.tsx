@@ -50,6 +50,7 @@ export default async function AdventurePage({
       data={content}
       query={AdventuresDocument}
       variables={{ relativePath: `${slug}.json` }}
+      collection="adventures"
     />
   )
 }
