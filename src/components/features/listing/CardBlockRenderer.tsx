@@ -49,7 +49,8 @@ export default function CardBlockRenderer({ block }: Props) {
 
   // List - centered on mobile WITHOUT bullets, left-aligned with bullets on desktop.
   // Supports both existing JSON (`content: string[]`) and Tina-edited JSON (`contentItems: string[]`).
-  const listItems = block.contentItems ?? (block.content as string[] | null) ?? [];
+  const rawItems = block.contentItems ?? block.content;
+  const listItems = Array.isArray(rawItems) ? rawItems : [];
   return (
     <ul
       data-tina-field={tf(block, "contentItems")}
