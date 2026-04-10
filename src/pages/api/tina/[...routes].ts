@@ -1,28 +1,32 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { TinaNodeBackend } from "@tinacms/datalayer";
+
+import { TinaNodeBackend, LocalBackendAuthProvider } from "@tinacms/datalayer";
+import { TinaAuthJSOptions, AuthJsBackendAuthProvider } from "tinacms-authjs";
+
 import databaseClient from "../../../../.tina/__generated__/databaseClient";
 
 const isLocal = process.env.TINA_PUBLIC_IS_LOCAL === "true";
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  let authProvider;
-
-  if (isLocal) {
-    const { LocalBackendAuthProvider } = await import("@tinacms/datalayer");
-    authProvider = LocalBackendAuthProvider();
-  } else {
-    const { AuthJsBackendAuthProvider, TinaAuthJSOptions } = await import("tinacms-authjs");
-
-    authProvider = AuthJsBackendAuthProvider({
+const authProvider = isLocal
+  ? LocalBackendAuthProvider()
+  : AuthJsBackendAuthProvider({
       authOptions: TinaAuthJSOptions({
-        databaseClient,
-        secret: process.env.NEXTAUTH_SECRET!,
+        databaseClient: databaseClient,
+        secret: process.env.NEXTAUTH_SECRET ?? "",
       }),
     });
-  }
 
-  return TinaNodeBackend({
-    authProvider,
-    databaseClient,
-  })(req, res);
+const tinaHandler = TinaNodeBackend({
+  authProvider,
+  databaseClient,
+});
+
+// This wrapper fixes the NextAuth import issue in Next.js 15
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+  try {
+    return await tinaHandler(req, res);
+  } catch (error) {
+    console.error("Tina routes handler error:", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
 }

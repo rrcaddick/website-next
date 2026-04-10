@@ -6,20 +6,21 @@
     "dev": "tinacms dev -c \"next dev\"",
     "build": "tinacms build && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "dev:prod": "TINA_PUBLIC_IS_LOCAL=false tinacms dev -c \"next dev\"",
+    "postinstall": "patch-package && rm -rf node_modules/@tinacms/app/node_modules/react node_modules/@tinacms/app/node_modules/react-dom"
   },
   "dependencies": {
     "@tinacms/cli": "^2.2.2",
     "@tinacms/datalayer": "^2.0.15",
     "@upstash/redis": "^1.37.0",
     "autoprefixer": "^10.4.17",
-    "color-string": "^2.1.4",
-    "next": "^14.2.28",
+    "next": "^15.2.0",
     "next-auth": "^4.24.13",
     "next-tinacms-cloudinary": "^24.0.2",
     "postcss": "^8.4.35",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-icons": "^5.0.1",
     "react-intersection-observer": "^9.5.3",
     "sharp": "^0.34.5",
@@ -30,15 +31,20 @@
     "upstash-redis-level": "^1.1.1"
   },
   "devDependencies": {
-    "@types/node": "^20.11.16",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
-    "eslint": "^8.56.0",
-    "eslint-config-next": "14.1.0",
-    "typescript": "^5.3.3"
+    "@types/node": "^22.13.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.22.0",
+    "eslint-config-next": "^15.2.0",
+    "patch-package": "^8.0.1",
+    "typescript": "^5.8.0"
   },
   "overrides": {
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0"
+    "react": "$react",
+    "react-dom": "$react-dom",
+    "@tinacms/app": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    }
   }
 }

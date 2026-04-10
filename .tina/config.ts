@@ -1,6 +1,9 @@
 import { defineConfig } from "tinacms";
+import { TinaUserCollection, UsernamePasswordAuthJSProvider } from "tinacms-authjs/dist/tinacms";
+import { LocalAuthProvider } from "tinacms";
 
 const branch = process.env.GITHUB_BRANCH || process.env.VERCEL_GIT_COMMIT_REF || "main";
+const isLocal = process.env.TINA_PUBLIC_IS_LOCAL === "true";
 
 // ─── Shared field groups ─────────────────────────────────────────────────────
 
@@ -105,6 +108,7 @@ export default defineConfig({
   branch,
   clientId: "",
   token: "",
+  authProvider: isLocal ? new LocalAuthProvider() : new UsernamePasswordAuthJSProvider(),
 
   // Self-hosted: point the Tina admin at our own API route
   contentApiUrlOverride: `${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/api/tina/gql`,
@@ -122,6 +126,7 @@ export default defineConfig({
 
   schema: {
     collections: [
+      TinaUserCollection,
       // ── Accommodation ───────────────────────────────────────────────────────
       {
         name: "accommodation",
