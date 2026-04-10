@@ -11,5 +11,13 @@ const nextConfig = {
   experimental: {
     caseSensitiveRoutes: false,
   },
+  async rewrites() {
+    return {
+      afterFiles: [
+        { source: '/admin', destination: '/admin/index.html' },
+        { source: '/admin/:path*', destination: '/admin/:path*' },
+      ],
+    };
+  },
 };
 module.exports = nextConfig;
