@@ -2,12 +2,12 @@
   "title": "Adventures",
   "description": "Explore the forest on horseback, take flight up to the sky, or grab a kayak and gently float on by.",
   "hero": {
-    "mobileSrc": "/images/adventures/hero/mobile.webp",
-    "desktopSrc": "/images/adventures/hero/desktop.webp"
+    "mobileSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/hero/mobile.webp",
+    "desktopSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/hero/desktop.webp"
   },
   "items": [
     {
-      "image": "/images/adventures/cards/kayaking-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/cards/kayaking-card.webp",
       "href": "/adventures/kayaking",
       "blocks": [
         {
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "image": "/images/adventures/cards/paragliding-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/cards/paragliding-card.webp",
       "href": "/adventures/paragliding",
       "blocks": [
         {
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "image": "/images/adventures/cards/horseriding-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/cards/horseriding-card.webp",
       "href": "/adventures/horseriding",
       "blocks": [
         {
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "image": "/images/adventures/cards/half-collared-kingfisher-trail-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/cards/half-collared-kingfisher-trail-card.webp",
       "href": "/adventures/half-collared-kingfisher-trail",
       "blocks": [
         {
@@ -121,7 +121,7 @@
       ]
     },
     {
-      "image": "/images/adventures/cards/brown-hooded-kingfisher-trail-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/cards/brown-hooded-kingfisher-trail-card.webp",
       "href": "/adventures/brown-hooded-kingfisher-trail",
       "blocks": [
         {
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "image": "/images/adventures/cards/bosduif-trail-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/cards/bosduif-trail-card.webp",
       "href": "/adventures/bosduif-trail",
       "blocks": [
         {
@@ -173,7 +173,7 @@
       ]
     },
     {
-      "image": "/images/adventures/cards/woodville-big-tree-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/cards/woodville-big-tree-card.webp",
       "href": "/adventures/woodville-big-tree",
       "blocks": [
         {
@@ -205,7 +205,7 @@
       ]
     },
     {
-      "image": "/images/adventures/cards/map-of-africa-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/cards/map-of-africa-card.webp",
       "href": "/adventures/map-of-africa",
       "blocks": [
         {
@@ -231,7 +231,7 @@
       ]
     },
     {
-      "image": "/images/adventures/cards/wilderness-beach-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/cards/wilderness-beach-card.webp",
       "href": "/adventures/wilderness-beach",
       "blocks": [
         {
@@ -257,7 +257,7 @@
       ]
     },
     {
-      "image": "/images/adventures/cards/water-under-the-bridge-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/cards/water-under-the-bridge-card.webp",
       "href": "/adventures/water-under-the-bridge",
       "blocks": [
         {
@@ -283,7 +283,7 @@
       ]
     },
     {
-      "image": "/images/adventures/cards/fairy-labyrinth-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/cards/fairy-labyrinth-card.webp",
       "href": "/adventures/fairy-labyrinth",
       "blocks": [
         {
@@ -309,7 +309,7 @@
       ]
     },
     {
-      "image": "/images/adventures/cards/ancient-archives-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/cards/ancient-archives-card.webp",
       "href": "/adventures/ancient-archives",
       "blocks": [
         {

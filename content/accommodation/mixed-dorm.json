@@ -3,54 +3,54 @@
   "title": "Mixed Dorm",
   "description": "Our mixed dorm offers a social atmosphere with comfortable bunk beds, perfect for solo travelers looking to meet new friends. A great budget-friendly option with all the essential amenities.",
   "hero": {
-    "mobileSrc": "/images/accommodation/mixed-dorm/hero/mobile.webp",
-    "desktopSrc": "/images/accommodation/mixed-dorm/hero/desktop.webp"
+    "mobileSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/mixed-dorm/hero/mobile.webp",
+    "desktopSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/mixed-dorm/hero/desktop.webp"
   },
   "gallery": [
     {
-      "src": "/images/accommodation/mixed-dorm/gallery/thumb/1.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/mixed-dorm/gallery/thumb/1.webp",
       "alt": "Mixed Dorm Overview",
-      "fullSize": "/images/accommodation/mixed-dorm/gallery/full/1.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/mixed-dorm/gallery/full/1.webp"
     },
     {
-      "src": "/images/accommodation/mixed-dorm/gallery/thumb/2.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/mixed-dorm/gallery/thumb/2.webp",
       "alt": "Mixed Dorm Interior",
-      "fullSize": "/images/accommodation/mixed-dorm/gallery/full/2.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/mixed-dorm/gallery/full/2.webp"
     },
     {
-      "src": "/images/accommodation/mixed-dorm/gallery/thumb/3.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/mixed-dorm/gallery/thumb/3.webp",
       "alt": "Mixed Dorm Beds",
-      "fullSize": "/images/accommodation/mixed-dorm/gallery/full/3.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/mixed-dorm/gallery/full/3.webp"
     },
     {
-      "src": "/images/accommodation/mixed-dorm/gallery/thumb/4.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/mixed-dorm/gallery/thumb/4.webp",
       "alt": "Mixed Dorm View",
-      "fullSize": "/images/accommodation/mixed-dorm/gallery/full/4.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/mixed-dorm/gallery/full/4.webp"
     },
     {
-      "src": "/images/accommodation/mixed-dorm/gallery/thumb/5.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/mixed-dorm/gallery/thumb/5.webp",
       "alt": "Mixed Dorm Additional View 1",
-      "fullSize": "/images/accommodation/mixed-dorm/gallery/full/5.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/mixed-dorm/gallery/full/5.webp"
     },
     {
-      "src": "/images/accommodation/mixed-dorm/gallery/thumb/6.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/mixed-dorm/gallery/thumb/6.webp",
       "alt": "Mixed Dorm Additional View 2",
-      "fullSize": "/images/accommodation/mixed-dorm/gallery/full/6.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/mixed-dorm/gallery/full/6.webp"
     },
     {
-      "src": "/images/accommodation/mixed-dorm/gallery/thumb/7.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/mixed-dorm/gallery/thumb/7.webp",
       "alt": "Mixed Dorm Additional View 3",
-      "fullSize": "/images/accommodation/mixed-dorm/gallery/full/7.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/mixed-dorm/gallery/full/7.webp"
     },
     {
-      "src": "/images/accommodation/mixed-dorm/gallery/thumb/8.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/mixed-dorm/gallery/thumb/8.webp",
       "alt": "Mixed Dorm Additional View 4",
-      "fullSize": "/images/accommodation/mixed-dorm/gallery/full/8.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/mixed-dorm/gallery/full/8.webp"
     }
   ],
   "imagesPerPage": 8,
-  "cardImage": "/images/accommodation/mixed-dorm-card.webp",
-  "cardMobileImage": "/images/accommodation/mobile-banners/mixed-dorm-card.webp",
+  "cardImage": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/mixed-dorm-card.webp",
+  "cardMobileImage": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/mobile-banners/mixed-dorm-card.webp",
   "cardDescription": "Comfortable bunk beds in our mixed dormitory, perfect for solo travelers and backpackers.",
   "cardFeatures": [
     "Bunk beds",

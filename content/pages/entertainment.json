@@ -2,12 +2,12 @@
   "title": "Entertainment",
   "description": "From magical nights with all sorts of musical delights to whimsical days spent hunting for treasure at the fairy family market of leisure, there's always a sprinkle of wonder waiting at the Knowe for your pleasure.",
   "hero": {
-    "mobileSrc": "/images/entertainment/hero/mobile.webp",
-    "desktopSrc": "/images/entertainment/hero/desktop.webp"
+    "mobileSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/entertainment/hero/mobile.webp",
+    "desktopSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/entertainment/hero/desktop.webp"
   },
   "items": [
     {
-      "image": "/images/entertainment/images/live-gigs-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/entertainmenthttps://res.cloudinary.com/dqxnz4cpu/image/upload/images/live-gigs-card.webp",
       "blocks": [
         {
           "type": "title",
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "image": "/images/entertainment/images/open-mic-night-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/entertainmenthttps://res.cloudinary.com/dqxnz4cpu/image/upload/images/open-mic-night-card.webp",
       "blocks": [
         {
           "type": "title",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "image": "/images/entertainment/images/family-market-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/entertainmenthttps://res.cloudinary.com/dqxnz4cpu/image/upload/images/family-market-card.webp",
       "blocks": [
         {
           "type": "title",

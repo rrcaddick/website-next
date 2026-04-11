@@ -3,24 +3,24 @@
   "title": "Camping",
   "description": "Pitch your tent and make yourself at home in our magical forest, where nature's embrace tucks you in at night. With access to all facilities, our camping area caters to every camper's preference, offering a mix of sunny clearings and shaded hideaways beneath the trees.",
   "hero": {
-    "mobileSrc": "/images/accommodation/camping/hero/mobile.webp",
-    "desktopSrc": "/images/accommodation/camping/hero/desktop.webp"
+    "mobileSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/camping/hero/mobile.webp",
+    "desktopSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/camping/hero/desktop.webp"
   },
   "gallery": [
     {
-      "src": "/images/accommodation/camping/gallery/thumb/1.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/camping/gallery/thumb/1.webp",
       "alt": "Camping Ground Overview",
-      "fullSize": "/images/accommodation/camping/gallery/full/1.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/camping/gallery/full/1.webp"
     },
     {
-      "src": "/images/accommodation/camping/gallery/thumb/2.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/camping/gallery/thumb/2.webp",
       "alt": "Tent Setup Area",
-      "fullSize": "/images/accommodation/camping/gallery/full/2.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/camping/gallery/full/2.webp"
     }
   ],
   "imagesPerPage": 8,
-  "cardImage": "/images/accommodation/camping-card.webp",
-  "cardMobileImage": "/images/accommodation/mobile-banners/camping-card.webp",
+  "cardImage": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/camping-card.webp",
+  "cardMobileImage": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/mobile-banners/camping-card.webp",
   "cardDescription": "Bring your own tent and enjoy our beautiful campsite with access to shared facilities.",
   "cardFeatures": ["Shared bathroom facilities", "Kitchen access", "Sunny or shaded camping grounds"],
   "showBookNow": true,

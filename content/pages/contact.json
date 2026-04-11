@@ -1,7 +1,7 @@
 {
   "title": "Contact",
-  "mobileSrc": "/images/contact/hero/mobile.webp",
-  "desktopSrc": "/images/contact/hero/desktop.webp",
+  "mobileSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/contact/hero/mobile.webp",
+  "desktopSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/contact/hero/desktop.webp",
   "infoHeading": "Get in Touch",
   "infoSections": [
     {

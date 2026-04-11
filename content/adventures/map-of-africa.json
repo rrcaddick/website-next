@@ -4,54 +4,54 @@
   "description": "The Map of Africa offers a spellbinding viewpoint, where nature's artistry is unveiled in the form of a river that gracefully sculpts the shape of the African continent into the valley below. Just across the way, another mesmerizing vantage point awaits, offering sweeping views of the ocean's endless expanse, golden sands of the beach, and the picturesque charm of Wilderness itself.",
   "category": "Viewpoints",
   "hero": {
-    "mobileSrc": "/images/adventures/map-of-africa/hero/mobile.webp",
-    "desktopSrc": "/images/adventures/map-of-africa/hero/desktop.webp"
+    "mobileSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/map-of-africa/hero/mobile.webp",
+    "desktopSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/map-of-africa/hero/desktop.webp"
   },
   "gallery": [
     {
-      "src": "/images/adventures/map-of-africa/gallery/thumb/1.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/map-of-africa/gallery/thumb/1.webp",
       "alt": "Map of Africa Adventure",
-      "fullSize": "/images/adventures/map-of-africa/gallery/full/1.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/map-of-africa/gallery/full/1.webp"
     },
     {
-      "src": "/images/adventures/map-of-africa/gallery/thumb/2.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/map-of-africa/gallery/thumb/2.webp",
       "alt": "Map of Africa Experience",
-      "fullSize": "/images/adventures/map-of-africa/gallery/full/2.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/map-of-africa/gallery/full/2.webp"
     },
     {
-      "src": "/images/adventures/map-of-africa/gallery/thumb/3.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/map-of-africa/gallery/thumb/3.webp",
       "alt": "Map of Africa Journey",
-      "fullSize": "/images/adventures/map-of-africa/gallery/full/3.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/map-of-africa/gallery/full/3.webp"
     },
     {
-      "src": "/images/adventures/map-of-africa/gallery/thumb/4.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/map-of-africa/gallery/thumb/4.webp",
       "alt": "Map of Africa Views",
-      "fullSize": "/images/adventures/map-of-africa/gallery/full/4.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/map-of-africa/gallery/full/4.webp"
     },
     {
-      "src": "/images/adventures/map-of-africa/gallery/thumb/5.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/map-of-africa/gallery/thumb/5.webp",
       "alt": "Map of Africa Adventure 2",
-      "fullSize": "/images/adventures/map-of-africa/gallery/full/5.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/map-of-africa/gallery/full/5.webp"
     },
     {
-      "src": "/images/adventures/map-of-africa/gallery/thumb/6.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/map-of-africa/gallery/thumb/6.webp",
       "alt": "Map of Africa Experience 2",
-      "fullSize": "/images/adventures/map-of-africa/gallery/full/6.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/map-of-africa/gallery/full/6.webp"
     },
     {
-      "src": "/images/adventures/map-of-africa/gallery/thumb/7.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/map-of-africa/gallery/thumb/7.webp",
       "alt": "Map of Africa Journey 2",
-      "fullSize": "/images/adventures/map-of-africa/gallery/full/7.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/map-of-africa/gallery/full/7.webp"
     },
     {
-      "src": "/images/adventures/map-of-africa/gallery/thumb/8.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/map-of-africa/gallery/thumb/8.webp",
       "alt": "Map of Africa Views 2",
-      "fullSize": "/images/adventures/map-of-africa/gallery/full/8.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/map-of-africa/gallery/full/8.webp"
     }
   ],
   "imagesPerPage": 8,
-  "cardImage": "/images/adventures/cards/desktop/map-of-africa-card.webp",
-  "cardMobileImage": "/images/adventures/cards/mobile/map-of-africa-card.webp",
+  "cardImage": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/cards/desktop/map-of-africa-card.webp",
+  "cardMobileImage": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/cards/mobile/map-of-africa-card.webp",
   "cardDescription": "A sight to behold.",
   "cardFeatures": [
     "Easy access",

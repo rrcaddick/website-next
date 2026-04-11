@@ -3,54 +3,54 @@
   "title": "Double En-Suite",
   "description": "Indulge in the crème de la crème of comfort, ideal for couples or individuals who appreciate a touch of coziness. With privacy and extra amenities, this retreat offers the perfect sanctuary for a truly special and relaxing stay.",
   "hero": {
-    "mobileSrc": "/images/accommodation/double-en-suite/hero/mobile.webp",
-    "desktopSrc": "/images/accommodation/double-en-suite/hero/desktop.webp"
+    "mobileSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite/hero/mobile.webp",
+    "desktopSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite/hero/desktop.webp"
   },
   "gallery": [
     {
-      "src": "/images/accommodation/double-en-suite/gallery/thumb/1.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite/gallery/thumb/1.webp",
       "alt": "Double En-suite Overview",
-      "fullSize": "/images/accommodation/double-en-suite/gallery/full/1.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite/gallery/full/1.webp"
     },
     {
-      "src": "/images/accommodation/double-en-suite/gallery/thumb/2.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite/gallery/thumb/2.webp",
       "alt": "Double En-suite Interior",
-      "fullSize": "/images/accommodation/double-en-suite/gallery/full/2.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite/gallery/full/2.webp"
     },
     {
-      "src": "/images/accommodation/double-en-suite/gallery/thumb/3.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite/gallery/thumb/3.webp",
       "alt": "Double En-suite Bathroom",
-      "fullSize": "/images/accommodation/double-en-suite/gallery/full/3.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite/gallery/full/3.webp"
     },
     {
-      "src": "/images/accommodation/double-en-suite/gallery/thumb/4.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite/gallery/thumb/4.webp",
       "alt": "Double En-suite View",
-      "fullSize": "/images/accommodation/double-en-suite/gallery/full/4.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite/gallery/full/4.webp"
     },
     {
-      "src": "/images/accommodation/double-en-suite/gallery/thumb/5.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite/gallery/thumb/5.webp",
       "alt": "Double En-suite Additional View 1",
-      "fullSize": "/images/accommodation/double-en-suite/gallery/full/5.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite/gallery/full/5.webp"
     },
     {
-      "src": "/images/accommodation/double-en-suite/gallery/thumb/6.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite/gallery/thumb/6.webp",
       "alt": "Double En-suite Additional View 2",
-      "fullSize": "/images/accommodation/double-en-suite/gallery/full/6.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite/gallery/full/6.webp"
     },
     {
-      "src": "/images/accommodation/double-en-suite/gallery/thumb/7.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite/gallery/thumb/7.webp",
       "alt": "Double En-suite Additional View 3",
-      "fullSize": "/images/accommodation/double-en-suite/gallery/full/7.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite/gallery/full/7.webp"
     },
     {
-      "src": "/images/accommodation/double-en-suite/gallery/thumb/8.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite/gallery/thumb/8.webp",
       "alt": "Double En-suite Additional View 4",
-      "fullSize": "/images/accommodation/double-en-suite/gallery/full/8.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite/gallery/full/8.webp"
     }
   ],
   "imagesPerPage": 8,
-  "cardImage": "/images/accommodation/double-ensuite-card.webp",
-  "cardMobileImage": "/images/accommodation/mobile-banners/double-en-suite-card.webp",
+  "cardImage": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-ensuite-card.webp",
+  "cardMobileImage": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/mobile-banners/double-en-suite-card.webp",
   "cardDescription": "Private room with a queen size bed and en-suite bathroom for added comfort.",
   "cardFeatures": [
     "Queen bed",

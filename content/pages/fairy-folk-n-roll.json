@@ -2,13 +2,13 @@
   "title": "Fairy Folk 'n Roll",
   "description": "Welcome to our vibrant music community where local talent meets global audiences through our YouTube channel. We capture the magic of live performances and blend it with the natural beauty of our enchanted milkwood forest, creating a unique musical experience that celebrates both artistry and nature.",
   "hero": {
-    "mobileSrc": "/images/fairy-folk-n-roll/hero/mobile.webp",
-    "desktopSrc": "/images/fairy-folk-n-roll/hero/desktop.webp"
+    "mobileSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/fairy-folk-n-roll/hero/mobile.webp",
+    "desktopSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/fairy-folk-n-roll/hero/desktop.webp"
   },
   "columns": 2,
   "items": [
     {
-      "image": "/images/fairy-folk-n-roll/cards/ffr-live-music.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/fairy-folk-n-roll/cards/ffr-live-music.webp",
       "blocks": [
         {
           "type": "title",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "image": "/images/fairy-folk-n-roll/cards/ffr-youtube.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/fairy-folk-n-roll/cards/ffr-youtube.webp",
       "href": "https://www.youtube.com/@FairyFolknRoll",
       "blocks": [
         {

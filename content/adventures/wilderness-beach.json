@@ -4,54 +4,54 @@
   "description": "Bask in the sun on the golden shores of Wilderness Beach, a Blue Flag gem renowned for its beauty and charm. Whether you're diving for a volleyball, soaking up the sunshine, wafting through the waters, or crafting a kingdom of sandcastles, this beach promises a day filled with joy and seaside smiles.",
   "category": "Beach",
   "hero": {
-    "mobileSrc": "/images/adventures/wilderness-beach/hero/mobile.webp",
-    "desktopSrc": "/images/adventures/wilderness-beach/hero/desktop.webp"
+    "mobileSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/wilderness-beach/hero/mobile.webp",
+    "desktopSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/wilderness-beach/hero/desktop.webp"
   },
   "gallery": [
     {
       "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/v1775750972/beach2_xpc9v9.webp",
       "alt": "Wilderness Beach Adventure 1",
-      "fullSize": "/images/adventures/wilderness-beach/gallery/full/1.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/wilderness-beach/gallery/full/1.webp"
     },
     {
-      "src": "/images/adventures/wilderness-beach/gallery/thumb/2.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/wilderness-beach/gallery/thumb/2.webp",
       "alt": "Wilderness Beach Adventure 2",
-      "fullSize": "/images/adventures/wilderness-beach/gallery/full/2.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/wilderness-beach/gallery/full/2.webp"
     },
     {
-      "src": "/images/adventures/wilderness-beach/gallery/thumb/3.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/wilderness-beach/gallery/thumb/3.webp",
       "alt": "Wilderness Beach Adventure 3",
-      "fullSize": "/images/adventures/wilderness-beach/gallery/full/3.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/wilderness-beach/gallery/full/3.webp"
     },
     {
-      "src": "/images/adventures/wilderness-beach/gallery/thumb/4.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/wilderness-beach/gallery/thumb/4.webp",
       "alt": "Wilderness Beach Adventure 4",
-      "fullSize": "/images/adventures/wilderness-beach/gallery/full/4.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/wilderness-beach/gallery/full/4.webp"
     },
     {
-      "src": "/images/adventures/wilderness-beach/gallery/thumb/5.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/wilderness-beach/gallery/thumb/5.webp",
       "alt": "Wilderness Beach Adventure 5",
-      "fullSize": "/images/adventures/wilderness-beach/gallery/full/5.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/wilderness-beach/gallery/full/5.webp"
     },
     {
-      "src": "/images/adventures/wilderness-beach/gallery/thumb/6.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/wilderness-beach/gallery/thumb/6.webp",
       "alt": "Wilderness Beach Adventure 6",
-      "fullSize": "/images/adventures/wilderness-beach/gallery/full/6.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/wilderness-beach/gallery/full/6.webp"
     },
     {
-      "src": "/images/adventures/wilderness-beach/gallery/thumb/7.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/wilderness-beach/gallery/thumb/7.webp",
       "alt": "Wilderness Beach Adventure 7",
-      "fullSize": "/images/adventures/wilderness-beach/gallery/full/7.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/wilderness-beach/gallery/full/7.webp"
     },
     {
-      "src": "/images/adventures/wilderness-beach/gallery/thumb/8.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/wilderness-beach/gallery/thumb/8.webp",
       "alt": "Wilderness Beach Adventure 8",
-      "fullSize": "/images/adventures/wilderness-beach/gallery/full/8.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/wilderness-beach/gallery/full/8.webp"
     }
   ],
   "imagesPerPage": 8,
-  "cardImage": "/images/adventures/cards/desktop/wilderness-beach-card.webp",
-  "cardMobileImage": "/images/adventures/cards/mobile/wilderness-beach-card.webp",
+  "cardImage": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/cards/desktop/wilderness-beach-card.webp",
+  "cardMobileImage": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/cards/mobile/wilderness-beach-card.webp",
   "cardDescription": "Blue Flag beach perfect for a nice sunny day.",
   "cardFeatures": [
     "Blue Flag status",

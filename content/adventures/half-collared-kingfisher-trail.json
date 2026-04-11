@@ -4,174 +4,174 @@
   "description": "Embark on a delightful 7.6-km out-and-back trail that winds its way through a serene, shaded wonderland. This moderately easy route, typically completed in around 3 hours, invites you to stroll along wooden boardwalk that meanders its way to a magical waterfall, perfect for a refreshing swim and moment of bliss. Popular among adventurers, runners, and wanderers alike, this charming path brims with life, offering a likely chance to cross paths with friendly folk as you explore its natural splendor.",
   "category": "Hiking",
   "hero": {
-    "mobileSrc": "/images/adventures/half-collared-kingfisher-trail/hero/mobile.webp",
-    "desktopSrc": "/images/adventures/half-collared-kingfisher-trail/hero/desktop.webp"
+    "mobileSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/hero/mobile.webp",
+    "desktopSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/hero/desktop.webp"
   },
   "gallery": [
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/1.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/1.webp",
       "alt": "Half Collared Kingfisher Trail 1",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/1.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/1.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/2.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/2.webp",
       "alt": "Half Collared Kingfisher Trail 2",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/2.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/2.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/3.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/3.webp",
       "alt": "Half Collared Kingfisher Trail 3",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/3.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/3.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/4.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/4.webp",
       "alt": "Half Collared Kingfisher Trail 4",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/4.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/4.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/5.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/5.webp",
       "alt": "Half Collared Kingfisher Trail 5",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/5.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/5.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/6.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/6.webp",
       "alt": "Half Collared Kingfisher Trail 6",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/6.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/6.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/7.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/7.webp",
       "alt": "Half Collared Kingfisher Trail 7",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/7.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/7.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/8.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/8.webp",
       "alt": "Half Collared Kingfisher Trail 8",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/8.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/8.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/9.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/9.webp",
       "alt": "Half Collared Kingfisher Trail 9",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/9.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/9.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/10.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/10.webp",
       "alt": "Half Collared Kingfisher Trail 10",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/10.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/10.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/11.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/11.webp",
       "alt": "Half Collared Kingfisher Trail 11",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/11.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/11.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/12.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/12.webp",
       "alt": "Half Collared Kingfisher Trail 12",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/12.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/12.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/13.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/13.webp",
       "alt": "Half Collared Kingfisher Trail 13",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/13.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/13.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/14.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/14.webp",
       "alt": "Half Collared Kingfisher Trail 14",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/14.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/14.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/15.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/15.webp",
       "alt": "Half Collared Kingfisher Trail 15",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/15.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/15.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/16.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/16.webp",
       "alt": "Half Collared Kingfisher Trail 16",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/16.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/16.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/17.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/17.webp",
       "alt": "Half Collared Kingfisher Trail 17",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/17.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/17.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/18.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/18.webp",
       "alt": "Half Collared Kingfisher Trail 18",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/18.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/18.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/19.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/19.webp",
       "alt": "Half Collared Kingfisher Trail 19",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/19.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/19.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/20.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/20.webp",
       "alt": "Half Collared Kingfisher Trail 20",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/20.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/20.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/21.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/21.webp",
       "alt": "Half Collared Kingfisher Trail 21",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/21.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/21.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/22.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/22.webp",
       "alt": "Half Collared Kingfisher Trail 22",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/22.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/22.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/23.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/23.webp",
       "alt": "Half Collared Kingfisher Trail 23",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/23.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/23.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/24.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/24.webp",
       "alt": "Half Collared Kingfisher Trail 24",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/24.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/24.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/25.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/25.webp",
       "alt": "Half Collared Kingfisher Trail 25",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/25.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/25.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/26.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/26.webp",
       "alt": "Half Collared Kingfisher Trail 26",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/26.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/26.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/27.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/27.webp",
       "alt": "Half Collared Kingfisher Trail 27",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/27.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/27.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/28.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/28.webp",
       "alt": "Half Collared Kingfisher Trail 28",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/28.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/28.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/29.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/29.webp",
       "alt": "Half Collared Kingfisher Trail 29",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/29.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/29.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/30.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/30.webp",
       "alt": "Half Collared Kingfisher Trail 30",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/30.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/30.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/31.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/31.webp",
       "alt": "Half Collared Kingfisher Trail 31",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/31.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/31.webp"
     },
     {
-      "src": "/images/adventures/half-collared-kingfisher-trail/gallery/thumb/32.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/thumb/32.webp",
       "alt": "Half Collared Kingfisher Trail 32",
-      "fullSize": "/images/adventures/half-collared-kingfisher-trail/gallery/full/32.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/half-collared-kingfisher-trail/gallery/full/32.webp"
     }
   ],
   "imagesPerPage": 8,
-  "cardImage": "/images/adventures/cards/desktop/half-collared-kingfisher-trail-card.webp",
-  "cardMobileImage": "/images/adventures/cards/mobile/half-collared-kingfisher-trail-card.webp",
+  "cardImage": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/cards/desktop/half-collared-kingfisher-trail-card.webp",
+  "cardMobileImage": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/cards/mobile/half-collared-kingfisher-trail-card.webp",
   "cardDescription": "3 hour trail along the Touw River, leading to the waterfall. Great for swimming.",
   "cardFeatures": [
     "There and back trail",

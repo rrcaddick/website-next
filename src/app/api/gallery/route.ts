@@ -1,9 +1,13 @@
 import { NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
+import { v2 as cloudinary } from "cloudinary";
 
-// Cache the response for 1 hour at the CDN/edge level
 export const revalidate = 3600;
+
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
+});
 
 type GalleryImage = {
   category: string;
@@ -13,163 +17,109 @@ type GalleryImage = {
   fullSize: string;
 };
 
-function isDir(p: string): boolean {
-  try {
-    return fs.statSync(p).isDirectory();
-  } catch {
-    return false;
+type CloudinaryResource = {
+  public_id: string;
+  secure_url: string;
+};
+
+async function fetchByPrefix(prefix: string): Promise<CloudinaryResource[]> {
+  const all: CloudinaryResource[] = [];
+  let next_cursor: string | undefined;
+  do {
+    const res: { resources: CloudinaryResource[]; next_cursor?: string } =
+      await cloudinary.api.resources({
+        type: "upload",
+        resource_type: "image",
+        prefix,
+        max_results: 500,
+        next_cursor,
+      });
+    all.push(...res.resources);
+    next_cursor = res.next_cursor;
+  } while (next_cursor);
+  return all;
+}
+
+/** Parse paths like images/{cat}/{slug}/gallery/thumb/{name} */
+function buildGalleryImages(
+  resources: CloudinaryResource[],
+  category: string,
+  pathCategory: string
+): GalleryImage[] {
+  // Build a map of full-size images: slug/name → secure_url
+  const fullMap = new Map<string, string>();
+  for (const r of resources) {
+    // e.g. images/accommodation/camping/gallery/full/1
+    const match = r.public_id.match(
+      new RegExp(`^images/${pathCategory}/([^/]+)/gallery/full/(.+)$`)
+    );
+    if (match) fullMap.set(`${match[1]}/${match[2]}`, r.secure_url);
   }
-}
 
-function fileExists(p: string): boolean {
-  try {
-    return fs.existsSync(p);
-  } catch {
-    return false;
-  }
-}
-
-function isImageFile(name: string): boolean {
-  return /\.(jpg|jpeg|png|webp)$/i.test(name);
-}
-
-function isGalleryImage(name: string): boolean {
-  return isImageFile(name) && !name.includes("-card") && !name.includes("-mobile");
-}
-
-function buildGalleryImages(): GalleryImage[] {
   const images: GalleryImage[] = [];
-  const baseDir = path.join(process.cwd(), "public", "images");
-
-  // --- Accommodation ---
-  const accommodationDir = path.join(baseDir, "accommodation");
-  if (isDir(accommodationDir)) {
-    for (const room of fs.readdirSync(accommodationDir)) {
-      const roomPath = path.join(accommodationDir, room);
-      if (!isDir(roomPath)) continue;
-      const thumbDir = path.join(roomPath, "gallery", "thumb");
-      const fullDir = path.join(roomPath, "gallery", "full");
-      if (!isDir(thumbDir)) continue;
-      const subcategory = room.replace(/-/g, " ");
-      for (const file of fs.readdirSync(thumbDir)) {
-        if (!isGalleryImage(file)) continue;
-        const fullSizePath = fileExists(path.join(fullDir, file))
-          ? `/images/accommodation/${room}/gallery/full/${file}`
-          : `/images/accommodation/${room}/gallery/thumb/${file}`;
-        images.push({
-          category: "Accommodation",
-          subcategory,
-          src: `/images/accommodation/${room}/gallery/thumb/${file}`,
-          alt: `${subcategory} ${file.replace(/\.[^/.]+$/, "").replace(/[-_]/g, " ")}`,
-          fullSize: fullSizePath,
-        });
-      }
-    }
+  for (const r of resources) {
+    const match = r.public_id.match(
+      new RegExp(`^images/${pathCategory}/([^/]+)/gallery/thumb/(.+)$`)
+    );
+    if (!match) continue;
+    const [, slug, name] = match;
+    const subcategory = slug.replace(/-/g, " ");
+    const fullUrl = fullMap.get(`${slug}/${name}`) ?? r.secure_url;
+    images.push({
+      category,
+      subcategory,
+      src: r.secure_url,
+      alt: `${subcategory} ${name.replace(/[-_]/g, " ")}`,
+      fullSize: fullUrl,
+    });
   }
-
-  // --- Adventures ---
-  const adventuresDir = path.join(baseDir, "adventures");
-  if (isDir(adventuresDir)) {
-    for (const adventure of fs.readdirSync(adventuresDir)) {
-      const adventurePath = path.join(adventuresDir, adventure);
-      if (!isDir(adventurePath)) continue;
-      const thumbDir = path.join(adventurePath, "gallery", "thumb");
-      const fullDir = path.join(adventurePath, "gallery", "full");
-      if (!isDir(thumbDir)) continue;
-      const subcategory = adventure.replace(/-/g, " ");
-      for (const file of fs.readdirSync(thumbDir)) {
-        if (!isGalleryImage(file)) continue;
-        const fullSizePath = fileExists(path.join(fullDir, file))
-          ? `/images/adventures/${adventure}/gallery/full/${file}`
-          : `/images/adventures/${adventure}/gallery/thumb/${file}`;
-        images.push({
-          category: "Adventures",
-          subcategory,
-          src: `/images/adventures/${adventure}/gallery/thumb/${file}`,
-          alt: `${subcategory} ${file.replace(/\.[^/.]+$/, "").replace(/[-_]/g, " ")}`,
-          fullSize: fullSizePath,
-        });
-      }
-    }
-  }
-
-  // --- Entertainment ---
-  const entertainmentImagesDir = path.join(baseDir, "entertainment", "images");
-  if (isDir(entertainmentImagesDir)) {
-    for (const file of fs.readdirSync(entertainmentImagesDir)) {
-      if (!isGalleryImage(file)) continue;
-      const filePath = path.join(entertainmentImagesDir, file);
-      if (!isDir(filePath)) {
-        const src = `/images/entertainment/images/${file}`;
-        images.push({
-          category: "Entertainment",
-          src,
-          alt: `Entertainment ${file.replace(/\.[^/.]+$/, "").replace(/[-_]/g, " ")}`,
-          fullSize: src,
-        });
-      }
-    }
-  }
-
-  // --- Facilities ---
-  const facilitiesImagesDir = path.join(baseDir, "facilities", "images");
-  if (isDir(facilitiesImagesDir)) {
-    for (const file of fs.readdirSync(facilitiesImagesDir)) {
-      if (!isGalleryImage(file)) continue;
-      const filePath = path.join(facilitiesImagesDir, file);
-      if (!isDir(filePath)) {
-        const src = `/images/facilities/images/${file}`;
-        images.push({
-          category: "Facilities",
-          src,
-          alt: `Facilities ${file.replace(/\.[^/.]+$/, "").replace(/[-_]/g, " ")}`,
-          fullSize: src,
-        });
-      }
-    }
-  }
-
-  // --- Venue Hire ---
-  const venueDir = path.join(baseDir, "venue");
-  if (isDir(venueDir)) {
-    for (const subdir of fs.readdirSync(venueDir)) {
-      const subdirPath = path.join(venueDir, subdir);
-      if (!isDir(subdirPath)) continue;
-      const thumbDir = path.join(subdirPath, "gallery", "thumb");
-      const fullDir = path.join(subdirPath, "gallery", "full");
-      if (!isDir(thumbDir)) continue;
-      const subcategory = subdir.replace(/-/g, " ");
-      for (const file of fs.readdirSync(thumbDir)) {
-        if (!isGalleryImage(file)) continue;
-        const fullSizePath = fileExists(path.join(fullDir, file))
-          ? `/images/venue/${subdir}/gallery/full/${file}`
-          : `/images/venue/${subdir}/gallery/thumb/${file}`;
-        images.push({
-          category: "Venue Hire",
-          subcategory,
-          src: `/images/venue/${subdir}/gallery/thumb/${file}`,
-          alt: `${subcategory} ${file.replace(/\.[^/.]+$/, "").replace(/[-_]/g, " ")}`,
-          fullSize: fullSizePath,
-        });
-      }
-    }
-  }
-
   return images;
 }
 
-// Scan the filesystem once at module load time.
-// In a long-running server this is computed once and reused for all requests.
-// On serverless platforms it is computed once per warm instance.
-let cachedImages: GalleryImage[];
-try {
-  cachedImages = buildGalleryImages();
-  console.log(`Gallery: loaded ${cachedImages.length} images`);
-} catch (error) {
-  console.error("Error building gallery image list:", error);
-  cachedImages = [];
+/** Parse paths like images/{pathPrefix}/{name} (flat — no thumb/full split) */
+function buildFlatImages(
+  resources: CloudinaryResource[],
+  category: string,
+  pathPrefix: string
+): GalleryImage[] {
+  return resources
+    .filter((r) => r.public_id.startsWith(`images/${pathPrefix}/`))
+    .map((r) => {
+      const name = r.public_id.split("/").pop() ?? "";
+      return {
+        category,
+        src: r.secure_url,
+        alt: `${category} ${name.replace(/[-_]/g, " ")}`,
+        fullSize: r.secure_url,
+      };
+    });
+}
+
+async function buildAllGalleryImages(): Promise<GalleryImage[]> {
+  const [accommodation, adventures, entertainment, facilities, venue] =
+    await Promise.all([
+      fetchByPrefix("images/accommodation"),
+      fetchByPrefix("images/adventures"),
+      fetchByPrefix("images/entertainment/images"),
+      fetchByPrefix("images/facilities/images"),
+      fetchByPrefix("images/venue"),
+    ]);
+
+  return [
+    ...buildGalleryImages(accommodation, "Accommodation", "accommodation"),
+    ...buildGalleryImages(adventures, "Adventures", "adventures"),
+    ...buildFlatImages(entertainment, "Entertainment", "entertainment/images"),
+    ...buildFlatImages(facilities, "Facilities", "facilities/images"),
+    ...buildGalleryImages(venue, "Venue Hire", "venue"),
+  ];
 }
 
 export async function GET() {
-  return NextResponse.json({ images: cachedImages });
+  try {
+    const images = await buildAllGalleryImages();
+    return NextResponse.json({ images });
+  } catch (error) {
+    console.error("Gallery API error:", error);
+    return NextResponse.json({ error: "Failed to load gallery" }, { status: 500 });
+  }
 }

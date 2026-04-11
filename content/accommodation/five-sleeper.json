@@ -3,54 +3,54 @@
   "title": "Five Sleeper",
   "description": "Our five sleeper room is the perfect retreat for larger families or groups, offering spacious comfort and privacy.",
   "hero": {
-    "mobileSrc": "/images/accommodation/five-sleeper/hero/mobile.webp",
-    "desktopSrc": "/images/accommodation/five-sleeper/hero/desktop.webp"
+    "mobileSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/five-sleeper/hero/mobile.webp",
+    "desktopSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/five-sleeper/hero/desktop.webp"
   },
   "gallery": [
     {
-      "src": "/images/accommodation/five-sleeper/gallery/thumb/1.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/five-sleeper/gallery/thumb/1.webp",
       "alt": "Five Sleeper Overview",
-      "fullSize": "/images/accommodation/five-sleeper/gallery/full/1.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/five-sleeper/gallery/full/1.webp"
     },
     {
-      "src": "/images/accommodation/five-sleeper/gallery/thumb/2.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/five-sleeper/gallery/thumb/2.webp",
       "alt": "Five Sleeper Interior",
-      "fullSize": "/images/accommodation/five-sleeper/gallery/full/2.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/five-sleeper/gallery/full/2.webp"
     },
     {
-      "src": "/images/accommodation/five-sleeper/gallery/thumb/3.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/five-sleeper/gallery/thumb/3.webp",
       "alt": "Five Sleeper Beds",
-      "fullSize": "/images/accommodation/five-sleeper/gallery/full/3.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/five-sleeper/gallery/full/3.webp"
     },
     {
-      "src": "/images/accommodation/five-sleeper/gallery/thumb/4.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/five-sleeper/gallery/thumb/4.webp",
       "alt": "Five Sleeper View",
-      "fullSize": "/images/accommodation/five-sleeper/gallery/full/4.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/five-sleeper/gallery/full/4.webp"
     },
     {
-      "src": "/images/accommodation/five-sleeper/gallery/thumb/5.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/five-sleeper/gallery/thumb/5.webp",
       "alt": "Five Sleeper Additional View 1",
-      "fullSize": "/images/accommodation/five-sleeper/gallery/full/5.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/five-sleeper/gallery/full/5.webp"
     },
     {
-      "src": "/images/accommodation/five-sleeper/gallery/thumb/6.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/five-sleeper/gallery/thumb/6.webp",
       "alt": "Five Sleeper Additional View 2",
-      "fullSize": "/images/accommodation/five-sleeper/gallery/full/6.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/five-sleeper/gallery/full/6.webp"
     },
     {
-      "src": "/images/accommodation/five-sleeper/gallery/thumb/7.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/five-sleeper/gallery/thumb/7.webp",
       "alt": "Five Sleeper Additional View 3",
-      "fullSize": "/images/accommodation/five-sleeper/gallery/full/7.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/five-sleeper/gallery/full/7.webp"
     },
     {
-      "src": "/images/accommodation/five-sleeper/gallery/thumb/8.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/five-sleeper/gallery/thumb/8.webp",
       "alt": "Five Sleeper Additional View 4",
-      "fullSize": "/images/accommodation/five-sleeper/gallery/full/8.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/five-sleeper/gallery/full/8.webp"
     }
   ],
   "imagesPerPage": 8,
-  "cardImage": "/images/accommodation/five-sleeper-card.webp",
-  "cardMobileImage": "/images/accommodation/mobile-banners/five-sleeper-card.webp",
+  "cardImage": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/five-sleeper-card.webp",
+  "cardMobileImage": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/mobile-banners/five-sleeper-card.webp",
   "cardDescription": "Large room that comfortably accommodates up to five people, perfect for groups or families.",
   "cardFeatures": [
     "Double bed + bunk bed + single bed",

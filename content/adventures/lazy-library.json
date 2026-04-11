@@ -4,13 +4,13 @@
   "description": "Feeling a little lazy, or perhaps things are looking rather rainy? Explore the boundless worlds within our charming library. Trade in your finished tale for another, and let your journey continue with the pages of a new adventure waiting to unfold. With stories for every soul and swaps to keep the exploration alive, our library is your perfect rainy-day retreat.",
   "category": "Indoor Activities",
   "hero": {
-    "mobileSrc": "/images/adventures/lazy-library/hero/mobile.webp",
-    "desktopSrc": "/images/adventures/lazy-library/hero/desktop.webp"
+    "mobileSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/lazy-library/hero/mobile.webp",
+    "desktopSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/lazy-library/hero/desktop.webp"
   },
   "gallery": [],
   "imagesPerPage": 8,
-  "cardImage": "/images/adventures/lazy-library/hero/mobile.webp",
-  "cardMobileImage": "/images/adventures/lazy-library/hero/mobile.webp",
+  "cardImage": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/lazy-library/hero/mobile.webp",
+  "cardMobileImage": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/lazy-library/hero/mobile.webp",
   "cardDescription": "Feeling a little lazy, or perhaps things are looking rather rainy? Explore the boundless worlds within our charming library.",
   "cardFeatures": [
     "Book swap",

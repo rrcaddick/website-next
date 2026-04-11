@@ -3,23 +3,23 @@
   "title": "Double En-suite Rondawel",
   "description": "Experience the charm of our traditional rondawel with modern comforts. This cozy double en-suite room offers a unique circular design with all the amenities you need for a comfortable stay.",
   "hero": {
-    "mobileSrc": "/images/accommodation/double-en-suite-rondawel/hero/mobile.webp",
-    "desktopSrc": "/images/accommodation/double-en-suite-rondawel/hero/desktop.webp"
+    "mobileSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite-rondawel/hero/mobile.webp",
+    "desktopSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite-rondawel/hero/desktop.webp"
   },
   "gallery": [
     {
-      "src": "/images/accommodation/double-en-suite-rondawel/gallery/thumb/1.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite-rondawel/gallery/thumb/1.webp",
       "alt": "Double En-suite Rondawel Overview",
-      "fullSize": "/images/accommodation/double-en-suite-rondawel/gallery/full/1.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite-rondawel/gallery/full/1.webp"
     },
     {
-      "src": "/images/accommodation/double-en-suite-rondawel/gallery/thumb/2.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite-rondawel/gallery/thumb/2.webp",
       "alt": "Double En-suite Rondawel Interior",
-      "fullSize": "/images/accommodation/double-en-suite-rondawel/gallery/full/2.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite-rondawel/gallery/full/2.webp"
     }
   ],
   "imagesPerPage": 8,
-  "cardImage": "/images/accommodation/double-en-suite-rondawel/gallery/thumb/1.webp",
+  "cardImage": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/double-en-suite-rondawel/gallery/thumb/1.webp",
   "cardDescription": "Experience the charm of our traditional rondawel with modern comforts. A unique circular design with all the amenities for a comfortable stay.",
   "cardFeatures": [
     "Double bed",

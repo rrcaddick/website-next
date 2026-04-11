@@ -1,12 +1,12 @@
 {
-  "heroMobile": "/images/facilities/hero/mobile.webp",
-  "heroDesktop": "/images/facilities/hero/desktop.webp",
+  "heroMobile": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/facilities/hero/mobile.webp",
+  "heroDesktop": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/facilities/hero/desktop.webp",
   "description": "Everything you need to keep clean, comfortable, connected, captivated, cozy, fed and feeling good during your stay in the enchanted realms of the wood.",
   "categories": [
     {
       "id": 1,
       "title": "Amenities & Services",
-      "image": "/images/facilities/images/amenities-and-services.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/facilitieshttps://res.cloudinary.com/dqxnz4cpu/image/upload/images/amenities-and-services.webp",
       "facilities": [
         {
           "name": "Communal wi-fi",
@@ -54,7 +54,7 @@
     {
       "id": 2,
       "title": "Entertainment & Recreation",
-      "image": "/images/facilities/images/entertainment-and-recreation.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/facilitieshttps://res.cloudinary.com/dqxnz4cpu/image/upload/images/entertainment-and-recreation.webp",
       "facilities": [
         {
           "name": "Books & board games",
@@ -91,7 +91,7 @@
     {
       "id": 3,
       "title": "Food & Drink",
-      "image": "/images/facilities/images/food-and-drink.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/facilitieshttps://res.cloudinary.com/dqxnz4cpu/image/upload/images/food-and-drink.webp",
       "facilities": [
         {
           "name": "Lively bar",
@@ -135,7 +135,7 @@
     {
       "id": 4,
       "title": "Social & Gathering Spaces",
-      "image": "/images/facilities/images/social-and-gathering-spaces.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/facilitieshttps://res.cloudinary.com/dqxnz4cpu/image/upload/images/social-and-gathering-spaces.webp",
       "facilities": [
         {
           "name": "Communal fire pit",

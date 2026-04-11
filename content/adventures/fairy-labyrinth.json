@@ -4,54 +4,54 @@
   "description": "Step into a world of enchantment at the Fairy Labyrinth, a magical 1.5-km trail that winds through an ancient forest filled with towering trees and mystical formations. This easy, family-friendly walk offers a perfect blend of adventure and wonder, with winding paths that lead through a natural maze of giant tree roots and moss-covered rocks. The trail is alive with the sounds of forest birds and the gentle rustling of leaves, creating an atmosphere straight out of a fairy tale. Whether you're seeking a peaceful nature walk or a magical adventure with children, the Fairy Labyrinth provides an unforgettable experience in the heart of Wilderness's mystical forests.",
   "category": "Relaxation",
   "hero": {
-    "mobileSrc": "/images/adventures/fairy-labyrinth/hero/mobile.webp",
-    "desktopSrc": "/images/adventures/fairy-labyrinth/hero/desktop.webp"
+    "mobileSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/fairy-labyrinth/hero/mobile.webp",
+    "desktopSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/fairy-labyrinth/hero/desktop.webp"
   },
   "gallery": [
     {
-      "src": "/images/adventures/fairy-labyrinth/gallery/thumb/1.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/fairy-labyrinth/gallery/thumb/1.webp",
       "alt": "Fairy Labyrinth Adventure",
-      "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/1.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/fairy-labyrinth/gallery/full/1.webp"
     },
     {
-      "src": "/images/adventures/fairy-labyrinth/gallery/thumb/2.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/fairy-labyrinth/gallery/thumb/2.webp",
       "alt": "Fairy Labyrinth Experience",
-      "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/2.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/fairy-labyrinth/gallery/full/2.webp"
     },
     {
-      "src": "/images/adventures/fairy-labyrinth/gallery/thumb/3.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/fairy-labyrinth/gallery/thumb/3.webp",
       "alt": "Fairy Labyrinth Journey",
-      "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/3.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/fairy-labyrinth/gallery/full/3.webp"
     },
     {
-      "src": "/images/adventures/fairy-labyrinth/gallery/thumb/4.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/fairy-labyrinth/gallery/thumb/4.webp",
       "alt": "Fairy Labyrinth Views",
-      "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/4.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/fairy-labyrinth/gallery/full/4.webp"
     },
     {
-      "src": "/images/adventures/fairy-labyrinth/gallery/thumb/5.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/fairy-labyrinth/gallery/thumb/5.webp",
       "alt": "Fairy Labyrinth Adventure 2",
-      "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/5.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/fairy-labyrinth/gallery/full/5.webp"
     },
     {
-      "src": "/images/adventures/fairy-labyrinth/gallery/thumb/6.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/fairy-labyrinth/gallery/thumb/6.webp",
       "alt": "Fairy Labyrinth Experience 2",
-      "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/6.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/fairy-labyrinth/gallery/full/6.webp"
     },
     {
-      "src": "/images/adventures/fairy-labyrinth/gallery/thumb/7.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/fairy-labyrinth/gallery/thumb/7.webp",
       "alt": "Fairy Labyrinth Journey 2",
-      "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/7.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/fairy-labyrinth/gallery/full/7.webp"
     },
     {
-      "src": "/images/adventures/fairy-labyrinth/gallery/thumb/8.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/fairy-labyrinth/gallery/thumb/8.webp",
       "alt": "Fairy Labyrinth Views 2",
-      "fullSize": "/images/adventures/fairy-labyrinth/gallery/full/8.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/fairy-labyrinth/gallery/full/8.webp"
     }
   ],
   "imagesPerPage": 8,
-  "cardImage": "/images/adventures/fairy-labyrinth-card.webp",
-  "cardMobileImage": "/images/adventures/fairy-labyrinth-card.webp",
+  "cardImage": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/fairy-labyrinth-card.webp",
+  "cardMobileImage": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/fairy-labyrinth-card.webp",
   "cardDescription": "Something on your mind? Unravel and unwind.",
   "cardFeatures": [
     "Meditatative walk",

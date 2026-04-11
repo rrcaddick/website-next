@@ -2,13 +2,13 @@
   "title": "Facilities",
   "description": "Everything you need to keep clean, comfortable, connected, captivated, cozy, fed and feeling good during your stay in the enchanted realms of the wood.",
   "hero": {
-    "mobileSrc": "/images/facilities/hero/mobile.webp",
-    "desktopSrc": "/images/facilities/hero/desktop.webp"
+    "mobileSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/facilities/hero/mobile.webp",
+    "desktopSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/facilities/hero/desktop.webp"
   },
   "columns": 4,
   "items": [
     {
-      "image": "/images/facilities/cards/amenities-and-services-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/facilities/cards/amenities-and-services-card.webp",
       "blocks": [
         {
           "type": "title",
@@ -28,7 +28,7 @@
       ]
     },
     {
-      "image": "/images/facilities/cards/entertainment-and-recreation-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/facilities/cards/entertainment-and-recreation-card.webp",
       "blocks": [
         {
           "type": "title",
@@ -48,7 +48,7 @@
       ]
     },
     {
-      "image": "/images/facilities/cards/food-and-drink-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/facilities/cards/food-and-drink-card.webp",
       "blocks": [
         {
           "type": "title",
@@ -68,7 +68,7 @@
       ]
     },
     {
-      "image": "/images/facilities/cards/social-and-gathering-spaces-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/facilities/cards/social-and-gathering-spaces-card.webp",
       "blocks": [
         {
           "type": "title",

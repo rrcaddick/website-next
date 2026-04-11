@@ -7,10 +7,10 @@
     "instagram": "https://www.instagram.com/fairyknowebackpackers/",
     "youtube": "https://www.youtube.com/@FairyFolknRoll"
   },
-  "headerLogo": "/images/ui/logos/logo-icon.png",
-  "logo": "/images/ui/logos/logo.webp",
-  "footerImage": "/images/ui/footer-banner.webp",
-  "mobileMenuBackground": "/images/ui/mobile-menu-background.jpg",
+  "headerLogo": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/ui/logos/logo-icon.png",
+  "logo": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/ui/logos/logo.webp",
+  "footerImage": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/ui/footer-banner.webp",
+  "mobileMenuBackground": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/ui/mobile-menu-background.jpg",
   "mobileMenuHeading": "Fairy Knowe",
   "seo": {
     "defaultTitle": "Fairy Knowe Backpackers",
@@ -32,7 +32,7 @@
       "button": "Try again"
     },
     "notFound": {
-      "image": "/images/404.jpg",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/404.jpg",
       "heading": "Are you lost traveler?",
       "description": "This path leads nowhere. Let us guide you back to the magic.",
       "button": {

@@ -4,59 +4,59 @@
   "description": "Embark on a 2-hour loop trail that takes you up to breathtaking viewpoints above the Touw River. Experience the perfect blend of forest exploration and scenic vistas as you make your way back down through the enchanting landscape.",
   "category": "Hiking",
   "hero": {
-    "mobileSrc": "/images/adventures/bosduif-trail/hero/mobile.webp",
-    "desktopSrc": "/images/adventures/bosduif-trail/hero/desktop.webp"
+    "mobileSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/bosduif-trail/hero/mobile.webp",
+    "desktopSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/bosduif-trail/hero/desktop.webp"
   },
   "gallery": [
     {
-      "src": "/images/adventures/bosduif-trail/gallery/thumb/1.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/bosduif-trail/gallery/thumb/1.webp",
       "alt": "Bosduif Trail View 1",
-      "fullSize": "/images/adventures/bosduif-trail/gallery/full/1.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/bosduif-trail/gallery/full/1.webp"
     },
     {
-      "src": "/images/adventures/bosduif-trail/gallery/thumb/2.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/bosduif-trail/gallery/thumb/2.webp",
       "alt": "Bosduif Trail View 2",
-      "fullSize": "/images/adventures/bosduif-trail/gallery/full/2.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/bosduif-trail/gallery/full/2.webp"
     },
     {
-      "src": "/images/adventures/bosduif-trail/gallery/thumb/3.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/bosduif-trail/gallery/thumb/3.webp",
       "alt": "Bosduif Trail View 3",
-      "fullSize": "/images/adventures/bosduif-trail/gallery/full/3.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/bosduif-trail/gallery/full/3.webp"
     },
     {
-      "src": "/images/adventures/bosduif-trail/gallery/thumb/4.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/bosduif-trail/gallery/thumb/4.webp",
       "alt": "Bosduif Trail View 4",
-      "fullSize": "/images/adventures/bosduif-trail/gallery/full/4.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/bosduif-trail/gallery/full/4.webp"
     },
     {
-      "src": "/images/adventures/bosduif-trail/gallery/thumb/5.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/bosduif-trail/gallery/thumb/5.webp",
       "alt": "Bosduif Trail View 5",
-      "fullSize": "/images/adventures/bosduif-trail/gallery/full/5.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/bosduif-trail/gallery/full/5.webp"
     },
     {
-      "src": "/images/adventures/bosduif-trail/gallery/thumb/6.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/bosduif-trail/gallery/thumb/6.webp",
       "alt": "Bosduif Trail View 6",
-      "fullSize": "/images/adventures/bosduif-trail/gallery/full/6.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/bosduif-trail/gallery/full/6.webp"
     },
     {
-      "src": "/images/adventures/bosduif-trail/gallery/thumb/7.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/bosduif-trail/gallery/thumb/7.webp",
       "alt": "Bosduif Trail View 7",
-      "fullSize": "/images/adventures/bosduif-trail/gallery/full/7.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/bosduif-trail/gallery/full/7.webp"
     },
     {
-      "src": "/images/adventures/bosduif-trail/gallery/thumb/8.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/bosduif-trail/gallery/thumb/8.webp",
       "alt": "Bosduif Trail View 8",
-      "fullSize": "/images/adventures/bosduif-trail/gallery/full/8.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/bosduif-trail/gallery/full/8.webp"
     },
     {
-      "src": "/images/adventures/bosduif-trail/gallery/thumb/9.webp",
+      "src": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/bosduif-trail/gallery/thumb/9.webp",
       "alt": "Bosduif Trail View 9",
-      "fullSize": "/images/adventures/bosduif-trail/gallery/full/9.webp"
+      "fullSize": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/bosduif-trail/gallery/full/9.webp"
     }
   ],
   "imagesPerPage": 8,
-  "cardImage": "/images/adventures/cards/desktop/bosduif-trail-card.webp",
-  "cardMobileImage": "/images/adventures/cards/mobile/bosduif-trail-card.webp",
+  "cardImage": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/cards/desktop/bosduif-trail-card.webp",
+  "cardMobileImage": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/adventures/cards/mobile/bosduif-trail-card.webp",
   "cardDescription": "2 hour loop trail up to breath-taking viewpoints above the Touw River, and back down again.",
   "cardFeatures": [
     "Loop trail",

@@ -2,12 +2,12 @@
   "title": "Venue Hire",
   "description": "Whether you're planning an intimate wedding amongst the trees, a captivating film shoot for the next Peter Pan, a corporate retreat where nature fuels inspiration, or a special celebration glowing with fairy-tale splendor, Fairy Knowe Backpackers Lodge opens the door to magical moments. Nestled against a backdrop of natural beauty, this rustic haven of enchanting wonder creates unforgettable memories for all those who wander.",
   "hero": {
-    "mobileSrc": "/images/venue/hero/mobile.webp",
-    "desktopSrc": "/images/venue/hero/desktop.webp"
+    "mobileSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/venue/hero/mobile.webp",
+    "desktopSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/venue/hero/desktop.webp"
   },
   "items": [
     {
-      "image": "/images/venue/cards/weddings-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/venue/cards/weddings-card.webp",
       "blocks": [
         {
           "type": "title",
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "image": "/images/venue/cards/private-parties-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/venue/cards/private-parties-card.webp",
       "blocks": [
         {
           "type": "title",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "image": "/images/venue/cards/corporate-events-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/venue/cards/corporate-events-card.webp",
       "blocks": [
         {
           "type": "title",
@@ -52,7 +52,7 @@
       ]
     },
     {
-      "image": "/images/venue/cards/film-crews-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/venue/cards/film-crews-card.webp",
       "blocks": [
         {
           "type": "title",
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "image": "/images/venue/cards/skill-trades-workshops-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/venue/cards/skill-trades-workshops-card.webp",
       "blocks": [
         {
           "type": "title",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "image": "/images/venue/cards/expo-events-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/venue/cards/expo-events-card.webp",
       "blocks": [
         {
           "type": "title",

@@ -2,13 +2,13 @@
   "title": "Accommodation",
   "description": "Nestled in the heart of Wilderness, our enchanting backpackers offers a magical retreat with room for every wandering soul. With cozy beds for up to 50 guests and a sprawling campsite that welcomes twice as many adventurers, we've created a space where lifelong friendships and unforgettable memories are made.",
   "hero": {
-    "mobileSrc": "/images/accommodation/hero/mobile.webp",
-    "desktopSrc": "/images/accommodation/hero/desktop.webp"
+    "mobileSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/hero/mobile.webp",
+    "desktopSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/hero/desktop.webp"
   },
   "showBookNow": true,
   "items": [
     {
-      "image": "/images/accommodation/cards/camping-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/cards/camping-card.webp",
       "href": "/accommodation/camping",
       "blocks": [
         {
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "image": "/images/accommodation/cards/safari-tent-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/cards/safari-tent-card.webp",
       "href": "/accommodation/safari-tent",
       "blocks": [
         {
@@ -70,7 +70,7 @@
       ]
     },
     {
-      "image": "/images/accommodation/cards/gypsy-caravan-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/cards/gypsy-caravan-card.webp",
       "href": "/accommodation/gypsy-caravan",
       "blocks": [
         {
@@ -102,7 +102,7 @@
       ]
     },
     {
-      "image": "/images/accommodation/cards/mixed-dorm-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/cards/mixed-dorm-card.webp",
       "href": "/accommodation/mixed-dorm",
       "blocks": [
         {
@@ -132,7 +132,7 @@
       ]
     },
     {
-      "image": "/images/accommodation/cards/twin-room-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/cards/twin-room-card.webp",
       "href": "/accommodation/twin-room",
       "blocks": [
         {
@@ -162,7 +162,7 @@
       ]
     },
     {
-      "image": "/images/accommodation/cards/family-room-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/cards/family-room-card.webp",
       "href": "/accommodation/family-room",
       "blocks": [
         {
@@ -192,7 +192,7 @@
       ]
     },
     {
-      "image": "/images/accommodation/cards/five-sleeper-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/cards/five-sleeper-card.webp",
       "href": "/accommodation/five-sleeper",
       "blocks": [
         {
@@ -223,7 +223,7 @@
       ]
     },
     {
-      "image": "/images/accommodation/cards/double-ensuite-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/cards/double-ensuite-card.webp",
       "href": "/accommodation/double-en-suite",
       "blocks": [
         {
@@ -253,7 +253,7 @@
       ]
     },
     {
-      "image": "/images/accommodation/cards/family-en-suite-rondawel-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/accommodation/cards/family-en-suite-rondawel-card.webp",
       "href": "/accommodation/family-en-suite-rondawel",
       "blocks": [
         {

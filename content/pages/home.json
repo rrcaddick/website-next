@@ -2,13 +2,13 @@
   "title": "Fairy Knowe Backpackers",
   "description": "Your home away from home in the heart of Wilderness, offering comfortable accommodation, exciting adventures, and a vibrant social atmosphere.",
   "hero": {
-    "mobileSrc": "/images/home/hero/mobile.webp",
-    "desktopSrc": "/images/home/hero/desktop.webp"
+    "mobileSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/home/hero/mobile.webp",
+    "desktopSrc": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/home/hero/desktop.webp"
   },
   "showBookNow": true,
   "items": [
     {
-      "image": "/images/home/cards/accommodation.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/home/cards/accommodation.webp",
       "href": "/accommodation",
       "blocks": [
         {
@@ -24,7 +24,7 @@
       ]
     },
     {
-      "image": "/images/home/cards/adventure.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/home/cards/adventure.webp",
       "href": "/adventures",
       "blocks": [
         {
@@ -40,7 +40,7 @@
       ]
     },
     {
-      "image": "/images/home/cards/entertainment.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/home/cards/entertainment.webp",
       "href": "/entertainment",
       "blocks": [
         {
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "image": "/images/home/cards/venue.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/home/cards/venue.webp",
       "href": "/venue",
       "blocks": [
         {
@@ -72,7 +72,7 @@
       ]
     },
     {
-      "image": "/images/home/cards/facilities.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/home/cards/facilities.webp",
       "href": "/facilities",
       "blocks": [
         {
@@ -88,7 +88,7 @@
       ]
     },
     {
-      "image": "/images/home/cards/ffr-card.webp",
+      "image": "https://res.cloudinary.com/dqxnz4cpu/image/upload/images/home/cards/ffr-card.webp",
       "href": "/fairy-folk-n-roll",
       "blocks": [
         {
