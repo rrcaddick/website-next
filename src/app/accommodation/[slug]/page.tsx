@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import { getAccommodation, getAllAccommodationSlugs, getSiteContent } from '@/lib/content'
-import { AccommodationDocument } from '@tina/__generated__/types'
+import { AccommodationDocument, SiteDocument } from '@tina/__generated__/types'
 import DetailPageTemplateClient from '@/features/detail/DetailPageTemplateClient'
 
 export async function generateStaticParams() {
@@ -37,6 +37,7 @@ export default async function AccommodationPage({
   params: Promise<{ slug: string }>
 }) {
   const { slug } = await params
+  const site = await getSiteContent()
 
   let content
   try {
@@ -51,6 +52,9 @@ export default async function AccommodationPage({
       query={AccommodationDocument}
       variables={{ relativePath: `${slug}.json` }}
       collection="accommodation"
+      site={site}
+      siteQuery={SiteDocument}
+      siteVariables={{ relativePath: 'site.json' }}
     />
   )
 }

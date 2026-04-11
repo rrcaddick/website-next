@@ -1,10 +1,12 @@
 import Link from "next/link";
-import Image from "next/image";
 import MobileMenu from "./MobileMenu";
-import { getNav } from "@/lib/content";
+import SiteHeaderLogoClient from "./SiteHeaderLogoClient";
+import { getNav, getSiteContent } from "@/lib/content";
+import { SiteDocument } from "@tina/__generated__/types";
 
 export default async function SiteHeader() {
   const nav = await getNav();
+  const site = await getSiteContent();
 
   return (
     <nav className="bg-white shadow-lg fixed w-full z-50">
@@ -14,17 +16,11 @@ export default async function SiteHeader() {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center" title="Fairy Knowe Backpackers">
-              <div className="relative w-12 h-12">
-                {/* Logo Image*/}
-                <Image
-                  src="/images/ui/logos/logo-icon.png"
-                  alt="Fairy Knowe Backpackers"
-                  priority
-                  width={32}
-                  height={32}
-                  className="object-contain mt-1"
-                />
-              </div>
+              <SiteHeaderLogoClient
+                data={site}
+                query={SiteDocument}
+                variables={{ relativePath: "site.json" }}
+              />
             </Link>
           </div>
 

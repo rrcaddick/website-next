@@ -1,8 +1,9 @@
 import localFont from "next/font/local";
 import "@/app/globals.css";
 import SiteHeader from "@/components/layout/SiteHeader";
-import SiteFooter from "@/components/layout/SiteFooter";
+import SiteFooterClient from "@/components/layout/SiteFooterClient";
 import { getSiteContent } from "@/lib/content";
+import { SiteDocument } from "@tina/__generated__/types";
 import React from "react";
 
 const inter = localFont({
@@ -32,7 +33,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body className="font-sans bg-white">
         <SiteHeader />
         <main className="min-h-screen pt-12">{children}</main>
-        <SiteFooter site={site} />
+        <SiteFooterClient data={site} query={SiteDocument} variables={{ relativePath: "site.json" }} />
       </body>
     </html>
   );

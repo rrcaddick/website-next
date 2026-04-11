@@ -27,7 +27,7 @@ export default function SiteFooter({ site }: Props) {
         {/* Contact buttons — single DOM tree, colour shifts at sm breakpoint */}
         <div className="flex justify-center space-x-6 mb-4 relative z-10">
           {/* Phone */}
-          <a href={`tel:${site.phone}`} className="text-gray-900 sm:text-black hover:text-primary transition-colors">
+          <a data-tina-field={tf(site, "phone")} href={`tel:${site.phone}`} className="text-gray-900 sm:text-black hover:text-primary transition-colors">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -45,7 +45,7 @@ export default function SiteFooter({ site }: Props) {
           </a>
 
           {/* Email */}
-          <a href="/contact" className="text-gray-900 sm:text-black hover:text-primary transition-colors">
+          <a data-tina-field={tf(site, "email")} href="/contact" className="text-gray-900 sm:text-black hover:text-primary transition-colors">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -64,6 +64,7 @@ export default function SiteFooter({ site }: Props) {
 
           {/* Facebook */}
           <a
+            data-tina-field={tf(site.social, "facebook")}
             href={site.social.facebook}
             target="_blank"
             className="text-gray-900 sm:text-black hover:text-primary transition-colors"
@@ -75,6 +76,7 @@ export default function SiteFooter({ site }: Props) {
 
           {/* Instagram */}
           <a
+            data-tina-field={tf(site.social, "instagram")}
             href={site.social.instagram}
             target="_blank"
             className="text-gray-900 sm:text-black hover:text-primary transition-colors"
@@ -86,6 +88,7 @@ export default function SiteFooter({ site }: Props) {
 
           {/* YouTube */}
           <a
+            data-tina-field={tf(site.social, "youtube")}
             href={site.social.youtube}
             target="_blank"
             className="text-gray-900 sm:text-black hover:text-primary transition-colors"
@@ -98,7 +101,7 @@ export default function SiteFooter({ site }: Props) {
 
         {/* Address */}
         <div className="text-center mb-6 relative z-10">
-          <p className="text-xs sm:text-sm text-gray-900 sm:text-black">{site.address}</p>
+          <p data-tina-field={tf(site, "address")} className="text-xs sm:text-sm text-gray-900 sm:text-black">{site.address}</p>
         </div>
       </div>
 

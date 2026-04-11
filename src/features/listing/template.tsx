@@ -5,15 +5,16 @@ import CTASection from "@/components/ui/CTASection";
 import InfoSections from "@/components/ui/InfoSections";
 import Card from "@/components/features/listing/Card";
 import { tinaField } from "tinacms/dist/react";
-import type { ListingPageContent } from "@/lib/content";
+import type { ListingPageContent, SiteContent } from "@/lib/content";
 
 interface Props {
   content: ListingPageContent;
+  site: SiteContent;
 }
 
 const tf = tinaField as (obj: unknown, field: string) => string;
 
-export default function ListingTemplate({ content }: Props) {
+export default function ListingTemplate({ content, site }: Props) {
   const { title, description, hero, items, columns = 3, showBookNow, infoSections, cta, footnote } = content;
 
   const itemCount = (items ?? []).length;
@@ -84,7 +85,7 @@ export default function ListingTemplate({ content }: Props) {
           )}
 
           <div className="mt-16 mb-8">
-            <LogoSection />
+            <LogoSection site={site} />
           </div>
 
           {footnote && (

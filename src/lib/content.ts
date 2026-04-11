@@ -175,6 +175,8 @@ export interface SiteContent {
     instagram: string;
     youtube: string;
   };
+  headerLogo: string;
+  logo: string;
   footerImage: string;
   seo: {
     defaultTitle: string;

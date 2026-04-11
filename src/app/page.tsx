@@ -1,5 +1,5 @@
 import { getPageContent, getSiteContent } from '@/lib/content';
-import { ListingPagesDocument } from '@tina/__generated__/types';
+import { ListingPagesDocument, SiteDocument } from '@tina/__generated__/types';
 import ListingTemplateClient from '@/features/listing/ListingTemplateClient';
 
 export async function generateMetadata() {
@@ -11,12 +11,15 @@ export async function generateMetadata() {
 }
 
 export default async function Home() {
-  const data = await getPageContent('home');
+  const [data, site] = await Promise.all([getPageContent('home'), getSiteContent()]);
   return (
     <ListingTemplateClient
       data={data}
       query={ListingPagesDocument}
       variables={{ relativePath: 'home.json' }}
+      site={site}
+      siteQuery={SiteDocument}
+      siteVariables={{ relativePath: 'site.json' }}
     />
   );
 }

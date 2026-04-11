@@ -14,12 +14,14 @@ interface ImageGalleryProps {
   images: GalleryImage[];
   title?: string;
   imagesPerPage?: number;
+  tinaFields?: string[];
 }
 
 export default function ImageGallery({
   images,
   title,
-  imagesPerPage = 8
+  imagesPerPage = 8,
+  tinaFields,
 }: ImageGalleryProps) {
   const [currentPage, setCurrentPage] = useState(0);
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
@@ -88,6 +90,7 @@ export default function ImageGallery({
             return (
               <div
                 key={`${image.src}-${globalIndex}`}
+                data-tina-field={tinaFields?.[globalIndex]}
                 className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-lg hover:shadow-xl cursor-pointer"
                 onClick={() => openImage(image, globalIndex)}
               >

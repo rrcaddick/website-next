@@ -69,7 +69,7 @@ export default function MobileMenu({ links }: Props) {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="block rounded-2xl border border-[#D1D5DB] bg-gradient-to-b from-white via-white to-[#E5E7EB] px-5 py-4 text-base font-medium text-[#202635] transition-colors hover:text-[#073F3A] hover:border-[#073F3A]"
+                    className="block hestrial-font rounded-2xl border border-[#D1D5DB] bg-gradient-to-b from-white via-white to-[#E5E7EB] px-5 py-4 text-base font-medium text-[#202635] transition-colors hover:text-[#073F3A] hover:border-[#073F3A]"
                     onClick={() => setIsOpen(false)}
                   >
                     {link.label}

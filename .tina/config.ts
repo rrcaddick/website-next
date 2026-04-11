@@ -395,6 +395,8 @@ export default defineConfig({
               { name: "youtube", label: "YouTube URL", type: "string" },
             ],
           },
+          { name: "headerLogo", label: "Header Logo", type: "image" as const },
+          { name: "logo", label: "Site Logo", type: "image" as const },
           { name: "footerImage", label: "Footer Image", type: "image" as const },
           {
             name: "seo",
