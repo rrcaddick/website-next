@@ -50,8 +50,7 @@ export default function MobileMenu({ links }: Props) {
           onClick={(event) => event.stopPropagation()}
         >
           <div className="flex h-full flex-col">
-            <div className="flex items-center justify-between border-b border-gray-200 px-5 py-4">
-              <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-[#073F3A]">Menu</h2>
+            <div className="flex justify-end px-5 py-4">
               <button
                 onClick={() => setIsOpen(false)}
                 className="rounded-full p-2 text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary"
