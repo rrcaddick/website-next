@@ -69,7 +69,7 @@ export default function MobileMenu({ nav, navQuery, navVariables, site, siteQuer
         {/* Drawer */}
         <div
           id="mobile-drawer-menu"
-          className={`absolute right-0 top-0 h-full w-[90%] overflow-hidden transition-transform duration-300 ease-out ${
+          className={`absolute inset-0 h-full w-full overflow-hidden transition-transform duration-300 ease-out ${
             isOpen ? "translate-x-0" : "translate-x-full"
           }`}
           onClick={(e) => e.stopPropagation()}
@@ -82,7 +82,7 @@ export default function MobileMenu({ nav, navQuery, navVariables, site, siteQuer
               fill
               className="object-cover object-center"
               priority
-              sizes="90vw"
+              sizes="100vw"
             />
           </div>
 

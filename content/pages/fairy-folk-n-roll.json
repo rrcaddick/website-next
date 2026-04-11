@@ -48,11 +48,7 @@
         {
           "type": "list",
           "_template": "list",
-          "contentItems": [
-            "Regular new content",
-            "High-quality production",
-            "Behind-the-scenes content"
-          ]
+          "contentItems": ["Regular new content", "High-quality production", "Behind-the-scenes content"]
         }
       ]
     }
@@ -61,7 +57,7 @@
     "heading": "Be Part of Our Story",
     "description": "Are you a musician looking to showcase your talent? We're always excited to feature new artists in our live sessions. Join our growing community of musicians and reach audiences worldwide through our YouTube channel",
     "button": {
-      "href": "/booking",
+      "href": "/contact",
       "label": "Contact Us"
     }
   }
