@@ -69,11 +69,24 @@ const blockTemplates = [
   {
     name: "title",
     label: "Title",
+    ui: {
+      itemProps: (item: { content?: string }) => ({
+        label: item?.content || "Title",
+      }),
+    },
     fields: [{ name: "content", label: "Text", type: "string" as const }],
   },
   {
     name: "text",
     label: "Text",
+    ui: {
+      itemProps: (item: { content?: string }) => {
+        const text = item?.content || "";
+        return {
+          label: text.length > 45 ? text.slice(0, 45) + "…" : text || "Text",
+        };
+      },
+    },
     fields: [
       {
         name: "content",
@@ -86,11 +99,24 @@ const blockTemplates = [
   {
     name: "subheading",
     label: "Subheading",
+    ui: {
+      itemProps: (item: { content?: string }) => ({
+        label: item?.content || "Subheading",
+      }),
+    },
     fields: [{ name: "content", label: "Text", type: "string" as const }],
   },
   {
     name: "list",
     label: "List",
+    ui: {
+      itemProps: (item: { contentItems?: string[] }) => {
+        const count = item?.contentItems?.length ?? 0;
+        return {
+          label: `List (${count} item${count !== 1 ? "s" : ""})`,
+        };
+      },
+    },
     fields: [
       {
         name: "contentItems",
