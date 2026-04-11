@@ -537,42 +537,29 @@ export default defineConfig({
         ui: { global: true },
         fields: [
           {
-            name: "topLevelLinks",
-            label: "Top Level Links",
+            name: "nav",
+            label: "Navigation Links",
             type: "object",
             list: true,
             ui: {
               itemProps: (item) => ({ label: item?.label || item?.href || "Link" }),
             },
             fields: [
-              { name: "href", label: "URL", type: "string" },
-              { name: "label", label: "Label", type: "string" },
-            ],
-          },
-          {
-            name: "accommodationLinks",
-            label: "Accommodation Dropdown Links",
-            type: "object",
-            list: true,
-            ui: {
-              itemProps: (item) => ({ label: item?.label || item?.href || "Link" }),
-            },
-            fields: [
-              { name: "href", label: "URL", type: "string" },
-              { name: "label", label: "Label", type: "string" },
-            ],
-          },
-          {
-            name: "adventureLinks",
-            label: "Adventure Dropdown Links",
-            type: "object",
-            list: true,
-            ui: {
-              itemProps: (item) => ({ label: item?.label || item?.href || "Link" }),
-            },
-            fields: [
-              { name: "href", label: "URL", type: "string" },
-              { name: "label", label: "Label", type: "string" },
+              { name: "href", label: "URL", type: "string" as const },
+              { name: "label", label: "Label", type: "string" as const },
+              {
+                name: "children",
+                label: "Dropdown Links",
+                type: "object" as const,
+                list: true,
+                ui: {
+                  itemProps: (item) => ({ label: item?.label || item?.href || "Link" }),
+                },
+                fields: [
+                  { name: "href", label: "URL", type: "string" as const },
+                  { name: "label", label: "Label", type: "string" as const },
+                ],
+              },
             ],
           },
         ],

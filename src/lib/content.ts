@@ -152,15 +152,14 @@ export interface AdventureContent extends DetailPageContent {
 // Navigation
 // ─────────────────────────────────────────────────────────────────────────────
 
-export interface NavLink {
+export interface NavItem {
   href: string;
   label: string;
+  children?: { href: string; label: string }[];
 }
 
 export interface NavContent {
-  topLevelLinks: NavLink[];
-  accommodationLinks: NavLink[];
-  adventureLinks: NavLink[];
+  nav: NavItem[];
 }
 
 // ─────────────────────────────────────────────────────────────────────────────

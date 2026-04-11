@@ -1,23 +1,29 @@
 "use client";
 
-import { useMemo } from "react";
-import { useEffect, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTina, tinaField } from "tinacms/dist/react";
-import type { NavLink, SiteContent } from "@/lib/content";
+import type { NavContent, SiteContent } from "@/lib/content";
 
 const tf = tinaField as (obj: unknown, field: string) => string;
 
 interface Props {
-  links: NavLink[];
+  nav: NavContent;
+  navQuery: string;
+  navVariables: object;
   site: SiteContent;
   siteQuery: string;
   siteVariables: object;
 }
 
-export default function MobileMenu({ links, site, siteQuery, siteVariables }: Props) {
+export default function MobileMenu({ nav, navQuery, navVariables, site, siteQuery, siteVariables }: Props) {
   const [isOpen, setIsOpen] = useState(false);
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+
+  const navWrapped = useMemo(() => ({ nav }), [nav]);
+  const { data: liveNavData } = useTina({ query: navQuery, variables: navVariables, data: navWrapped });
+  const liveNav = (liveNavData as { nav: NavContent }).nav;
 
   const siteWrapped = useMemo(() => ({ site }), [site]);
   const { data: liveSiteData } = useTina({ query: siteQuery, variables: siteVariables, data: siteWrapped });
@@ -25,10 +31,13 @@ export default function MobileMenu({ links, site, siteQuery, siteVariables }: Pr
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
-    return () => {
-      document.body.style.overflow = "";
-    };
+    return () => { document.body.style.overflow = ""; };
   }, [isOpen]);
+
+  const close = () => {
+    setIsOpen(false);
+    setExpandedIndex(null);
+  };
 
   return (
     <>
@@ -52,10 +61,10 @@ export default function MobileMenu({ links, site, siteQuery, siteVariables }: Pr
         className={`sm:hidden fixed inset-0 z-50 transition-opacity duration-300 ${
           isOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
         }`}
-        onClick={() => setIsOpen(false)}
+        onClick={close}
         aria-hidden={!isOpen}
       >
-        {/* Drawer — 90% width, anchored right */}
+        {/* Drawer */}
         <div
           id="mobile-drawer-menu"
           className={`absolute right-0 top-0 h-full w-[90%] overflow-hidden transition-transform duration-300 ease-out ${
@@ -89,7 +98,7 @@ export default function MobileMenu({ links, site, siteQuery, siteVariables }: Pr
                 ✦ {liveSite.mobileMenuHeading} ✦
               </span>
               <button
-                onClick={() => setIsOpen(false)}
+                onClick={close}
                 className="rounded-full p-2 text-white/70 hover:text-white hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-[#C9DD94]/50"
               >
                 <span className="sr-only">Close main menu</span>
@@ -103,26 +112,87 @@ export default function MobileMenu({ links, site, siteQuery, siteVariables }: Pr
             <div className="mx-5 mb-2 h-px bg-gradient-to-r from-transparent via-[#C9DD94]/50 to-transparent" />
 
             {/* Nav */}
-            <nav className="flex-1 flex flex-col justify-center px-6 py-4 overflow-y-auto">
-              <div className="space-y-3">
-                {links.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="block hestrial-font text-center text-xl text-white
-                               drop-shadow-[0_2px_6px_rgba(255,255,255,0.9)]
-                               bg-black/30 backdrop-blur-sm
-                               border border-[#C9DD94]/30
-                               rounded-xl px-5 py-4
-                               hover:bg-[#0E7D73]/50 hover:border-[#C9DD94]/80
-                               hover:text-[#C9DD94]
-                               hover:drop-shadow-[0_0_12px_rgba(255,255,255,1)]
-                               transition-all duration-200"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
+            <nav className="flex-1 px-6 py-4 overflow-y-auto flex flex-col justify-center">
+              <div className="space-y-2">
+                {liveNav.nav.map((item, index) => {
+                  const hasChildren = item.children && item.children.length > 0;
+                  const isExpanded = expandedIndex === index;
+
+                  if (hasChildren) {
+                    return (
+                      <div key={item.href}>
+                        {/* Parent row — tap label to navigate, tap chevron to expand */}
+                        <div className="flex items-stretch gap-0 rounded-xl overflow-hidden border border-[#C9DD94]/30 bg-black/30 backdrop-blur-sm">
+                          <Link
+                            data-tina-field={tf(item, "label")}
+                            href={item.href}
+                            className="flex-1 hestrial-font text-center text-xl text-white px-5 py-4
+                                       hover:bg-[#0E7D73]/50 hover:text-[#C9DD94]
+                                       transition-all duration-200"
+                            onClick={close}
+                          >
+                            {item.label}
+                          </Link>
+                          <button
+                            onClick={() => setExpandedIndex(isExpanded ? null : index)}
+                            className="px-4 text-white/70 hover:text-[#C9DD94] hover:bg-[#0E7D73]/40 transition-all duration-200 border-l border-[#C9DD94]/20"
+                            aria-label={isExpanded ? "Collapse" : "Expand"}
+                          >
+                            <svg
+                              className={`h-5 w-5 transition-transform duration-200 ${isExpanded ? "rotate-180" : ""}`}
+                              fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            >
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                            </svg>
+                          </button>
+                        </div>
+
+                        {/* Children */}
+                        {isExpanded && (
+                          <div className="mt-1 ml-3 space-y-1">
+                            {item.children!.map((child) => (
+                              <Link
+                                key={child.href}
+                                data-tina-field={tf(child, "label")}
+                                href={child.href}
+                                className="block hestrial-font text-center text-base text-white/90
+                                           bg-black/20 backdrop-blur-sm
+                                           border border-[#C9DD94]/20
+                                           rounded-lg px-4 py-3
+                                           hover:bg-[#0E7D73]/50 hover:border-[#C9DD94]/60
+                                           hover:text-[#C9DD94]
+                                           transition-all duration-200"
+                                onClick={close}
+                              >
+                                {child.label}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  }
+
+                  return (
+                    <Link
+                      key={item.href}
+                      data-tina-field={tf(item, "label")}
+                      href={item.href}
+                      className="block hestrial-font text-center text-xl text-white
+                                 drop-shadow-[0_2px_6px_rgba(255,255,255,0.9)]
+                                 bg-black/30 backdrop-blur-sm
+                                 border border-[#C9DD94]/30
+                                 rounded-xl px-5 py-4
+                                 hover:bg-[#0E7D73]/50 hover:border-[#C9DD94]/80
+                                 hover:text-[#C9DD94]
+                                 hover:drop-shadow-[0_0_12px_rgba(255,255,255,1)]
+                                 transition-all duration-200"
+                      onClick={close}
+                    >
+                      {item.label}
+                    </Link>
+                  );
+                })}
               </div>
             </nav>
 
