@@ -1,5 +1,6 @@
 import { tinaField } from "tinacms/dist/react";
 import type { CardBlock } from "@/lib/content";
+import { resolveBlockType } from "./blockType";
 
 const tf = tinaField as (obj: unknown, field: string) => string;
 
@@ -8,8 +9,7 @@ interface Props {
 }
 
 export default function CardBlockRenderer({ block }: Props) {
-  // Support both existing JSON (`type`) and Tina-edited JSON (`_template`).
-  const blockType = block._template || block.type;
+  const blockType = resolveBlockType(block);
 
   if (blockType === "title") {
     return (

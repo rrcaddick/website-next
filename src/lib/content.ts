@@ -16,9 +16,10 @@ export interface GalleryImage {
 // ─────────────────────────────────────────────────────────────────────────────
 
 export type CardBlock = {
+  __typename?: string;
   _template?: string;
-  type: "title" | "text" | "subheading" | "list";
-  content: string | string[];
+  type?: "title" | "text" | "subheading" | "list";
+  content?: string | string[];
   contentItems?: string[];
 };
 

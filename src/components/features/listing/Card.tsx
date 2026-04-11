@@ -4,6 +4,7 @@ import MouseGradientCard from "@/components/theme/MouseGradientCard";
 import CardContent from "./CardContent";
 import CardImage from "./CardImage";
 import type { ListingItem } from "@/lib/content";
+import { resolveBlockType } from "./blockType";
 
 const tf = tinaField as (obj: unknown, field: string) => string;
 
@@ -14,7 +15,7 @@ interface Props {
 
 function getCardTitle(blocks: ListingItem["blocks"]) {
   const safeBlocks = blocks ?? [];
-  const titleBlock = safeBlocks.find((block) => block.type === "title");
+  const titleBlock = safeBlocks.find((block) => resolveBlockType(block) === "title");
   return typeof titleBlock?.content === "string" ? titleBlock.content : "Listing image";
 }
 
