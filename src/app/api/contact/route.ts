@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import { buildEmailHtml } from "@/lib/email/buildEmailHtml";
+import { buildEmailText } from "@/lib/email/buildEmailText";
 
 interface ContactPayload {
   formConfig: {
@@ -23,16 +25,21 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ success: false }, { status: 400 });
   }
 
-  const subject = formConfig.subjectTemplate.replace("{{name}}", typeof fields.name === "string" ? fields.name : "");
+  // Subject with variable replacement
+  const subject = formConfig.subjectTemplate.replace(
+    /\{\{(.*?)\}\}/g,
+    (_, key) => (fields[key.trim()] as string) || "",
+  );
 
-  const fieldLines = Object.entries(fields)
-    .map(([key, val]) => {
-      const label = key.replace(/([A-Z])/g, " $1").replace(/^./, (s) => s.toUpperCase());
-      return `${label}: ${val}`;
-    })
-    .join("\n");
+  // Build text (fallback)
+  const text = buildEmailText(fields as Record<string, string>);
 
-  const text = `${emailTemplate.intro}\n\n${fieldLines}\n\n${emailTemplate.footer}`;
+  // Build HTML
+  const html = `
+      <p style="font-family:Arial,sans-serif;">${emailTemplate.intro}</p>
+      ${buildEmailHtml(fields as Record<string, string>)}
+      <p style="font-family:Arial,sans-serif;">${emailTemplate.footer}</p>
+    `;
 
   const transporter = nodemailer.createTransport({
     host: process.env.EMAIL_HOST,
@@ -50,7 +57,8 @@ export async function POST(req: NextRequest) {
       to: formConfig.recipientEmail || process.env.EMAIL_USER,
       replyTo: typeof fields.email === "string" ? fields.email : undefined,
       subject,
-      text,
+      text, // fallback
+      html, // 👈 THIS is the upgrade
     });
 
     return NextResponse.json({ success: true });
