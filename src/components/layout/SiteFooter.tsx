@@ -1,9 +1,12 @@
 import Image from "next/image";
 import type { SiteContent } from "@/lib/content";
+import { tinaField } from "tinacms/dist/react";
 
 interface Props {
   site: SiteContent;
 }
+
+const tf = tinaField as (obj: unknown, field: string) => string;
 
 export default function SiteFooter({ site }: Props) {
   return (
@@ -100,9 +103,9 @@ export default function SiteFooter({ site }: Props) {
       </div>
 
       {/* Background Banner Image */}
-      <div className="relative w-full mt-auto">
+      <div className="relative w-full mt-auto" data-tina-field={tf(site, "footerImage")}>
         <Image
-          src="/images/ui/footer-banner.webp"
+          src={site.footerImage}
           alt="Footer Background"
           width={1920}
           height={400}

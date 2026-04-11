@@ -78,7 +78,7 @@ export default function ListingTemplate({ content }: Props) {
                 heading={cta.heading}
                 description={cta.description}
                 button={cta.button}
-                tinaFields={{ heading: tf(cta, "heading"), description: tf(cta, "description") }}
+                tinaFields={{ heading: tf(cta, "heading"), description: tf(cta, "description"), button: cta.button ? tf(cta, "button") : undefined }}
               />
             </div>
           )}

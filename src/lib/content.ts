@@ -175,6 +175,7 @@ export interface SiteContent {
     instagram: string;
     youtube: string;
   };
+  footerImage: string;
   seo: {
     defaultTitle: string;
     defaultDescription: string;
@@ -203,7 +204,8 @@ function readJson<T>(relativePath: string): T {
 
 function listJsonSlugs(dir: string): string[] {
   const abs = path.join(process.cwd(), dir);
-  return fs.readdirSync(abs)
+  return fs
+    .readdirSync(abs)
     .filter((f) => f.endsWith(".json"))
     .map((f) => f.replace(".json", ""));
 }

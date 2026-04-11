@@ -4,6 +4,7 @@ const nextConfig = {
   images: {
     remotePatterns: [{ protocol: "https", hostname: "**" }],
     unoptimized: process.env.NODE_ENV === "development",
+    qualities: [80, 85],
   },
   outputFileTracingIncludes: {
     "*": ["./public/**/*", "./.next/static/**/*"],
@@ -14,8 +15,8 @@ const nextConfig = {
   async rewrites() {
     return {
       afterFiles: [
-        { source: '/admin', destination: '/admin/index.html' },
-        { source: '/admin/:path*', destination: '/admin/:path*' },
+        { source: "/admin", destination: "/admin/index.html" },
+        { source: "/admin/:path*", destination: "/admin/:path*" },
       ],
     };
   },

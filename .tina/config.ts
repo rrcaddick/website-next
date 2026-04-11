@@ -255,6 +255,17 @@ export default defineConfig({
             label: "Cards",
             type: "object",
             list: true,
+            ui: {
+              itemProps: (item) => {
+                const titleBlock = item?.blocks?.find(
+                  (b: { _template?: string; content?: string }) => b?._template === "title",
+                );
+
+                return {
+                  label: titleBlock?.content || "Card",
+                };
+              },
+            },
             fields: [
               { name: "image", label: "Card Image", type: "image" },
               { name: "href", label: "Link URL", type: "string" },
@@ -384,6 +395,7 @@ export default defineConfig({
               { name: "youtube", label: "YouTube URL", type: "string" },
             ],
           },
+          { name: "footerImage", label: "Footer Image", type: "image" as const },
           {
             name: "seo",
             label: "SEO",

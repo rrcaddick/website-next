@@ -3,6 +3,7 @@ import "@/app/globals.css";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
 import { getSiteContent } from "@/lib/content";
+import React from "react";
 
 const inter = localFont({
   src: "../../public/fonts/Inter.ttf",

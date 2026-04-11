@@ -10,6 +10,7 @@ interface CTAProps {
   tinaFields?: {
     heading?: string;
     description?: string;
+    button?: string;
   };
 }
 
@@ -22,6 +23,7 @@ export default function CTASection({ heading, description, button, tinaFields }:
         <Link
           href={button.href}
           target="blank"
+          data-tina-field={tinaFields?.button}
           className="inline-block bg-[#0E7D73] hover:bg-[#073F3A] text-[#C9DD94] hover:text-[#00FF7F] px-8 py-3 rounded-lg transition-colors font-medium"
         >
           {button.label}

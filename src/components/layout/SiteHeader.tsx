@@ -15,6 +15,7 @@ export default async function SiteHeader() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center" title="Fairy Knowe Backpackers">
               <div className="relative w-12 h-12">
+                {/* Logo Image*/}
                 <Image
                   src="/images/ui/logos/logo-icon.png"
                   alt="Fairy Knowe Backpackers"

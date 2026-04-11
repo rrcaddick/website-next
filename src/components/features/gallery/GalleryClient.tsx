@@ -43,9 +43,10 @@ function getBalancedImages(images: GalleryImage[]): GalleryImage[] {
 
 interface Props {
   emptyMessage: string;
+  emptyMessageTinaField?: string;
 }
 
-export default function GalleryClient({ emptyMessage }: Props) {
+export default function GalleryClient({ emptyMessage, emptyMessageTinaField }: Props) {
   const IMAGES_PER_PAGE = 12;
 
   const [selectedCategory, setSelectedCategory] = useState<Category>("All");
@@ -227,7 +228,7 @@ export default function GalleryClient({ emptyMessage }: Props) {
 
       {imagesToDisplay.length === 0 && (
         <div className="text-center py-12">
-          <p className="text-gray-500 dark:text-gray-400">{emptyMessage}</p>
+          <p data-tina-field={emptyMessageTinaField} className="text-gray-500 dark:text-gray-400">{emptyMessage}</p>
         </div>
       )}
 
