@@ -152,6 +152,9 @@ export default defineConfig({
             label: "Gallery",
             type: "object",
             list: true,
+            ui: {
+              itemProps: (item) => ({ label: item?.alt || item?.src || "Image" }),
+            },
             fields: galleryImageFields,
           },
           { name: "imagesPerPage", label: "Images Per Page", type: "number" },
@@ -170,6 +173,9 @@ export default defineConfig({
             label: "Info Sections",
             type: "object",
             list: true,
+            ui: {
+              itemProps: (item) => ({ label: item?.heading || "Section" }),
+            },
             fields: infoSectionFields,
           },
           { name: "cta", label: "Call to Action", type: "object", fields: ctaFields },
@@ -202,6 +208,9 @@ export default defineConfig({
             label: "Gallery",
             type: "object",
             list: true,
+            ui: {
+              itemProps: (item) => ({ label: item?.alt || item?.src || "Image" }),
+            },
             fields: galleryImageFields,
           },
           { name: "imagesPerPage", label: "Images Per Page", type: "number" },
@@ -219,6 +228,9 @@ export default defineConfig({
             label: "Info Sections",
             type: "object",
             list: true,
+            ui: {
+              itemProps: (item) => ({ label: item?.heading || "Section" }),
+            },
             fields: infoSectionFields,
           },
           { name: "cta", label: "Call to Action", type: "object", fields: ctaFields },
@@ -285,6 +297,9 @@ export default defineConfig({
             label: "Info Sections",
             type: "object",
             list: true,
+            ui: {
+              itemProps: (item) => ({ label: item?.heading || "Section" }),
+            },
             fields: infoSectionFields,
           },
           { name: "cta", label: "Call to Action", type: "object", fields: ctaFields },
@@ -334,6 +349,9 @@ export default defineConfig({
             label: "Form Fields",
             type: "object",
             list: true,
+            ui: {
+              itemProps: (item) => ({ label: item?.label || item?.name || "Field" }),
+            },
             fields: [
               { name: "name", label: "Field Name (HTML)", type: "string" },
               { name: "label", label: "Display Label", type: "string" },
@@ -476,6 +494,9 @@ export default defineConfig({
             label: "Top Level Links",
             type: "object",
             list: true,
+            ui: {
+              itemProps: (item) => ({ label: item?.label || item?.href || "Link" }),
+            },
             fields: [
               { name: "href", label: "URL", type: "string" },
               { name: "label", label: "Label", type: "string" },
@@ -486,6 +507,9 @@ export default defineConfig({
             label: "Accommodation Dropdown Links",
             type: "object",
             list: true,
+            ui: {
+              itemProps: (item) => ({ label: item?.label || item?.href || "Link" }),
+            },
             fields: [
               { name: "href", label: "URL", type: "string" },
               { name: "label", label: "Label", type: "string" },
@@ -496,6 +520,9 @@ export default defineConfig({
             label: "Adventure Dropdown Links",
             type: "object",
             list: true,
+            ui: {
+              itemProps: (item) => ({ label: item?.label || item?.href || "Link" }),
+            },
             fields: [
               { name: "href", label: "URL", type: "string" },
               { name: "label", label: "Label", type: "string" },
