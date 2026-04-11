@@ -1,6 +1,5 @@
 {
   "nav": [
-    { "label": "Home", "href": "/" },
     {
       "label": "Accommodation",
       "href": "/accommodation",

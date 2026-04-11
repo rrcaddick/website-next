@@ -31,7 +31,9 @@ export default function MobileMenu({ nav, navQuery, navVariables, site, siteQuer
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
-    return () => { document.body.style.overflow = ""; };
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [isOpen]);
 
   const close = () => {
@@ -84,19 +86,22 @@ export default function MobileMenu({ nav, navQuery, navVariables, site, siteQuer
             />
           </div>
 
-          {/* Gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/75" />
+          {/* Strong overlay */}
+          <div className="absolute inset-0 bg-black/80" />
 
           {/* Content */}
           <div className="relative z-10 flex h-full flex-col">
             {/* Header */}
             <div className="flex items-center justify-between px-5 pt-5 pb-3">
-              <span
+              <Link
+                href="/"
+                onClick={close}
                 data-tina-field={tf(liveSite, "mobileMenuHeading")}
-                className="hestrial-font text-lg text-[#C9DD94] drop-shadow-[0_0_10px_rgba(201,221,148,0.9)] tracking-widest"
+                className="hestrial-font text-lg text-[#C9DD94] tracking-widest"
               >
                 ✦ {liveSite.mobileMenuHeading} ✦
-              </span>
+              </Link>
+
               <button
                 onClick={close}
                 className="rounded-full p-2 text-white/70 hover:text-white hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-[#C9DD94]/50"
@@ -112,8 +117,8 @@ export default function MobileMenu({ nav, navQuery, navVariables, site, siteQuer
             <div className="mx-5 mb-2 h-px bg-gradient-to-r from-transparent via-[#C9DD94]/50 to-transparent" />
 
             {/* Nav */}
-            <nav className="flex-1 px-6 py-4 overflow-y-auto flex flex-col justify-center">
-              <div className="space-y-2">
+            <nav className="flex-1 px-6 py-4 overflow-y-auto flex flex-col">
+              <div className="space-y-3">
                 {liveNav.nav.map((item, index) => {
                   const hasChildren = item.children && item.children.length > 0;
                   const isExpanded = expandedIndex === index;
@@ -121,26 +126,31 @@ export default function MobileMenu({ nav, navQuery, navVariables, site, siteQuer
                   if (hasChildren) {
                     return (
                       <div key={item.href}>
-                        {/* Parent row — tap label to navigate, tap chevron to expand */}
-                        <div className="flex items-stretch gap-0 rounded-xl overflow-hidden border border-[#C9DD94]/30 bg-black/30 backdrop-blur-sm">
+                        {/* Parent row */}
+                        <div className="flex items-stretch gap-0 rounded-xl overflow-hidden border border-[#C9DD94]/30 bg-black/70">
                           <Link
                             data-tina-field={tf(item, "label")}
                             href={item.href}
                             className="flex-1 hestrial-font text-center text-xl text-white px-5 py-4
-                                       hover:bg-[#0E7D73]/50 hover:text-[#C9DD94]
+                                       tracking-[0.15em]
+                                       hover:bg-[#0E7D73] hover:text-[#C9DD94]
                                        transition-all duration-200"
                             onClick={close}
                           >
                             {item.label}
                           </Link>
+
+                          {/* Chevron unchanged */}
                           <button
                             onClick={() => setExpandedIndex(isExpanded ? null : index)}
-                            className="px-4 text-white/70 hover:text-[#C9DD94] hover:bg-[#0E7D73]/40 transition-all duration-200 border-l border-[#C9DD94]/20"
+                            className="px-4 text-white/70 hover:text-[#C9DD94] hover:bg-[#0E7D73]/80 transition-all duration-200 border-l border-[#C9DD94]/20"
                             aria-label={isExpanded ? "Collapse" : "Expand"}
                           >
                             <svg
                               className={`h-5 w-5 transition-transform duration-200 ${isExpanded ? "rotate-180" : ""}`}
-                              fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
                             >
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                             </svg>
@@ -149,17 +159,18 @@ export default function MobileMenu({ nav, navQuery, navVariables, site, siteQuer
 
                         {/* Children */}
                         {isExpanded && (
-                          <div className="mt-1 ml-3 space-y-1">
+                          <div className="mt-1 ml-3 space-y-2">
                             {item.children!.map((child) => (
                               <Link
                                 key={child.href}
                                 data-tina-field={tf(child, "label")}
                                 href={child.href}
-                                className="block hestrial-font text-center text-base text-white/90
-                                           bg-black/20 backdrop-blur-sm
+                                className="block hestrial-font text-center text-base text-white
+                                           tracking-[0.3em]
+                                           bg-grey/70
                                            border border-[#C9DD94]/20
                                            rounded-lg px-4 py-3
-                                           hover:bg-[#0E7D73]/50 hover:border-[#C9DD94]/60
+                                           hover:bg-[#0E7D73] hover:border-[#C9DD94]/60
                                            hover:text-[#C9DD94]
                                            transition-all duration-200"
                                 onClick={close}
@@ -179,13 +190,12 @@ export default function MobileMenu({ nav, navQuery, navVariables, site, siteQuer
                       data-tina-field={tf(item, "label")}
                       href={item.href}
                       className="block hestrial-font text-center text-xl text-white
-                                 drop-shadow-[0_2px_6px_rgba(255,255,255,0.9)]
-                                 bg-black/30 backdrop-blur-sm
+                                 tracking-[0.15em]
+                                 bg-black/70
                                  border border-[#C9DD94]/30
                                  rounded-xl px-5 py-4
-                                 hover:bg-[#0E7D73]/50 hover:border-[#C9DD94]/80
+                                 hover:bg-[#0E7D73] hover:border-[#C9DD94]/80
                                  hover:text-[#C9DD94]
-                                 hover:drop-shadow-[0_0_12px_rgba(255,255,255,1)]
                                  transition-all duration-200"
                       onClick={close}
                     >
