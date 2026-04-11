@@ -78,6 +78,16 @@ export interface ContactPageContent {
   formHeading: string;
   formFields: FormFields[];
   formSubmitLabel: string;
+  formConfig: {
+    recipientEmail: string;
+    subjectTemplate: string;
+    successMessage: string;
+    errorMessage: string;
+  };
+  emailTemplate: {
+    intro: string;
+    footer: string;
+  };
 }
 
 // ─────────────────────────────────────────────────────────────────────────────

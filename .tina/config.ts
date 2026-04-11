@@ -392,6 +392,26 @@ export default defineConfig({
             ],
           },
           { name: "formSubmitLabel", label: "Submit Button Label", type: "string" },
+          {
+            name: "formConfig",
+            label: "Form Configuration",
+            type: "object",
+            fields: [
+              { name: "recipientEmail", label: "Recipient Email", type: "string" },
+              { name: "subjectTemplate", label: "Subject Template (use {{name}})", type: "string" },
+              { name: "successMessage", label: "Success Message", type: "string", ui: { component: "textarea" } },
+              { name: "errorMessage", label: "Error Message", type: "string", ui: { component: "textarea" } },
+            ],
+          },
+          {
+            name: "emailTemplate",
+            label: "Email Template",
+            type: "object",
+            fields: [
+              { name: "intro", label: "Email Intro", type: "string", ui: { component: "textarea" } },
+              { name: "footer", label: "Email Footer", type: "string", ui: { component: "textarea" } },
+            ],
+          },
         ],
       },
 

@@ -17,23 +17,15 @@
     },
     {
       "sectionTitle": "Phone",
-      "sectionsItems": [
-        "+27 83 443 8384"
-      ]
+      "sectionsItems": ["+27 83 443 8384"]
     },
     {
       "sectionTitle": "Email",
-      "sectionsItems": [
-        "info@wildernessbackpackers.com"
-      ]
+      "sectionsItems": ["info@wildernessbackpackers.com"]
     },
     {
       "sectionTitle": "Reception Hours",
-      "sectionsItems": [
-        "Monday - Sunday: 8AM - 8PM",
-        "Check-in: 2PM - 8PM",
-        "Check-out: 10AM"
-      ]
+      "sectionsItems": ["Monday - Sunday: 8AM - 8PM", "Check-in: 2PM - 8PM", "Check-out: 10AM"]
     }
   ],
   "formHeading": "Send us a Message",
@@ -63,5 +55,15 @@
       "required": true
     }
   ],
-  "formSubmitLabel": "Send Message"
+  "formSubmitLabel": "Send Message",
+  "formConfig": {
+    "recipientEmail": "rrcaddick@gmail.com",
+    "subjectTemplate": "New enquiry from {{name}}",
+    "successMessage": "Thank you! Your message has been sent. We'll get back to you soon.",
+    "errorMessage": "Sorry, something went wrong. Please try again or email us directly."
+  },
+  "emailTemplate": {
+    "intro": "You have received a new enquiry from the Fairy Knowe Backpackers website.",
+    "footer": "This message was sent via the contact form at fairyknowebackpackers.co.za."
+  }
 }

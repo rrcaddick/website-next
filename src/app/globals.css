@@ -10,6 +10,17 @@
   font-display: swap;
 }
 
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}
+
 .hestrial-font {
   font-family: "Hestrial", sans-serif !important;
 }
