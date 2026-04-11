@@ -442,6 +442,8 @@ export default defineConfig({
           { name: "headerLogo", label: "Header Logo", type: "image" as const },
           { name: "logo", label: "Site Logo", type: "image" as const },
           { name: "footerImage", label: "Footer Image", type: "image" as const },
+          { name: "mobileMenuBackground", label: "Mobile Menu Background Image", type: "image" as const },
+          { name: "mobileMenuHeading", label: "Mobile Menu Heading", type: "string" as const },
           {
             name: "seo",
             label: "SEO",
@@ -493,6 +495,25 @@ export default defineConfig({
                   { name: "title", label: "Title", type: "string" },
                   { name: "message", label: "Message", type: "string" },
                   { name: "button", label: "Button Label", type: "string" },
+                ],
+              },
+              {
+                name: "notFound",
+                label: "404 Not Found Page",
+                type: "object",
+                fields: [
+                  { name: "image", label: "Background Image", type: "image" as const },
+                  { name: "heading", label: "Heading", type: "string" as const },
+                  { name: "description", label: "Description", type: "string" as const, ui: { component: "textarea" } },
+                  {
+                    name: "button",
+                    label: "Button",
+                    type: "object" as const,
+                    fields: [
+                      { name: "label", label: "Button Label", type: "string" as const },
+                      { name: "href", label: "Button URL", type: "string" as const },
+                    ],
+                  },
                 ],
               },
             ],

@@ -1,16 +1,27 @@
 "use client";
 
+import { useMemo } from "react";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import type { NavLink } from "@/lib/content";
+import { useTina, tinaField } from "tinacms/dist/react";
+import type { NavLink, SiteContent } from "@/lib/content";
+
+const tf = tinaField as (obj: unknown, field: string) => string;
 
 interface Props {
   links: NavLink[];
+  site: SiteContent;
+  siteQuery: string;
+  siteVariables: object;
 }
 
-export default function MobileMenu({ links }: Props) {
+export default function MobileMenu({ links, site, siteQuery, siteVariables }: Props) {
   const [isOpen, setIsOpen] = useState(false);
+
+  const siteWrapped = useMemo(() => ({ site }), [site]);
+  const { data: liveSiteData } = useTina({ query: siteQuery, variables: siteVariables, data: siteWrapped });
+  const liveSite = (liveSiteData as { site: SiteContent }).site;
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
@@ -53,14 +64,16 @@ export default function MobileMenu({ links }: Props) {
           onClick={(e) => e.stopPropagation()}
         >
           {/* Background image */}
-          <Image
-            src="/images/ui/mobile-menu-background.jpg"
-            alt=""
-            fill
-            className="object-cover object-center"
-            priority
-            sizes="90vw"
-          />
+          <div data-tina-field={tf(liveSite, "mobileMenuBackground")} className="absolute inset-0">
+            <Image
+              src={liveSite.mobileMenuBackground}
+              alt=""
+              fill
+              className="object-cover object-center"
+              priority
+              sizes="90vw"
+            />
+          </div>
 
           {/* Gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/75" />
@@ -69,8 +82,11 @@ export default function MobileMenu({ links }: Props) {
           <div className="relative z-10 flex h-full flex-col">
             {/* Header */}
             <div className="flex items-center justify-between px-5 pt-5 pb-3">
-              <span className="hestrial-font text-lg text-[#C9DD94] drop-shadow-[0_0_10px_rgba(201,221,148,0.9)] tracking-widest">
-                ✦ Fairy Knowe ✦
+              <span
+                data-tina-field={tf(liveSite, "mobileMenuHeading")}
+                className="hestrial-font text-lg text-[#C9DD94] drop-shadow-[0_0_10px_rgba(201,221,148,0.9)] tracking-widest"
+              >
+                ✦ {liveSite.mobileMenuHeading} ✦
               </span>
               <button
                 onClick={() => setIsOpen(false)}

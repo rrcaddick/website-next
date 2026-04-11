@@ -10,6 +10,8 @@
   "headerLogo": "/images/ui/logos/logo-icon.png",
   "logo": "/images/ui/logos/logo.webp",
   "footerImage": "/images/ui/footer-banner.webp",
+  "mobileMenuBackground": "/images/ui/mobile-menu-background.jpg",
+  "mobileMenuHeading": "Fairy Knowe",
   "seo": {
     "defaultTitle": "Fairy Knowe Backpackers",
     "defaultDescription": "Adventure Backpackers in the heart of the Garden Route",
@@ -28,6 +30,15 @@
       "title": "Gallery unavailable",
       "message": "We couldn't load the gallery images. Please check your connection and try again.",
       "button": "Try again"
+    },
+    "notFound": {
+      "image": "/images/404.jpg",
+      "heading": "Are you lost traveler?",
+      "description": "This path leads nowhere. Let us guide you back to the magic.",
+      "button": {
+        "label": "Travel Home",
+        "href": "/"
+      }
     }
   },
   "defaults": {

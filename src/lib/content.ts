@@ -179,6 +179,8 @@ export interface SiteContent {
   headerLogo: string;
   logo: string;
   footerImage: string;
+  mobileMenuBackground: string;
+  mobileMenuHeading: string;
   seo: {
     defaultTitle: string;
     defaultDescription: string;
@@ -190,6 +192,12 @@ export interface SiteContent {
   errors: {
     generic: { title: string; message: string; button: string };
     gallery: { title: string; message: string; button: string };
+    notFound: {
+      image: string;
+      heading: string;
+      description: string;
+      button: { label: string; href: string };
+    };
   };
   defaults: {
     galleryHeading: string;

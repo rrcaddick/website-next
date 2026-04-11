@@ -125,7 +125,12 @@ export default async function SiteHeader() {
           </div>
 
           {/* Mobile Menu — stays on the right of the logo row */}
-          <MobileMenu links={nav.topLevelLinks} />
+          <MobileMenu
+            links={nav.topLevelLinks}
+            site={site}
+            siteQuery={SiteDocument}
+            siteVariables={{ relativePath: "site.json" }}
+          />
         </div>
       </div>
     </nav>
