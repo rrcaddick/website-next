@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "tinacms dev -c \"next dev\"",
     "build": "tinacms build && next build",
     "start": "next start",
     "lint": "next lint",
+    "dev": "tinacms dev -c \"next dev\"",
     "dev:prod": "TINA_PUBLIC_IS_LOCAL=false tinacms dev -c \"next dev\"",
+    "dev:access": "tinacms dev -c \"next dev -H 0.0.0.0\"",
     "preinstall": "npm install react react-dom --no-save",
     "postinstall": "patch-package && rm -rf node_modules/@tinacms/app/node_modules/react node_modules/@tinacms/app/node_modules/react-dom"
   },

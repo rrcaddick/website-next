@@ -22,3 +22,22 @@ export interface SideNavigationProps {
   items: Pick<VideoItem, 'id' | 'label'>[];
   activeId: string;
 }
+
+// ── More Projects ────────────────────────────────────────────────────────────
+
+export interface Project {
+  id: string;
+  title: string;
+  category: string;
+  thumbnailUrl: string;
+  href: string;
+}
+
+export interface ProjectCardProps {
+  project: Project;
+}
+
+export interface MoreProjectsProps {
+  projects: Project[];
+  heading?: string;
+}

@@ -1,5 +1,6 @@
 import { createMediaHandler } from "next-tinacms-cloudinary/dist/handlers";
 import { getServerSession } from "next-auth/next";
+import { TinaAuthJSOptions } from "tinacms-authjs";
 import databaseClient from "../../../../.tina/__generated__/databaseClient";
 
 export const config = { api: { bodyParser: false } };
@@ -11,8 +12,6 @@ export default createMediaHandler({
 
   authorized: async (req, res) => {
     if (process.env.TINA_PUBLIC_IS_LOCAL === "true") return true;
-
-    const { TinaAuthJSOptions } = await import("tinacms-authjs");
 
     const session = await getServerSession(
       req,

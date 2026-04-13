@@ -6,6 +6,9 @@ import SideNavigation from './SideNavigation';
 import type { VideoScrollerProps } from './types';
 
 export default function VideoScroller({ items }: VideoScrollerProps) {
+  const [playingIndices, setPlayingIndices] = useState<ReadonlySet<number>>(
+    () => new Set([0]),
+  );
   const [activeIndex, setActiveIndex] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -14,23 +17,24 @@ export default function VideoScroller({ items }: VideoScrollerProps) {
       const container = containerRef.current;
       if (!container) return;
 
-      // How far the viewport has scrolled into the container
       const scrolledIntoContainer = -container.getBoundingClientRect().top;
       const sectionHeight = window.innerHeight;
 
-      const index = Math.max(
+      const primary = Math.max(
         0,
-        Math.min(
-          Math.floor(scrolledIntoContainer / sectionHeight),
-          items.length - 1,
-        ),
+        Math.min(Math.floor(scrolledIntoContainer / sectionHeight), items.length - 1),
       );
 
-      setActiveIndex(index);
+      // If we've scrolled any amount past the primary boundary, the next section is
+      // sliding up from below and should also play (transition state).
+      const fraction = scrolledIntoContainer % sectionHeight;
+      const next = fraction > 0 && primary + 1 < items.length ? primary + 1 : -1;
+
+      setActiveIndex(primary);
+      setPlayingIndices(new Set(next >= 0 ? [primary, next] : [primary]));
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    // Run once on mount to set initial state
     handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, [items.length]);
@@ -38,8 +42,6 @@ export default function VideoScroller({ items }: VideoScrollerProps) {
   const navItems = items.map(({ id, label }) => ({ id, label }));
 
   return (
-    // Total height = N × 100vh — this is the scrollable distance.
-    // Each sticky section occupies one "slot" of that scroll budget.
     <div
       ref={containerRef}
       data-video-scroller
@@ -53,7 +55,7 @@ export default function VideoScroller({ items }: VideoScrollerProps) {
           key={item.id}
           item={item}
           index={index}
-          isActive={activeIndex === index}
+          isActive={playingIndices.has(index)}
         />
       ))}
     </div>
